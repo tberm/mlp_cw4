@@ -46,31 +46,31 @@ logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s',
                     filename='embedding_extraction.log')
 
-def load_llama_model(model_name: str):
+def load_llama_model(model_path: Path):
     '''
     Initializes and returns a LLaMa model and tokenizer.
 
     Args:
-    model_name: str. A string representing the model name. Must be one of '7B', '13B', or '30B'.
+    model_path: str. Full path to folder containing model weights.
 
     Returns:
     Tuple[LlamaForCausalLM, LlamaTokenizer]. A tuple containing the loaded LLaMa model and its tokenizer.
     '''
-    model_path = "/data/ben_levinstein/llama/models/hf_weights" #CHANGE THIS TO WHEREVER YOU STORE THE HUGGING FACE WEIGHTS
-    tokenizer = LlamaTokenizer.from_pretrained(f"{model_path}/{model_name}")
-    model = LlamaForCausalLM.from_pretrained(f"{model_path}/{model_name}")
+    model = LlamaForCausalLM.from_pretrained(model_path, local_files_only=True, device_map="auto")
+    #tokenizer = LlamaTokenizer.from_pretrained(model_path)
+    tokenizer = AutoTokenizer.from_pretrained(model_path)
     return model, tokenizer
 
 
-def init_model(model_name: str):
+def init_model(model_name: str, llama_model_path: Path = None):
     """
     Initializes and returns the model and tokenizer.
     """
     try:
         if model_name in ['7B', '13B', '30B']:
-            model, tokenizer = load_llama_model(model_name)
+            model, tokenizer = load_llama_model(llama_model_path)
         else:
-            model = OPTForCausalLM.from_pretrained("facebook/opt-"+model_name)
+            model = OPTForCausalLM.from_pretrained("facebook/opt-"+model_name, device_map='auto')
             tokenizer = AutoTokenizer.from_pretrained("facebook/opt-"+model_name)
     except Exception as e:
         print(f"An error occurred when initializing the model: {str(e)}")
@@ -155,6 +155,11 @@ def save_data(df, output_path: Path, dataset_name: str, model_name: str, layer: 
     except Exception as e:
         print(f"An unexpected error occurred when trying to write to {output_file}: {e}")
 
+def load_results(output_path: Path, dataset_name: str, model_name: str, layer: int, remove_period: bool):
+    filename_suffix = "_rmv_period" if remove_period else ""
+    output_file = output_path / f"embeddings_{dataset_name}{model_name}_{abs(layer)}{filename_suffix}.csv"
+    return pd.read_csv(output_file)
+ 
 
 def main():
     """
@@ -192,6 +197,7 @@ def main():
     parser.add_argument("--true_false", action="store_true", help="Do you want to append 'true_false' to the dataset name?")
     parser.add_argument("--batch_size", type=int, help="Batch size for processing.")
     parser.add_argument("--remove_period", action="store_true", help="Include this flag if you want to extract embedding for the last token before the final period.")
+    parser.add_argument("--continue_run", action="store_true", help="Continue a half-finished run, adding to an existing results file")
     args = parser.parse_args()
 
     model_name = args.model if args.model is not None else config_parameters["model"]
@@ -200,13 +206,15 @@ def main():
     dataset_names = args.dataset_names if args.dataset_names is not None else config_parameters["list_of_datasets"]
     true_false = args.true_false if args.true_false is not None else config_parameters["true_false"]
     BATCH_SIZE = args.batch_size if args.batch_size is not None else config_parameters["batch_size"]
+    llama_model_path = Path(config_parameters['llama_model_path']) if 'llama_model_path' in config_parameters else None
+    continue_run = args.continue_run
     dataset_path = Path(config_parameters["dataset_path"])
     output_path = Path(config_parameters["processed_dataset_path"])
 
 
     model_output_per_layer: Dict[int, pd.DataFrame] = {}
 
-    model, tokenizer = init_model(model_name)
+    model, tokenizer = init_model(model_name, llama_model_path)
     if model is None or tokenizer is None:
         logging.error("Model or tokenizer initialization failed.")
         return
@@ -236,14 +244,25 @@ def main():
         if dataset is None:
             continue
 
-        num_batches = len(dataset) // BATCH_SIZE + (len(dataset) % BATCH_SIZE != 0)
-
+        num_already_done = len(dataset)
         for layer in layers_to_process:
-            model_output_per_layer[layer] = dataset.copy()
-            model_output_per_layer[layer]['embeddings'] = pd.Series(dtype='object')
+            if continue_run:
+                part_results = load_results(output_path, dataset_name, model_name, layer, should_remove_period)
+                model_output_per_layer[layer] = part_results
+                num_already_done = min(
+                    num_already_done,
+                    part_results.index[part_results.embeddings.isnull()][0]
+                )
+            else:
+                model_output_per_layer[layer] = dataset.copy()
+                model_output_per_layer[layer]['embeddings'] = pd.Series(dtype='object')
+                num_already_done = 0
+
+        num_to_do = len(dataset) - num_already_done
+        num_batches = num_to_do // BATCH_SIZE + (num_to_do % BATCH_SIZE != 0)
 
         for batch_num in tqdm(range(num_batches), desc=f"Processing batches in {dataset_name}"):
-            start_idx = batch_num * BATCH_SIZE
+            start_idx = batch_num * BATCH_SIZE + num_already_done
             actual_batch_size = min(BATCH_SIZE, len(dataset) - start_idx)
             end_idx = start_idx + actual_batch_size
             batch = dataset.iloc[start_idx:end_idx]
@@ -257,8 +276,8 @@ def main():
             if batch_num % 10 == 0:
                 logging.info(f"Processing batch {batch_num}")
 
-        for layer in layers_to_process:
-            save_data(model_output_per_layer[layer], output_path, dataset_name, model_name, layer, should_remove_period)
+            for layer in layers_to_process:
+                save_data(model_output_per_layer[layer], output_path, dataset_name, model_name, layer, should_remove_period)
 
 
 if __name__ == "__main__":

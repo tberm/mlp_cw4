@@ -1,0 +1,4 @@
+slurm-*
+processed_datasets/*
+config.json
+__pycache__

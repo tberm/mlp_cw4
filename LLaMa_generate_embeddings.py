@@ -46,6 +46,8 @@ logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s',
                     filename='embedding_extraction.log')
 
+logging.getLogger('').addHandler(logging.StreamHandler())
+
 def load_llama_model(model_path: Path):
     '''
     Initializes and returns a LLaMa model and tokenizer.

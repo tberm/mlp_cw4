@@ -48,7 +48,7 @@ logging.basicConfig(level=logging.INFO,
 
 logging.getLogger('').addHandler(logging.StreamHandler())
 
-def load_llama_model(model_path: Path):
+def load_llama_model(model_path: Path, cpu_only: bool = False):
     '''
     Initializes and returns a LLaMa model and tokenizer.
 
@@ -58,13 +58,13 @@ def load_llama_model(model_path: Path):
     Returns:
     Tuple[LlamaForCausalLM, LlamaTokenizer]. A tuple containing the loaded LLaMa model and its tokenizer.
     '''
-    model = LlamaForCausalLM.from_pretrained(model_path, local_files_only=True, device_map="auto")
+    model = LlamaForCausalLM.from_pretrained(model_path, local_files_only=True, device_map=None if cpu_only else 'auto')
     #tokenizer = LlamaTokenizer.from_pretrained(model_path)
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     return model, tokenizer
 
 
-def init_model(model_name: str, llama_model_path: Path = None):
+def init_model(model_name: str, llama_model_path: Path = None, cpu_only: bool = False):
     """
     Initializes and returns the model and tokenizer.
     """
@@ -72,7 +72,7 @@ def init_model(model_name: str, llama_model_path: Path = None):
         if model_name in ['7B', '13B', '30B']:
             model, tokenizer = load_llama_model(llama_model_path)
         else:
-            model = OPTForCausalLM.from_pretrained("facebook/opt-"+model_name, device_map='auto')
+            model = OPTForCausalLM.from_pretrained("facebook/opt-"+model_name, device_map=None if cpu_only else 'auto')
             tokenizer = AutoTokenizer.from_pretrained("facebook/opt-"+model_name)
     except Exception as e:
         print(f"An error occurred when initializing the model: {str(e)}")
@@ -143,7 +143,8 @@ def process_batch(batch_prompts: List[str], model, tokenizer, layers_to_use: lis
     return batch_embeddings
 
 
-def save_data(df, output_path: Path, dataset_name: str, model_name: str, layer: int, remove_period: bool):
+def save_data(df, output_path: Path, dataset_name: str, model_name: str, layer: int,
+        remove_period: bool, append: bool):
     """
     Saves the processed data to a CSV file.
     """
@@ -151,7 +152,10 @@ def save_data(df, output_path: Path, dataset_name: str, model_name: str, layer: 
     filename_suffix = "_rmv_period" if remove_period else ""
     output_file = output_path / f"embeddings_{dataset_name}{model_name}_{abs(layer)}{filename_suffix}.csv"
     try:
-        df.to_csv(output_file, index=False)
+        if append:
+            df.to_csv(output_file, index=False, header=False, mode='a')
+        else:
+            df.to_csv(output_file, index=False)
     except PermissionError:
         print(f"Permission denied when trying to write to {output_file}. Please check your file permissions.")
     except Exception as e:
@@ -196,7 +200,6 @@ def main():
                         help="List of layers of the LM to save embeddings from indexed negatively from the end")
     parser.add_argument("--dataset_names", nargs='*',
                         help="List of dataset names without csv extension. Can leave off 'true_false' suffix if true_false flag is set to True")
-    parser.add_argument("--true_false", action="store_true", help="Do you want to append 'true_false' to the dataset name?")
     parser.add_argument("--batch_size", type=int, help="Batch size for processing.")
     parser.add_argument("--remove_period", action="store_true", help="Include this flag if you want to extract embedding for the last token before the final period.")
     parser.add_argument("--continue_run", action="store_true", help="Continue a half-finished run, adding to an existing results file")
@@ -206,9 +209,10 @@ def main():
     should_remove_period = args.remove_period if args.remove_period is not None else config_parameters["remove_period"]
     layers_to_process = [int(x) for x in args.layers] if args.layers is not None else config_parameters["layers_to_use"]
     dataset_names = args.dataset_names if args.dataset_names is not None else config_parameters["list_of_datasets"]
-    true_false = args.true_false if args.true_false is not None else config_parameters["true_false"]
+    true_false = config_parameters.get("true_false", False)
     BATCH_SIZE = args.batch_size if args.batch_size is not None else config_parameters["batch_size"]
     llama_model_path = Path(config_parameters['llama_model_path']) if 'llama_model_path' in config_parameters else None
+    cpu_only = config_parameters.get('cpu_only', False)
     continue_run = args.continue_run
     dataset_path = Path(config_parameters["dataset_path"])
     output_path = Path(config_parameters["processed_dataset_path"])
@@ -216,7 +220,7 @@ def main():
 
     model_output_per_layer: Dict[int, pd.DataFrame] = {}
 
-    model, tokenizer = init_model(model_name, llama_model_path)
+    model, tokenizer = init_model(model_name, llama_model_path, cpu_only)
     if model is None or tokenizer is None:
         logging.error("Model or tokenizer initialization failed.")
         return
@@ -246,17 +250,26 @@ def main():
         if dataset is None:
             continue
 
-        num_already_done = len(dataset)
+        num_already_done = None
         for layer in layers_to_process:
+            model_output_per_layer[layer] = dataset.copy()
+            filename_suffix = "_rmv_period" if should_remove_period else ""
+            output_file = output_path / f"embeddings_{dataset_name}{model_name}_{abs(layer)}{filename_suffix}.csv"
             if continue_run:
+                if not output_file.exists():
+                    raise Exception(
+                        f'Tried to continue run, but results file does not exist ({output_file})'
+                    )
                 part_results = load_results(output_path, dataset_name, model_name, layer, should_remove_period)
-                model_output_per_layer[layer] = part_results
-                num_already_done = min(
-                    num_already_done,
-                    part_results.index[part_results.embeddings.isnull()][0]
-                )
+                if num_already_done is None:
+                    num_already_done = len(part_results)
+                elif num_already_done != len(part_results):
+                    raise Exception('Different number of results already done for'
+                        'different layers! Please fix manually')
+
             else:
-                model_output_per_layer[layer] = dataset.copy()
+                output_path.mkdir(parents=True, exist_ok=True)
+                dataset[:0].to_csv(output_file, index=False)  # header row only
                 model_output_per_layer[layer]['embeddings'] = pd.Series(dtype='object')
                 num_already_done = 0
 
@@ -279,7 +292,11 @@ def main():
                 logging.info(f"Processing batch {batch_num}")
 
             for layer in layers_to_process:
-                save_data(model_output_per_layer[layer], output_path, dataset_name, model_name, layer, should_remove_period)
+                save_data(
+                    model_output_per_layer[layer].loc[start_idx:end_idx-1],
+                    output_path, dataset_name, model_name, layer, should_remove_period,
+                    append=True
+                )
 
 
 if __name__ == "__main__":

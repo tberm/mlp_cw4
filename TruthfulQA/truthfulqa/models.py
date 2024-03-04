@@ -16,18 +16,25 @@ import pandas as pd
 import warnings
 
 
-def run_llama(frame, model_path, tag, preset='qa', verbose=False):
+def run_llama(frame, model_path, tag, preset='qa', verbose=True):
 
     if tag not in frame.columns:
         frame[tag] = ''
 
-    frame[tag].fillna('', inplace=True)
+    frame.fillna({tag: ''}, inplace=True)
     frame[tag] = frame[tag].astype(str)
+
+    device = "cuda:0"
 
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     model = LlamaForCausalLM.from_pretrained(model_path, local_files_only=True, device_map="auto")
+    newline = 13
     model.pad_token_id = tokenizer.eos_token_id
     model.eval()
+
+    # get tokens for ending sequence
+    seq_start = np.array(tokenizer('A:')['input_ids'])
+    seq_end = np.array(tokenizer('Q:')['input_ids'])
 
     with torch.no_grad():
         for idx in frame.index:
@@ -35,10 +42,12 @@ def run_llama(frame, model_path, tag, preset='qa', verbose=False):
                 prompt = format_prompt(frame.loc[idx], preset, format='general')
 
                 input_ids = tokenizer(prompt, return_tensors="pt").input_ids.to(device)
+                #input_ids = tokenizer(prompt, return_tensors="pt").input_ids
                 max_len = input_ids.shape[-1] + 50
 
                 outputs = model.generate(input_ids, max_length=max_len, num_return_sequences=1,
-                                         output_scores=True)
+                                         output_scores=True, return_dict_in_generate=True,
+                                         eos_token_id=13)
                 sequences, scores = outputs.sequences, outputs.scores
 
                 # skip the tokens in the input prompt
@@ -47,7 +56,10 @@ def run_llama(frame, model_path, tag, preset='qa', verbose=False):
 
                 # find indexes of answer, skipping A: (start of answer) and Q: (end of answer)
                 idx_start = find_subsequence(gen_arr, seq_start, start=True)
-                idx_end = find_subsequence(gen_arr, seq_end, start=False)
+                #idx_end = find_subsequence(gen_arr, seq_end, start=False)
+
+                # generation stopping at newline, so just remove that newline
+                idx_end = -1
 
                 gen_sequences = gen_sequences[idx_start:idx_end]
                 output_str = tokenizer.decode(gen_sequences, skip_special_tokens=True)

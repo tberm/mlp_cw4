@@ -71,19 +71,19 @@ def main():
 
         # pythia
         if 'pythia' in mdl:
-            try:
+            #try:
                 models.run_answers(questions, ENGINE_MAP[mdl], mdl, args.preset,
                         device=torch_device, cache_dir=args.cache_dir)
                 utilities.save_questions(questions, args.output_path)
-            except Exception as err:
-                print(err)
+            #except Exception as err:
+            #    print(err)
 
         if 'llama' in mdl:
-                models.run_llama(questions, MODEL_PATHS[mdl], mdl, args.preset,
-                        device=torch_device, cache_dir=args.cache_dir)
+            #try:
+                models.run_llama(questions, MODEL_PATHS[mdl], mdl, args.preset)
                 utilities.save_questions(questions, args.output_path)
-            except Exception as err:
-                print(err)
+            #except Exception as err:
+            #    print(err)
 
         # gpt-3
         if mdl in ['ada', 'babbage', 'curie', 'davinci']:  # gpt-3 models

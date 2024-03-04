@@ -5,7 +5,7 @@ from datasets import load_metric
 import numpy as np
 import pandas as pd
 import warnings
-from t5.evaluation import metrics
+#from t5.evaluation import metrics
 from time import sleep
 
 import logging

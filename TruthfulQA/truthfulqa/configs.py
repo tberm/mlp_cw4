@@ -42,3 +42,5 @@ INFO_MAP = {1: 1.0,
             12: 0.7,
             13: 0.1,
             14: 0.1}
+
+MODEL_PATHS = {'llama2-7b-chat': "/home/s2602481/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-chat-hf/snapshots/c1b0db933684edbfe29a06fa47eb19cc48025e93"}

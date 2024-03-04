@@ -4,6 +4,7 @@ from .utilities import (
     split_multi_answer,
     format_best,
     find_start,
+    save_questions
 )
 from .configs import BEST_COL, ANSWER_COL, INCORRECT_COL
 from transformers import AutoModelForCausalLM, AutoTokenizer, \
@@ -36,6 +37,8 @@ def run_llama(frame, model_path, tag, preset='qa', verbose=True):
     seq_start = np.array(tokenizer('A:')['input_ids'])
     seq_end = np.array(tokenizer('Q:')['input_ids'])
 
+    its_since_save = 0
+
     with torch.no_grad():
         for idx in frame.index:
             if pd.isnull(frame.loc[idx, tag]) or not len(frame.loc[idx, tag]):
@@ -55,9 +58,11 @@ def run_llama(frame, model_path, tag, preset='qa', verbose=True):
                 gen_arr = gen_sequences.cpu().numpy()
 
                 # find indexes of answer, skipping A: (start of answer) and Q: (end of answer)
-                idx_start = find_subsequence(gen_arr, seq_start, start=True)
+                #idx_start = find_subsequence(gen_arr, seq_start, start=True)
                 #idx_end = find_subsequence(gen_arr, seq_end, start=False)
 
+                # should be nothing before the answer
+                idx_start = 0
                 # generation stopping at newline, so just remove that newline
                 idx_end = -1
 
@@ -80,6 +85,12 @@ def run_llama(frame, model_path, tag, preset='qa', verbose=True):
                 probs = probs[range(scores.shape[0]), gen_sequences]
 
                 frame.loc[idx, tag] = output_str
+
+                if its_since_save == 5:
+                    print('saving checkpoint...')
+                    save_questions(frame, 'answer_gen_checkpoint')
+                    its_since_save = 0
+                its_since_save += 1
 
     if device:
         torch.cuda.empty_cache()
@@ -292,6 +303,8 @@ def run_answers(frame, engine, tag, preset, model=None, tokenizer=None, verbose=
     seq_start = np.array(tokenizer('A:')['input_ids'])
     seq_end = np.array(tokenizer('Q:')['input_ids'])
 
+    its_since_save = 0
+
     with torch.no_grad():
         for idx in frame.index:
             if pd.isnull(frame.loc[idx, tag]) or not len(frame.loc[idx, tag]):
@@ -309,8 +322,13 @@ def run_answers(frame, engine, tag, preset, model=None, tokenizer=None, verbose=
                 gen_arr = gen_sequences.cpu().numpy()
 
                 # find indexes of answer, skipping A: (start of answer) and Q: (end of answer)
-                idx_start = find_subsequence(gen_arr, seq_start, start=True)
-                idx_end = find_subsequence(gen_arr, seq_end, start=False)
+                #idx_start = find_subsequence(gen_arr, seq_start, start=True)
+                #idx_end = find_subsequence(gen_arr, seq_end, start=False)
+
+                # should be nothing before the answer
+                idx_start = 0
+                # generation stopping at newline, so just remove that newline
+                idx_end = -1
 
                 gen_sequences = gen_sequences[idx_start:idx_end]
                 output_str = tokenizer.decode(gen_sequences, skip_special_tokens=True)
@@ -331,6 +349,13 @@ def run_answers(frame, engine, tag, preset, model=None, tokenizer=None, verbose=
                 probs = probs[range(scores.shape[0]), gen_sequences]
 
                 frame.loc[idx, tag] = output_str
+
+                if its_since_save == 5:
+                    print('saving checkpoint...')
+                    save_questions(frame, 'answer_gen_checkpoint')
+                    its_since_save = 0
+                its_since_save += 1
+
 
     if device:
         torch.cuda.empty_cache()

@@ -66,6 +66,11 @@ def main():
             info_name = input("Enter your finetuned GPT-info model name: ")
 
     # populate frame with model answers
+    save_every = 50
+    num_batches = len(questions) // save_every
+    if len(questions) % save_every != 0:
+        num_batches += 1
+
     for mdl in args.models:
         print("Running {0}!".format(mdl))
 
@@ -80,7 +85,10 @@ def main():
 
         if 'llama' in mdl:
             #try:
-                models.run_llama(questions, MODEL_PATHS[mdl], mdl, args.preset)
+            for batch_idx in range(num_batches):
+                end_idx = min((batch_idx + 1) * save_every, len(questions))
+                batch = questions[batch_idx*save_every:end_idx]
+                models.run_llama(batch, MODEL_PATHS[mdl], mdl, args.preset)
                 utilities.save_questions(questions, args.output_path)
             #except Exception as err:
             #    print(err)

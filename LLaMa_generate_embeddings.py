@@ -32,7 +32,7 @@ Requirements:
 """
 
 import torch
-from transformers import AutoTokenizer, OPTForCausalLM, LlamaForCausalLM, LlamaTokenizer
+from transformers import AutoTokenizer, OPTForCausalLM, LlamaForCausalLM, LlamaTokenizer, GPTNeoXForCausalLM
 import pandas as pd
 import numpy as np
 from typing import Dict, List
@@ -71,6 +71,15 @@ def init_model(model_name: str, llama_model_path: Path = None, cpu_only: bool = 
     try:
         if model_name in ['7B', '13B', '30B']:
             model, tokenizer = load_llama_model(llama_model_path)
+        elif model_name == '70m':
+            model = GPTNeoXForCausalLM.from_pretrained(
+              "EleutherAI/pythia-70m",
+              cache_dir="./pythia-70m/main",
+            )
+            tokenizer = AutoTokenizer.from_pretrained(
+              "EleutherAI/pythia-70m",
+              cache_dir="./pythia-70m/main",
+            )
         else:
             model = OPTForCausalLM.from_pretrained("facebook/opt-"+model_name, device_map=None if cpu_only else 'auto')
             tokenizer = AutoTokenizer.from_pretrained("facebook/opt-"+model_name)
@@ -96,7 +105,6 @@ def load_data(dataset_path: Path, dataset_name: str, true_false: bool = False):
     if 'embeddings' not in df.columns:
         df['embeddings'] = pd.Series(dtype='object')
     return df
-
 
 def process_row(prompt: str, model, tokenizer, layers_to_use: list, remove_period: bool):
     """
@@ -141,6 +149,30 @@ def process_batch(batch_prompts: List[str], model, tokenizer, layers_to_use: lis
         batch_embeddings[layer] = [embedding.detach().cpu().numpy().tolist() for embedding in last_hidden_states]
 
     return batch_embeddings
+
+def process_qa_row(batch_rows, model, tokenizer, layers_to_use):
+    if len(batch_rows) > 1:
+        raise Exception('Batch processing not implemented for QA task')
+    row = batch_rows.iloc[0]
+
+    prompt = row.Question + ' ' + row['llama2-7b-chat']
+    inputs = tokenizer(prompt, return_tensors="pt")
+    q_as_tokens = tokenizer(row.Question, return_tensors="pt")
+    q_emb_idx = len(q_as_tokens['input_ids'])
+
+    model.eval()
+    with torch.no_grad():
+        outputs = model(**inputs, output_hidden_states=True, return_dict=True) 
+
+    q_embeddings = {}
+    a_embeddings = {} 
+    for layer in layers_to_use:
+        hidden_states = outputs.hidden_states[layer]
+        q_hidden_state = hidden_states[0][q_emb_idx]
+        a_hidden_state = hidden_states[0][-1]
+        q_embeddings[layer] = q_hidden_state.numpy().tolist()
+        a_embeddings[layer] = a_hidden_state.numpy().tolist()
+    return q_embeddings, a_embeddings
 
 
 def save_data(df, output_path: Path, dataset_name: str, model_name: str, layer: int,
@@ -246,7 +278,14 @@ def main():
     for dataset_name in tqdm(dataset_names, desc="Processing datasets"):
         # Increase the threshold parameter to a large number
         np.set_printoptions(threshold=np.inf)
-        dataset = load_data(dataset_path, dataset_name, true_false=true_false)
+        qa_mode = dataset_name.lower() == 'qa'
+        if qa_mode:
+            dataset = pd.read_csv(config_parameters["qa_answers_path"])
+            dataset = dataset[['Type', 'Category', 'Question', 'llama2-7b-chat']]
+            dataset['question-embedding'] = pd.Series(dtype='object') 
+            dataset['answer-embedding'] = pd.Series(dtype='object') 
+        else:
+            dataset = load_data(dataset_path, dataset_name, true_false=true_false)
         if dataset is None:
             continue
 
@@ -270,7 +309,11 @@ def main():
             else:
                 output_path.mkdir(parents=True, exist_ok=True)
                 dataset[:0].to_csv(output_file, index=False)  # header row only
-                model_output_per_layer[layer]['embeddings'] = pd.Series(dtype='object')
+                if qa_mode:
+                    model_output_per_layer[layer]['question-embedding'] = pd.Series(dtype='object')
+                    model_output_per_layer[layer]['answer-embedding'] = pd.Series(dtype='object')
+                else:
+                    model_output_per_layer[layer]['embeddings'] = pd.Series(dtype='object')
                 num_already_done = 0
 
         num_to_do = len(dataset) - num_already_done
@@ -281,12 +324,19 @@ def main():
             actual_batch_size = min(BATCH_SIZE, len(dataset) - start_idx)
             end_idx = start_idx + actual_batch_size
             batch = dataset.iloc[start_idx:end_idx]
-            batch_prompts = batch['statement'].tolist()
-            batch_embeddings = process_batch(batch_prompts, model, tokenizer, layers_to_process, should_remove_period)
+            if qa_mode:
+                q_embeddings, a_embeddings = process_qa_row(batch, model, tokenizer, layers_to_process)
+                for layer in layers_to_process:
+                    model_output_per_layer[layer].at[start_idx, 'question-embedding'] = q_embeddings[layer]
+                    model_output_per_layer[layer].at[start_idx, 'answer-embedding'] = a_embeddings[layer]
 
-            for layer in layers_to_process:
-                for i, idx in enumerate(range(start_idx, end_idx)):
-                    model_output_per_layer[layer].at[idx, 'embeddings'] = batch_embeddings[layer][i]
+            else:
+                batch_prompts = batch['statement'].tolist()
+                batch_embeddings = process_batch(batch_prompts, model, tokenizer, layers_to_process, should_remove_period)
+
+                for layer in layers_to_process:
+                    for i, idx in enumerate(range(start_idx, end_idx)):
+                        model_output_per_layer[layer].at[idx, 'embeddings'] = batch_embeddings[layer][i]
 
             if batch_num % 10 == 0:
                 logging.info(f"Processing batch {batch_num}")

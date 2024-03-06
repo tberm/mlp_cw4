@@ -86,7 +86,7 @@ def run_llama(frame, model_path, tag, preset='qa', verbose=True):
 
                 frame.loc[idx, tag] = output_str
 
-                if its_since_save == 5:
+                if its_since_save == 20:
                     print('saving checkpoint...')
                     save_questions(frame, 'answer_gen_checkpoint')
                     its_since_save = 0
@@ -456,6 +456,8 @@ def run_probs(frame, engine, tag, preset='qa', model=None, tokenizer=None, devic
     if tokenizer is None:
         tokenizer = AutoTokenizer.from_pretrained(engine, cache_dir=cache_dir)
 
+    its_since_save = 0
+
     with torch.no_grad():
         for idx in frame.index:
             if pd.isnull(frame.loc[idx, '{0} lprob max'.format(tag)]):
@@ -525,6 +527,12 @@ def run_probs(frame, engine, tag, preset='qa', model=None, tokenizer=None, devic
                     scores_false.append(log_probs.sum().item())
 
                 MC_calcs(tag, frame, idx, scores_true, scores_false, ref_true, ref_best)
+
+                if its_since_save == 20:
+                    print('saving checkpoint...')
+                    save_questions(frame, 'mc_probs_checkpoint')
+                    its_since_save = 0
+                its_since_save += 1
 
     if device:
         torch.cuda.empty_cache()

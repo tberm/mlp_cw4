@@ -362,6 +362,87 @@ def run_answers(frame, engine, tag, preset, model=None, tokenizer=None, verbose=
 
     return frame
 
+def run_probs_llama(frame, model_path, tag, preset='qa', verbose=True):
+    set_columns(tag, frame)
+    tokenizer = AutoTokenizer.from_pretrained(model_path)
+    model = LlamaForCausalLM.from_pretrained(
+        model_path, local_files_only=True, device_map="auto"
+    )
+    device = "cuda:0"
+    model.eval()
+    with torch.no_grad():
+        for idx in frame.index:
+            if pd.isnull(frame.loc[idx, '{0} lprob max'.format(tag)]):
+     
+                # check that answer exists
+                if pd.isnull(frame.loc[idx, INCORRECT_COL]):
+                    warnings.warn("References missing for {0}!".format(idx), stacklevel=2)
+                    continue
+                if not len(frame.loc[idx, INCORRECT_COL]):
+                    warnings.warn("References missing for {0}!".format(idx), stacklevel=2)
+                    continue
+
+                # reference answers
+                ref_best = format_best(frame.loc[idx, BEST_COL])
+                ref_true = split_multi_answer(frame.loc[idx, ANSWER_COL])
+                ref_false = split_multi_answer(frame.loc[idx, INCORRECT_COL])
+
+                scores_true = []
+                scores_false = []
+
+                input_prompt = format_prompt(frame.loc[idx], preset, format='general')
+
+                for temp_ans in ref_true:
+                    # append the current answer choice to the prompt
+                    prompt = format_prompt_with_answer_strings(frame.loc[idx, 'Question'],
+                                                               temp_ans,
+                                                               preset,
+                                                               format='general')
+                    input_ids = tokenizer(input_prompt, return_tensors="pt").input_ids.to(device)
+                    prompt_ids = tokenizer(prompt, return_tensors="pt").input_ids.to(device)
+
+                    outputs = model(prompt_ids)[0].squeeze(0)
+                    outputs = outputs.log_softmax(-1)  # logits to log probs
+
+                    # skip tokens in the prompt -- we only care about the answer
+                    outputs = outputs[input_ids.shape[-1] - 1: -1, :]
+                    prompt_ids = prompt_ids[0, input_ids.shape[-1]:]
+
+                    # get logprobs for each token in the answer
+                    log_probs = outputs[range(outputs.shape[0]), prompt_ids.squeeze(0)]
+                    # log_probs = log_probs[3:]  # drop the '\nA:' prefix
+
+                    scores_true.append(log_probs.sum().item())
+
+                for temp_ans in ref_false:
+                    # append the current answer choice to the prompt
+                    prompt = format_prompt_with_answer_strings(frame.loc[idx, 'Question'],
+                                                               temp_ans,
+                                                               preset,
+                                                               format='general')
+                    input_ids = tokenizer(input_prompt, return_tensors="pt").input_ids.to(device)
+                    prompt_ids = tokenizer(prompt, return_tensors="pt").input_ids.to(device)
+
+                    outputs = model(prompt_ids)[0].squeeze(0)
+                    outputs = outputs.log_softmax(-1)  # logits to log probs
+
+                    # skip tokens in the prompt -- we only care about the answer
+                    outputs = outputs[input_ids.shape[-1] - 1: -1, :]
+                    prompt_ids = prompt_ids[0, input_ids.shape[-1]:]
+
+                    # get logprobs for each token in the answer
+                    log_probs = outputs[range(outputs.shape[0]), prompt_ids.squeeze(0)]
+                    # log_probs = log_probs[3:] # drop the '\nA:' prefix
+
+                    scores_false.append(log_probs.sum().item())
+
+                MC_calcs(tag, frame, idx, scores_true, scores_false, ref_true, ref_best)
+
+    if device:
+        torch.cuda.empty_cache()
+
+    return frame
+
 
 def run_probs(frame, engine, tag, preset='qa', model=None, tokenizer=None, device=None, cache_dir=None):
 
@@ -403,7 +484,9 @@ def run_probs(frame, engine, tag, preset='qa', model=None, tokenizer=None, devic
                                                                temp_ans,
                                                                preset,
                                                                format='general')
+                    # ids of questions part of the prompt
                     input_ids = tokenizer(input_prompt, return_tensors="pt").input_ids.to(device)
+                    # ids of prompt including the answer
                     prompt_ids = tokenizer(prompt, return_tensors="pt").input_ids.to(device)
 
                     outputs = model(prompt_ids)[0].squeeze(0)
@@ -415,7 +498,7 @@ def run_probs(frame, engine, tag, preset='qa', model=None, tokenizer=None, devic
 
                     # get logprobs for each token in the answer
                     log_probs = outputs[range(outputs.shape[0]), prompt_ids.squeeze(0)]
-                    log_probs = log_probs[3:]  # drop the '\nA:' prefix
+                    #log_probs = log_probs[3:]  # drop the '\nA:' prefix
 
                     scores_true.append(log_probs.sum().item())
 
@@ -437,7 +520,7 @@ def run_probs(frame, engine, tag, preset='qa', model=None, tokenizer=None, devic
 
                     # get logprobs for each token in the answer
                     log_probs = outputs[range(outputs.shape[0]), prompt_ids.squeeze(0)]
-                    log_probs = log_probs[3:] # drop the '\nA:' prefix
+                    #log_probs = log_probs[3:] # drop the '\nA:' prefix
 
                     scores_false.append(log_probs.sum().item())
 

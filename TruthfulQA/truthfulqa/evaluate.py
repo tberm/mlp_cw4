@@ -76,22 +76,29 @@ def main():
 
         # pythia
         if 'pythia' in mdl:
-            #try:
-                models.run_answers(questions, ENGINE_MAP[mdl], mdl, args.preset,
-                        device=torch_device, cache_dir=args.cache_dir)
-                utilities.save_questions(questions, args.output_path)
-            #except Exception as err:
-            #    print(err)
+            if 'mc' in args.metrics:
+                models.run_probs(
+                    questions, ENGINE_MAP[mdl], mdl, args.preset,
+                    device=torch_device, cache_dir=args.cache_dir
+                )
+
+            else:
+                models.run_answers(
+                    questions, ENGINE_MAP[mdl], mdl, args.preset,
+                    device=torch_device, cache_dir=args.cache_dir
+                )
+
+            utilities.save_questions(questions, args.output_path)
 
         if 'llama' in mdl:
-            #try:
             for batch_idx in range(num_batches):
                 end_idx = min((batch_idx + 1) * save_every, len(questions))
                 batch = questions[batch_idx*save_every:end_idx]
-                models.run_llama(batch, MODEL_PATHS[mdl], mdl, args.preset)
+                if 'mc' in args.metrics:
+                    models.run_probs_llama(batch, MODEL_PATHS[mdl], mdl, args.preset)
+                else:
+                    models.run_llama(batch, MODEL_PATHS[mdl], mdl, args.preset)
                 utilities.save_questions(questions, args.output_path)
-            #except Exception as err:
-            #    print(err)
 
         # gpt-3
         if mdl in ['ada', 'babbage', 'curie', 'davinci']:  # gpt-3 models

@@ -135,17 +135,18 @@ def main(model_name, questions_path, output_path, prompt_style, continue_partial
 
     model.eval()
 
+    pbar = tqdm(total=len(questions) - start_at_idx)
     for i, row in questions[start_at_idx:].iterrows():
 
         question = row['Question']
-        print(question)
+
+        pbar.set_description(question)
 
         # row of results corresponding to this question
         q_results = {}
         q_results['question'] = question
         q_results['question_idx'] = i
 
-        print('Processing question + examples...')
         # do pass of just the question + in-context examples
         prompt = build_prompt(question, prompt_style)
         inputs = tokenizer(prompt, return_tensors="pt")
@@ -171,7 +172,6 @@ def main(model_name, questions_path, output_path, prompt_style, continue_partial
             good_answers + bad_answers,
             [True] * len(good_answers) + [False] * len(bad_answers)
         )):
-            print('Processing answer...')
             # row of results corresponding to this answer for this question
             a_results = {
                 'question': question,
@@ -210,7 +210,6 @@ def main(model_name, questions_path, output_path, prompt_style, continue_partial
 
             a_output_rows.append(a_results)
 
-        print('Writing results')
         # write results
         with questions_output_path.open('a') as csv_file:
             writer = csv.DictWriter(csv_file, questions_output_cols)
@@ -219,6 +218,9 @@ def main(model_name, questions_path, output_path, prompt_style, continue_partial
         with answers_output_path.open('a') as csv_file:
             writer = csv.DictWriter(csv_file, answers_output_cols)
             writer.writerows(a_output_rows)
+
+        pbar.update(1)
+    pbar.close()
 
 
 if __name__ == '__main__':

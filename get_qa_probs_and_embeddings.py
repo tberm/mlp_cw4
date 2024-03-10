@@ -47,12 +47,11 @@ def build_prompt(question, prompt_style):
     return prompt
 
 
-def main(model_name, questions_path, output_path, prompt_style, continue_partial=False):
+def main(model_name, questions_path, output_path, prompt_style, continue_partial=False, cpu_only=False):
     with open("config.json") as config_file:
         config = json.load(config_file)
 
-    #layers = [-1, -5, -9, -13]
-    layers = [-1, -3]
+    layers = [-1, -5, -9, -13]
 
     if output_path.exists():
         if not continue_partial:
@@ -71,10 +70,11 @@ def main(model_name, questions_path, output_path, prompt_style, continue_partial
 
     if 'llama' in model_name:
         llama_model_path = Path(config['llama_model_path'])
-        model, tokenizer = load_llama_model(llama_model_path)
+        model, tokenizer = load_llama_model(llama_model_path, cpu_only)
     elif 'pythia' in model_name:
         model, tokenizer = load_pythia_model(model_name)
 
+    device = 'cpu' if cpu_only else 'cuda:0'
     questions = pd.read_csv(questions_path)
 
     questions_output_cols = [
@@ -105,7 +105,7 @@ def main(model_name, questions_path, output_path, prompt_style, continue_partial
     else:
         # get last line in file
         last_line = subprocess.check_output(['tail', '-1', str(questions_output_path)])
-        match = re.match('[^,]*,(\d+)', last_line.decode())
+        match = re.match(r'[^,]*,(\d+)', last_line.decode())
         if match is None:
             start_at_idx = 0
         else:
@@ -122,7 +122,7 @@ def main(model_name, questions_path, output_path, prompt_style, continue_partial
     else:
         # get last line in file
         last_line = subprocess.check_output(['tail', '-1', str(answers_output_path)])
-        match = re.match('[^,]*,(\d+)', last_line.decode())
+        match = re.match(r'[^,]*,(\d+)', last_line.decode())
         if match is None:
             if start_at_idx != 0:
                 raise RuntimeError('Progress mismatch: already have questions data but no answers')
@@ -149,19 +149,19 @@ def main(model_name, questions_path, output_path, prompt_style, continue_partial
 
         # do pass of just the question + in-context examples
         prompt = build_prompt(question, prompt_style)
-        inputs = tokenizer(prompt, return_tensors="pt")
+        inputs = tokenizer(prompt, return_tensors="pt").to(device)
         with torch.no_grad():
             outputs = model(**inputs, output_hidden_states=True, return_dict=True) 
 
         for layer in layers:
             col_name = f'activations_layer_{layer}'
-            q_results[col_name] = outputs.hidden_states[layer][0][-1].numpy().tolist()
+            q_results[col_name] = outputs.hidden_states[layer][0][-1].cpu().numpy().tolist()
 
         next_token_logits = outputs.logits[0][-1]
         log_probs = next_token_logits.log_softmax(0)
         probs = next_token_logits.softmax(0)
-        q_results['next_token_entropy'] = - (log_probs * probs).sum().item()
-        q_results['next_token_log_prob'] = log_probs.max().item()
+        q_results['next_token_entropy'] = - (log_probs * probs).sum().cpu().item()
+        q_results['next_token_log_prob'] = log_probs.max().cpu().item()
 
         good_answers = tqa.utilities.split_multi_answer(row['Correct Answers'])
         bad_answers = tqa.utilities.split_multi_answer(row['Incorrect Answers'])
@@ -180,7 +180,7 @@ def main(model_name, questions_path, output_path, prompt_style, continue_partial
                 'answer_is_correct': is_correct,
             }
             full_input = prompt + ' ' + answer
-            inputs = tokenizer(full_input, return_tensors="pt")
+            inputs = tokenizer(full_input, return_tensors="pt").to(device)
             with torch.no_grad():
                 outputs = model(**inputs, output_hidden_states=True, return_dict=True) 
 
@@ -193,20 +193,20 @@ def main(model_name, questions_path, output_path, prompt_style, continue_partial
             log_probs = log_probs[num_prompt_tokens-1:, :]
             # get only the probs of tokens in the answer
             answer_log_probs = log_probs[range(log_probs.shape[0]), inputs['input_ids'][0]]
-            a_results['all_log_probs'] = answer_log_probs.numpy().tolist()
-            a_results['avg_log_prob'] = answer_log_probs.mean().item()
-            a_results['sum_log_prob'] = answer_log_probs.sum().item()
+            a_results['all_log_probs'] = answer_log_probs.cpu().numpy().tolist()
+            a_results['avg_log_prob'] = answer_log_probs.mean().cpu().item()
+            a_results['sum_log_prob'] = answer_log_probs.sum().cpu().item()
 
             # calculate entropy of distribution over tokens 
             probs = outputs.logits[0].softmax(-1)
             probs = probs[num_prompt_tokens-1:, :]
             entropy_per_pos = - (probs * log_probs).sum(-1)
-            a_results['avg_entropy'] = entropy_per_pos.mean().item()
+            a_results['avg_entropy'] = entropy_per_pos.mean().cpu().item()
 
             # get activations
             for layer in layers:
                 col_name = f'activations_layer_{layer}'
-                a_results[col_name] = outputs.hidden_states[layer][0][-1].numpy().tolist()
+                a_results[col_name] = outputs.hidden_states[layer][0][-1].cpu().numpy().tolist()
 
             a_output_rows.append(a_results)
 
@@ -232,9 +232,10 @@ if __name__ == '__main__':
     parser.add_argument('-p', '--prompt-style', choices=['qa'], default='qa',
         help='what to include in prompts before question')
     parser.add_argument('--continue-partial', action='store_true', help='continue a previously started experiment (with the same output path)')
+    parser.add_argument('--cpu-only', action='store_true', help='do not use GPU')
 
     args = parser.parse_args()
     questions_path = Path(args.questions_path)
     output_path = Path(args.output_path)
 
-    main(args.model, questions_path, output_path, args.prompt_style, args.continue_partial)
+    main(args.model, questions_path, output_path, args.prompt_style, args.continue_partial, args.cpu_only)

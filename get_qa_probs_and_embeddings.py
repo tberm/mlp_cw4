@@ -52,6 +52,7 @@ def main(model_name, questions_path, output_path, prompt_style, continue_partial
         config = json.load(config_file)
 
     layers = [-1, -5, -9, -13]
+    #layers = [-1, -5]
 
     if output_path.exists():
         if not continue_partial:
@@ -179,7 +180,7 @@ def main(model_name, questions_path, output_path, prompt_style, continue_partial
                 'answer': answer,
                 'answer_is_correct': is_correct,
             }
-            full_input = prompt + ' ' + answer
+            full_input = prompt + answer
             inputs = tokenizer(full_input, return_tensors="pt").to(device)
             with torch.no_grad():
                 outputs = model(**inputs, output_hidden_states=True, return_dict=True) 
@@ -229,7 +230,7 @@ if __name__ == '__main__':
     parser.add_argument('-m', '--model', required=True, choices=['pythia-70m', 'llama2-7b-chat'])
     parser.add_argument('-q', '--questions-path', required=True, help='path to questions and answers CSV')
     parser.add_argument('-o', '--output-path', required=True, help='path for creating results directory')
-    parser.add_argument('-p', '--prompt-style', choices=['qa'], default='qa',
+    parser.add_argument('-p', '--prompt-style', choices=['qa', 'help', 'harm', 'null'], default='qa',
         help='what to include in prompts before question')
     parser.add_argument('--continue-partial', action='store_true', help='continue a previously started experiment (with the same output path)')
     parser.add_argument('--cpu-only', action='store_true', help='do not use GPU')

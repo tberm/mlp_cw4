@@ -1,0 +1,3 @@
+Probe Class, Trained Medley Datasets, Validation Dataset: Accuracy 
+LRProbe, embeddings_neg_facts7B_4, embeddings_neg_facts7B_4: 0.5675675868988037
+MMProbe, embeddings_neg_facts7B_4, embeddings_neg_facts7B_4: 0.5540540814399719

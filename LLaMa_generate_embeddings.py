@@ -182,7 +182,7 @@ def save_data(df, output_path: Path, dataset_name: str, model_name: str, layer: 
     """
     output_path.mkdir(parents=True, exist_ok=True)
     filename_suffix = "_rmv_period" if remove_period else ""
-    output_file = output_path / f"embeddings_{dataset_name}{model_name}_{abs(layer)}{filename_suffix}.csv"
+    output_file = output_path / f"embeddings_{dataset_name}{model_name}_{layer}{filename_suffix}.csv"
     try:
         if append:
             df.to_csv(output_file, index=False, header=False, mode='a')
@@ -195,7 +195,7 @@ def save_data(df, output_path: Path, dataset_name: str, model_name: str, layer: 
 
 def load_results(output_path: Path, dataset_name: str, model_name: str, layer: int, remove_period: bool):
     filename_suffix = "_rmv_period" if remove_period else ""
-    output_file = output_path / f"embeddings_{dataset_name}{model_name}_{abs(layer)}{filename_suffix}.csv"
+    output_file = output_path / f"embeddings_{dataset_name}{model_name}_{layer}{filename_suffix}.csv"
     return pd.read_csv(output_file)
  
 
@@ -293,7 +293,7 @@ def main():
         for layer in layers_to_process:
             model_output_per_layer[layer] = dataset.copy()
             filename_suffix = "_rmv_period" if should_remove_period else ""
-            output_file = output_path / f"embeddings_{dataset_name}{model_name}_{abs(layer)}{filename_suffix}.csv"
+            output_file = output_path / f"embeddings_{dataset_name}{model_name}_{layer}{filename_suffix}.csv"
             if continue_run:
                 if not output_file.exists():
                     raise Exception(

@@ -122,7 +122,7 @@ def process_row(prompt: str, model, tokenizer, layers_to_use: list, remove_perio
     return embeddings
 
 #Still not convinced this function works 100% correctly, but it's much faster than process_row.
-def process_batch(batch_prompts: List[str], model, tokenizer, layers_to_use: list, remove_period: bool):
+def process_batch(batch_prompts: List[str], model, tokenizer, layers_to_use: list, remove_period: bool, cpu_only: bool):
     """
     Processes a batch of data and returns the embeddings for each statement.
     """
@@ -131,7 +131,9 @@ def process_batch(batch_prompts: List[str], model, tokenizer, layers_to_use: lis
 
     if remove_period:
         batch_prompts = [prompt.rstrip(". ") for prompt in batch_prompts]
-    inputs = tokenizer(batch_prompts, return_tensors="pt", padding=True, truncation=True)
+
+    device = 'cpu' if cpu_only else 'cuda:0'
+    inputs = tokenizer(batch_prompts, return_tensors="pt", padding=True, truncation=True).to(device)
     
     model.eval()
     with torch.no_grad():
@@ -332,7 +334,7 @@ def main():
 
             else:
                 batch_prompts = batch['statement'].tolist()
-                batch_embeddings = process_batch(batch_prompts, model, tokenizer, layers_to_process, should_remove_period)
+                batch_embeddings = process_batch(batch_prompts, model, tokenizer, layers_to_process, should_remove_period, cpu_only)
 
                 for layer in layers_to_process:
                     for i, idx in enumerate(range(start_idx, end_idx)):

@@ -2,3 +2,7 @@ slurm-*
 processed_datasets/*
 config.json
 __pycache__
+llama-qa-results/
+*schema.json
+*.zip
+*.pth

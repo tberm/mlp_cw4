@@ -63,10 +63,10 @@ def main(model_name, questions_path, output_path, prompt_style, continue_partial
         output_path.mkdir()
         with (output_path / 'MANIFEST').open('w') as manifest:
             manifest.writelines([
-                f'model_name={model_name}',
-                f'prompt_style={model_name}',
-                f'layers={layers}',
-                f'started_at={datetime.utcnow()}',
+                f'model_name={model_name}\n',
+                f'prompt_style={prompt_style}\n',
+                f'layers={layers}\n',
+                f'started_at={datetime.utcnow()}\n',
             ])
 
     if 'llama' in model_name:

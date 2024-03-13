@@ -1,16 +1,41 @@
 """
 Implementation of LAT from Zou et al (2023) https://arxiv.org/pdf/2310.01405.pdf
+
+Test of how PC changes with more data:
+
+    Getting PC for 5 pairs
+    Getting PC for 10 pairs
+    Dot prod with last PC is 0.6791404744838188
+    Getting PC for 20 pairs
+    Dot prod with last PC is 0.8782564310047014
+    Getting PC for 40 pairs
+    Dot prod with last PC is 0.9407143671935939
+    Getting PC for 80 pairs
+    Dot prod with last PC is 0.9508949596988319
+    Getting PC for 160 pairs
+    Dot prod with last PC is 0.9848249197052708
+    Getting PC for 320 pairs
+    Dot prod with last PC is 0.9879344522295015
+    Getting PC for 640 pairs
+    Dot prod with last PC is 0.9903457344444526
+    Getting PC for 1280 pairs
+    Dot prod with last PC is 0.9969290615682445
+    Getting PC for 2560 pairs
+    Dot prod with last PC is 0.9982798775964266
 """
 from argparse import ArgumentParser
+from ast import literal_eval
 import csv
 from pathlib import Path
 import json
 
 import pandas as pd
 import numpy as np
+from sklearn.decomposition import PCA
 import torch
 from transformers import AutoTokenizer, LlamaForCausalLM, LlamaTokenizer, GPTNeoXForCausalLM
 from tqdm import tqdm
+import matplotlib.pyplot as plt
 
 from mixed_true_false_data_loader import get_batch_of_statements
 
@@ -91,7 +116,7 @@ class ResultsFile:
 
 def run_rep_extraction(model_name, output_path, cpu_only=False):
 
-    output_path.mkdir(exist_ok=False)
+    #output_path.mkdir(exist_ok=False)
 
     #layers = [-1, -5, -9, -13]
     layers = [-1, -5]
@@ -119,7 +144,9 @@ def run_rep_extraction(model_name, output_path, cpu_only=False):
     output_file = ResultsFile(output_path, checkpoint_idx, layers)
     next_checkpoint_at = 5
 
-    pairs_progress = tqdm(make_pairs(statements))
+    pairs = list(make_pairs(statements))
+
+    pairs_progress = tqdm(pairs)
     for i, pair in enumerate(pairs_progress):
         if i == next_checkpoint_at:
             checkpoint_idx += 1
@@ -146,7 +173,6 @@ def run_rep_extraction(model_name, output_path, cpu_only=False):
             for layer in layers:
                 false_reps_by_layer[layer] = outputs.hidden_states[layer][0][-1].cpu().numpy()
 
-        import pdb; pdb.set_trace()
         this_row = {
             'source': pair[0].source,
             'true_statement_idx': pair[0]['index'],
@@ -159,19 +185,91 @@ def run_rep_extraction(model_name, output_path, cpu_only=False):
 
         output_file.write_row(this_row)
 
-    print('Embeddings extracted for all pairs.')
+    print('Embedding diffs extracted for all training pairs.')
+
+
+def normalise_vec(vec):
+    return (vec - vec.mean()) / vec.std()
+
+
+class LATProbe:
+    def train(self, diffs, layer):
+        self.layer = layer
+        self.num_pairs = len(diffs)
+        norm_diffs = diffs[f'rep_diff_layer_{layer}'].apply(literal_eval).apply(np.array).apply(normalise_vec)
+        norm_diffs = np.array([emb for emb in norm_diffs])
+        pca = PCA(1)
+        pca.fit(norm_diffs)
+        pc = pca.components_[0]
+        self.pca = pca
+        self.pc = pc
+        return pc
+
+    def train_and_visualise(self, diffs, layer):
+        norm_diffs = diffs[f'rep_diff_layer_{layer}'].apply(literal_eval).apply(np.array).apply(normalise_vec)
+        norm_diffs = np.array([emb for emb in norm_diffs])
+        self.pca = PCA(2)
+        proj = self.pca.fit_transform(norm_diffs)
+        ...
+
+    def __repr__(self):
+        return f'<LATProbe trained on {self.num_pairs} pairs for layer {self.layer}>'
+
+
+def get_validation_set(layer, number=500):
+    """
+    Problem: we generated the rep_diffs files before removing some items from the mixed
+    t/f dataset. And to get a validation set we want to use the rep_diffs file to
+    determine the indexes of examples not used in training, and then get embeddings for
+    these from the general embeddings results used by other methods... but these might
+    not match.
+    We accept this and just ignore the validation set ids that don't have a
+    corresponding entry in the embeddings results 
+    """
+    statements = get_batch_of_statements(reindex=True)
+    val_ids = pd.read_csv(output_path / 'validation_set.csv') 
+    embs_path = Path('llama-true-false-results')
+    val_rows = []
+    for i, row in val_ids.iterrows():
+        topic_name = 'numbers' if row['source'] in ('larger_than', 'smaller_than') else row['source']
+        emb_file = f'embeddings_{topic_name}7B_{layer}.csv'
 
 
 if __name__ == '__main__':
     parser = ArgumentParser()
-    parser.add_argument('action', choices=['extract'])
-    parser.add_argument('-m', '--model', required=True)
-    parser.add_argument('-o', '--output-path', required=True)
+    parser.add_argument('action', choices=['extract', 'train_probe'])
+    parser.add_argument('-m', '--model')
+    parser.add_argument('--diffs-path', help='path to folder of extracted representation differences', required=True)
     parser.add_argument('--cpu-only', action='store_true')
 
     args = parser.parse_args()
+    diffs_path = Path(args.diffs_path)
 
     if args.action == 'extract':
+        if args.model is None:
+            raise ValueError('Must specify a `--model` for extract mode')
         run_rep_extraction(
-            args.model, Path(args.output_path), args.cpu_only
+            args.model, diffs_path, args.cpu_only
         )
+    elif args.action == 'train_probe':
+        diffs = None
+        last_pc = None
+
+        # use the last values of the last batch for validation since we don't need that
+        # many values for training
+
+        statements = get_batch_of_statements(reindex=True)
+        validation_ids = pd.read_csv(diffs_path / 'validation_set.csv')
+
+        for chunk in range(1, 11):
+            new_diffs = pd.read_csv(diffs_path / f'rep_diffs-{chunk}.csv')
+            if diffs is None:
+                diffs = new_diffs
+            else:
+                diffs = pd.concat([diffs, new_diffs])
+
+            print(f'Getting PC for {len(diffs)} pairs')
+            pc = train_probe(diffs, -1)
+            if last_pc is not None:
+                print(f'Dot prod with last PC is {pc @ last_pc}')
+            last_pc = pc

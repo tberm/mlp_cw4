@@ -1,0 +1,791 @@
+,statement,label
+0,Boron is used in the production of glass and ceramics.,1
+1,"Praseodymium is used in coins, batteries, and corrosion-resistant alloys.",0
+2,"Cobalt is used in strong, permanent magnets and as a blue pigment.",1
+3,Indium is in the Lanthanide group.,0
+4,Zirconium has the atomic number of 6.,0
+5,Boron has the atomic number of 70.,0
+6,Thallium appears in its standard state as Liquid.,0
+7,Bromine is in the Halogen group.,1
+8,Manganese appears in its standard state as Solid.,1
+9,Palladium appears in its standard state as Solid.,1
+10,Sulfur is used in the production of sulfuric acid and rubber vulcanization.,1
+11,Scandium has the atomic number of 21.,1
+12,Hydrogen is in the Actinide group.,0
+13,Barium is used in touchscreens and some semiconductors.,0
+14,Radon has the atomic number of 41.,0
+15,Iron is the most abundant element on Earth by mass and is essential for blood oxygen transport.,1
+16,Dysprosium appears in its standard state as Gas.,0
+17,Magnesium is used in the production of glass and ceramics.,0
+18,Thallium has the symbol Tl.,1
+19,Barium has the symbol Sb.,0
+20,Cadmium is used in rechargeable batteries and as a pigment.,1
+21,Carbon appears in its standard state as Gas.,0
+22,Tantalum has the atomic number of 79.,0
+23,Dysprosium is a noble gas used in lighting and medical imaging.,0
+24,Silver is used in catalytic converters and some electronic components.,0
+25,Chlorine has the atomic number of 17.,1
+26,Tantalum has the atomic number of 73.,1
+27,Holmium is used in lasers and magnetic refrigeration.,1
+28,Barium is in the Alkaline earth metal group.,1
+29,Rhenium appears in its standard state as Gas.,0
+30,Europium has the atomic number of 92.,0
+31,"Rhenium is used in coins, batteries, and corrosion-resistant alloys.",0
+32,Tantalum has the symbol Ta.,1
+33,Gallium has the atomic number of 10.,0
+34,Tantalum appears in its standard state as Gas.,0
+35,Actinium has the atomic number of 89.,1
+36,Scandium appears in its standard state as Solid.,1
+37,Hafnium is in the Transition metal group.,1
+38,Ytterbium appears in its standard state as Gas.,0
+39,Terbium is used in green phosphors and lasers.,1
+40,Astatine has the atomic number of 85.,1
+41,Bromine is in the Noble gas group.,0
+42,Rubidium has the atomic number of 37.,1
+43,Beryllium has the symbol Be.,1
+44,"Gold is highly valued for its conductivity, malleability, and resistance to corrosion, used in electronics, jewelry, and dentistry.",1
+45,Rubidium is in the Lanthanide group.,0
+46,Antimony appears in its standard state as Liquid.,0
+47,Carbon has the atomic number of 6.,1
+48,Oxygen appears in its standard state as Gas.,1
+49,Cerium appears in its standard state as Solid.,1
+50,Cerium has the atomic number of 58.,1
+51,Holmium has the atomic number of 92.,0
+52,Helium is in the Noble gas group.,1
+53,Gallium is a toxic element used in some semiconductors and infrared detectors.,0
+54,Niobium appears in its standard state as Gas.,0
+55,Phosphorus is used in catalytic converters and hydrogen storage.,0
+56,Yttrium has the symbol U.,0
+57,Sulfur is in the Nonmetal group.,1
+58,Platinum is a radioactive noble gas produced during the decay of uranium and thorium; it can accumulate in buildings and is a health hazard.,0
+59,Chromium appears in its standard state as Gas.,0
+60,Terbium is in the Lanthanide group.,1
+61,Rhodium appears in its standard state as Gas.,0
+62,Zirconium appears in its standard state as Solid.,1
+63,Gadolinium has the atomic number of 64.,1
+64,Krypton has the symbol Kr.,1
+65,Terbium appears in its standard state as Solid.,1
+66,Iodine has the atomic number of 47.,0
+67,Nitrogen is an essential component of proteins and DNA.,1
+68,Sodium reacts violently with water and is essential for nerve function.,1
+69,Potassium is in the Actinide group.,0
+70,Holmium has the atomic number of 67.,1
+71,Neon appears in its standard state as Gas.,1
+72,Molybdenum has the symbol Np.,0
+73,Strontium has the symbol Sn.,0
+74,Phosphorus appears in its standard state as Solid.,1
+75,Lanthanum appears in its standard state as Solid.,1
+76,Gallium appears in its standard state as Solid.,1
+77,Europium appears in its standard state as Gas.,0
+78,Sodium is a highly radioactive alkali metal with no practical applications due to its instability.,0
+79,Thulium is in the Lanthanide group.,1
+80,Rubidium has the symbol Rb.,1
+81,Silver is in the Post-transition metal group.,0
+82,Indium is used in touchscreens and some semiconductors.,1
+83,Holmium is in the Lanthanide group.,1
+84,Chlorine is used as a disinfectant and in the production of PVC.,1
+85,Cesium is used in atomic clocks and as a catalyst.,1
+86,Aluminum appears in its standard state as Gas.,0
+87,Terbium is in the Alkali metal group.,0
+88,Lead has the atomic number of 82.,1
+89,Hydrogen has the atomic number of 1.,1
+90,Titanium has the symbol Ti.,1
+91,Cesium has the atomic number of 55.,1
+92,Strontium has the symbol Sr.,1
+93,Strontium is used in neon signs and produces a distinct reddish-orange glow.,0
+94,Mercury has the symbol Cl.,0
+95,"Nickel is used in magnets, lasers, and neutron capture.",0
+96,Astatine is a highly reactive alkali metal used in atomic clocks.,0
+97,Lanthanum has the atomic number of 57.,1
+98,Sodium is in the Post-transition metal group.,0
+99,Xenon has the symbol Xe.,1
+100,Francium has the atomic number of 87.,1
+101,Uranium has the symbol Re.,0
+102,Erbium has the atomic number of 68.,1
+103,Gallium appears in its standard state as Liquid.,0
+104,Indium has the symbol As.,0
+105,Rhenium has the atomic number of 60.,0
+106,Tin is in the Transition metal group.,0
+107,Gallium has the symbol Ga.,1
+108,Antimony is in the Metalloid group.,1
+109,Zirconium is in the Transition metal group.,1
+110,Uranium has the atomic number of 92.,1
+111,Titanium has the atomic number of 49.,0
+112,Technetium is in the Lanthanide group.,0
+113,Europium has the symbol Eu.,1
+114,Hydrogen is the most abundant element in the universe.,1
+115,Chlorine has the symbol Cl.,1
+116,Rhenium has the atomic number of 75.,1
+117,Palladium has the symbol Nd.,0
+118,Sodium appears in its standard state as Solid.,1
+119,Rubidium has the symbol Kr.,0
+120,Iridium appears in its standard state as Solid.,1
+121,Promethium has the atomic number of 60.,0
+122,Nickel has the atomic number of 8.,0
+123,Nickel appears in its standard state as Gas.,0
+124,Argon is in the Lanthanide group.,0
+125,Praseodymium appears in its standard state as Gas.,0
+126,"Lead is a heavy, toxic metal used in batteries, radiation shielding, and some solders.",1
+127,Zinc has the symbol Fr.,0
+128,Actinium is used in magnets and lasers.,0
+129,Cerium is in the Noble gas group.,0
+130,Neodymium is in the Lanthanide group.,1
+131,Sodium has the symbol Lu.,0
+132,Francium appears in its standard state as Gas.,0
+133,Palladium appears in its standard state as Gas.,0
+134,Niobium has the atomic number of 41.,1
+135,Francium has the symbol Fr.,1
+136,Selenium has the symbol Se.,1
+137,Francium has the atomic number of 61.,0
+138,Silver has the symbol Ag.,1
+139,Uranium is a radioactive element used as fuel in nuclear reactors and in the production of atomic weapons.,1
+140,Krypton has the atomic number of 86.,0
+141,Potassium is essential for muscle and nerve function and is highly reactive with water.,1
+142,Potassium has the symbol Al.,0
+143,Dysprosium appears in its standard state as Solid.,1
+144,Gold is in the Transition metal group.,1
+145,Bromine appears in its standard state as Liquid.,1
+146,Uranium is in the Transition metal group.,0
+147,Selenium has the atomic number of 60.,0
+148,Rhenium is in the Halogen group.,0
+149,Krypton appears in its standard state as Gas.,1
+150,Palladium is a liquid at room temperature and used in thermometers and some electrical switches.,0
+151,Niobium is in the Lanthanide group.,0
+152,Oxygen is necessary for aerobic respiration in living organisms.,1
+153,Astatine appears in its standard state as Solid.,1
+154,"Strontium is used in fireworks to produce a bright red color and in certain types of glass, such as CRT displays.",1
+155,Arsenic is in the Metalloid group.,1
+156,Technetium is the lightest radioactive element and is used in medical imaging.,1
+157,Erbium has the atomic number of 41.,0
+158,Potassium has the atomic number of 19.,1
+159,Hafnium appears in its standard state as Gas.,0
+160,Xenon is used in nuclear reactors due to its low neutron absorption.,0
+161,Astatine appears in its standard state as Gas.,0
+162,Aluminum is used in MRI contrast agents and X-ray tubes.,0
+163,Neodymium is a radioactive actinide mainly used in research and plutonium production.,0
+164,Neon has the symbol Ne.,1
+165,Chromium is used in stainless steel and as a decorative plating.,1
+166,Neodymium appears in its standard state as Gas.,0
+167,Fluorine is used in solder and pewter.,0
+168,Chlorine appears in its standard state as Solid.,0
+169,Palladium has the symbol Pd.,1
+170,Promethium is a radioactive element used in luminous paints.,1
+171,Thallium appears in its standard state as Solid.,1
+172,Sulfur has the symbol S.,1
+173,"Copper is a strong, lightweight metal used in aerospace and medical implants.",0
+174,Beryllium is in the Actinide group.,0
+175,Arsenic appears in its standard state as Solid.,1
+176,Zinc has the atomic number of 49.,0
+177,Copper is in the Post-transition metal group.,0
+178,Yttrium has the atomic number of 26.,0
+179,Germanium is in the Alkaline earth metal group.,0
+180,Zinc appears in its standard state as Solid.,1
+181,Dysprosium is used in magnets and lasers.,1
+182,Holmium appears in its standard state as Solid.,1
+183,Promethium is used in flame retardants and as a fumigant.,0
+184,Antimony has the symbol Al.,0
+185,Beryllium is in the Alkaline earth metal group.,1
+186,Polonium has the symbol Tb.,0
+187,Aluminum has the atomic number of 13.,1
+188,Selenium is in the Nonmetal group.,1
+189,Chromium has the atomic number of 39.,0
+190,Phosphorus is in the Nonmetal group.,1
+191,Lutetium is in the Transition metal group.,0
+192,Radium appears in its standard state as Gas.,0
+193,Copper is in the Transition metal group.,1
+194,Nitrogen has the atomic number of 31.,0
+195,Arsenic has the atomic number of 53.,0
+196,Strontium appears in its standard state as Solid.,1
+197,"Tungsten is a lightweight, corrosion-resistant metal used in many applications.",0
+198,"Aluminum is a lightweight, corrosion-resistant metal used in many applications.",1
+199,Rubidium is used in phosphors for CRT displays and LEDs.,0
+200,Tantalum is in the Transition metal group.,1
+201,Hafnium has the symbol Hf.,1
+202,Gold has the symbol Cr.,0
+203,Protactinium appears in its standard state as Gas.,0
+204,Neptunium has the atomic number of 93.,1
+205,Germanium is in the Metalloid group.,1
+206,Lanthanum has the atomic number of 17.,0
+207,Cesium appears in its standard state as Gas.,0
+208,Boron appears in its standard state as Solid.,1
+209,Fluorine appears in its standard state as Gas.,1
+210,Chlorine has the symbol Cr.,0
+211,Strontium has the atomic number of 38.,1
+212,Iridium has the symbol Ir.,1
+213,Silver has the atomic number of 82.,0
+214,Francium has the symbol Tl.,0
+215,Helium has the atomic number of 2.,1
+216,Bromine has the atomic number of 35.,1
+217,Radon is in the Noble gas group.,1
+218,Sulfur is the second most abundant element in Earth's crust and is used in computer chips.,0
+219,Magnesium appears in its standard state as Gas.,0
+220,Xenon is in the Noble gas group.,1
+221,Actinium has the symbol Ac.,1
+222,Gold has the symbol Au.,1
+223,Platinum appears in its standard state as Solid.,1
+224,Beryllium has the symbol As.,0
+225,Ruthenium is in the Transition metal group.,1
+226,Rhenium has the symbol Tm.,0
+227,Palladium has the atomic number of 46.,1
+228,Neon has the atomic number of 10.,1
+229,Actinium appears in its standard state as Gas.,0
+230,Neon is a radioactive element used as a neutron source and in some cancer treatments.,0
+231,Magnesium appears in its standard state as Solid.,1
+232,Manganese is a rare earth metal used in high-performance alloys.,0
+233,Erbium has the symbol Pr.,0
+234,Iridium has the atomic number of 77.,1
+235,Yttrium is in the Post-transition metal group.,0
+236,Lead is in the Post-transition metal group.,1
+237,Cobalt appears in its standard state as Gas.,0
+238,Cadmium has the symbol Cd.,1
+239,Thulium appears in its standard state as Solid.,1
+240,Thorium is in the Actinide group.,1
+241,Copper is an excellent conductor of electricity and is used in wiring and pipes.,1
+242,Ytterbium is in the Noble gas group.,0
+243,Iodine appears in its standard state as Solid.,1
+244,Bromine appears in its standard state as Solid.,0
+245,Actinium is in the Post-transition metal group.,0
+246,Lanthanum appears in its standard state as Liquid.,0
+247,Mercury is in the Actinide group.,0
+248,Platinum is in the Transition metal group.,1
+249,Actinium has the symbol Ar.,0
+250,Osmium has the symbol Os.,1
+251,Carbon is in the Alkaline earth metal group.,0
+252,Neptunium has the symbol Np.,1
+253,Potassium appears in its standard state as Solid.,1
+254,Cerium has the symbol Ne.,0
+255,Potassium has the symbol K.,1
+256,Bromine has the symbol Br.,1
+257,Ruthenium appears in its standard state as Liquid.,0
+258,Tellurium is used in catalytic converters and hydrogen storage.,0
+259,"Titanium is a strong, lightweight metal used in aerospace and medical implants.",1
+260,Arsenic has the symbol Re.,0
+261,Beryllium is used in the production of glass and ceramics.,0
+262,Platinum has the atomic number of 78.,1
+263,Technetium is in the Transition metal group.,1
+264,Thorium has the symbol Se.,0
+265,Argon is in the Noble gas group.,1
+266,Cadmium is in the Lanthanide group.,0
+267,Calcium has the symbol Ca.,1
+268,Beryllium appears in its standard state as Solid.,1
+269,Zirconium has the symbol Zr.,1
+270,Germanium has the atomic number of 13.,0
+271,Arsenic appears in its standard state as Liquid.,0
+272,Palladium is in the Nonmetal group.,0
+273,Tellurium is in the Alkali metal group.,0
+274,Radon has the atomic number of 86.,1
+275,Dysprosium has the symbol U.,0
+276,Lutetium has the atomic number of 37.,0
+277,Selenium is used in lasers and magnetic refrigeration.,0
+278,Mercury is a liquid at room temperature and used in thermometers and some electrical switches.,1
+279,Krypton has the atomic number of 36.,1
+280,Erbium is used in lasers and fiber-optic communication.,1
+281,Praseodymium is in the Nonmetal group.,0
+282,Cerium forms more compounds than any other element.,0
+283,Boron has the symbol B.,1
+284,Argon appears in its standard state as Gas.,1
+285,Iron has the atomic number of 12.,0
+286,Silver has the symbol Sb.,0
+287,"Titanium is used in lasers, atomic clocks, and some solar cells.",0
+288,Phosphorus has the symbol P.,1
+289,Neodymium has the atomic number of 60.,1
+290,Xenon has the symbol F.,0
+291,Tin is used in solder and pewter.,1
+292,Tellurium has the atomic number of 52.,1
+293,Mercury has the atomic number of 65.,0
+294,Copper has the atomic number of 50.,0
+295,Iridium has the atomic number of 56.,0
+296,Lutetium has the symbol Lu.,1
+297,Zirconium is in the Metalloid group.,0
+298,Fluorine is in the Transition metal group.,0
+299,Phosphorus has the symbol Zn.,0
+300,Fluorine has the symbol N.,0
+301,Magnesium has the symbol Mg.,1
+302,Neon has the symbol Lu.,0
+303,Cobalt appears in its standard state as Solid.,1
+304,Ruthenium has the symbol Au.,0
+305,Gadolinium appears in its standard state as Solid.,1
+306,Praseodymium has the atomic number of 59.,1
+307,Bismuth has the atomic number of 55.,0
+308,Zinc is used to galvanize steel and is an essential trace element in living organisms.,1
+309,Francium appears in its standard state as Solid.,1
+310,Thorium has the atomic number of 78.,0
+311,Hafnium is essential for thyroid function and is used as a disinfectant.,0
+312,Selenium appears in its standard state as Solid.,1
+313,Thorium has the atomic number of 90.,1
+314,Protactinium is a radioactive element with no significant practical applications.,1
+315,Molybdenum is used in high-temperature applications and steel alloys.,1
+316,Rubidium is in the Alkali metal group.,1
+317,Krypton is a noble gas used in some lighting applications and window insulation.,1
+318,Argon has the atomic number of 12.,0
+319,Helium is used in catalytic converters and hydrogen storage.,0
+320,Neon has the atomic number of 63.,0
+321,Germanium appears in its standard state as Solid.,1
+322,Manganese is in the Transition metal group.,1
+323,Carbon has the atomic number of 71.,0
+324,Tantalum is in the Lanthanide group.,0
+325,Beryllium appears in its standard state as Gas.,0
+326,Polonium has the atomic number of 25.,0
+327,Silicon is in the Metalloid group.,1
+328,Gold has the atomic number of 79.,1
+329,Potassium is in the Alkali metal group.,1
+330,Thulium has the atomic number of 69.,1
+331,Cerium is used in catalytic converters and self-cleaning ovens.,1
+332,Titanium has the atomic number of 22.,1
+333,Gold is in the Lanthanide group.,0
+334,Lithium has the atomic number of 3.,1
+335,Bismuth appears in its standard state as Gas.,0
+336,Thorium is an essential trace element in living organisms and is used to strengthen steel.,0
+337,Thulium has the symbol Tm.,1
+338,Bromine has the atomic number of 64.,0
+339,Strontium has the atomic number of 12.,0
+340,Dysprosium has the atomic number of 60.,0
+341,Scandium appears in its standard state as Gas.,0
+342,Fluorine has the atomic number of 9.,1
+343,Cadmium has the atomic number of 48.,1
+344,Holmium has the symbol Ho.,1
+345,Bromine has the symbol Mo.,0
+346,Lanthanum is in the Alkali metal group.,0
+347,Lutetium is used in PET scans and some cancer treatments.,1
+348,Mercury has the atomic number of 80.,1
+349,Molybdenum is in the Transition metal group.,1
+350,Lithium is the lightest metal and is used in rechargeable batteries.,1
+351,Molybdenum is used in the production of sulfuric acid and rubber vulcanization.,0
+352,Samarium has the atomic number of 28.,0
+353,Tellurium appears in its standard state as Gas.,0
+354,Aluminum appears in its standard state as Solid.,1
+355,Magnesium is in the Alkaline earth metal group.,1
+356,Bismuth has the symbol Bi.,1
+357,Vanadium appears in its standard state as Solid.,1
+358,"Platinum is a highly valued, non-reactive metal used in jewelry, catalytic converters, and fuel cells.",1
+359,Tin appears in its standard state as Solid.,1
+360,Calcium is in the Nonmetal group.,0
+361,Chlorine appears in its standard state as Gas.,1
+362,Germanium is a semiconductor used in transistors and photovoltaic cells.,1
+363,Gadolinium is in the Lanthanide group.,1
+364,Ruthenium is used in catalytic converters and some electronic components.,1
+365,Gold is the most reactive and electronegative element.,0
+366,Calcium has the atomic number of 20.,1
+367,Promethium has the symbol Pm.,1
+368,Nickel is in the Transition metal group.,1
+369,Gadolinium has the atomic number of 6.,0
+370,Xenon appears in its standard state as Solid.,0
+371,Francium is in the Halogen group.,0
+372,Tungsten appears in its standard state as Liquid.,0
+373,Iridium is in the Transition metal group.,1
+374,Rhodium has the symbol Rh.,1
+375,Cesium is in the Transition metal group.,0
+376,Osmium is in the Post-transition metal group.,0
+377,Niobium has the symbol Nb.,1
+378,Dysprosium is in the Lanthanide group.,1
+379,"Beryllium is a lightweight, strong metal used in aerospace and other applications.",1
+380,Selenium has the symbol Na.,0
+381,Rhodium appears in its standard state as Solid.,1
+382,Aluminum has the symbol Sc.,0
+383,Iodine is in the Halogen group.,1
+384,Ytterbium has the symbol Mo.,0
+385,Lithium has the symbol Sb.,0
+386,Iron has the symbol Tl.,0
+387,Cadmium has the symbol Ir.,0
+388,Lead appears in its standard state as Solid.,1
+389,Xenon is a noble gas used in lighting and medical imaging.,1
+390,Lithium appears in its standard state as Solid.,1
+391,Mercury has the symbol Hg.,1
+392,Radon is a radioactive noble gas produced during the decay of uranium and thorium; it can accumulate in buildings and is a health hazard.,1
+393,Sodium has the atomic number of 11.,1
+394,Bromine is used in flame retardants and as a fumigant.,1
+395,Astatine has the atomic number of 7.,0
+396,Niobium is a radioactive element with no significant practical applications.,0
+397,Neodymium is in the Transition metal group.,0
+398,Phosphorus is in the Alkali metal group.,0
+399,Oxygen has the symbol O.,1
+400,Indium has the symbol In.,1
+401,Radium is a radioactive alkaline earth metal used in luminous paints and some cancer treatments.,1
+402,Lithium is in the Alkali metal group.,1
+403,Zirconium is used in nuclear reactors due to its low neutron absorption.,1
+404,Krypton is in the Noble gas group.,1
+405,"Nickel is used in coins, batteries, and corrosion-resistant alloys.",1
+406,Hydrogen is in the Nonmetal group.,1
+407,Carbon has the symbol C.,1
+408,Iron has the atomic number of 26.,1
+409,Oxygen has the atomic number of 8.,1
+410,Neon is in the Post-transition metal group.,0
+411,Lithium has the symbol Li.,1
+412,Cadmium is used in magnets and lasers.,0
+413,Thallium is a toxic element used in some semiconductors and infrared detectors.,1
+414,Lutetium appears in its standard state as Solid.,1
+415,Radon appears in its standard state as Solid.,0
+416,Boron has the atomic number of 5.,1
+417,Calcium appears in its standard state as Gas.,0
+418,Tungsten has the symbol Zr.,0
+419,Silver is in the Transition metal group.,1
+420,Oxygen has the atomic number of 76.,0
+421,Polonium has the atomic number of 84.,1
+422,Arsenic is a toxic element used in pesticides and some alloys.,1
+423,Hafnium has the atomic number of 71.,0
+424,Samarium appears in its standard state as Solid.,1
+425,Fluorine is in the Halogen group.,1
+426,Chlorine is in the Post-transition metal group.,0
+427,Protactinium has the symbol Pa.,1
+428,Radon is in the Lanthanide group.,0
+429,Argon appears in its standard state as Solid.,0
+430,Yttrium is used in phosphors for CRT displays and LEDs.,1
+431,Titanium appears in its standard state as Liquid.,0
+432,Boron is in the Post-transition metal group.,0
+433,Gold appears in its standard state as Solid.,1
+434,Gallium has a low melting point and is used in semiconductors and LEDs.,1
+435,Copper has the atomic number of 29.,1
+436,Actinium is a radioactive element used as a neutron source and in some cancer treatments.,1
+437,Neptunium has the atomic number of 4.,0
+438,Tungsten is in the Transition metal group.,1
+439,Nitrogen appears in its standard state as Solid.,0
+440,Silver has the atomic number of 47.,1
+441,Tungsten appears in its standard state as Solid.,1
+442,Strontium is in the Alkaline earth metal group.,1
+443,Barium has the atomic number of 81.,0
+444,Barium appears in its standard state as Solid.,1
+445,Argon is the lightest radioactive element and is used in medical imaging.,0
+446,Oxygen is in the Halogen group.,0
+447,Radium is a highly radioactive element used in some heaters for space probes.,0
+448,Technetium appears in its standard state as Gas.,0
+449,Gallium has the symbol Cs.,0
+450,Manganese has the symbol Gd.,0
+451,Indium appears in its standard state as Gas.,0
+452,Nitrogen appears in its standard state as Gas.,1
+453,Bismuth is used in solder and pewter.,0
+454,Vanadium is used to strengthen steel and in some high-capacity batteries.,1
+455,Titanium appears in its standard state as Solid.,1
+456,"Iron is a highly valued, non-reactive metal used in jewelry, catalytic converters, and fuel cells.",0
+457,"Iridium is a rare, dense metal used in spark plugs, fountain pen nibs, and crucibles for high-temperature applications.",1
+458,Indium is in the Post-transition metal group.,1
+459,Calcium has the symbol P.,0
+460,Antimony has the atomic number of 21.,0
+461,Tantalum is used in capacitors and high-temperature alloys.,1
+462,Vanadium is in the Transition metal group.,1
+463,Nitrogen is used in thermoelectric devices and solar cells.,0
+464,Tellurium appears in its standard state as Solid.,1
+465,Chromium has the symbol Ru.,0
+466,Cobalt has the symbol Co.,1
+467,Cadmium appears in its standard state as Gas.,0
+468,Cesium has the symbol Cs.,1
+469,Tungsten has the symbol W.,1
+470,Terbium has the atomic number of 65.,1
+471,Holmium is in the Metalloid group.,0
+472,Praseodymium appears in its standard state as Solid.,1
+473,Iodine appears in its standard state as Gas.,0
+474,Actinium appears in its standard state as Solid.,1
+475,Sodium has the symbol Na.,1
+476,Tellurium is used in thermoelectric devices and solar cells.,1
+477,Aluminum has the atomic number of 36.,0
+478,"Ytterbium is used in lasers, atomic clocks, and some solar cells.",1
+479,Iridium appears in its standard state as Gas.,0
+480,Astatine is in the Actinide group.,0
+481,Rhenium appears in its standard state as Solid.,1
+482,Lanthanum is used to galvanize steel and is an essential trace element in living organisms.,0
+483,Radium appears in its standard state as Solid.,1
+484,Samarium appears in its standard state as Gas.,0
+485,Thulium has the atomic number of 64.,0
+486,Fluorine appears in its standard state as Solid.,0
+487,Ytterbium has the symbol Yb.,1
+488,Barium has the atomic number of 56.,1
+489,Germanium has the atomic number of 32.,1
+490,Rhenium has the symbol Re.,1
+491,Silicon is the second most abundant element in Earth's crust and is used in computer chips.,1
+492,Zinc is in the Transition metal group.,1
+493,Ytterbium has the atomic number of 82.,0
+494,Helium appears in its standard state as Gas.,1
+495,Palladium has the atomic number of 45.,0
+496,Argon has the symbol Co.,0
+497,Chromium has the atomic number of 24.,1
+498,Boron is used in lasers and magnetic refrigeration.,0
+499,Erbium appears in its standard state as Gas.,0
+500,Cobalt has the atomic number of 27.,1
+501,Zinc has the symbol Zn.,1
+502,Chromium is used in strong magnets and as a yellow pigment.,0
+503,Silicon appears in its standard state as Gas.,0
+504,Vanadium has the atomic number of 66.,0
+505,Uranium has the symbol U.,1
+506,Ruthenium has the symbol Ru.,1
+507,Molybdenum appears in its standard state as Solid.,1
+508,Actinium has the atomic number of 62.,0
+509,Barium is used in medical imaging and fireworks.,1
+510,Europium is in the Lanthanide group.,1
+511,Scandium is in the Transition metal group.,1
+512,Magnesium has the symbol Br.,0
+513,Iodine has the symbol I.,1
+514,Rubidium is a highly reactive alkali metal used in atomic clocks.,1
+515,Sulfur appears in its standard state as Solid.,1
+516,Xenon is in the Nonmetal group.,0
+517,Gallium is in the Post-transition metal group.,1
+518,Francium is the lightest metal and is used in rechargeable batteries.,0
+519,Rhodium has the atomic number of 45.,1
+520,Copper appears in its standard state as Solid.,1
+521,Zirconium has the symbol Eu.,0
+522,Platinum has the atomic number of 90.,0
+523,Rhodium has the symbol Sn.,0
+524,Protactinium appears in its standard state as Solid.,1
+525,Bismuth has the symbol La.,0
+526,Thallium is in the Transition metal group.,0
+527,Helium is used to fill balloons and airships because it is lighter than air.,1
+528,Platinum is in the Halogen group.,0
+529,Lithium is essential for thyroid function and is used as a disinfectant.,0
+530,Nitrogen has the symbol La.,0
+531,Gallium is in the Transition metal group.,0
+532,Calcium is essential for bone formation and muscle function.,1
+533,Zinc is an essential trace element in living organisms and is used to strengthen steel.,0
+534,Europium is used in phosphors for lighting and displays.,1
+535,Helium is in the Transition metal group.,0
+536,Antimony is in the Noble gas group.,0
+537,Manganese appears in its standard state as Gas.,0
+538,Hafnium is in the Alkaline earth metal group.,0
+539,Nickel has the atomic number of 28.,1
+540,Oxygen appears in its standard state as Solid.,0
+541,Manganese has the atomic number of 1.,0
+542,Copper appears in its standard state as Gas.,0
+543,Erbium is in the Lanthanide group.,1
+544,Nitrogen has the atomic number of 7.,1
+545,Radium is in the Alkaline earth metal group.,1
+546,Fluorine has the atomic number of 29.,0
+547,Uranium is in the Actinide group.,1
+548,Scandium is a rare earth metal used in high-performance alloys.,1
+549,Thallium has the atomic number of 81.,1
+550,Arsenic is in the Nonmetal group.,0
+551,Germanium is a noble gas used as an inert atmosphere in welding and other applications.,0
+552,Ruthenium appears in its standard state as Solid.,1
+553,Selenium is in the Alkali metal group.,0
+554,Selenium has the atomic number of 34.,1
+555,Iridium is used in catalytic converters and hydrogen storage.,0
+556,Oxygen has the symbol Ne.,0
+557,Bismuth is in the Post-transition metal group.,1
+558,Lutetium has the symbol Be.,0
+559,Europium is in the Transition metal group.,0
+560,Holmium appears in its standard state as Gas.,0
+561,Technetium is a noble gas used as an inert atmosphere in welding and other applications.,0
+562,Praseodymium has the symbol Sc.,0
+563,Neodymium is used in powerful permanent magnets and lasers.,1
+564,Tantalum appears in its standard state as Solid.,1
+565,Vanadium has the atomic number of 23.,1
+566,Dysprosium has the atomic number of 66.,1
+567,Neptunium is used in green phosphors and lasers.,0
+568,Zirconium has the atomic number of 40.,1
+569,Promethium appears in its standard state as Gas.,0
+570,Germanium has the symbol Ge.,1
+571,Lithium has the atomic number of 56.,0
+572,Terbium has the symbol Tb.,1
+573,Argon has the symbol Ar.,1
+574,Ytterbium has the atomic number of 70.,1
+575,Platinum appears in its standard state as Gas.,0
+576,Scandium has the symbol Rn.,0
+577,Indium has the atomic number of 60.,0
+578,Praseodymium is used in strong magnets and as a yellow pigment.,1
+579,Polonium appears in its standard state as Solid.,1
+580,Rhodium has the atomic number of 48.,0
+581,Sulfur is in the Alkaline earth metal group.,0
+582,Nitrogen is in the Nonmetal group.,1
+583,Francium is a highly radioactive alkali metal with no practical applications due to its instability.,1
+584,Erbium has the symbol Er.,1
+585,Cadmium has the atomic number of 37.,0
+586,Osmium is used in strong magnets and as a yellow pigment.,0
+587,Boron is in the Metalloid group.,1
+588,Chromium has the symbol Cr.,1
+589,Gold appears in its standard state as Gas.,0
+590,Lead has the atomic number of 31.,0
+591,Vanadium appears in its standard state as Gas.,0
+592,Lithium appears in its standard state as Liquid.,0
+593,Silicon appears in its standard state as Solid.,1
+594,Astatine has the symbol At.,1
+595,Nickel has the symbol Ni.,1
+596,Helium appears in its standard state as Solid.,0
+597,Magnesium is a lightweight metal used in alloys and flares.,1
+598,Protactinium has the atomic number of 66.,0
+599,Cadmium is in the Transition metal group.,1
+600,Praseodymium has the symbol Pr.,1
+601,Gadolinium is used in flame retardants and as a fumigant.,0
+602,Erbium is in the Post-transition metal group.,0
+603,Lanthanum is used in camera lenses and some batteries.,1
+604,Europium is a semiconductor used in transistors and photovoltaic cells.,0
+605,Yttrium has the symbol Y.,1
+606,"Zirconium is a rare, dense metal used in spark plugs, fountain pen nibs, and crucibles for high-temperature applications.",0
+607,Tellurium has the symbol Te.,1
+608,Helium has the atomic number of 62.,0
+609,Vanadium is used in the production of sulfuric acid and rubber vulcanization.,0
+610,Tungsten is in the Actinide group.,0
+611,Niobium has the symbol Rh.,0
+612,Molybdenum has the atomic number of 43.,0
+613,Neodymium has the symbol Ac.,0
+614,Magnesium has the atomic number of 26.,0
+615,Fluorine has the symbol F.,1
+616,Thallium is an essential trace element used in photovoltaic cells and glass production.,0
+617,Palladium is used in catalytic converters and hydrogen storage.,1
+618,Vanadium has the symbol V.,1
+619,Iridium is in the Alkaline earth metal group.,0
+620,Erbium reacts violently with water and is essential for nerve function.,0
+621,Chlorine is essential for muscle and nerve function and is highly reactive with water.,0
+622,Antimony is used in flame retardants and some semiconductors.,1
+623,Thallium has the symbol Sr.,0
+624,Zinc has the atomic number of 30.,1
+625,Potassium has the atomic number of 34.,0
+626,Osmium is in the Transition metal group.,1
+627,Sodium has the atomic number of 24.,0
+628,Samarium has the symbol Pr.,0
+629,Silicon is used in high-temperature alloys and catalytic converters.,0
+630,Beryllium has the atomic number of 4.,1
+631,Ruthenium is a highly conductive and reflective metal used in jewelry and electronics.,0
+632,Nickel appears in its standard state as Solid.,1
+633,Hafnium appears in its standard state as Solid.,1
+634,Hafnium is used in nuclear control rods and high-temperature alloys.,1
+635,Actinium is in the Actinide group.,1
+636,Radium is in the Nonmetal group.,0
+637,Boron appears in its standard state as Gas.,0
+638,Beryllium has the atomic number of 36.,0
+639,Uranium has the atomic number of 82.,0
+640,Terbium has the atomic number of 89.,0
+641,Neptunium is a radioactive actinide mainly used in research and plutonium production.,1
+642,Oxygen is a noble gas used in lighting and medical imaging.,0
+643,Iodine has the atomic number of 53.,1
+644,Sulfur appears in its standard state as Gas.,0
+645,Hydrogen has the symbol Pt.,0
+646,Neptunium has the symbol Na.,0
+647,Platinum has the symbol La.,0
+648,Indium appears in its standard state as Solid.,1
+649,Cobalt has the atomic number of 72.,0
+650,Tin has the symbol Be.,0
+651,Chlorine has the atomic number of 44.,0
+652,Thorium has the symbol Th.,1
+653,Dysprosium is in the Transition metal group.,0
+654,Lithium is in the Noble gas group.,0
+655,Promethium is in the Halogen group.,0
+656,Holmium is necessary for aerobic respiration in living organisms.,0
+657,Lead is a highly radioactive element used in some heaters for space probes.,0
+658,Sodium is in the Alkali metal group.,1
+659,Hydrogen appears in its standard state as Solid.,0
+660,Samarium has the symbol Sm.,1
+661,Mercury is in the Transition metal group.,1
+662,Hafnium has the atomic number of 72.,1
+663,Praseodymium has the atomic number of 36.,0
+664,Hydrogen has the symbol H.,1
+665,Gold has the atomic number of 89.,0
+666,Molybdenum appears in its standard state as Gas.,0
+667,Cadmium appears in its standard state as Solid.,1
+668,Carbon is the most reactive and electronegative element.,0
+669,Technetium has the atomic number of 6.,0
+670,Europium appears in its standard state as Solid.,1
+671,Silicon has the atomic number of 14.,1
+672,Silicon has the symbol Si.,1
+673,Strontium is in the Lanthanide group.,0
+674,Barium has the symbol Ba.,1
+675,Lanthanum has the symbol La.,1
+676,Iodine is in the Transition metal group.,0
+677,Lead appears in its standard state as Gas.,0
+678,Silicon is in the Halogen group.,0
+679,Neptunium is in the Transition metal group.,0
+680,Rhodium is in the Transition metal group.,1
+681,Calcium has the atomic number of 16.,0
+682,Rhenium is in the Transition metal group.,1
+683,Cerium has the symbol Ce.,1
+684,Cerium has the atomic number of 75.,0
+685,Fluorine is the most reactive and electronegative element.,1
+686,Scandium is in the Noble gas group.,0
+687,Neptunium appears in its standard state as Gas.,0
+688,Lanthanum is in the Lanthanide group.,1
+689,Silicon has the symbol Rn.,0
+690,Thulium is used in lasers and medical imaging.,1
+691,Lanthanum has the symbol Po.,0
+692,Cerium is in the Lanthanide group.,1
+693,Ruthenium is in the Lanthanide group.,0
+694,Rhodium is a noble gas used as an inert atmosphere in welding and other applications.,0
+695,Radium has the atomic number of 88.,1
+696,Osmium appears in its standard state as Solid.,1
+697,Lutetium is used to galvanize steel and is an essential trace element in living organisms.,0
+698,Vanadium is in the Lanthanide group.,0
+699,Gallium has the atomic number of 31.,1
+700,Molybdenum has the symbol Mo.,1
+701,Samarium is in the Transition metal group.,0
+702,Arsenic has the atomic number of 33.,1
+703,Iron is in the Transition metal group.,1
+704,Zinc appears in its standard state as Liquid.,0
+705,Samarium has the atomic number of 62.,1
+706,Niobium is in the Transition metal group.,1
+707,Gadolinium has the symbol Hg.,0
+708,Selenium is an essential trace element used in photovoltaic cells and glass production.,1
+709,Magnesium is in the Transition metal group.,0
+710,Zirconium appears in its standard state as Gas.,0
+711,Astatine is in the Halogen group.,1
+712,Sulfur has the atomic number of 59.,0
+713,Hafnium has the symbol Nd.,0
+714,Praseodymium is in the Lanthanide group.,1
+715,Arsenic has the symbol As.,1
+716,Aluminum has the symbol Al.,1
+717,Gadolinium is used in MRI contrast agents and X-ray tubes.,1
+718,Copper has the symbol Cu.,1
+719,Ytterbium is in the Lanthanide group.,1
+720,Palladium is in the Transition metal group.,1
+721,Promethium has the atomic number of 61.,1
+722,Neodymium appears in its standard state as Solid.,1
+723,Barium appears in its standard state as Gas.,0
+724,Protactinium has the atomic number of 91.,1
+725,Argon is a noble gas used as an inert atmosphere in welding and other applications.,1
+726,Sodium appears in its standard state as Gas.,0
+727,Uranium forms more compounds than any other element.,0
+728,Iron appears in its standard state as Gas.,0
+729,Antimony has the atomic number of 51.,1
+730,Cobalt is in the Transition metal group.,1
+731,Yttrium has the atomic number of 39.,1
+732,Bismuth is in the Alkali metal group.,0
+733,Samarium is in the Lanthanide group.,1
+734,Lutetium is in the Lanthanide group.,1
+735,Osmium is the densest naturally occurring element and is used in some alloys.,1
+736,Tin has the atomic number of 50.,1
+737,Promethium has the symbol Dy.,0
+738,Europium has the atomic number of 63.,1
+739,Molybdenum has the atomic number of 42.,1
+740,Ytterbium appears in its standard state as Solid.,1
+741,Niobium has the atomic number of 43.,0
+742,Holmium has the symbol Tb.,0
+743,Nickel is in the Lanthanide group.,0
+744,Iron has the symbol Fe.,1
+745,Francium is in the Alkali metal group.,1
+746,Technetium has the symbol Tc.,1
+747,Antimony appears in its standard state as Solid.,1
+748,Argon has the atomic number of 18.,1
+749,Terbium appears in its standard state as Gas.,0
+750,Technetium has the symbol Ag.,0
+751,Lutetium has the atomic number of 71.,1
+752,Cobalt has the symbol Lu.,0
+753,Iron appears in its standard state as Solid.,1
+754,Polonium is a highly radioactive element used in some heaters for space probes.,1
+755,Sulfur has the atomic number of 16.,1
+756,Thulium appears in its standard state as Gas.,0
+757,Aluminum is in the Post-transition metal group.,1
+758,Promethium appears in its standard state as Solid.,1
+759,Helium has the symbol Xe.,0
+760,Thorium appears in its standard state as Liquid.,0
+761,Manganese is an essential trace element in living organisms and is used to strengthen steel.,1
+762,Yttrium appears in its standard state as Solid.,1
+763,Carbon is in the Nonmetal group.,1
+764,Rhodium is in the Lanthanide group.,0
+765,Nickel has the symbol Rb.,0
+766,Tungsten has the highest melting point of all elements and is used in lightbulb filaments.,1
+767,Carbon appears in its standard state as Solid.,1
+768,Niobium is used in superconducting materials and steel alloys.,1
+769,Oxygen is in the Nonmetal group.,1
+770,Uranium appears in its standard state as Gas.,0
+771,Chromium is in the Actinide group.,0
+772,Antimony is used in camera lenses and some batteries.,0
+773,Neptunium appears in its standard state as Solid.,1
+774,Mercury appears in its standard state as Liquid.,1
+775,Zinc is in the Nonmetal group.,0
+776,Krypton has the symbol Nb.,0
+777,Boron has the symbol Pm.,0
+778,Lutetium appears in its standard state as Gas.,0
+779,Ruthenium has the atomic number of 62.,0
+780,Osmium has the atomic number of 76.,1
+781,Bismuth has the atomic number of 83.,1
+782,"Phosphorus is essential for life and is a component of ATP, DNA, and RNA.",1
+783,Lead is in the Noble gas group.,0
+784,Phosphorus appears in its standard state as Gas.,0
+785,Copper has the symbol Ta.,0
+786,Thorium appears in its standard state as Solid.,1
+787,Thallium has the atomic number of 82.,0
+788,Niobium appears in its standard state as Solid.,1
+789,Titanium has the symbol B.,0

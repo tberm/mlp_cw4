@@ -1,1272 +1,1272 @@
 ,statement,label,city,country,correct_country
-0,The city of Krasnodar is in Russia.,1,Krasnodar,Russia,Russia
-1,The city of Krasnodar is in South Africa.,0,Krasnodar,South Africa,Russia
-2,The city of Lodz is in Poland.,1,Lodz,Poland,Poland
-3,The city of Lodz is in the Dominican Republic.,0,Lodz,the Dominican Republic,Poland
-4,The city of Maracay is in Venezuela.,1,Maracay,Venezuela,Venezuela
-5,The city of Maracay is in China.,0,Maracay,China,Venezuela
-6,The city of Baku is in Azerbaijan.,1,Baku,Azerbaijan,Azerbaijan
-7,The city of Baku is in Ukraine.,0,Baku,Ukraine,Azerbaijan
-8,The city of Baoji is in China.,1,Baoji,China,China
-9,The city of Baoji is in Guatemala.,0,Baoji,Guatemala,China
-10,The city of Addis Ababa is in Ethiopia.,1,Addis Ababa,Ethiopia,Ethiopia
-11,The city of Addis Ababa is in Indonesia.,0,Addis Ababa,Indonesia,Ethiopia
-12,The city of Abidjan is in Côte d'Ivoire.,1,Abidjan,Côte d'Ivoire,Côte d'Ivoire
-13,The city of Abidjan is in China.,0,Abidjan,China,Côte d'Ivoire
-14,The city of Yongzhou is in China.,1,Yongzhou,China,China
-15,The city of Yongzhou is in Ukraine.,0,Yongzhou,Ukraine,China
-16,The city of Nanchong is in China.,1,Nanchong,China,China
-17,The city of Nanchong is in Nigeria.,0,Nanchong,Nigeria,China
-18,The city of Lu'an is in China.,1,Lu'an,China,China
-19,The city of Lu'an is in Turkey.,0,Lu'an,Turkey,China
-20,The city of Jiaxing is in China.,1,Jiaxing,China,China
-21,The city of Jiaxing is in Ukraine.,0,Jiaxing,Ukraine,China
-22,The city of Huaihua is in China.,1,Huaihua,China,China
-23,The city of Huaihua is in South Africa.,0,Huaihua,South Africa,China
-24,The city of Anqing is in China.,1,Anqing,China,China
-25,The city of Anqing is in Brazil.,0,Anqing,Brazil,China
-26,The city of Yingkou is in China.,1,Yingkou,China,China
-27,The city of Yingkou is in the Philippines.,0,Yingkou,the Philippines,China
-28,The city of Panshan is in China.,1,Panshan,China,China
-29,The city of Panshan is in Japan.,0,Panshan,Japan,China
-30,The city of Guatemala City is in Guatemala.,1,Guatemala City,Guatemala,Guatemala
-31,The city of Guatemala City is in Croatia.,0,Guatemala City,Croatia,Guatemala
-32,The city of Bauchi is in Nigeria.,1,Bauchi,Nigeria,Nigeria
-33,The city of Bauchi is in Iran.,0,Bauchi,Iran,Nigeria
-34,The city of Tokyo is in Japan.,1,Tokyo,Japan,Japan
-35,The city of Tokyo is in Pakistan.,0,Tokyo,Pakistan,Japan
-36,The city of Mombasa is in Kenya.,1,Mombasa,Kenya,Kenya
-37,The city of Mombasa is in India.,0,Mombasa,India,Kenya
-38,The city of Ulsan is in South Korea.,1,Ulsan,South Korea,South Korea
-39,The city of Ulsan is in South Africa.,0,Ulsan,South Africa,South Korea
-40,The city of Warangal is in India.,1,Warangal,India,India
-41,The city of Warangal is in Yemen.,0,Warangal,Yemen,India
-42,The city of Tiruchirappalli is in India.,1,Tiruchirappalli,India,India
-43,The city of Tiruchirappalli is in Iraq.,0,Tiruchirappalli,Iraq,India
-44,The city of Nowrangapur is in India.,1,Nowrangapur,India,India
-45,The city of Nowrangapur is in Vietnam.,0,Nowrangapur,Vietnam,India
-46,The city of Sambhaji Nagar is in India.,1,Sambhaji Nagar,India,India
-47,The city of Sambhaji Nagar is in China.,0,Sambhaji Nagar,China,India
-48,The city of Ajmer is in India.,1,Ajmer,India,India
-49,The city of Ajmer is in Russia.,0,Ajmer,Russia,India
-50,The city of Rohini is in India.,1,Rohini,India,India
-51,The city of Rohini is in Russia.,0,Rohini,Russia,India
-52,The city of Serang is in Indonesia.,1,Serang,Indonesia,Indonesia
-53,The city of Serang is in Poland.,0,Serang,Poland,Indonesia
-54,The city of Niigata is in Japan.,1,Niigata,Japan,Japan
-55,The city of Niigata is in Yemen.,0,Niigata,Yemen,Japan
-56,The city of Marrakesh is in Morocco.,1,Marrakesh,Morocco,Morocco
-57,The city of Marrakesh is in Malaysia.,0,Marrakesh,Malaysia,Morocco
-58,The city of Makati City is in the Philippines.,1,Makati City,the Philippines,the Philippines
-59,The city of Makati City is in India.,0,Makati City,India,the Philippines
-60,The city of Tirunelveli is in India.,1,Tirunelveli,India,India
-61,The city of Tirunelveli is in China.,0,Tirunelveli,China,India
-62,The city of Thane is in India.,1,Thane,India,India
-63,The city of Thane is in China.,0,Thane,China,India
-64,The city of Solapur is in India.,1,Solapur,India,India
-65,The city of Solapur is in the United States.,0,Solapur,the United States,India
-66,The city of Najafgarh is in India.,1,Najafgarh,India,India
-67,The city of Najafgarh is in Brazil.,0,Najafgarh,Brazil,India
-68,The city of Borivli is in India.,1,Borivli,India,India
-69,The city of Borivli is in Ukraine.,0,Borivli,Ukraine,India
-70,The city of Zhabei is in China.,1,Zhabei,China,China
-71,The city of Zhabei is in Afghanistan.,0,Zhabei,Afghanistan,China
-72,The city of Liaocheng is in China.,1,Liaocheng,China,China
-73,The city of Liaocheng is in South Korea.,0,Liaocheng,South Korea,China
-74,The city of Jiaozhou is in China.,1,Jiaozhou,China,China
-75,The city of Jiaozhou is in Latvia.,0,Jiaozhou,Latvia,China
-76,The city of Guilin is in China.,1,Guilin,China,China
-77,The city of Guilin is in the Dominican Republic.,0,Guilin,the Dominican Republic,China
-78,The city of Chaozhou is in China.,1,Chaozhou,China,China
-79,The city of Chaozhou is in South Korea.,0,Chaozhou,South Korea,China
-80,The city of Panzhihua is in China.,1,Panzhihua,China,China
-81,The city of Panzhihua is in Iran.,0,Panzhihua,Iran,China
-82,The city of Bucaramanga is in Colombia.,1,Bucaramanga,Colombia,Colombia
-83,The city of Bucaramanga is in Brazil.,0,Bucaramanga,Brazil,Colombia
-84,The city of Niamey is in Niger.,1,Niamey,Niger,Niger
-85,The city of Niamey is in China.,0,Niamey,China,Niger
-86,The city of Sokoto is in Nigeria.,1,Sokoto,Nigeria,Nigeria
-87,The city of Sokoto is in South Korea.,0,Sokoto,South Korea,Nigeria
-88,The city of Abuja is in Nigeria.,1,Abuja,Nigeria,Nigeria
-89,The city of Abuja is in China.,0,Abuja,China,Nigeria
-90,The city of South Tangerang is in Indonesia.,1,South Tangerang,Indonesia,Indonesia
-91,The city of South Tangerang is in India.,0,South Tangerang,India,Indonesia
-92,The city of Odesa is in Ukraine.,1,Odesa,Ukraine,Ukraine
-93,The city of Odesa is in China.,0,Odesa,China,Ukraine
-94,The city of Fort Worth is in the United States.,1,Fort Worth,the United States,the United States
-95,The city of Fort Worth is in Russia.,0,Fort Worth,Russia,the United States
-96,The city of Boumerdes is in Algeria.,1,Boumerdes,Algeria,Algeria
-97,The city of Boumerdes is in Iran.,0,Boumerdes,Iran,Algeria
-98,The city of Asmara is in Eritrea.,1,Asmara,Eritrea,Eritrea
-99,The city of Asmara is in Indonesia.,0,Asmara,Indonesia,Eritrea
-100,The city of Santiago de Queretaro is in Mexico.,1,Santiago de Queretaro,Mexico,Mexico
-101,The city of Santiago de Queretaro is in Ecuador.,0,Santiago de Queretaro,Ecuador,Mexico
-102,The city of Perm is in Russia.,1,Perm,Russia,Russia
-103,The city of Perm is in China.,0,Perm,China,Russia
-104,The city of Jeddah is in Saudi Arabia.,1,Jeddah,Saudi Arabia,Saudi Arabia
-105,The city of Jeddah is in Myanmar.,0,Jeddah,Myanmar,Saudi Arabia
-106,The city of Konya is in Turkey.,1,Konya,Turkey,Turkey
-107,The city of Konya is in Russia.,0,Konya,Russia,Turkey
-108,The city of Macapa is in Brazil.,1,Macapa,Brazil,Brazil
-109,The city of Macapa is in China.,0,Macapa,China,Brazil
-110,The city of Belo Horizonte is in Brazil.,1,Belo Horizonte,Brazil,Brazil
-111,The city of Belo Horizonte is in North Korea.,0,Belo Horizonte,North Korea,Brazil
-112,The city of Poznan is in Poland.,1,Poznan,Poland,Poland
-113,The city of Poznan is in Mexico.,0,Poznan,Mexico,Poland
-114,The city of Linyi is in China.,1,Linyi,China,China
-115,The city of Linyi is in Iraq.,0,Linyi,Iraq,China
-116,The city of Hohhot is in China.,1,Hohhot,China,China
-117,The city of Hohhot is in Indonesia.,0,Hohhot,Indonesia,China
-118,The city of Malacca is in Malaysia.,1,Malacca,Malaysia,Malaysia
-119,The city of Malacca is in China.,0,Malacca,China,Malaysia
-120,The city of Busan is in South Korea.,1,Busan,South Korea,South Korea
-121,The city of Busan is in Brazil.,0,Busan,Brazil,South Korea
-122,The city of Seongnam-si is in South Korea.,1,Seongnam-si,South Korea,South Korea
-123,The city of Seongnam-si is in Russia.,0,Seongnam-si,Russia,South Korea
-124,The city of Matsuyama is in Japan.,1,Matsuyama,Japan,Japan
-125,The city of Matsuyama is in Burkina Faso.,0,Matsuyama,Burkina Faso,Japan
-126,The city of Suwon is in South Korea.,1,Suwon,South Korea,South Korea
-127,The city of Suwon is in Russia.,0,Suwon,Russia,South Korea
-128,The city of Incheon is in South Korea.,1,Incheon,South Korea,South Korea
-129,The city of Incheon is in India.,0,Incheon,India,South Korea
-130,The city of Hwaseong-si is in South Korea.,1,Hwaseong-si,South Korea,South Korea
-131,The city of Hwaseong-si is in Brazil.,0,Hwaseong-si,Brazil,South Korea
-132,The city of Changwon is in South Korea.,1,Changwon,South Korea,South Korea
-133,The city of Changwon is in Indonesia.,0,Changwon,Indonesia,South Korea
-134,The city of Bamako is in Mali.,1,Bamako,Mali,Mali
-135,The city of Bamako is in India.,0,Bamako,India,Mali
-136,The city of Acapulco de Juarez is in Mexico.,1,Acapulco de Juarez,Mexico,Mexico
-137,The city of Acapulco de Juarez is in Morocco.,0,Acapulco de Juarez,Morocco,Mexico
-138,The city of Mosul is in Iraq.,1,Mosul,Iraq,Iraq
-139,The city of Mosul is in China.,0,Mosul,China,Iraq
-140,The city of Basrah is in Iraq.,1,Basrah,Iraq,Iraq
-141,The city of Basrah is in China.,0,Basrah,China,Iraq
-142,The city of Qom is in Iran.,1,Qom,Iran,Iran
-143,The city of Qom is in Vietnam.,0,Qom,Vietnam,Iran
-144,The city of Torreon is in Mexico.,1,Torreon,Mexico,Mexico
-145,The city of Torreon is in India.,0,Torreon,India,Mexico
-146,The city of Beira is in Mozambique.,1,Beira,Mozambique,Mozambique
-147,The city of Beira is in India.,0,Beira,India,Mozambique
-148,The city of Naucalpan de Juarez is in Mexico.,1,Naucalpan de Juarez,Mexico,Mexico
-149,The city of Naucalpan de Juarez is in Honduras.,0,Naucalpan de Juarez,Honduras,Mexico
-150,The city of Dehra Dun is in India.,1,Dehra Dun,India,India
-151,The city of Dehra Dun is in China.,0,Dehra Dun,China,India
-152,The city of Bhubaneswar is in India.,1,Bhubaneswar,India,India
-153,The city of Bhubaneswar is in China.,0,Bhubaneswar,China,India
-154,The city of Ahvaz is in Iran.,1,Ahvaz,Iran,Iran
-155,The city of Ahvaz is in China.,0,Ahvaz,China,Iran
-156,The city of Kumasi is in Ghana.,1,Kumasi,Ghana,Ghana
-157,The city of Kumasi is in India.,0,Kumasi,India,Ghana
-158,The city of Palembang is in Indonesia.,1,Palembang,Indonesia,Indonesia
-159,The city of Palembang is in Brazil.,0,Palembang,Brazil,Indonesia
-160,The city of Novokuznetsk is in Russia.,1,Novokuznetsk,Russia,Russia
-161,The city of Novokuznetsk is in China.,0,Novokuznetsk,China,Russia
-162,The city of Izmir is in Turkey.,1,Izmir,Turkey,Turkey
-163,The city of Izmir is in Iran.,0,Izmir,Iran,Turkey
-164,The city of Lahore is in Pakistan.,1,Lahore,Pakistan,Pakistan
-165,The city of Lahore is in China.,0,Lahore,China,Pakistan
-166,The city of Zhenjiang is in China.,1,Zhenjiang,China,China
-167,The city of Zhenjiang is in Germany.,0,Zhenjiang,Germany,China
-168,The city of Zhaotong is in China.,1,Zhaotong,China,China
-169,The city of Zhaotong is in Iraq.,0,Zhaotong,Iraq,China
-170,The city of Weifang is in China.,1,Weifang,China,China
-171,The city of Weifang is in Indonesia.,0,Weifang,Indonesia,China
-172,The city of Tianjin is in China.,1,Tianjin,China,China
-173,The city of Tianjin is in Bangladesh.,0,Tianjin,Bangladesh,China
-174,The city of Shaoxing is in China.,1,Shaoxing,China,China
-175,The city of Shaoxing is in the Philippines.,0,Shaoxing,the Philippines,China
-176,The city of Hangzhou is in China.,1,Hangzhou,China,China
-177,The city of Hangzhou is in Russia.,0,Hangzhou,Russia,China
-178,The city of Mudanjiang is in China.,1,Mudanjiang,China,China
-179,The city of Mudanjiang is in Turkey.,0,Mudanjiang,Turkey,China
-180,The city of Anshan is in China.,1,Anshan,China,China
-181,The city of Anshan is in Cameroon.,0,Anshan,Cameroon,China
-182,The city of Porto Velho is in Brazil.,1,Porto Velho,Brazil,Brazil
-183,The city of Porto Velho is in Algeria.,0,Porto Velho,Algeria,Brazil
-184,The city of N'Djamena is in Chad.,1,N'Djamena,Chad,Chad
-185,The city of N'Djamena is in China.,0,N'Djamena,China,Chad
-186,The city of Kayseri is in Turkey.,1,Kayseri,Turkey,Turkey
-187,The city of Kayseri is in Iraq.,0,Kayseri,Iraq,Turkey
-188,The city of Marseille is in France.,1,Marseille,France,France
-189,The city of Marseille is in Russia.,0,Marseille,Russia,France
-190,The city of Lyon is in France.,1,Lyon,France,France
-191,The city of Lyon is in Canada.,0,Lyon,Canada,France
-192,The city of Suez is in Egypt.,1,Suez,Egypt,Egypt
-193,The city of Suez is in Brazil.,0,Suez,Brazil,Egypt
-194,The city of Giza is in Egypt.,1,Giza,Egypt,Egypt
-195,The city of Giza is in India.,0,Giza,India,Egypt
-196,The city of Naberezhnyye Chelny is in Russia.,1,Naberezhnyye Chelny,Russia,Russia
-197,The city of Naberezhnyye Chelny is in Brazil.,0,Naberezhnyye Chelny,Brazil,Russia
-198,The city of Mukalla is in Yemen.,1,Mukalla,Yemen,Yemen
-199,The city of Mukalla is in Iran.,0,Mukalla,Iran,Yemen
-200,The city of Harare is in Zimbabwe.,1,Harare,Zimbabwe,Zimbabwe
-201,The city of Harare is in Turkey.,0,Harare,Turkey,Zimbabwe
-202,The city of Sevastopol is in Ukraine.,1,Sevastopol,Ukraine,Ukraine
-203,The city of Sevastopol is in Pakistan.,0,Sevastopol,Pakistan,Ukraine
-204,The city of Lipetsk is in Russia.,1,Lipetsk,Russia,Russia
-205,The city of Lipetsk is in China.,0,Lipetsk,China,Russia
-206,The city of Istanbul is in Turkey.,1,Istanbul,Turkey,Turkey
-207,The city of Istanbul is in Ghana.,0,Istanbul,Ghana,Turkey
-208,The city of Callao is in Peru.,1,Callao,Peru,Peru
-209,The city of Callao is in Myanmar.,0,Callao,Myanmar,Peru
-210,The city of Cebu City is in the Philippines.,1,Cebu City,the Philippines,the Philippines
-211,The city of Cebu City is in China.,0,Cebu City,China,the Philippines
-212,The city of Tashkent is in Uzbekistan.,1,Tashkent,Uzbekistan,Uzbekistan
-213,The city of Tashkent is in Mexico.,0,Tashkent,Mexico,Uzbekistan
-214,The city of Maturin is in Venezuela.,1,Maturin,Venezuela,Venezuela
-215,The city of Maturin is in Saudi Arabia.,0,Maturin,Saudi Arabia,Venezuela
-216,The city of Hanoi is in Vietnam.,1,Hanoi,Vietnam,Vietnam
-217,The city of Hanoi is in Poland.,0,Hanoi,Poland,Vietnam
-218,The city of Xuzhou is in China.,1,Xuzhou,China,China
-219,The city of Xuzhou is in Mexico.,0,Xuzhou,Mexico,China
-220,The city of Cucuta is in Colombia.,1,Cucuta,Colombia,Colombia
-221,The city of Cucuta is in India.,0,Cucuta,India,Colombia
-222,The city of Santo Domingo Oeste is in the Dominican Republic.,1,Santo Domingo Oeste,the Dominican Republic,the Dominican Republic
-223,The city of Santo Domingo Oeste is in Zambia.,0,Santo Domingo Oeste,Zambia,the Dominican Republic
-224,The city of Tangshan is in China.,1,Tangshan,China,China
-225,The city of Tangshan is in India.,0,Tangshan,India,China
-226,The city of Neijiang is in China.,1,Neijiang,China,China
-227,The city of Neijiang is in Ghana.,0,Neijiang,Ghana,China
-228,The city of Linfen is in China.,1,Linfen,China,China
-229,The city of Linfen is in India.,0,Linfen,India,China
-230,The city of Yiwu is in China.,1,Yiwu,China,China
-231,The city of Yiwu is in India.,0,Yiwu,India,China
-232,The city of Qiqihar is in China.,1,Qiqihar,China,China
-233,The city of Qiqihar is in India.,0,Qiqihar,India,China
-234,The city of Baotou is in China.,1,Baotou,China,China
-235,The city of Baotou is in Japan.,0,Baotou,Japan,China
-236,The city of Aparecida de Goiania is in Brazil.,1,Aparecida de Goiania,Brazil,Brazil
-237,The city of Aparecida de Goiania is in China.,0,Aparecida de Goiania,China,Brazil
-238,The city of Kinshasa is in the Democratic Republic of the Congo.,1,Kinshasa,the Democratic Republic of the Congo,the Democratic Republic of the Congo
-239,The city of Kinshasa is in Brazil.,0,Kinshasa,Brazil,the Democratic Republic of the Congo
-240,The city of Ciudad Nezahualcoyotl is in Mexico.,1,Ciudad Nezahualcoyotl,Mexico,Mexico
-241,The city of Ciudad Nezahualcoyotl is in Senegal.,0,Ciudad Nezahualcoyotl,Senegal,Mexico
-242,The city of Mexicali is in Mexico.,1,Mexicali,Mexico,Mexico
-243,The city of Mexicali is in South Africa.,0,Mexicali,South Africa,Mexico
-244,The city of Ciudad Juarez is in Mexico.,1,Ciudad Juarez,Mexico,Mexico
-245,The city of Ciudad Juarez is in India.,0,Ciudad Juarez,India,Mexico
-246,The city of Kampung Baru Subang is in Malaysia.,1,Kampung Baru Subang,Malaysia,Malaysia
-247,The city of Kampung Baru Subang is in the Philippines.,0,Kampung Baru Subang,the Philippines,Malaysia
-248,The city of Subang Jaya is in Malaysia.,1,Subang Jaya,Malaysia,Malaysia
-249,The city of Subang Jaya is in Germany.,0,Subang Jaya,Germany,Malaysia
-250,The city of Maputo is in Mozambique.,1,Maputo,Mozambique,Mozambique
-251,The city of Maputo is in Japan.,0,Maputo,Japan,Mozambique
-252,The city of Kumamoto is in Japan.,1,Kumamoto,Japan,Japan
-253,The city of Kumamoto is in China.,0,Kumamoto,China,Japan
-254,The city of Daegu is in South Korea.,1,Daegu,South Korea,South Korea
-255,The city of Daegu is in the United States.,0,Daegu,the United States,South Korea
-256,The city of Vilnius is in Lithuania.,1,Vilnius,Lithuania,Lithuania
-257,The city of Vilnius is in China.,0,Vilnius,China,Lithuania
-258,The city of Ranchi is in India.,1,Ranchi,India,India
-259,The city of Ranchi is in Venezuela.,0,Ranchi,Venezuela,India
-260,The city of Jalandhar is in India.,1,Jalandhar,India,India
-261,The city of Jalandhar is in Iraq.,0,Jalandhar,Iraq,India
-262,The city of Bhayandar is in India.,1,Bhayandar,India,India
-263,The city of Bhayandar is in China.,0,Bhayandar,China,India
-264,The city of Bareilly is in India.,1,Bareilly,India,India
-265,The city of Bareilly is in Mozambique.,0,Bareilly,Mozambique,India
-266,The city of Santo Domingo Este is in the Dominican Republic.,1,Santo Domingo Este,the Dominican Republic,the Dominican Republic
-267,The city of Santo Domingo Este is in India.,0,Santo Domingo Este,India,the Dominican Republic
-268,The city of Al Fayyum is in Egypt.,1,Al Fayyum,Egypt,Egypt
-269,The city of Al Fayyum is in Chile.,0,Al Fayyum,Chile,Egypt
-270,The city of Rizhao is in China.,1,Rizhao,China,China
-271,The city of Rizhao is in Iraq.,0,Rizhao,Iraq,China
-272,"The city of Mianzhu, Deyang, Sichuan is in China.",1,"Mianzhu, Deyang, Sichuan",China,China
-273,"The city of Mianzhu, Deyang, Sichuan is in India.",0,"Mianzhu, Deyang, Sichuan",India,China
-274,The city of Jabalpur is in India.,1,Jabalpur,India,India
-275,The city of Jabalpur is in Ukraine.,0,Jabalpur,Ukraine,India
-276,The city of Bilimora is in India.,1,Bilimora,India,India
-277,The city of Bilimora is in Uzbekistan.,0,Bilimora,Uzbekistan,India
-278,The city of Accra is in Ghana.,1,Accra,Ghana,Ghana
-279,The city of Accra is in China.,0,Accra,China,Ghana
-280,The city of Bogor is in Indonesia.,1,Bogor,Indonesia,Indonesia
-281,The city of Bogor is in South Korea.,0,Bogor,South Korea,Indonesia
-282,The city of Nyala is in Sudan.,1,Nyala,Sudan,Sudan
-283,The city of Nyala is in Mozambique.,0,Nyala,Mozambique,Sudan
-284,The city of Eskisehir is in Turkey.,1,Eskisehir,Turkey,Turkey
-285,The city of Eskisehir is in China.,0,Eskisehir,China,Turkey
-286,The city of Antalya is in Turkey.,1,Antalya,Turkey,Turkey
-287,The city of Antalya is in Germany.,0,Antalya,Germany,Turkey
-288,The city of Dnipro is in Ukraine.,1,Dnipro,Ukraine,Ukraine
-289,The city of Dnipro is in Russia.,0,Dnipro,Russia,Ukraine
-290,The city of Khabarovsk is in Russia.,1,Khabarovsk,Russia,Russia
-291,The city of Khabarovsk is in Saudi Arabia.,0,Khabarovsk,Saudi Arabia,Russia
-292,The city of Irkutsk is in Russia.,1,Irkutsk,Russia,Russia
-293,The city of Irkutsk is in Morocco.,0,Irkutsk,Morocco,Russia
-294,The city of Libreville is in Gabon.,1,Libreville,Gabon,Gabon
-295,The city of Libreville is in the United States.,0,Libreville,the United States,Gabon
-296,The city of Santiago de los Caballeros is in the Dominican Republic.,1,Santiago de los Caballeros,the Dominican Republic,the Dominican Republic
-297,The city of Santiago de los Caballeros is in India.,0,Santiago de los Caballeros,India,the Dominican Republic
-298,The city of Algiers is in Algeria.,1,Algiers,Algeria,Algeria
-299,The city of Algiers is in China.,0,Algiers,China,Algeria
-300,The city of Nashik is in India.,1,Nashik,India,India
-301,The city of Nashik is in China.,0,Nashik,China,India
-302,The city of Karol Bagh is in India.,1,Karol Bagh,India,India
-303,The city of Karol Bagh is in Syria.,0,Karol Bagh,Syria,India
-304,The city of Orumiyeh is in Iran.,1,Orumiyeh,Iran,Iran
-305,The city of Orumiyeh is in Saudi Arabia.,0,Orumiyeh,Saudi Arabia,Iran
-306,The city of Zahedan is in Iran.,1,Zahedan,Iran,Iran
-307,The city of Zahedan is in Nicaragua.,0,Zahedan,Nicaragua,Iran
-308,The city of Xuchang is in China.,1,Xuchang,China,China
-309,The city of Xuchang is in Japan.,0,Xuchang,Japan,China
-310,The city of Changde is in China.,1,Changde,China,China
-311,The city of Changde is in Mexico.,0,Changde,Mexico,China
-312,The city of Shaoguan is in China.,1,Shaoguan,China,China
-313,The city of Shaoguan is in Pakistan.,0,Shaoguan,Pakistan,China
-314,The city of Jilin is in China.,1,Jilin,China,China
-315,The city of Jilin is in the United States.,0,Jilin,the United States,China
-316,The city of Manaus is in Brazil.,1,Manaus,Brazil,Brazil
-317,The city of Manaus is in Turkey.,0,Manaus,Turkey,Brazil
-318,The city of Jaboatao dos Guararapes is in Brazil.,1,Jaboatao dos Guararapes,Brazil,Brazil
-319,The city of Jaboatao dos Guararapes is in Myanmar.,0,Jaboatao dos Guararapes,Myanmar,Brazil
-320,The city of Kakamega is in Kenya.,1,Kakamega,Kenya,Kenya
-321,The city of Kakamega is in Russia.,0,Kakamega,Russia,Kenya
-322,The city of Agadir is in Morocco.,1,Agadir,Morocco,Morocco
-323,The city of Agadir is in Bangladesh.,0,Agadir,Bangladesh,Morocco
-324,The city of Ulan Bator is in Mongolia.,1,Ulan Bator,Mongolia,Mongolia
-325,The city of Ulan Bator is in Ukraine.,0,Ulan Bator,Ukraine,Mongolia
-326,The city of Muscat is in Oman.,1,Muscat,Oman,Oman
-327,The city of Muscat is in Bangladesh.,0,Muscat,Bangladesh,Oman
-328,The city of Paranaque City is in the Philippines.,1,Paranaque City,the Philippines,the Philippines
-329,The city of Paranaque City is in India.,0,Paranaque City,India,the Philippines
-330,The city of Rahim Yar Khan is in Pakistan.,1,Rahim Yar Khan,Pakistan,Pakistan
-331,The city of Rahim Yar Khan is in Lithuania.,0,Rahim Yar Khan,Lithuania,Pakistan
-332,The city of Balikpapan is in Indonesia.,1,Balikpapan,Indonesia,Indonesia
-333,The city of Balikpapan is in Japan.,0,Balikpapan,Japan,Indonesia
-334,The city of Guarulhos is in Brazil.,1,Guarulhos,Brazil,Brazil
-335,The city of Guarulhos is in China.,0,Guarulhos,China,Brazil
-336,The city of Volgograd is in Russia.,1,Volgograd,Russia,Russia
-337,The city of Volgograd is in Nigeria.,0,Volgograd,Nigeria,Russia
-338,The city of Ulyanovsk is in Russia.,1,Ulyanovsk,Russia,Russia
-339,The city of Ulyanovsk is in Ukraine.,0,Ulyanovsk,Ukraine,Russia
-340,The city of Kota Bharu is in Malaysia.,1,Kota Bharu,Malaysia,Malaysia
-341,The city of Kota Bharu is in Norway.,0,Kota Bharu,Norway,Malaysia
-342,The city of Sarajevo is in Bosnia and Herzegovina.,1,Sarajevo,Bosnia and Herzegovina,Bosnia and Herzegovina
-343,The city of Sarajevo is in South Africa.,0,Sarajevo,South Africa,Bosnia and Herzegovina
-344,The city of Maceio is in Brazil.,1,Maceio,Brazil,Brazil
-345,The city of Maceio is in China.,0,Maceio,China,Brazil
-346,The city of Joao Pessoa is in Brazil.,1,Joao Pessoa,Brazil,Brazil
-347,The city of Joao Pessoa is in South Africa.,0,Joao Pessoa,South Africa,Brazil
-348,The city of Shangqiu is in China.,1,Shangqiu,China,China
-349,The city of Shangqiu is in South Korea.,0,Shangqiu,South Korea,China
-350,The city of Zhangye is in China.,1,Zhangye,China,China
-351,The city of Zhangye is in Venezuela.,0,Zhangye,Venezuela,China
-352,The city of Xuanzhou is in China.,1,Xuanzhou,China,China
-353,The city of Xuanzhou is in Tanzania.,0,Xuanzhou,Tanzania,China
-354,The city of Wuhan is in China.,1,Wuhan,China,China
-355,The city of Wuhan is in Egypt.,0,Wuhan,Egypt,China
-356,The city of Nanchang is in China.,1,Nanchang,China,China
-357,The city of Nanchang is in Malaysia.,0,Nanchang,Malaysia,China
-358,The city of Luancheng is in China.,1,Luancheng,China,China
-359,The city of Luancheng is in Brazil.,0,Luancheng,Brazil,China
-360,The city of Liuzhou is in China.,1,Liuzhou,China,China
-361,The city of Liuzhou is in Russia.,0,Liuzhou,Russia,China
-362,The city of Guangyuan is in China.,1,Guangyuan,China,China
-363,The city of Guangyuan is in Mexico.,0,Guangyuan,Mexico,China
-364,The city of Bijie is in China.,1,Bijie,China,China
-365,The city of Bijie is in Indonesia.,0,Bijie,Indonesia,China
-366,The city of Zhoushan is in China.,1,Zhoushan,China,China
-367,The city of Zhoushan is in the Philippines.,0,Zhoushan,the Philippines,China
-368,The city of Hegang is in China.,1,Hegang,China,China
-369,The city of Hegang is in Russia.,0,Hegang,Russia,China
-370,The city of E'zhou is in China.,1,E'zhou,China,China
-371,The city of E'zhou is in Malaysia.,0,E'zhou,Malaysia,China
-372,The city of Campos dos Goytacazes is in Brazil.,1,Campos dos Goytacazes,Brazil,Brazil
-373,The city of Campos dos Goytacazes is in Vietnam.,0,Campos dos Goytacazes,Vietnam,Brazil
-374,The city of Bucharest is in Romania.,1,Bucharest,Romania,Romania
-375,The city of Bucharest is in Italy.,0,Bucharest,Italy,Romania
-376,The city of Ansan-si is in South Korea.,1,Ansan-si,South Korea,South Korea
-377,The city of Ansan-si is in Canada.,0,Ansan-si,Canada,South Korea
-378,The city of Casablanca is in Morocco.,1,Casablanca,Morocco,Morocco
-379,The city of Casablanca is in Russia.,0,Casablanca,Russia,Morocco
-380,The city of Coyoacan is in Mexico.,1,Coyoacan,Mexico,Mexico
-381,The city of Coyoacan is in Kenya.,0,Coyoacan,Kenya,Mexico
-382,The city of Oyo is in Nigeria.,1,Oyo,Nigeria,Nigeria
-383,The city of Oyo is in China.,0,Oyo,China,Nigeria
-384,The city of Pasig City is in the Philippines.,1,Pasig City,the Philippines,the Philippines
-385,The city of Pasig City is in Morocco.,0,Pasig City,Morocco,the Philippines
-386,The city of Kano is in Nigeria.,1,Kano,Nigeria,Nigeria
-387,The city of Kano is in China.,0,Kano,China,Nigeria
-388,The city of Bahawalpur is in Pakistan.,1,Bahawalpur,Pakistan,Pakistan
-389,The city of Bahawalpur is in China.,0,Bahawalpur,China,Pakistan
-390,The city of New Kingston is in Jamaica.,1,New Kingston,Jamaica,Jamaica
-391,The city of New Kingston is in South Africa.,0,New Kingston,South Africa,Jamaica
-392,The city of Pyongyang is in North Korea.,1,Pyongyang,North Korea,North Korea
-393,The city of Pyongyang is in Argentina.,0,Pyongyang,Argentina,North Korea
-394,The city of Shymkent is in Kazakhstan.,1,Shymkent,Kazakhstan,Kazakhstan
-395,The city of Shymkent is in China.,0,Shymkent,China,Kazakhstan
-396,The city of Tlalpan is in Mexico.,1,Tlalpan,Mexico,Mexico
-397,The city of Tlalpan is in Egypt.,0,Tlalpan,Egypt,Mexico
-398,The city of Kemerovo is in Russia.,1,Kemerovo,Russia,Russia
-399,The city of Kemerovo is in India.,0,Kemerovo,India,Russia
-400,The city of Zaporizhzhya is in Ukraine.,1,Zaporizhzhya,Ukraine,Ukraine
-401,The city of Zaporizhzhya is in South Korea.,0,Zaporizhzhya,South Korea,Ukraine
-402,The city of Iztapalapa is in Mexico.,1,Iztapalapa,Mexico,Mexico
-403,The city of Iztapalapa is in Yemen.,0,Iztapalapa,Yemen,Mexico
-404,The city of Aguascalientes is in Mexico.,1,Aguascalientes,Mexico,Mexico
-405,The city of Aguascalientes is in China.,0,Aguascalientes,China,Mexico
-406,The city of Kuala Lumpur is in Malaysia.,1,Kuala Lumpur,Malaysia,Malaysia
-407,The city of Kuala Lumpur is in Oman.,0,Kuala Lumpur,Oman,Malaysia
-408,The city of Warri is in Nigeria.,1,Warri,Nigeria,Nigeria
-409,The city of Warri is in China.,0,Warri,China,Nigeria
-410,The city of Peshawar is in Pakistan.,1,Peshawar,Pakistan,Pakistan
-411,The city of Peshawar is in Tanzania.,0,Peshawar,Tanzania,Pakistan
-412,The city of Kagoshima is in Japan.,1,Kagoshima,Japan,Japan
-413,The city of Kagoshima is in India.,0,Kagoshima,India,Japan
-414,The city of Hamamatsu is in Japan.,1,Hamamatsu,Japan,Japan
-415,The city of Hamamatsu is in Russia.,0,Hamamatsu,Russia,Japan
-416,The city of Cheongju-si is in South Korea.,1,Cheongju-si,South Korea,South Korea
-417,The city of Cheongju-si is in India.,0,Cheongju-si,India,South Korea
-418,The city of Ghaziabad is in India.,1,Ghaziabad,India,India
-419,The city of Ghaziabad is in South Korea.,0,Ghaziabad,South Korea,India
-420,The city of Cochin is in India.,1,Cochin,India,India
-421,The city of Cochin is in China.,0,Cochin,China,India
-422,The city of Ahmedabad is in India.,1,Ahmedabad,India,India
-423,The city of Ahmedabad is in China.,0,Ahmedabad,China,India
-424,The city of Sulaymaniyah is in Iraq.,1,Sulaymaniyah,Iraq,Iraq
-425,The city of Sulaymaniyah is in Turkey.,0,Sulaymaniyah,Turkey,Iraq
-426,The city of Hamadan is in Iran.,1,Hamadan,Iran,Iran
-427,The city of Hamadan is in Pakistan.,0,Hamadan,Pakistan,Iran
-428,The city of Omsk is in Russia.,1,Omsk,Russia,Russia
-429,The city of Omsk is in China.,0,Omsk,China,Russia
-430,The city of Ta'if is in Saudi Arabia.,1,Ta'if,Saudi Arabia,Saudi Arabia
-431,The city of Ta'if is in Venezuela.,0,Ta'if,Venezuela,Saudi Arabia
-432,The city of Stockholm is in Sweden.,1,Stockholm,Sweden,Sweden
-433,The city of Stockholm is in Russia.,0,Stockholm,Russia,Sweden
-434,The city of Siliguri is in India.,1,Siliguri,India,India
-435,The city of Siliguri is in China.,0,Siliguri,China,India
-436,The city of Baghdad is in Iraq.,1,Baghdad,Iraq,Iraq
-437,The city of Baghdad is in China.,0,Baghdad,China,Iraq
-438,The city of Al Basrah al Qadimah is in Iraq.,1,Al Basrah al Qadimah,Iraq,Iraq
-439,The city of Al Basrah al Qadimah is in China.,0,Al Basrah al Qadimah,China,Iraq
-440,The city of Krakow is in Poland.,1,Krakow,Poland,Poland
-441,The city of Krakow is in South Korea.,0,Krakow,South Korea,Poland
-442,The city of Tolyatti is in Russia.,1,Tolyatti,Russia,Russia
-443,The city of Tolyatti is in Ghana.,0,Tolyatti,Ghana,Russia
-444,The city of Bandar Lampung is in Indonesia.,1,Bandar Lampung,Indonesia,Indonesia
-445,The city of Bandar Lampung is in South Africa.,0,Bandar Lampung,South Africa,Indonesia
-446,The city of Tucson is in the United States.,1,Tucson,the United States,the United States
-447,The city of Tucson is in Canada.,0,Tucson,Canada,the United States
-448,The city of Can Tho is in Vietnam.,1,Can Tho,Vietnam,Vietnam
-449,The city of Can Tho is in Venezuela.,0,Can Tho,Venezuela,Vietnam
-450,The city of Bouake is in Côte d'Ivoire.,1,Bouake,Côte d'Ivoire,Côte d'Ivoire
-451,The city of Bouake is in China.,0,Bouake,China,Côte d'Ivoire
-452,The city of Abobo is in Côte d'Ivoire.,1,Abobo,Côte d'Ivoire,Côte d'Ivoire
-453,The city of Abobo is in India.,0,Abobo,India,Côte d'Ivoire
-454,The city of Shihezi is in China.,1,Shihezi,China,China
-455,The city of Shihezi is in Russia.,0,Shihezi,Russia,China
-456,The city of Yunfu is in China.,1,Yunfu,China,China
-457,The city of Yunfu is in Honduras.,0,Yunfu,Honduras,China
-458,The city of Xiangtan is in China.,1,Xiangtan,China,China
-459,The city of Xiangtan is in Brazil.,0,Xiangtan,Brazil,China
-460,The city of Qionghai is in China.,1,Qionghai,China,China
-461,The city of Qionghai is in Ecuador.,0,Qionghai,Ecuador,China
-462,The city of Chuzhou is in China.,1,Chuzhou,China,China
-463,The city of Chuzhou is in India.,0,Chuzhou,India,China
-464,The city of Taiz is in Yemen.,1,Taiz,Yemen,Yemen
-465,The city of Taiz is in Burkina Faso.,0,Taiz,Burkina Faso,Yemen
-466,The city of Tembisa is in South Africa.,1,Tembisa,South Africa,South Africa
-467,The city of Tembisa is in the Philippines.,0,Tembisa,the Philippines,South Africa
-468,The city of Puente Alto is in Chile.,1,Puente Alto,Chile,Chile
-469,The city of Puente Alto is in China.,0,Puente Alto,China,Chile
-470,The city of Zhumadian is in China.,1,Zhumadian,China,China
-471,The city of Zhumadian is in Brazil.,0,Zhumadian,Brazil,China
-472,The city of Zhengzhou is in China.,1,Zhengzhou,China,China
-473,The city of Zhengzhou is in Brazil.,0,Zhengzhou,Brazil,China
-474,The city of Ya'an is in China.,1,Ya'an,China,China
-475,The city of Ya'an is in Morocco.,0,Ya'an,Morocco,China
-476,The city of Xianyang is in China.,1,Xianyang,China,China
-477,The city of Xianyang is in Russia.,0,Xianyang,Russia,China
-478,The city of Weihai is in China.,1,Weihai,China,China
-479,The city of Weihai is in Russia.,0,Weihai,Russia,China
-480,The city of Pingdingshan is in China.,1,Pingdingshan,China,China
-481,The city of Pingdingshan is in South Africa.,0,Pingdingshan,South Africa,China
-482,The city of Bengbu is in China.,1,Bengbu,China,China
-483,The city of Bengbu is in India.,0,Bengbu,India,China
-484,The city of Zhangjiakou is in China.,1,Zhangjiakou,China,China
-485,The city of Zhangjiakou is in India.,0,Zhangjiakou,India,China
-486,The city of Mississauga is in Canada.,1,Mississauga,Canada,Canada
-487,The city of Mississauga is in India.,0,Mississauga,India,Canada
-488,The city of Yerevan is in Armenia.,1,Yerevan,Armenia,Armenia
-489,The city of Yerevan is in Bangladesh.,0,Yerevan,Bangladesh,Armenia
-490,The city of Albuquerque is in the United States.,1,Albuquerque,the United States,the United States
-491,The city of Albuquerque is in Egypt.,0,Albuquerque,Egypt,the United States
-492,The city of New South Memphis is in the United States.,1,New South Memphis,the United States,the United States
-493,The city of New South Memphis is in China.,0,New South Memphis,China,the United States
-494,The city of Calgary is in Canada.,1,Calgary,Canada,Canada
-495,The city of Calgary is in India.,0,Calgary,India,Canada
-496,The city of Kisangani is in the Democratic Republic of the Congo.,1,Kisangani,the Democratic Republic of the Congo,the Democratic Republic of the Congo
-497,The city of Kisangani is in China.,0,Kisangani,China,the Democratic Republic of the Congo
-498,The city of Bobo-Dioulasso is in Burkina Faso.,1,Bobo-Dioulasso,Burkina Faso,Burkina Faso
-499,The city of Bobo-Dioulasso is in China.,0,Bobo-Dioulasso,China,Burkina Faso
-500,The city of Sao Jose dos Campos is in Brazil.,1,Sao Jose dos Campos,Brazil,Brazil
-501,The city of Sao Jose dos Campos is in Iran.,0,Sao Jose dos Campos,Iran,Brazil
-502,The city of Florianopolis is in Brazil.,1,Florianopolis,Brazil,Brazil
-503,The city of Florianopolis is in Ecuador.,0,Florianopolis,Ecuador,Brazil
-504,The city of Cuiaba is in Brazil.,1,Cuiaba,Brazil,Brazil
-505,The city of Cuiaba is in Latvia.,0,Cuiaba,Latvia,Brazil
-506,The city of Chattogram is in Bangladesh.,1,Chattogram,Bangladesh,Bangladesh
-507,The city of Chattogram is in China.,0,Chattogram,China,Bangladesh
-508,The city of Nanjing is in China.,1,Nanjing,China,China
-509,The city of Nanjing is in Germany.,0,Nanjing,Germany,China
-510,The city of Kaifeng is in China.,1,Kaifeng,China,China
-511,The city of Kaifeng is in Mexico.,0,Kaifeng,Mexico,China
-512,The city of Heze is in China.,1,Heze,China,China
-513,The city of Heze is in Yemen.,0,Heze,Yemen,China
-514,The city of Sendai is in Japan.,1,Sendai,Japan,Japan
-515,The city of Sendai is in Brazil.,0,Sendai,Brazil,Japan
-516,The city of Jeonju is in South Korea.,1,Jeonju,South Korea,South Korea
-517,The city of Jeonju is in the United States.,0,Jeonju,the United States,South Korea
-518,The city of Almaty is in Kazakhstan.,1,Almaty,Kazakhstan,Kazakhstan
 519,The city of Almaty is in Iraq.,0,Almaty,Iraq,Kazakhstan
-520,The city of Pimpri is in India.,1,Pimpri,India,India
-521,The city of Pimpri is in China.,0,Pimpri,China,India
-522,The city of Navi Mumbai is in India.,1,Navi Mumbai,India,India
-523,The city of Navi Mumbai is in China.,0,Navi Mumbai,China,India
-524,The city of Novosibirsk is in Russia.,1,Novosibirsk,Russia,Russia
-525,The city of Novosibirsk is in the Philippines.,0,Novosibirsk,the Philippines,Russia
-526,The city of Goeteborg is in Sweden.,1,Goeteborg,Sweden,Sweden
-527,The city of Goeteborg is in South Korea.,0,Goeteborg,South Korea,Sweden
-528,The city of Bursa is in Turkey.,1,Bursa,Turkey,Turkey
-529,The city of Bursa is in Bosnia and Herzegovina.,0,Bursa,Bosnia and Herzegovina,Turkey
-530,The city of Dar es Salaam is in Tanzania.,1,Dar es Salaam,Tanzania,Tanzania
-531,The city of Dar es Salaam is in Italy.,0,Dar es Salaam,Italy,Tanzania
-532,The city of Mbuji-Mayi is in the Democratic Republic of the Congo.,1,Mbuji-Mayi,the Democratic Republic of the Congo,the Democratic Republic of the Congo
-533,The city of Mbuji-Mayi is in Pakistan.,0,Mbuji-Mayi,Pakistan,the Democratic Republic of the Congo
-534,The city of Goiania is in Brazil.,1,Goiania,Brazil,Brazil
-535,The city of Goiania is in China.,0,Goiania,China,Brazil
-536,The city of Yaroslavl is in Russia.,1,Yaroslavl,Russia,Russia
-537,The city of Yaroslavl is in India.,0,Yaroslavl,India,Russia
-538,The city of Kigali is in Rwanda.,1,Kigali,Rwanda,Rwanda
-539,The city of Kigali is in Indonesia.,0,Kigali,Indonesia,Rwanda
-540,The city of Diyarbakir is in Turkey.,1,Diyarbakir,Turkey,Turkey
-541,The city of Diyarbakir is in Colombia.,0,Diyarbakir,Colombia,Turkey
-542,The city of Tyumen is in Russia.,1,Tyumen,Russia,Russia
-543,The city of Tyumen is in Mexico.,0,Tyumen,Mexico,Russia
-544,The city of Orenburg is in Russia.,1,Orenburg,Russia,Russia
-545,The city of Orenburg is in Malaysia.,0,Orenburg,Malaysia,Russia
-546,The city of Osaka is in Japan.,1,Osaka,Japan,Japan
-547,The city of Osaka is in India.,0,Osaka,India,Japan
-548,The city of Sapporo is in Japan.,1,Sapporo,Japan,Japan
-549,The city of Sapporo is in Mexico.,0,Sapporo,Mexico,Japan
-550,The city of Kimhae is in South Korea.,1,Kimhae,South Korea,South Korea
-551,The city of Kimhae is in Senegal.,0,Kimhae,Senegal,South Korea
-552,The city of Cheonan is in South Korea.,1,Cheonan,South Korea,South Korea
-553,The city of Cheonan is in Myanmar.,0,Cheonan,Myanmar,South Korea
-554,The city of San Luis Potosi is in Mexico.,1,San Luis Potosi,Mexico,Mexico
-555,The city of San Luis Potosi is in the Democratic Republic of the Congo.,0,San Luis Potosi,the Democratic Republic of the Congo,Mexico
-556,The city of Culiacan is in Mexico.,1,Culiacan,Mexico,Mexico
-557,The city of Culiacan is in China.,0,Culiacan,China,Mexico
-558,The city of Kaduna is in Nigeria.,1,Kaduna,Nigeria,Nigeria
-559,The city of Kaduna is in Turkey.,0,Kaduna,Turkey,Nigeria
-560,The city of General Santos is in the Philippines.,1,General Santos,the Philippines,the Philippines
-561,The city of General Santos is in China.,0,General Santos,China,the Philippines
-562,The city of Ebute Ikorodu is in Nigeria.,1,Ebute Ikorodu,Nigeria,Nigeria
-563,The city of Ebute Ikorodu is in China.,0,Ebute Ikorodu,China,Nigeria
-564,The city of Benin City is in Nigeria.,1,Benin City,Nigeria,Nigeria
-565,The city of Benin City is in China.,0,Benin City,China,Nigeria
-566,The city of Kanpur is in India.,1,Kanpur,India,India
-567,The city of Kanpur is in Brazil.,0,Kanpur,Brazil,India
-568,The city of Indore is in India.,1,Indore,India,India
-569,The city of Indore is in Turkey.,0,Indore,Turkey,India
-570,The city of Zunyi is in China.,1,Zunyi,China,China
-571,The city of Zunyi is in Senegal.,0,Zunyi,Senegal,China
-572,The city of Zhanjiang is in China.,1,Zhanjiang,China,China
-573,The city of Zhanjiang is in India.,0,Zhanjiang,India,China
-574,The city of Wenzhou is in China.,1,Wenzhou,China,China
-575,The city of Wenzhou is in Moldova.,0,Wenzhou,Moldova,China
-576,The city of Luohe is in China.,1,Luohe,China,China
-577,The city of Luohe is in Brazil.,0,Luohe,Brazil,China
-578,The city of Kunming is in China.,1,Kunming,China,China
-579,The city of Kunming is in Mexico.,0,Kunming,Mexico,China
-580,The city of Cixi is in China.,1,Cixi,China,China
-581,The city of Cixi is in Indonesia.,0,Cixi,Indonesia,China
-582,The city of Hanzhong is in China.,1,Hanzhong,China,China
-583,The city of Hanzhong is in Iran.,0,Hanzhong,Iran,China
-584,The city of Guangzhou is in China.,1,Guangzhou,China,China
-585,The city of Guangzhou is in India.,0,Guangzhou,India,China
-586,The city of Munich is in Germany.,1,Munich,Germany,Germany
-587,The city of Munich is in China.,0,Munich,China,Germany
-588,The city of Pekanbaru is in Indonesia.,1,Pekanbaru,Indonesia,Indonesia
-589,The city of Pekanbaru is in India.,0,Pekanbaru,India,Indonesia
-590,The city of Malang is in Indonesia.,1,Malang,Indonesia,Indonesia
-591,The city of Malang is in Morocco.,0,Malang,Morocco,Indonesia
-592,The city of Douala is in Cameroon.,1,Douala,Cameroon,Cameroon
-593,The city of Douala is in Russia.,0,Douala,Russia,Cameroon
-594,The city of Kashgar is in China.,1,Kashgar,China,China
-595,The city of Kashgar is in Turkey.,0,Kashgar,Turkey,China
-596,The city of Zibo is in China.,1,Zibo,China,China
-597,The city of Zibo is in India.,0,Zibo,India,China
-598,The city of Tianshui is in China.,1,Tianshui,China,China
-599,The city of Tianshui is in Canada.,0,Tianshui,Canada,China
-600,The city of Laibin is in China.,1,Laibin,China,China
-601,The city of Laibin is in Ethiopia.,0,Laibin,Ethiopia,China
-602,The city of Deyang is in China.,1,Deyang,China,China
-603,The city of Deyang is in Japan.,0,Deyang,Japan,China
-604,The city of Teresina is in Brazil.,1,Teresina,Brazil,Brazil
-605,The city of Teresina is in Vietnam.,0,Teresina,Vietnam,Brazil
-606,The city of Leipzig is in Germany.,1,Leipzig,Germany,Germany
-607,The city of Leipzig is in Russia.,0,Leipzig,Russia,Germany
-608,The city of Duesseldorf is in Germany.,1,Duesseldorf,Germany,Germany
-609,The city of Duesseldorf is in Mexico.,0,Duesseldorf,Mexico,Germany
-610,The city of Zagreb is in Croatia.,1,Zagreb,Croatia,Croatia
-611,The city of Zagreb is in Japan.,0,Zagreb,Japan,Croatia
-612,The city of Hannover is in Germany.,1,Hannover,Germany,Germany
-613,The city of Hannover is in China.,0,Hannover,China,Germany
-614,The city of Penza is in Russia.,1,Penza,Russia,Russia
-615,The city of Penza is in China.,0,Penza,China,Russia
-616,The city of Matola is in Mozambique.,1,Matola,Mozambique,Mozambique
-617,The city of Matola is in India.,0,Matola,India,Mozambique
-618,The city of Enugu is in Nigeria.,1,Enugu,Nigeria,Nigeria
-619,The city of Enugu is in South Korea.,0,Enugu,South Korea,Nigeria
-620,The city of Shizuoka is in Japan.,1,Shizuoka,Japan,Japan
-621,The city of Shizuoka is in China.,0,Shizuoka,China,Japan
-622,The city of Himeji is in Japan.,1,Himeji,Japan,Japan
-623,The city of Himeji is in the Democratic Republic of the Congo.,0,Himeji,the Democratic Republic of the Congo,Japan
-624,The city of Hamhung is in North Korea.,1,Hamhung,North Korea,North Korea
-625,The city of Hamhung is in China.,0,Hamhung,China,North Korea
-626,The city of Seoul is in South Korea.,1,Seoul,South Korea,South Korea
-627,The city of Seoul is in Nicaragua.,0,Seoul,Nicaragua,South Korea
-628,The city of Meerut is in India.,1,Meerut,India,India
-629,The city of Meerut is in Nigeria.,0,Meerut,Nigeria,India
-630,The city of Hubli is in India.,1,Hubli,India,India
-631,The city of Hubli is in Indonesia.,0,Hubli,Indonesia,India
-632,The city of Dubai is in the United Arab Emirates.,1,Dubai,the United Arab Emirates,the United Arab Emirates
-633,The city of Dubai is in the United States.,0,Dubai,the United States,the United Arab Emirates
-634,The city of Astrakhan is in Russia.,1,Astrakhan,Russia,Russia
-635,The city of Astrakhan is in India.,0,Astrakhan,India,Russia
-636,The city of Aleppo is in Syria.,1,Aleppo,Syria,Syria
-637,The city of Aleppo is in China.,0,Aleppo,China,Syria
-638,The city of Ar Raqqah is in Syria.,1,Ar Raqqah,Syria,Syria
-639,The city of Ar Raqqah is in Iraq.,0,Ar Raqqah,Iraq,Syria
-640,The city of Saint Petersburg is in Russia.,1,Saint Petersburg,Russia,Russia
-641,The city of Saint Petersburg is in Canada.,0,Saint Petersburg,Canada,Russia
-642,The city of Johannesburg is in South Africa.,1,Johannesburg,South Africa,South Africa
-643,The city of Johannesburg is in China.,0,Johannesburg,China,South Africa
-644,The city of Wanzhou is in China.,1,Wanzhou,China,China
-645,The city of Wanzhou is in India.,0,Wanzhou,India,China
-646,The city of Anyang is in China.,1,Anyang,China,China
-647,The city of Anyang is in Kuwait.,0,Anyang,Kuwait,China
-648,The city of Qinhuangdao is in China.,1,Qinhuangdao,China,China
-649,The city of Qinhuangdao is in Eritrea.,0,Qinhuangdao,Eritrea,China
-650,The city of Meizhou is in China.,1,Meizhou,China,China
-651,The city of Meizhou is in Russia.,0,Meizhou,Russia,China
-652,The city of Yangjiang is in China.,1,Yangjiang,China,China
-653,The city of Yangjiang is in Indonesia.,0,Yangjiang,Indonesia,China
-654,The city of Beijing is in China.,1,Beijing,China,China
-655,The city of Beijing is in Ghana.,0,Beijing,Ghana,China
-656,The city of Shah Alam is in Malaysia.,1,Shah Alam,Malaysia,Malaysia
-657,The city of Shah Alam is in China.,0,Shah Alam,China,Malaysia
-658,The city of Vadodara is in India.,1,Vadodara,India,India
-659,The city of Vadodara is in Russia.,0,Vadodara,Russia,India
-660,The city of Sangli is in India.,1,Sangli,India,India
-661,The city of Sangli is in Japan.,0,Sangli,Japan,India
-662,The city of Guwahati is in India.,1,Guwahati,India,India
-663,The city of Guwahati is in China.,0,Guwahati,China,India
-664,The city of Prayagraj is in India.,1,Prayagraj,India,India
-665,The city of Prayagraj is in Kenya.,0,Prayagraj,Kenya,India
-666,The city of Aligarh is in India.,1,Aligarh,India,India
-667,The city of Aligarh is in China.,0,Aligarh,China,India
-668,The city of Kermanshah is in Iran.,1,Kermanshah,Iran,Iran
-669,The city of Kermanshah is in China.,0,Kermanshah,China,Iran
-670,The city of Semarang is in Indonesia.,1,Semarang,Indonesia,Indonesia
-671,The city of Semarang is in Saudi Arabia.,0,Semarang,Saudi Arabia,Indonesia
-672,The city of Khulna is in Bangladesh.,1,Khulna,Bangladesh,Bangladesh
-673,The city of Khulna is in Japan.,0,Khulna,Japan,Bangladesh
-674,The city of Korla is in China.,1,Korla,China,China
-675,The city of Korla is in Azerbaijan.,0,Korla,Azerbaijan,China
-676,The city of Zaozhuang is in China.,1,Zaozhuang,China,China
-677,The city of Zaozhuang is in Belarus.,0,Zaozhuang,Belarus,China
-678,The city of Xiamen is in China.,1,Xiamen,China,China
-679,The city of Xiamen is in Pakistan.,0,Xiamen,Pakistan,China
-680,The city of Shenzhen is in China.,1,Shenzhen,China,China
-681,The city of Shenzhen is in Mexico.,0,Shenzhen,Mexico,China
-682,The city of Maoming is in China.,1,Maoming,China,China
-683,The city of Maoming is in Brazil.,0,Maoming,Brazil,China
-684,The city of Anshun is in China.,1,Anshun,China,China
-685,The city of Anshun is in Brazil.,0,Anshun,Brazil,China
-686,The city of Siping is in China.,1,Siping,China,China
-687,The city of Siping is in Iraq.,0,Siping,Iraq,China
-688,The city of Shuangyashan is in China.,1,Shuangyashan,China,China
-689,The city of Shuangyashan is in India.,0,Shuangyashan,India,China
-690,The city of Jiamusi is in China.,1,Jiamusi,China,China
-691,The city of Jiamusi is in Germany.,0,Jiamusi,Germany,China
-692,The city of Minsk is in Belarus.,1,Minsk,Belarus,Belarus
-693,The city of Minsk is in South Korea.,0,Minsk,South Korea,Belarus
-694,The city of Lubumbashi is in the Democratic Republic of the Congo.,1,Lubumbashi,the Democratic Republic of the Congo,the Democratic Republic of the Congo
-695,The city of Lubumbashi is in India.,0,Lubumbashi,India,the Democratic Republic of the Congo
-696,The city of San Miguel de Tucuman is in Argentina.,1,San Miguel de Tucuman,Argentina,Argentina
-697,The city of San Miguel de Tucuman is in China.,0,San Miguel de Tucuman,China,Argentina
-698,The city of Cotonou is in Benin.,1,Cotonou,Benin,Benin
-699,The city of Cotonou is in China.,0,Cotonou,China,Benin
-700,The city of Comilla is in Bangladesh.,1,Comilla,Bangladesh,Bangladesh
-701,The city of Comilla is in China.,0,Comilla,China,Bangladesh
-702,The city of Sao Bernardo do Campo is in Brazil.,1,Sao Bernardo do Campo,Brazil,Brazil
-703,The city of Sao Bernardo do Campo is in Zambia.,0,Sao Bernardo do Campo,Zambia,Brazil
-704,The city of Feira de Santana is in Brazil.,1,Feira de Santana,Brazil,Brazil
-705,The city of Feira de Santana is in China.,0,Feira de Santana,China,Brazil
-706,The city of Porto Alegre is in Brazil.,1,Porto Alegre,Brazil,Brazil
-707,The city of Porto Alegre is in Belarus.,0,Porto Alegre,Belarus,Brazil
-708,The city of Juiz de Fora is in Brazil.,1,Juiz de Fora,Brazil,Brazil
-709,The city of Juiz de Fora is in India.,0,Juiz de Fora,India,Brazil
-710,The city of Nagoya is in Japan.,1,Nagoya,Japan,Japan
-711,The city of Nagoya is in China.,0,Nagoya,China,Japan
-712,The city of Al Ahmadi is in Kuwait.,1,Al Ahmadi,Kuwait,Kuwait
-713,The city of Al Ahmadi is in Japan.,0,Al Ahmadi,Japan,Kuwait
-714,The city of Beirut is in Lebanon.,1,Beirut,Lebanon,Lebanon
-715,The city of Beirut is in Algeria.,0,Beirut,Algeria,Lebanon
-716,The city of Lilongwe is in Malawi.,1,Lilongwe,Malawi,Malawi
-717,The city of Lilongwe is in Turkey.,0,Lilongwe,Turkey,Malawi
-718,The city of Ecatepec de Morelos is in Mexico.,1,Ecatepec de Morelos,Mexico,Mexico
-719,The city of Ecatepec de Morelos is in India.,0,Ecatepec de Morelos,India,Mexico
-720,The city of Cancun is in Mexico.,1,Cancun,Mexico,Mexico
-721,The city of Cancun is in Myanmar.,0,Cancun,Myanmar,Mexico
-722,The city of Isfahan is in Iran.,1,Isfahan,Iran,Iran
-723,The city of Isfahan is in China.,0,Isfahan,China,Iran
-724,The city of Conakry is in Guinea.,1,Conakry,Guinea,Guinea
-725,The city of Conakry is in Belarus.,0,Conakry,Belarus,Guinea
-726,The city of Petaling Jaya is in Malaysia.,1,Petaling Jaya,Malaysia,Malaysia
-727,The city of Petaling Jaya is in Bosnia and Herzegovina.,0,Petaling Jaya,Bosnia and Herzegovina,Malaysia
-728,The city of Zaria is in Nigeria.,1,Zaria,Nigeria,Nigeria
-729,The city of Zaria is in India.,0,Zaria,India,Nigeria
-730,The city of Cimahi is in Indonesia.,1,Cimahi,Indonesia,Indonesia
-731,The city of Cimahi is in Germany.,0,Cimahi,Germany,Indonesia
-732,The city of Arequipa is in Peru.,1,Arequipa,Peru,Peru
-733,The city of Arequipa is in India.,0,Arequipa,India,Peru
-734,The city of Multan is in Pakistan.,1,Multan,Pakistan,Pakistan
-735,The city of Multan is in Ecuador.,0,Multan,Ecuador,Pakistan
-736,The city of Bahcelievler is in Turkey.,1,Bahcelievler,Turkey,Turkey
-737,The city of Bahcelievler is in Germany.,0,Bahcelievler,Germany,Turkey
-738,The city of Saratov is in Russia.,1,Saratov,Russia,Russia
-739,The city of Saratov is in Indonesia.,0,Saratov,Indonesia,Russia
-740,The city of Kharkiv is in Ukraine.,1,Kharkiv,Ukraine,Ukraine
-741,The city of Kharkiv is in Moldova.,0,Kharkiv,Moldova,Ukraine
-742,The city of Malatya is in Turkey.,1,Malatya,Turkey,Turkey
-743,The city of Malatya is in Russia.,0,Malatya,Russia,Turkey
-744,The city of Lviv is in Ukraine.,1,Lviv,Ukraine,Ukraine
-745,The city of Lviv is in China.,0,Lviv,China,Ukraine
-746,The city of Kyiv is in Ukraine.,1,Kyiv,Ukraine,Ukraine
-747,The city of Kyiv is in Russia.,0,Kyiv,Russia,Ukraine
-748,The city of Kitakyushu is in Japan.,1,Kitakyushu,Japan,Japan
-749,The city of Kitakyushu is in Yemen.,0,Kitakyushu,Yemen,Japan
-750,The city of Onitsha is in Nigeria.,1,Onitsha,Nigeria,Nigeria
-751,The city of Onitsha is in China.,0,Onitsha,China,Nigeria
-752,The city of Anyang-si is in South Korea.,1,Anyang-si,South Korea,South Korea
-753,The city of Anyang-si is in Iraq.,0,Anyang-si,Iraq,South Korea
-754,The city of Kobe is in Japan.,1,Kobe,Japan,Japan
-755,The city of Kobe is in China.,0,Kobe,China,Japan
-756,The city of Chiclayo is in Peru.,1,Chiclayo,Peru,Peru
-757,The city of Chiclayo is in Venezuela.,0,Chiclayo,Venezuela,Peru
-758,The city of Phnom Penh is in Cambodia.,1,Phnom Penh,Cambodia,Cambodia
-759,The city of Phnom Penh is in Senegal.,0,Phnom Penh,Senegal,Cambodia
-760,The city of Nouakchott is in Mauritania.,1,Nouakchott,Mauritania,Mauritania
-761,The city of Nouakchott is in China.,0,Nouakchott,China,Mauritania
-762,The city of Vijayawada is in India.,1,Vijayawada,India,India
-763,The city of Vijayawada is in Nigeria.,0,Vijayawada,Nigeria,India
-764,The city of Theni is in India.,1,Theni,India,India
-765,The city of Theni is in Nigeria.,0,Theni,Nigeria,India
-766,The city of Narela is in India.,1,Narela,India,India
-767,The city of Narela is in Turkey.,0,Narela,Turkey,India
-768,The city of Quetta is in Pakistan.,1,Quetta,Pakistan,Pakistan
-769,The city of Quetta is in Kenya.,0,Quetta,Kenya,Pakistan
-770,The city of Chennai is in India.,1,Chennai,India,India
-771,The city of Chennai is in China.,0,Chennai,China,India
-772,The city of Changshu is in China.,1,Changshu,China,China
-773,The city of Changshu is in the Philippines.,0,Changshu,the Philippines,China
-774,The city of Tehran is in Iran.,1,Tehran,Iran,Iran
-775,The city of Tehran is in Niger.,0,Tehran,Niger,Iran
-776,The city of Bayannur is in China.,1,Bayannur,China,China
-777,The city of Bayannur is in Russia.,0,Bayannur,Russia,China
-778,The city of Barranquilla is in Colombia.,1,Barranquilla,Colombia,Colombia
-779,The city of Barranquilla is in Pakistan.,0,Barranquilla,Pakistan,Colombia
-780,The city of Budapest is in Hungary.,1,Budapest,Hungary,Hungary
-781,The city of Budapest is in Iraq.,0,Budapest,Iraq,Hungary
-782,The city of Pontianak is in Indonesia.,1,Pontianak,Indonesia,Indonesia
-783,The city of Pontianak is in India.,0,Pontianak,India,Indonesia
-784,The city of Recife is in Brazil.,1,Recife,Brazil,Brazil
-785,The city of Recife is in North Korea.,0,Recife,North Korea,Brazil
-786,The city of Contagem is in Brazil.,1,Contagem,Brazil,Brazil
-787,The city of Contagem is in Indonesia.,0,Contagem,Indonesia,Brazil
-788,The city of Port Said is in Egypt.,1,Port Said,Egypt,Egypt
-789,The city of Port Said is in China.,0,Port Said,China,Egypt
-790,The city of Asyut is in Egypt.,1,Asyut,Egypt,Egypt
-791,The city of Asyut is in Japan.,0,Asyut,Japan,Egypt
-792,The city of Ziyang is in China.,1,Ziyang,China,China
-793,The city of Ziyang is in Belgium.,0,Ziyang,Belgium,China
-794,The city of Yinchuan is in China.,1,Yinchuan,China,China
-795,The city of Yinchuan is in Bangladesh.,0,Yinchuan,Bangladesh,China
-796,The city of Zhangjiagang is in China.,1,Zhangjiagang,China,China
-797,The city of Zhangjiagang is in Brazil.,0,Zhangjiagang,Brazil,China
-798,The city of Shanghai is in China.,1,Shanghai,China,China
-799,The city of Shanghai is in Mexico.,0,Shanghai,Mexico,China
-800,The city of Jieyang is in China.,1,Jieyang,China,China
-801,The city of Jieyang is in the Philippines.,0,Jieyang,the Philippines,China
-802,The city of Longyan is in China.,1,Longyan,China,China
-803,The city of Longyan is in Benin.,0,Longyan,Benin,China
-804,The city of Dandong is in China.,1,Dandong,China,China
-805,The city of Dandong is in Niger.,0,Dandong,Niger,China
-806,The city of Frankfurt am Main is in Germany.,1,Frankfurt am Main,Germany,Germany
-807,The city of Frankfurt am Main is in Vietnam.,0,Frankfurt am Main,Vietnam,Germany
-808,The city of Lusaka is in Zambia.,1,Lusaka,Zambia,Zambia
-809,The city of Lusaka is in Poland.,0,Lusaka,Poland,Zambia
-810,The city of Aden is in Yemen.,1,Aden,Yemen,Yemen
-811,The city of Aden is in Japan.,0,Aden,Japan,Yemen
 812,The city of Jaboatao is in Brazil.,1,Jaboatao,Brazil,Brazil
-813,The city of Jaboatao is in Syria.,0,Jaboatao,Syria,Brazil
-814,The city of Aracaju is in Brazil.,1,Aracaju,Brazil,Brazil
-815,The city of Aracaju is in Russia.,0,Aracaju,Russia,Brazil
-816,The city of Londrina is in Brazil.,1,Londrina,Brazil,Brazil
-817,The city of Londrina is in India.,0,Londrina,India,Brazil
-818,The city of Zigong is in China.,1,Zigong,China,China
-819,The city of Zigong is in Turkey.,0,Zigong,Turkey,China
-820,The city of Kunshan is in China.,1,Kunshan,China,China
-821,The city of Kunshan is in Russia.,0,Kunshan,Russia,China
-822,The city of Yichang is in China.,1,Yichang,China,China
-823,The city of Yichang is in Japan.,0,Yichang,Japan,China
-824,The city of Sanming is in China.,1,Sanming,China,China
-825,The city of Sanming is in Bulgaria.,0,Sanming,Bulgaria,China
-826,The city of Guang'an is in China.,1,Guang'an,China,China
-827,The city of Guang'an is in Germany.,0,Guang'an,Germany,China
-828,The city of Ma'anshan is in China.,1,Ma'anshan,China,China
-829,The city of Ma'anshan is in India.,0,Ma'anshan,India,China
-830,The city of Dongying is in China.,1,Dongying,China,China
-831,The city of Dongying is in India.,0,Dongying,India,China
-832,The city of Fushun is in China.,1,Fushun,China,China
-833,The city of Fushun is in Mexico.,0,Fushun,Mexico,China
-834,The city of Rajshahi is in Bangladesh.,1,Rajshahi,Bangladesh,Bangladesh
-835,The city of Rajshahi is in Russia.,0,Rajshahi,Russia,Bangladesh
-836,The city of Rangpur is in Bangladesh.,1,Rangpur,Bangladesh,Bangladesh
-837,The city of Rangpur is in Russia.,0,Rangpur,Russia,Bangladesh
-838,The city of Dortmund is in Germany.,1,Dortmund,Germany,Germany
-839,The city of Dortmund is in India.,0,Dortmund,India,Germany
-840,The city of Detroit is in the United States.,1,Detroit,the United States,the United States
-841,The city of Detroit is in China.,0,Detroit,China,the United States
-842,The city of Latakia is in Syria.,1,Latakia,Syria,Syria
-843,The city of Latakia is in Somalia.,0,Latakia,Somalia,Syria
-844,The city of Ashgabat is in Turkmenistan.,1,Ashgabat,Turkmenistan,Turkmenistan
-845,The city of Ashgabat is in Bangladesh.,0,Ashgabat,Bangladesh,Turkmenistan
-846,The city of Maracaibo is in Venezuela.,1,Maracaibo,Venezuela,Venezuela
-847,The city of Maracaibo is in Russia.,0,Maracaibo,Russia,Venezuela
-848,The city of Erode is in India.,1,Erode,India,India
-849,The city of Erode is in China.,0,Erode,China,India
-850,The city of Mumbai is in India.,1,Mumbai,India,India
-851,The city of Mumbai is in China.,0,Mumbai,China,India
-852,The city of Nasiriyah is in Iraq.,1,Nasiriyah,Iraq,Iraq
-853,The city of Nasiriyah is in Rwanda.,0,Nasiriyah,Rwanda,Iraq
-854,The city of Kahriz is in Iran.,1,Kahriz,Iran,Iran
-855,The city of Kahriz is in Uzbekistan.,0,Kahriz,Uzbekistan,Iran
-856,The city of Surakarta is in Indonesia.,1,Surakarta,Indonesia,Indonesia
-857,The city of Surakarta is in India.,0,Surakarta,India,Indonesia
-858,The city of Banjarmasin is in Indonesia.,1,Banjarmasin,Indonesia,Indonesia
-859,The city of Banjarmasin is in South Korea.,0,Banjarmasin,South Korea,Indonesia
-860,The city of Vladivostok is in Russia.,1,Vladivostok,Russia,Russia
-861,The city of Vladivostok is in Romania.,0,Vladivostok,Romania,Russia
-862,The city of Adana is in Turkey.,1,Adana,Turkey,Turkey
-863,The city of Adana is in Togo.,0,Adana,Togo,Turkey
-864,The city of Voronezh is in Russia.,1,Voronezh,Russia,Russia
-865,The city of Voronezh is in Romania.,0,Voronezh,Romania,Russia
-866,The city of Namangan is in Uzbekistan.,1,Namangan,Uzbekistan,Uzbekistan
-867,The city of Namangan is in India.,0,Namangan,India,Uzbekistan
-868,The city of Ordos is in China.,1,Ordos,China,China
-869,The city of Ordos is in Brazil.,0,Ordos,Brazil,China
-870,The city of Moradabad is in India.,1,Moradabad,India,India
-871,The city of Moradabad is in China.,0,Moradabad,China,India
-872,The city of Bengaluru is in India.,1,Bengaluru,India,India
-873,The city of Bengaluru is in China.,0,Bengaluru,China,India
-874,The city of Shivaji Nagar is in India.,1,Shivaji Nagar,India,India
-875,The city of Shivaji Nagar is in China.,0,Shivaji Nagar,China,India
-876,The city of Turin is in Italy.,1,Turin,Italy,Italy
-877,The city of Turin is in China.,0,Turin,China,Italy
-878,The city of Okayama is in Japan.,1,Okayama,Japan,Japan
-879,The city of Okayama is in Russia.,0,Okayama,Russia,Japan
-880,The city of Daejeon is in South Korea.,1,Daejeon,South Korea,South Korea
-881,The city of Daejeon is in India.,0,Daejeon,India,South Korea
-882,The city of Battagram is in Pakistan.,1,Battagram,Pakistan,Pakistan
-883,The city of Battagram is in Tanzania.,0,Battagram,Tanzania,Pakistan
-884,The city of Yaounde is in Cameroon.,1,Yaounde,Cameroon,Cameroon
-885,The city of Yaounde is in China.,0,Yaounde,China,Cameroon
-886,The city of Zhangzhou is in China.,1,Zhangzhou,China,China
-887,The city of Zhangzhou is in Nicaragua.,0,Zhangzhou,Nicaragua,China
-888,The city of Yangquan is in China.,1,Yangquan,China,China
-889,The city of Yangquan is in Hungary.,0,Yangquan,Hungary,China
-890,The city of Sanya is in China.,1,Sanya,China,China
-891,The city of Sanya is in India.,0,Sanya,India,China
-892,The city of Foshan is in China.,1,Foshan,China,China
-893,The city of Foshan is in Mozambique.,0,Foshan,Mozambique,China
-894,The city of Sharjah is in the United Arab Emirates.,1,Sharjah,the United Arab Emirates,the United Arab Emirates
-895,The city of Sharjah is in China.,0,Sharjah,China,the United Arab Emirates
-896,The city of Al Ain City is in the United Arab Emirates.,1,Al Ain City,the United Arab Emirates,the United Arab Emirates
-897,The city of Al Ain City is in India.,0,Al Ain City,India,the United Arab Emirates
-898,The city of Kalininskiy is in Russia.,1,Kalininskiy,Russia,Russia
-899,The city of Kalininskiy is in Japan.,0,Kalininskiy,Japan,Russia
-900,The city of Mersin is in Turkey.,1,Mersin,Turkey,Turkey
-901,The city of Mersin is in the United States.,0,Mersin,the United States,Turkey
-902,The city of Guayaquil is in Ecuador.,1,Guayaquil,Ecuador,Ecuador
-903,The city of Guayaquil is in China.,0,Guayaquil,China,Ecuador
-904,The city of Tegucigalpa is in Honduras.,1,Tegucigalpa,Honduras,Honduras
-905,The city of Tegucigalpa is in China.,0,Tegucigalpa,China,Honduras
-906,The city of Koeln is in Germany.,1,Koeln,Germany,Germany
-907,The city of Koeln is in Nigeria.,0,Koeln,Nigeria,Germany
-908,The city of Nuernberg is in Germany.,1,Nuernberg,Germany,Germany
-909,The city of Nuernberg is in China.,0,Nuernberg,China,Germany
-910,The city of Zarqa is in Jordan.,1,Zarqa,Jordan,Jordan
-911,The city of Zarqa is in India.,0,Zarqa,India,Jordan
-912,The city of Riga is in Latvia.,1,Riga,Latvia,Latvia
-913,The city of Riga is in Japan.,0,Riga,Japan,Latvia
-914,The city of Nanded is in India.,1,Nanded,India,India
-915,The city of Nanded is in China.,0,Nanded,China,India
-916,The city of Gwalior is in India.,1,Gwalior,India,India
-917,The city of Gwalior is in China.,0,Gwalior,China,India
-918,The city of Dombivli is in India.,1,Dombivli,India,India
-919,The city of Dombivli is in Mali.,0,Dombivli,Mali,India
-920,The city of Kallakurichi is in India.,1,Kallakurichi,India,India
-921,The city of Kallakurichi is in Iraq.,0,Kallakurichi,Iraq,India
-922,The city of Bekasi is in Indonesia.,1,Bekasi,Indonesia,Indonesia
-923,The city of Bekasi is in China.,0,Bekasi,China,Indonesia
-924,The city of Johor Bahru is in Malaysia.,1,Johor Bahru,Malaysia,Malaysia
-925,The city of Johor Bahru is in Cuba.,0,Johor Bahru,Cuba,Malaysia
-926,The city of Santa Maria Chimalhuacan is in Mexico.,1,Santa Maria Chimalhuacan,Mexico,Mexico
-927,The city of Santa Maria Chimalhuacan is in Saudi Arabia.,0,Santa Maria Chimalhuacan,Saudi Arabia,Mexico
-928,The city of Urumqi is in China.,1,Urumqi,China,China
-929,The city of Urumqi is in Vietnam.,0,Urumqi,Vietnam,China
-930,The city of Qingdao is in China.,1,Qingdao,China,China
-931,The city of Qingdao is in India.,0,Qingdao,India,China
-932,The city of Sofia is in Bulgaria.,1,Sofia,Bulgaria,Bulgaria
-933,The city of Sofia is in South Korea.,0,Sofia,South Korea,Bulgaria
-934,The city of Nova Iguacu is in Brazil.,1,Nova Iguacu,Brazil,Brazil
-935,The city of Nova Iguacu is in India.,0,Nova Iguacu,India,Brazil
-936,The city of Abeokuta is in Nigeria.,1,Abeokuta,Nigeria,Nigeria
-937,The city of Abeokuta is in Mozambique.,0,Abeokuta,Mozambique,Nigeria
-938,The city of Amman is in Jordan.,1,Amman,Jordan,Jordan
-939,The city of Amman is in Malaysia.,0,Amman,Malaysia,Jordan
-940,The city of Hachioji is in Japan.,1,Hachioji,Japan,Japan
-941,The city of Hachioji is in Mexico.,0,Hachioji,Mexico,Japan
-942,The city of Fukuoka is in Japan.,1,Fukuoka,Japan,Japan
-943,The city of Fukuoka is in Senegal.,0,Fukuoka,Senegal,Japan
-944,The city of Goyang-si is in South Korea.,1,Goyang-si,South Korea,South Korea
-945,The city of Goyang-si is in Russia.,0,Goyang-si,Russia,South Korea
-946,The city of Meknes is in Morocco.,1,Meknes,Morocco,Morocco
-947,The city of Meknes is in China.,0,Meknes,China,Morocco
-948,The city of Antananarivo is in Madagascar.,1,Antananarivo,Madagascar,Madagascar
-949,The city of Antananarivo is in Germany.,0,Antananarivo,Germany,Madagascar
-950,The city of Kalyan is in India.,1,Kalyan,India,India
-951,The city of Kalyan is in South Korea.,0,Kalyan,South Korea,India
-952,The city of Jaipur is in India.,1,Jaipur,India,India
-953,The city of Jaipur is in China.,0,Jaipur,China,India
-954,The city of Guntur is in India.,1,Guntur,India,India
-955,The city of Guntur is in China.,0,Guntur,China,India
-956,The city of Bhilai is in India.,1,Bhilai,India,India
-957,The city of Bhilai is in Venezuela.,0,Bhilai,Venezuela,India
-958,The city of Bhavnagar is in India.,1,Bhavnagar,India,India
-959,The city of Bhavnagar is in Japan.,0,Bhavnagar,Japan,India
-960,The city of Amravati is in India.,1,Amravati,India,India
-961,The city of Amravati is in China.,0,Amravati,China,India
-962,The city of Shiraz is in Iran.,1,Shiraz,Iran,Iran
-963,The city of Shiraz is in China.,0,Shiraz,China,Iran
-964,The city of Lome is in Togo.,1,Lome,Togo,Togo
-965,The city of Lome is in Yemen.,0,Lome,Yemen,Togo
-966,The city of Erzurum is in Turkey.,1,Erzurum,Turkey,Turkey
-967,The city of Erzurum is in the Democratic Republic of the Congo.,0,Erzurum,the Democratic Republic of the Congo,Turkey
-968,The city of Seattle is in the United States.,1,Seattle,the United States,the United States
-969,The city of Seattle is in Yemen.,0,Seattle,Yemen,the United States
-970,The city of Barquisimeto is in Venezuela.,1,Barquisimeto,Venezuela,Venezuela
-971,The city of Barquisimeto is in Poland.,0,Barquisimeto,Poland,Venezuela
-972,The city of Kryvyy Rih is in Ukraine.,1,Kryvyy Rih,Ukraine,Ukraine
-973,The city of Kryvyy Rih is in China.,0,Kryvyy Rih,China,Ukraine
-974,The city of Krasnoyarsk is in Russia.,1,Krasnoyarsk,Russia,Russia
-975,The city of Krasnoyarsk is in India.,0,Krasnoyarsk,India,Russia
-976,The city of Quzhou is in China.,1,Quzhou,China,China
-977,The city of Quzhou is in Vietnam.,0,Quzhou,Vietnam,China
-978,The city of Pingliang is in China.,1,Pingliang,China,China
-979,The city of Pingliang is in Tanzania.,0,Pingliang,Tanzania,China
-980,The city of Puning is in China.,1,Puning,China,China
-981,The city of Puning is in India.,0,Puning,India,China
-982,The city of Huzhou is in China.,1,Huzhou,China,China
-983,The city of Huzhou is in Germany.,0,Huzhou,Germany,China
-984,The city of Chizhou is in China.,1,Chizhou,China,China
-985,The city of Chizhou is in the Republic of the Congo.,0,Chizhou,the Republic of the Congo,China
-986,The city of Chengdu is in China.,1,Chengdu,China,China
-987,The city of Chengdu is in South Korea.,0,Chengdu,South Korea,China
-988,The city of Cangzhou is in China.,1,Cangzhou,China,China
-989,The city of Cangzhou is in Germany.,0,Cangzhou,Germany,China
-990,The city of Samarinda is in Indonesia.,1,Samarinda,Indonesia,Indonesia
-991,The city of Samarinda is in Iraq.,0,Samarinda,Iraq,Indonesia
-992,The city of Helsinki is in Finland.,1,Helsinki,Finland,Finland
-993,The city of Helsinki is in Pakistan.,0,Helsinki,Pakistan,Finland
-994,The city of Khabarovsk Vtoroy is in Russia.,1,Khabarovsk Vtoroy,Russia,Russia
-995,The city of Khabarovsk Vtoroy is in China.,0,Khabarovsk Vtoroy,China,Russia
-996,The city of Wroclaw is in Poland.,1,Wroclaw,Poland,Poland
-997,The city of Wroclaw is in Mexico.,0,Wroclaw,Mexico,Poland
-998,The city of Oslo is in Norway.,1,Oslo,Norway,Norway
-999,The city of Oslo is in Venezuela.,0,Oslo,Venezuela,Norway
-1000,The city of Caloocan City is in the Philippines.,1,Caloocan City,the Philippines,the Philippines
-1001,The city of Caloocan City is in China.,0,Caloocan City,China,the Philippines
-1002,The city of Ryazan' is in Russia.,1,Ryazan',Russia,Russia
-1003,The city of Ryazan' is in South Korea.,0,Ryazan',South Korea,Russia
-1004,The city of Ciudad Guayana is in Venezuela.,1,Ciudad Guayana,Venezuela,Venezuela
-1005,The city of Ciudad Guayana is in South Africa.,0,Ciudad Guayana,South Africa,Venezuela
-1006,The city of Ho Chi Minh City is in Vietnam.,1,Ho Chi Minh City,Vietnam,Vietnam
-1007,The city of Ho Chi Minh City is in Gabon.,0,Ho Chi Minh City,Gabon,Vietnam
-1008,The city of Al Hudaydah is in Yemen.,1,Al Hudaydah,Yemen,Yemen
-1009,The city of Al Hudaydah is in South Korea.,0,Al Hudaydah,South Korea,Yemen
-1010,The city of Soweto is in South Africa.,1,Soweto,South Africa,South Africa
-1011,The city of Soweto is in Gabon.,0,Soweto,Gabon,South Africa
-1012,The city of Benoni is in South Africa.,1,Benoni,South Africa,South Africa
-1013,The city of Benoni is in the Philippines.,0,Benoni,the Philippines,South Africa
-1014,The city of Wuzhou is in China.,1,Wuzhou,China,China
-1015,The city of Wuzhou is in Syria.,0,Wuzhou,Syria,China
-1016,The city of Wanxian is in China.,1,Wanxian,China,China
-1017,The city of Wanxian is in Algeria.,0,Wanxian,Algeria,China
-1018,The city of Qinzhou is in China.,1,Qinzhou,China,China
-1019,The city of Qinzhou is in India.,0,Qinzhou,India,China
-1020,The city of Wuwei is in China.,1,Wuwei,China,China
-1021,The city of Wuwei is in India.,0,Wuwei,India,China
-1022,The city of Hefei is in China.,1,Hefei,China,China
-1023,The city of Hefei is in Germany.,0,Hefei,Germany,China
-1024,The city of Handan is in China.,1,Handan,China,China
-1025,The city of Handan is in Russia.,0,Handan,Russia,China
-1026,The city of Jiangyin is in China.,1,Jiangyin,China,China
-1027,The city of Jiangyin is in Bulgaria.,0,Jiangyin,Bulgaria,China
-1028,The city of Brazzaville is in the Republic of the Congo.,1,Brazzaville,the Republic of the Congo,the Republic of the Congo
-1029,The city of Brazzaville is in Nigeria.,0,Brazzaville,Nigeria,the Republic of the Congo
-1030,The city of Sorocaba is in Brazil.,1,Sorocaba,Brazil,Brazil
-1031,The city of Sorocaba is in Mexico.,0,Sorocaba,Mexico,Brazil
-1032,The city of Aktobe is in Kazakhstan.,1,Aktobe,Kazakhstan,Kazakhstan
-1033,The city of Aktobe is in Afghanistan.,0,Aktobe,Afghanistan,Kazakhstan
-1034,The city of Chisinau is in Moldova.,1,Chisinau,Moldova,Moldova
-1035,The city of Chisinau is in Germany.,0,Chisinau,Germany,Moldova
-1036,The city of Tiruppur is in India.,1,Tiruppur,India,India
-1037,The city of Tiruppur is in Japan.,0,Tiruppur,Japan,India
-1038,The city of Kozhikode is in India.,1,Kozhikode,India,India
-1039,The city of Kozhikode is in the United States.,0,Kozhikode,the United States,India
-1040,The city of Asansol is in India.,1,Asansol,India,India
-1041,The city of Asansol is in China.,0,Asansol,China,India
-1042,The city of Suizhou is in China.,1,Suizhou,China,China
-1043,The city of Suizhou is in Japan.,0,Suizhou,Japan,China
-1044,The city of Jingmen is in China.,1,Jingmen,China,China
-1045,The city of Jingmen is in Japan.,0,Jingmen,Japan,China
-1046,The city of Huangshi is in China.,1,Huangshi,China,China
-1047,The city of Huangshi is in India.,0,Huangshi,India,China
-1048,The city of Huaibei is in China.,1,Huaibei,China,China
-1049,The city of Huaibei is in Brazil.,0,Huaibei,Brazil,China
-1050,The city of Hebi is in China.,1,Hebi,China,China
-1051,The city of Hebi is in Nigeria.,0,Hebi,Nigeria,China
-1052,The city of Benxi is in China.,1,Benxi,China,China
-1053,The city of Benxi is in Brazil.,0,Benxi,Brazil,China
-1054,The city of Fortaleza is in Brazil.,1,Fortaleza,Brazil,Brazil
-1055,The city of Fortaleza is in Honduras.,0,Fortaleza,Honduras,Brazil
-1056,The city of Antwerpen is in Belgium.,1,Antwerpen,Belgium,Belgium
-1057,The city of Antwerpen is in Japan.,0,Antwerpen,Japan,Belgium
-1058,The city of Pikine is in Senegal.,1,Pikine,Senegal,Senegal
-1059,The city of Pikine is in Pakistan.,0,Pikine,Pakistan,Senegal
-1060,The city of Dakar is in Senegal.,1,Dakar,Senegal,Senegal
-1061,The city of Dakar is in India.,0,Dakar,India,Senegal
-1062,The city of Faisalabad is in Pakistan.,1,Faisalabad,Pakistan,Pakistan
-1063,The city of Faisalabad is in India.,0,Faisalabad,India,Pakistan
-1064,The city of Kyoto is in Japan.,1,Kyoto,Japan,Japan
-1065,The city of Kyoto is in China.,0,Kyoto,China,Japan
-1066,The city of Port Harcourt is in Nigeria.,1,Port Harcourt,Nigeria,Nigeria
-1067,The city of Port Harcourt is in Eritrea.,0,Port Harcourt,Eritrea,Nigeria
-1068,The city of Makhachkala is in Russia.,1,Makhachkala,Russia,Russia
-1069,The city of Makhachkala is in Indonesia.,0,Makhachkala,Indonesia,Russia
-1070,The city of Thiruvananthapuram is in India.,1,Thiruvananthapuram,India,India
-1071,The city of Thiruvananthapuram is in Japan.,0,Thiruvananthapuram,Japan,India
-1072,The city of Madurai is in India.,1,Madurai,India,India
-1073,The city of Madurai is in Burundi.,0,Madurai,Burundi,India
-1074,The city of Abu Ghurayb is in Iraq.,1,Abu Ghurayb,Iraq,Iraq
-1075,The city of Abu Ghurayb is in Indonesia.,0,Abu Ghurayb,Indonesia,Iraq
-1076,The city of Karaj is in Iran.,1,Karaj,Iran,Iran
-1077,The city of Karaj is in India.,0,Karaj,India,Iran
-1078,The city of Kampala is in Uganda.,1,Kampala,Uganda,Uganda
-1079,The city of Kampala is in Turkey.,0,Kampala,Turkey,Uganda
-1080,The city of Chicago is in the United States.,1,Chicago,the United States,the United States
-1081,The city of Chicago is in Madagascar.,0,Chicago,Madagascar,the United States
-1082,The city of Milwaukee is in the United States.,1,Milwaukee,the United States,the United States
-1083,The city of Milwaukee is in China.,0,Milwaukee,China,the United States
-1084,The city of Bloemfontein is in South Africa.,1,Bloemfontein,South Africa,South Africa
-1085,The city of Bloemfontein is in China.,0,Bloemfontein,China,South Africa
-1086,The city of Uberlandia is in Brazil.,1,Uberlandia,Brazil,Brazil
-1087,The city of Uberlandia is in India.,0,Uberlandia,India,Brazil
-1088,The city of Curitiba is in Brazil.,1,Curitiba,Brazil,Brazil
-1089,The city of Curitiba is in India.,0,Curitiba,India,Brazil
-1090,The city of Rio de Janeiro is in Brazil.,1,Rio de Janeiro,Brazil,Brazil
-1091,The city of Rio de Janeiro is in Japan.,0,Rio de Janeiro,Japan,Brazil
-1092,The city of Ribeirao Preto is in Brazil.,1,Ribeirao Preto,Brazil,Brazil
-1093,The city of Ribeirao Preto is in China.,0,Ribeirao Preto,China,Brazil
-1094,The city of The Bronx is in the United States.,1,The Bronx,the United States,the United States
-1095,The city of The Bronx is in South Korea.,0,The Bronx,South Korea,the United States
 1096,The city of Samarkand is in Uzbekistan.,1,Samarkand,Uzbekistan,Uzbekistan
-1097,The city of Samarkand is in China.,0,Samarkand,China,Uzbekistan
-1098,The city of Da Nang is in Vietnam.,1,Da Nang,Vietnam,Vietnam
-1099,The city of Da Nang is in China.,0,Da Nang,China,Vietnam
-1100,The city of Tomsk is in Russia.,1,Tomsk,Russia,Russia
-1101,The city of Tomsk is in Ghana.,0,Tomsk,Ghana,Russia
-1102,The city of Najran is in Saudi Arabia.,1,Najran,Saudi Arabia,Saudi Arabia
-1103,The city of Najran is in India.,0,Najran,India,Saudi Arabia
-1104,The city of Bangkok is in Thailand.,1,Bangkok,Thailand,Thailand
-1105,The city of Bangkok is in China.,0,Bangkok,China,Thailand
-1106,The city of Oklahoma City is in the United States.,1,Oklahoma City,the United States,the United States
-1107,The city of Oklahoma City is in China.,0,Oklahoma City,China,the United States
-1108,The city of Izhevsk is in Russia.,1,Izhevsk,Russia,Russia
-1109,The city of Izhevsk is in Nigeria.,0,Izhevsk,Nigeria,Russia
-1110,The city of Madinat an Nasr is in Egypt.,1,Madinat an Nasr,Egypt,Egypt
-1111,The city of Madinat an Nasr is in India.,0,Madinat an Nasr,India,Egypt
-1112,The city of Yibin is in China.,1,Yibin,China,China
-1113,The city of Yibin is in Brazil.,0,Yibin,Brazil,China
-1114,The city of Sanmenxia is in China.,1,Sanmenxia,China,China
-1115,The city of Sanmenxia is in Brazil.,0,Sanmenxia,Brazil,China
-1116,The city of Rui'an is in China.,1,Rui'an,China,China
-1117,The city of Rui'an is in Indonesia.,0,Rui'an,Indonesia,China
-1118,The city of Ningbo is in China.,1,Ningbo,China,China
-1119,The city of Ningbo is in South Korea.,0,Ningbo,South Korea,China
-1120,The city of Jiujiang is in China.,1,Jiujiang,China,China
-1121,The city of Jiujiang is in Indonesia.,0,Jiujiang,Indonesia,China
-1122,The city of Jiaozuo is in China.,1,Jiaozuo,China,China
-1123,The city of Jiaozuo is in Bangladesh.,0,Jiaozuo,Bangladesh,China
-1124,The city of Jiangmen is in China.,1,Jiangmen,China,China
-1125,The city of Jiangmen is in South Korea.,0,Jiangmen,South Korea,China
-1126,The city of Huizhou is in China.,1,Huizhou,China,China
-1127,The city of Huizhou is in the United States.,0,Huizhou,the United States,China
-1128,The city of Harbin is in China.,1,Harbin,China,China
-1129,The city of Harbin is in Russia.,0,Harbin,Russia,China
-1130,The city of Herat is in Afghanistan.,1,Herat,Afghanistan,Afghanistan
-1131,The city of Herat is in China.,0,Herat,China,Afghanistan
-1132,The city of Kleinzschocher is in Germany.,1,Kleinzschocher,Germany,Germany
-1133,The city of Kleinzschocher is in Brazil.,0,Kleinzschocher,Brazil,Germany
-1134,The city of Davao is in the Philippines.,1,Davao,the Philippines,the Philippines
-1135,The city of Davao is in Brazil.,0,Davao,Brazil,the Philippines
-1136,The city of Sargodha is in Pakistan.,1,Sargodha,Pakistan,Pakistan
-1137,The city of Sargodha is in India.,0,Sargodha,India,Pakistan
-1138,The city of Islamabad is in Pakistan.,1,Islamabad,Pakistan,Pakistan
-1139,The city of Islamabad is in Japan.,0,Islamabad,Japan,Pakistan
-1140,The city of Zapopan is in Mexico.,1,Zapopan,Mexico,Mexico
-1141,The city of Zapopan is in China.,0,Zapopan,China,Mexico
-1142,The city of Visakhapatnam is in India.,1,Visakhapatnam,India,India
-1143,The city of Visakhapatnam is in Indonesia.,0,Visakhapatnam,Indonesia,India
-1144,The city of Rourkela is in India.,1,Rourkela,India,India
-1145,The city of Rourkela is in Brazil.,0,Rourkela,Brazil,India
-1146,The city of Dhanbad is in India.,1,Dhanbad,India,India
-1147,The city of Dhanbad is in Kenya.,0,Dhanbad,Kenya,India
-1148,The city of Bokaro is in India.,1,Bokaro,India,India
-1149,The city of Bokaro is in China.,0,Bokaro,China,India
-1150,The city of Tabriz is in Iran.,1,Tabriz,Iran,Iran
-1151,The city of Tabriz is in India.,0,Tabriz,India,Iran
-1152,The city of Tlaquepaque is in Mexico.,1,Tlaquepaque,Mexico,Mexico
-1153,The city of Tlaquepaque is in Japan.,0,Tlaquepaque,Japan,Mexico
-1154,The city of Victoria de Durango is in Mexico.,1,Victoria de Durango,Mexico,Mexico
-1155,The city of Victoria de Durango is in Ghana.,0,Victoria de Durango,Ghana,Mexico
-1156,The city of Kota Kinabalu is in Malaysia.,1,Kota Kinabalu,Malaysia,Malaysia
-1157,The city of Kota Kinabalu is in the United States.,0,Kota Kinabalu,the United States,Malaysia
-1158,The city of Nairobi is in Kenya.,1,Nairobi,Kenya,Kenya
-1159,The city of Nairobi is in Mexico.,0,Nairobi,Mexico,Kenya
-1160,The city of Taguig is in the Philippines.,1,Taguig,the Philippines,the Philippines
-1161,The city of Taguig is in India.,0,Taguig,India,the Philippines
-1162,The city of Rajkot is in India.,1,Rajkot,India,India
-1163,The city of Rajkot is in Russia.,0,Rajkot,Russia,India
-1164,The city of Pune is in India.,1,Pune,India,India
-1165,The city of Pune is in South Korea.,0,Pune,South Korea,India
-1166,The city of Ludhiana is in India.,1,Ludhiana,India,India
-1167,The city of Ludhiana is in Togo.,0,Ludhiana,Togo,India
-1168,The city of Jamshedpur is in India.,1,Jamshedpur,India,India
-1169,The city of Jamshedpur is in China.,0,Jamshedpur,China,India
-1170,The city of Bhiwandi is in India.,1,Bhiwandi,India,India
-1171,The city of Bhiwandi is in China.,0,Bhiwandi,China,India
-1172,The city of Erbil is in Iraq.,1,Erbil,Iraq,Iraq
-1173,The city of Erbil is in Cuba.,0,Erbil,Cuba,Iraq
-1174,The city of Chelyabinsk is in Russia.,1,Chelyabinsk,Russia,Russia
-1175,The city of Chelyabinsk is in China.,0,Chelyabinsk,China,Russia
-1176,The city of Uskudar is in Turkey.,1,Uskudar,Turkey,Turkey
-1177,The city of Uskudar is in Bulgaria.,0,Uskudar,Bulgaria,Turkey
-1178,The city of Bagcilar is in Turkey.,1,Bagcilar,Turkey,Turkey
-1179,The city of Bagcilar is in Iran.,0,Bagcilar,Iran,Turkey
-1180,The city of Quezon City is in the Philippines.,1,Quezon City,the Philippines,the Philippines
-1181,The city of Quezon City is in China.,0,Quezon City,China,the Philippines
-1182,The city of Mexico City is in Mexico.,1,Mexico City,Mexico,Mexico
-1183,The city of Mexico City is in China.,0,Mexico City,China,Mexico
-1184,The city of Leon de los Aldama is in Mexico.,1,Leon de los Aldama,Mexico,Mexico
-1185,The city of Leon de los Aldama is in China.,0,Leon de los Aldama,China,Mexico
-1186,The city of Fes is in Morocco.,1,Fes,Morocco,Morocco
-1187,The city of Fes is in Mali.,0,Fes,Mali,Morocco
-1188,The city of Surat is in India.,1,Surat,India,India
-1189,The city of Surat is in Burkina Faso.,0,Surat,Burkina Faso,India
-1190,The city of Barnaul is in Russia.,1,Barnaul,Russia,Russia
-1191,The city of Barnaul is in South Africa.,0,Barnaul,South Africa,Russia
-1192,The city of Buraydah is in Saudi Arabia.,1,Buraydah,Saudi Arabia,Saudi Arabia
-1193,The city of Buraydah is in Rwanda.,0,Buraydah,Rwanda,Saudi Arabia
-1194,The city of Bikaner is in India.,1,Bikaner,India,India
-1195,The city of Bikaner is in South Korea.,0,Bikaner,South Korea,India
-1196,The city of Mogadishu is in Somalia.,1,Mogadishu,Somalia,Somalia
-1197,The city of Mogadishu is in Iran.,0,Mogadishu,Iran,Somalia
-1198,The city of Homs is in Syria.,1,Homs,Syria,Syria
-1199,The city of Homs is in Indonesia.,0,Homs,Indonesia,Syria
-1200,The city of Port-au-Prince is in Haiti.,1,Port-au-Prince,Haiti,Haiti
-1201,The city of Port-au-Prince is in South Korea.,0,Port-au-Prince,South Korea,Haiti
-1202,The city of Thuan An is in Vietnam.,1,Thuan An,Vietnam,Vietnam
-1203,The city of Thuan An is in Mozambique.,0,Thuan An,Mozambique,Vietnam
-1204,The city of Sanaa is in Yemen.,1,Sanaa,Yemen,Yemen
-1205,The city of Sanaa is in China.,0,Sanaa,China,Yemen
-1206,The city of Pretoria is in South Africa.,1,Pretoria,South Africa,South Africa
-1207,The city of Pretoria is in India.,0,Pretoria,India,South Africa
-1208,The city of Pietermaritzburg is in South Africa.,1,Pietermaritzburg,South Africa,South Africa
-1209,The city of Pietermaritzburg is in China.,0,Pietermaritzburg,China,South Africa
+1492,The city of Al Mawsil al Jadidah is in Iraq.,1,Al Mawsil al Jadidah,Iraq,Iraq
+388,The city of Bahawalpur is in Pakistan.,1,Bahawalpur,Pakistan,Pakistan
+684,The city of Anshun is in China.,1,Anshun,China,China
+806,The city of Frankfurt am Main is in Germany.,1,Frankfurt am Main,Germany,Germany
+817,The city of Londrina is in India.,0,Londrina,India,Brazil
+1444,The city of Haiphong is in Vietnam.,1,Haiphong,Vietnam,Vietnam
 1210,The city of Abu Dhabi is in the United Arab Emirates.,1,Abu Dhabi,the United Arab Emirates,the United Arab Emirates
-1211,The city of Abu Dhabi is in Oman.,0,Abu Dhabi,Oman,the United Arab Emirates
-1212,The city of Sao Paulo is in Brazil.,1,Sao Paulo,Brazil,Brazil
-1213,The city of Sao Paulo is in China.,0,Sao Paulo,China,Brazil
-1214,The city of Lianyungang is in China.,1,Lianyungang,China,China
-1215,The city of Lianyungang is in the Philippines.,0,Lianyungang,the Philippines,China
-1216,The city of Xiaogan is in China.,1,Xiaogan,China,China
-1217,The city of Xiaogan is in Ukraine.,0,Xiaogan,Ukraine,China
-1218,The city of Taicang is in China.,1,Taicang,China,China
-1219,The city of Taicang is in Madagascar.,0,Taicang,Madagascar,China
-1220,The city of Guiyang is in China.,1,Guiyang,China,China
-1221,The city of Guiyang is in South Korea.,0,Guiyang,South Korea,China
-1222,The city of Ganzhou is in China.,1,Ganzhou,China,China
-1223,The city of Ganzhou is in South Korea.,0,Ganzhou,South Korea,China
-1224,The city of Shangyu is in China.,1,Shangyu,China,China
-1225,The city of Shangyu is in the United Arab Emirates.,0,Shangyu,the United Arab Emirates,China
-1226,The city of Jambi City is in Indonesia.,1,Jambi City,Indonesia,Indonesia
-1227,The city of Jambi City is in China.,0,Jambi City,China,Indonesia
-1228,The city of Indianapolis is in the United States.,1,Indianapolis,the United States,the United States
-1229,The city of Indianapolis is in Côte d'Ivoire.,0,Indianapolis,Côte d'Ivoire,the United States
-1230,The city of New York City is in the United States.,1,New York City,the United States,the United States
-1231,The city of New York City is in India.,0,New York City,India,the United States
-1232,The city of Bulawayo is in Zimbabwe.,1,Bulawayo,Zimbabwe,Zimbabwe
-1233,The city of Bulawayo is in China.,0,Bulawayo,China,Zimbabwe
-1234,The city of Santiago de Cuba is in Cuba.,1,Santiago de Cuba,Cuba,Cuba
-1235,The city of Santiago de Cuba is in India.,0,Santiago de Cuba,India,Cuba
-1236,The city of Quito is in Ecuador.,1,Quito,Ecuador,Ecuador
-1237,The city of Quito is in China.,0,Quito,China,Ecuador
-1238,The city of Shubra al Khaymah is in Egypt.,1,Shubra al Khaymah,Egypt,Egypt
-1239,The city of Shubra al Khaymah is in Nigeria.,0,Shubra al Khaymah,Nigeria,Egypt
-1240,The city of Al Mahallah al Kubra is in Egypt.,1,Al Mahallah al Kubra,Egypt,Egypt
-1241,The city of Al Mahallah al Kubra is in Afghanistan.,0,Al Mahallah al Kubra,Afghanistan,Egypt
-1242,The city of Suining is in China.,1,Suining,China,China
-1243,The city of Suining is in Algeria.,0,Suining,Algeria,China
-1244,The city of Guankou is in China.,1,Guankou,China,China
-1245,The city of Guankou is in Pakistan.,0,Guankou,Pakistan,China
-1246,The city of Langfang is in China.,1,Langfang,China,China
-1247,The city of Langfang is in India.,0,Langfang,India,China
-1248,The city of Jinan is in China.,1,Jinan,China,China
-1249,The city of Jinan is in Rwanda.,0,Jinan,Rwanda,China
-1250,The city of Guigang is in China.,1,Guigang,China,China
-1251,The city of Guigang is in Japan.,0,Guigang,Japan,China
-1252,The city of Dalian is in China.,1,Dalian,China,China
-1253,The city of Dalian is in Saudi Arabia.,0,Dalian,Saudi Arabia,China
-1254,The city of Chongqing is in China.,1,Chongqing,China,China
-1255,The city of Chongqing is in Sweden.,0,Chongqing,Sweden,China
-1256,The city of Homyel' is in Belarus.,1,Homyel',Belarus,Belarus
-1257,The city of Homyel' is in Iran.,0,Homyel',Iran,Belarus
-1258,The city of Winnipeg is in Canada.,1,Winnipeg,Canada,Canada
-1259,The city of Winnipeg is in Mexico.,0,Winnipeg,Mexico,Canada
-1260,The city of Klang is in Malaysia.,1,Klang,Malaysia,Malaysia
-1261,The city of Klang is in China.,0,Klang,China,Malaysia
-1262,The city of Irbid is in Jordan.,1,Irbid,Jordan,Jordan
+897,The city of Al Ain City is in India.,0,Al Ain City,India,the United Arab Emirates
+1277,The city of Makassar is in China.,0,Makassar,China,Indonesia
+788,The city of Port Said is in Egypt.,1,Port Said,Egypt,Egypt
+373,The city of Campos dos Goytacazes is in Vietnam.,0,Campos dos Goytacazes,Vietnam,Brazil
+892,The city of Foshan is in China.,1,Foshan,China,China
+1384,The city of Faridabad is in India.,1,Faridabad,India,India
+255,The city of Daegu is in the United States.,0,Daegu,the United States,South Korea
+553,The city of Cheonan is in Myanmar.,0,Cheonan,Myanmar,South Korea
+730,The city of Cimahi is in Indonesia.,1,Cimahi,Indonesia,Indonesia
 1263,The city of Irbid is in India.,0,Irbid,India,Jordan
-1264,The city of Bishkek is in Kyrgyzstan.,1,Bishkek,Kyrgyzstan,Kyrgyzstan
-1265,The city of Bishkek is in Germany.,0,Bishkek,Germany,Kyrgyzstan
+843,The city of Latakia is in Somalia.,0,Latakia,Somalia,Syria
+647,The city of Anyang is in Kuwait.,0,Anyang,Kuwait,China
+870,The city of Moradabad is in India.,1,Moradabad,India,India
+1463,The city of Rostov-na-Donu is in the United Arab Emirates.,0,Rostov-na-Donu,the United Arab Emirates,Russia
+258,The city of Ranchi is in India.,1,Ranchi,India,India
+1004,The city of Ciudad Guayana is in Venezuela.,1,Ciudad Guayana,Venezuela,Venezuela
+1086,The city of Uberlandia is in Brazil.,1,Uberlandia,Brazil,Brazil
+742,The city of Malatya is in Turkey.,1,Malatya,Turkey,Turkey
+386,The city of Kano is in Nigeria.,1,Kano,Nigeria,Nigeria
+1190,The city of Barnaul is in Russia.,1,Barnaul,Russia,Russia
+1480,The city of Changchun is in China.,1,Changchun,China,China
+783,The city of Pontianak is in India.,0,Pontianak,India,Indonesia
+969,The city of Seattle is in Yemen.,0,Seattle,Yemen,the United States
+1162,The city of Rajkot is in India.,1,Rajkot,India,India
+1003,The city of Ryazan' is in South Korea.,0,Ryazan',South Korea,Russia
+306,The city of Zahedan is in Iran.,1,Zahedan,Iran,Iran
+1446,The city of Cape Town is in South Africa.,1,Cape Town,South Africa,South Africa
+1465,The city of Ibague is in Finland.,0,Ibague,Finland,Colombia
+679,The city of Xiamen is in Pakistan.,0,Xiamen,Pakistan,China
+1453,The city of Maiduguri is in China.,0,Maiduguri,China,Nigeria
+655,The city of Beijing is in Ghana.,0,Beijing,Ghana,China
+1044,The city of Jingmen is in China.,1,Jingmen,China,China
+1313,The city of Daqing is in Brazil.,0,Daqing,Brazil,China
+234,The city of Baotou is in China.,1,Baotou,China,China
+34,The city of Tokyo is in Japan.,1,Tokyo,Japan,Japan
+1430,The city of Rawalpindi is in Pakistan.,1,Rawalpindi,Pakistan,Pakistan
+1159,The city of Nairobi is in Mexico.,0,Nairobi,Mexico,Kenya
+419,The city of Ghaziabad is in South Korea.,0,Ghaziabad,South Korea,India
+110,The city of Belo Horizonte is in Brazil.,1,Belo Horizonte,Brazil,Brazil
+802,The city of Longyan is in China.,1,Longyan,China,China
+842,The city of Latakia is in Syria.,1,Latakia,Syria,Syria
+698,The city of Cotonou is in Benin.,1,Cotonou,Benin,Benin
+166,The city of Zhenjiang is in China.,1,Zhenjiang,China,China
+947,The city of Meknes is in China.,0,Meknes,China,Morocco
+312,The city of Shaoguan is in China.,1,Shaoguan,China,China
+699,The city of Cotonou is in China.,0,Cotonou,China,Benin
+428,The city of Omsk is in Russia.,1,Omsk,Russia,Russia
+1160,The city of Taguig is in the Philippines.,1,Taguig,the Philippines,the Philippines
+1028,The city of Brazzaville is in the Republic of the Congo.,1,Brazzaville,the Republic of the Congo,the Republic of the Congo
+11,The city of Addis Ababa is in Indonesia.,0,Addis Ababa,Indonesia,Ethiopia
+180,The city of Anshan is in China.,1,Anshan,China,China
+793,The city of Ziyang is in Belgium.,0,Ziyang,Belgium,China
+693,The city of Minsk is in South Korea.,0,Minsk,South Korea,Belarus
+252,The city of Kumamoto is in Japan.,1,Kumamoto,Japan,Japan
+533,The city of Mbuji-Mayi is in Pakistan.,0,Mbuji-Mayi,Pakistan,the Democratic Republic of the Congo
+1393,The city of Denpasar is in Brazil.,0,Denpasar,Brazil,Indonesia
+478,The city of Weihai is in China.,1,Weihai,China,China
+71,The city of Zhabei is in Afghanistan.,0,Zhabei,Afghanistan,China
+727,The city of Petaling Jaya is in Bosnia and Herzegovina.,0,Petaling Jaya,Bosnia and Herzegovina,Malaysia
+593,The city of Douala is in Russia.,0,Douala,Russia,Cameroon
+1176,The city of Uskudar is in Turkey.,1,Uskudar,Turkey,Turkey
+118,The city of Malacca is in Malaysia.,1,Malacca,Malaysia,Malaysia
+518,The city of Almaty is in Kazakhstan.,1,Almaty,Kazakhstan,Kazakhstan
+1417,The city of Mar del Plata is in Nigeria.,0,Mar del Plata,Nigeria,Argentina
+1140,The city of Zapopan is in Mexico.,1,Zapopan,Mexico,Mexico
+1286,The city of Asuncion is in Paraguay.,1,Asuncion,Paraguay,Paraguay
+1209,The city of Pietermaritzburg is in China.,0,Pietermaritzburg,China,South Africa
+254,The city of Daegu is in South Korea.,1,Daegu,South Korea,South Korea
+242,The city of Mexicali is in Mexico.,1,Mexicali,Mexico,Mexico
+285,The city of Eskisehir is in China.,0,Eskisehir,China,Turkey
+144,The city of Torreon is in Mexico.,1,Torreon,Mexico,Mexico
+1192,The city of Buraydah is in Saudi Arabia.,1,Buraydah,Saudi Arabia,Saudi Arabia
+596,The city of Zibo is in China.,1,Zibo,China,China
+173,The city of Tianjin is in Bangladesh.,0,Tianjin,Bangladesh,China
+733,The city of Arequipa is in India.,0,Arequipa,India,Peru
+860,The city of Vladivostok is in Russia.,1,Vladivostok,Russia,Russia
+1242,The city of Suining is in China.,1,Suining,China,China
+1458,The city of Las Pinas is in the Philippines.,1,Las Pinas,the Philippines,the Philippines
+832,The city of Fushun is in China.,1,Fushun,China,China
+65,The city of Solapur is in the United States.,0,Solapur,the United States,India
+1038,The city of Kozhikode is in India.,1,Kozhikode,India,India
+416,The city of Cheongju-si is in South Korea.,1,Cheongju-si,South Korea,South Korea
+479,The city of Weihai is in Russia.,0,Weihai,Russia,China
+393,The city of Pyongyang is in Argentina.,0,Pyongyang,Argentina,North Korea
+82,The city of Bucaramanga is in Colombia.,1,Bucaramanga,Colombia,Colombia
+704,The city of Feira de Santana is in Brazil.,1,Feira de Santana,Brazil,Brazil
+1491,The city of Kirkuk is in China.,0,Kirkuk,China,Iraq
+1309,The city of Baise is in Japan.,0,Baise,Japan,China
+1344,The city of Omdurman is in Sudan.,1,Omdurman,Sudan,Sudan
+172,The city of Tianjin is in China.,1,Tianjin,China,China
+1132,The city of Kleinzschocher is in Germany.,1,Kleinzschocher,Germany,Germany
+1440,The city of Managua is in Nicaragua.,1,Managua,Nicaragua,Nicaragua
+539,The city of Kigali is in Indonesia.,0,Kigali,Indonesia,Rwanda
+1030,The city of Sorocaba is in Brazil.,1,Sorocaba,Brazil,Brazil
+577,The city of Luohe is in Brazil.,0,Luohe,Brazil,China
+989,The city of Cangzhou is in Germany.,0,Cangzhou,Germany,China
+660,The city of Sangli is in India.,1,Sangli,India,India
+621,The city of Shizuoka is in China.,0,Shizuoka,China,Japan
+1224,The city of Shangyu is in China.,1,Shangyu,China,China
+1173,The city of Erbil is in Cuba.,0,Erbil,Cuba,Iraq
+541,The city of Diyarbakir is in Colombia.,0,Diyarbakir,Colombia,Turkey
+434,The city of Siliguri is in India.,1,Siliguri,India,India
+193,The city of Suez is in Brazil.,0,Suez,Brazil,Egypt
+686,The city of Siping is in China.,1,Siping,China,China
+1377,The city of Bucheon-si is in Romania.,0,Bucheon-si,Romania,South Korea
+484,The city of Zhangjiakou is in China.,1,Zhangjiakou,China,China
+611,The city of Zagreb is in Japan.,0,Zagreb,Japan,Croatia
+30,The city of Guatemala City is in Guatemala.,1,Guatemala City,Guatemala,Guatemala
+411,The city of Peshawar is in Tanzania.,0,Peshawar,Tanzania,Pakistan
+39,The city of Ulsan is in South Africa.,0,Ulsan,South Africa,South Korea
+790,The city of Asyut is in Egypt.,1,Asyut,Egypt,Egypt
+45,The city of Nowrangapur is in Vietnam.,0,Nowrangapur,Vietnam,India
+2,The city of Lodz is in Poland.,1,Lodz,Poland,Poland
+262,The city of Bhayandar is in India.,1,Bhayandar,India,India
+1002,The city of Ryazan' is in Russia.,1,Ryazan',Russia,Russia
+1347,The city of Khartoum is in China.,0,Khartoum,China,Sudan
+1345,The city of Omdurman is in South Korea.,0,Omdurman,South Korea,Sudan
+731,The city of Cimahi is in Germany.,0,Cimahi,Germany,Indonesia
+55,The city of Niigata is in Yemen.,0,Niigata,Yemen,Japan
+571,The city of Zunyi is in Senegal.,0,Zunyi,Senegal,China
+103,The city of Perm is in China.,0,Perm,China,Russia
+469,The city of Puente Alto is in China.,0,Puente Alto,China,Chile
+213,The city of Tashkent is in Mexico.,0,Tashkent,Mexico,Uzbekistan
+251,The city of Maputo is in Japan.,0,Maputo,Japan,Mozambique
+899,The city of Kalininskiy is in Japan.,0,Kalininskiy,Japan,Russia
+440,The city of Krakow is in Poland.,1,Krakow,Poland,Poland
+450,The city of Bouake is in Côte d'Ivoire.,1,Bouake,Côte d'Ivoire,Côte d'Ivoire
+348,The city of Shangqiu is in China.,1,Shangqiu,China,China
+93,The city of Odesa is in China.,0,Odesa,China,Ukraine
+1001,The city of Caloocan City is in China.,0,Caloocan City,China,the Philippines
+297,The city of Santiago de los Caballeros is in India.,0,Santiago de los Caballeros,India,the Dominican Republic
+1148,The city of Bokaro is in India.,1,Bokaro,India,India
+829,The city of Ma'anshan is in India.,0,Ma'anshan,India,China
+278,The city of Accra is in Ghana.,1,Accra,Ghana,Ghana
+1183,The city of Mexico City is in China.,0,Mexico City,China,Mexico
+487,The city of Mississauga is in India.,0,Mississauga,India,Canada
+648,The city of Qinhuangdao is in China.,1,Qinhuangdao,China,China
+1014,The city of Wuzhou is in China.,1,Wuzhou,China,China
+700,The city of Comilla is in Bangladesh.,1,Comilla,Bangladesh,Bangladesh
+13,The city of Abidjan is in China.,0,Abidjan,China,Côte d'Ivoire
+136,The city of Acapulco de Juarez is in Mexico.,1,Acapulco de Juarez,Mexico,Mexico
+992,The city of Helsinki is in Finland.,1,Helsinki,Finland,Finland
+589,The city of Pekanbaru is in India.,0,Pekanbaru,India,Indonesia
+311,The city of Changde is in Mexico.,0,Changde,Mexico,China
+912,The city of Riga is in Latvia.,1,Riga,Latvia,Latvia
+1311,The city of Shenyang is in Somalia.,0,Shenyang,Somalia,China
+1340,The city of Arak is in Iran.,1,Arak,Iran,Iran
+96,The city of Boumerdes is in Algeria.,1,Boumerdes,Algeria,Algeria
+683,The city of Maoming is in Brazil.,0,Maoming,Brazil,China
+725,The city of Conakry is in Belarus.,0,Conakry,Belarus,Guinea
+844,The city of Ashgabat is in Turkmenistan.,1,Ashgabat,Turkmenistan,Turkmenistan
+929,The city of Urumqi is in Vietnam.,0,Urumqi,Vietnam,China
+1131,The city of Herat is in China.,0,Herat,China,Afghanistan
+305,The city of Orumiyeh is in Saudi Arabia.,0,Orumiyeh,Saudi Arabia,Iran
+1090,The city of Rio de Janeiro is in Brazil.,1,Rio de Janeiro,Brazil,Brazil
+1020,The city of Wuwei is in China.,1,Wuwei,China,China
+6,The city of Baku is in Azerbaijan.,1,Baku,Azerbaijan,Azerbaijan
+1185,The city of Leon de los Aldama is in China.,0,Leon de los Aldama,China,Mexico
+293,The city of Irkutsk is in Morocco.,0,Irkutsk,Morocco,Russia
+489,The city of Yerevan is in Bangladesh.,0,Yerevan,Bangladesh,Armenia
+681,The city of Shenzhen is in Mexico.,0,Shenzhen,Mexico,China
+939,The city of Amman is in Malaysia.,0,Amman,Malaysia,Jordan
+463,The city of Chuzhou is in India.,0,Chuzhou,India,China
+1062,The city of Faisalabad is in Pakistan.,1,Faisalabad,Pakistan,Pakistan
+467,The city of Tembisa is in the Philippines.,0,Tembisa,the Philippines,South Africa
+1247,The city of Langfang is in India.,0,Langfang,India,China
+613,The city of Hannover is in China.,0,Hannover,China,Germany
+521,The city of Pimpri is in China.,0,Pimpri,China,India
+1105,The city of Bangkok is in China.,0,Bangkok,China,Thailand
+509,The city of Nanjing is in Germany.,0,Nanjing,Germany,China
+1202,The city of Thuan An is in Vietnam.,1,Thuan An,Vietnam,Vietnam
+284,The city of Eskisehir is in Turkey.,1,Eskisehir,Turkey,Turkey
+735,The city of Multan is in Ecuador.,0,Multan,Ecuador,Pakistan
+1172,The city of Erbil is in Iraq.,1,Erbil,Iraq,Iraq
+1026,The city of Jiangyin is in China.,1,Jiangyin,China,China
+121,The city of Busan is in Brazil.,0,Busan,Brazil,South Korea
+511,The city of Kaifeng is in Mexico.,0,Kaifeng,Mexico,China
+934,The city of Nova Iguacu is in Brazil.,1,Nova Iguacu,Brazil,Brazil
+561,The city of General Santos is in China.,0,General Santos,China,the Philippines
+1110,The city of Madinat an Nasr is in Egypt.,1,Madinat an Nasr,Egypt,Egypt
+410,The city of Peshawar is in Pakistan.,1,Peshawar,Pakistan,Pakistan
+221,The city of Cucuta is in India.,0,Cucuta,India,Colombia
+851,The city of Mumbai is in China.,0,Mumbai,China,India
+1282,The city of Dushanbe is in Tajikistan.,1,Dushanbe,Tajikistan,Tajikistan
+979,The city of Pingliang is in Tanzania.,0,Pingliang,Tanzania,China
+795,The city of Yinchuan is in Bangladesh.,0,Yinchuan,Bangladesh,China
+606,The city of Leipzig is in Germany.,1,Leipzig,Germany,Germany
+401,The city of Zaporizhzhya is in South Korea.,0,Zaporizhzhya,South Korea,Ukraine
+1291,The city of Zhuzhou is in France.,0,Zhuzhou,France,China
+315,The city of Jilin is in the United States.,0,Jilin,the United States,China
+900,The city of Mersin is in Turkey.,1,Mersin,Turkey,Turkey
+935,The city of Nova Iguacu is in India.,0,Nova Iguacu,India,Brazil
+1439,The city of Ibadan is in Malaysia.,0,Ibadan,Malaysia,Nigeria
+685,The city of Anshun is in Brazil.,0,Anshun,Brazil,China
+409,The city of Warri is in China.,0,Warri,China,Nigeria
+1418,The city of Salta is in Argentina.,1,Salta,Argentina,Argentina
+657,The city of Shah Alam is in China.,0,Shah Alam,China,Malaysia
+1432,The city of Karachi is in Pakistan.,1,Karachi,Pakistan,Pakistan
+517,The city of Jeonju is in the United States.,0,Jeonju,the United States,South Korea
+112,The city of Poznan is in Poland.,1,Poznan,Poland,Poland
+1258,The city of Winnipeg is in Canada.,1,Winnipeg,Canada,Canada
+512,The city of Heze is in China.,1,Heze,China,China
+1323,The city of Duque de Caxias is in Côte d'Ivoire.,0,Duque de Caxias,Côte d'Ivoire,Brazil
+154,The city of Ahvaz is in Iran.,1,Ahvaz,Iran,Iran
+1217,The city of Xiaogan is in Ukraine.,0,Xiaogan,Ukraine,China
+988,The city of Cangzhou is in China.,1,Cangzhou,China,China
+31,The city of Guatemala City is in Croatia.,0,Guatemala City,Croatia,Guatemala
+942,The city of Fukuoka is in Japan.,1,Fukuoka,Japan,Japan
+1027,The city of Jiangyin is in Bulgaria.,0,Jiangyin,Bulgaria,China
+1280,The city of Dammam is in Saudi Arabia.,1,Dammam,Saudi Arabia,Saudi Arabia
+654,The city of Beijing is in China.,1,Beijing,China,China
+94,The city of Fort Worth is in the United States.,1,Fort Worth,the United States,the United States
+628,The city of Meerut is in India.,1,Meerut,India,India
+926,The city of Santa Maria Chimalhuacan is in Mexico.,1,Santa Maria Chimalhuacan,Mexico,Mexico
+1486,The city of Bhopal is in India.,1,Bhopal,India,India
+846,The city of Maracaibo is in Venezuela.,1,Maracaibo,Venezuela,Venezuela
+981,The city of Puning is in India.,0,Puning,India,China
+1181,The city of Quezon City is in China.,0,Quezon City,China,the Philippines
+760,The city of Nouakchott is in Mauritania.,1,Nouakchott,Mauritania,Mauritania
+676,The city of Zaozhuang is in China.,1,Zaozhuang,China,China
+1460,The city of Reynosa is in Mexico.,1,Reynosa,Mexico,Mexico
+1206,The city of Pretoria is in South Africa.,1,Pretoria,South Africa,South Africa
+322,The city of Agadir is in Morocco.,1,Agadir,Morocco,Morocco
+906,The city of Koeln is in Germany.,1,Koeln,Germany,Germany
+652,The city of Yangjiang is in China.,1,Yangjiang,China,China
+332,The city of Balikpapan is in Indonesia.,1,Balikpapan,Indonesia,Indonesia
 1266,The city of Muzaffarabad is in Pakistan.,1,Muzaffarabad,Pakistan,Pakistan
+819,The city of Zigong is in Turkey.,0,Zigong,Turkey,China
+32,The city of Bauchi is in Nigeria.,1,Bauchi,Nigeria,Nigeria
+1141,The city of Zapopan is in China.,0,Zapopan,China,Mexico
+1029,The city of Brazzaville is in Nigeria.,0,Brazzaville,Nigeria,the Republic of the Congo
+275,The city of Jabalpur is in Ukraine.,0,Jabalpur,Ukraine,India
+1264,The city of Bishkek is in Kyrgyzstan.,1,Bishkek,Kyrgyzstan,Kyrgyzstan
+36,The city of Mombasa is in Kenya.,1,Mombasa,Kenya,Kenya
+406,The city of Kuala Lumpur is in Malaysia.,1,Kuala Lumpur,Malaysia,Malaysia
+950,The city of Kalyan is in India.,1,Kalyan,India,India
+176,The city of Hangzhou is in China.,1,Hangzhou,China,China
+1070,The city of Thiruvananthapuram is in India.,1,Thiruvananthapuram,India,India
+446,The city of Tucson is in the United States.,1,Tucson,the United States,the United States
+107,The city of Konya is in Russia.,0,Konya,Russia,Turkey
+73,The city of Liaocheng is in South Korea.,0,Liaocheng,South Korea,China
+1420,The city of Bujumbura is in Burundi.,1,Bujumbura,Burundi,Burundi
+1031,The city of Sorocaba is in Mexico.,0,Sorocaba,Mexico,Brazil
+18,The city of Lu'an is in China.,1,Lu'an,China,China
+617,The city of Matola is in India.,0,Matola,India,Mozambique
+902,The city of Guayaquil is in Ecuador.,1,Guayaquil,Ecuador,Ecuador
+643,The city of Johannesburg is in China.,0,Johannesburg,China,South Africa
+659,The city of Vadodara is in Russia.,0,Vadodara,Russia,India
+758,The city of Phnom Penh is in Cambodia.,1,Phnom Penh,Cambodia,Cambodia
+1487,The city of Bhopal is in Russia.,0,Bhopal,Russia,India
+707,The city of Porto Alegre is in Belarus.,0,Porto Alegre,Belarus,Brazil
+1400,The city of Xingtai is in China.,1,Xingtai,China,China
+618,The city of Enugu is in Nigeria.,1,Enugu,Nigeria,Nigeria
+728,The city of Zaria is in Nigeria.,1,Zaria,Nigeria,Nigeria
+122,The city of Seongnam-si is in South Korea.,1,Seongnam-si,South Korea,South Korea
+687,The city of Siping is in Iraq.,0,Siping,Iraq,China
+1381,The city of Nay Pyi Taw is in Mozambique.,0,Nay Pyi Taw,Mozambique,Myanmar
+205,The city of Lipetsk is in China.,0,Lipetsk,China,Russia
+1448,The city of Ipoh is in Malaysia.,1,Ipoh,Malaysia,Malaysia
+219,The city of Xuzhou is in Mexico.,0,Xuzhou,Mexico,China
+1127,The city of Huizhou is in the United States.,0,Huizhou,the United States,China
+202,The city of Sevastopol is in Ukraine.,1,Sevastopol,Ukraine,Ukraine
+1391,The city of Jakarta is in Colombia.,0,Jakarta,Colombia,Indonesia
+323,The city of Agadir is in Bangladesh.,0,Agadir,Bangladesh,Morocco
+949,The city of Antananarivo is in Germany.,0,Antananarivo,Germany,Madagascar
+29,The city of Panshan is in Japan.,0,Panshan,Japan,China
+63,The city of Thane is in China.,0,Thane,China,India
+1056,The city of Antwerpen is in Belgium.,1,Antwerpen,Belgium,Belgium
+224,The city of Tangshan is in China.,1,Tangshan,China,China
+444,The city of Bandar Lampung is in Indonesia.,1,Bandar Lampung,Indonesia,Indonesia
+54,The city of Niigata is in Japan.,1,Niigata,Japan,Japan
+893,The city of Foshan is in Mozambique.,0,Foshan,Mozambique,China
+876,The city of Turin is in Italy.,1,Turin,Italy,Italy
+1112,The city of Yibin is in China.,1,Yibin,China,China
+239,The city of Kinshasa is in Brazil.,0,Kinshasa,Brazil,the Democratic Republic of the Congo
+772,The city of Changshu is in China.,1,Changshu,China,China
+157,The city of Kumasi is in India.,0,Kumasi,India,Ghana
+325,The city of Ulan Bator is in Ukraine.,0,Ulan Bator,Ukraine,Mongolia
+195,The city of Giza is in India.,0,Giza,India,Egypt
+75,The city of Jiaozhou is in Latvia.,0,Jiaozhou,Latvia,China
+757,The city of Chiclayo is in Venezuela.,0,Chiclayo,Venezuela,Peru
+1481,The city of Changchun is in Germany.,0,Changchun,Germany,China
+972,The city of Kryvyy Rih is in Ukraine.,1,Kryvyy Rih,Ukraine,Ukraine
+200,The city of Harare is in Zimbabwe.,1,Harare,Zimbabwe,Zimbabwe
+164,The city of Lahore is in Pakistan.,1,Lahore,Pakistan,Pakistan
+1369,The city of Caracas is in Sudan.,0,Caracas,Sudan,Venezuela
+449,The city of Can Tho is in Venezuela.,0,Can Tho,Venezuela,Vietnam
+1366,The city of Queens is in the United States.,1,Queens,the United States,the United States
+771,The city of Chennai is in China.,0,Chennai,China,India
+1262,The city of Irbid is in Jordan.,1,Irbid,Jordan,Jordan
+1200,The city of Port-au-Prince is in Haiti.,1,Port-au-Prince,Haiti,Haiti
+828,The city of Ma'anshan is in China.,1,Ma'anshan,China,China
+1115,The city of Sanmenxia is in Brazil.,0,Sanmenxia,Brazil,China
+1254,The city of Chongqing is in China.,1,Chongqing,China,China
+43,The city of Tiruchirappalli is in Iraq.,0,Tiruchirappalli,Iraq,India
+108,The city of Macapa is in Brazil.,1,Macapa,Brazil,Brazil
+294,The city of Libreville is in Gabon.,1,Libreville,Gabon,Gabon
+691,The city of Jiamusi is in Germany.,0,Jiamusi,Germany,China
+1474,The city of Shijiazhuang is in China.,1,Shijiazhuang,China,China
+1468,The city of Xinyang is in China.,1,Xinyang,China,China
+1364,The city of San Pedro Sula is in Honduras.,1,San Pedro Sula,Honduras,Honduras
+792,The city of Ziyang is in China.,1,Ziyang,China,China
+61,The city of Tirunelveli is in China.,0,Tirunelveli,China,India
+1186,The city of Fes is in Morocco.,1,Fes,Morocco,Morocco
+353,The city of Xuanzhou is in Tanzania.,0,Xuanzhou,Tanzania,China
+214,The city of Maturin is in Venezuela.,1,Maturin,Venezuela,Venezuela
+347,The city of Joao Pessoa is in South Africa.,0,Joao Pessoa,South Africa,Brazil
+287,The city of Antalya is in Germany.,0,Antalya,Germany,Turkey
+414,The city of Hamamatsu is in Japan.,1,Hamamatsu,Japan,Japan
+1387,The city of Kolkata is in Japan.,0,Kolkata,Japan,India
+556,The city of Culiacan is in Mexico.,1,Culiacan,Mexico,Mexico
+615,The city of Penza is in China.,0,Penza,China,Russia
+72,The city of Liaocheng is in China.,1,Liaocheng,China,China
+227,The city of Neijiang is in Ghana.,0,Neijiang,Ghana,China
+563,The city of Ebute Ikorodu is in China.,0,Ebute Ikorodu,China,Nigeria
+217,The city of Hanoi is in Poland.,0,Hanoi,Poland,Vietnam
+52,The city of Serang is in Indonesia.,1,Serang,Indonesia,Indonesia
+426,The city of Hamadan is in Iran.,1,Hamadan,Iran,Iran
+1298,The city of Shangluo is in China.,1,Shangluo,China,China
+661,The city of Sangli is in Japan.,0,Sangli,Japan,India
+1063,The city of Faisalabad is in India.,0,Faisalabad,India,Pakistan
+355,The city of Wuhan is in Egypt.,0,Wuhan,Egypt,China
+338,The city of Ulyanovsk is in Russia.,1,Ulyanovsk,Russia,Russia
+1036,The city of Tiruppur is in India.,1,Tiruppur,India,India
+1011,The city of Soweto is in Gabon.,0,Soweto,Gabon,South Africa
+381,The city of Coyoacan is in Kenya.,0,Coyoacan,Kenya,Mexico
+396,The city of Tlalpan is in Mexico.,1,Tlalpan,Mexico,Mexico
+694,The city of Lubumbashi is in the Democratic Republic of the Congo.,1,Lubumbashi,the Democratic Republic of the Congo,the Democratic Republic of the Congo
+417,The city of Cheongju-si is in India.,0,Cheongju-si,India,South Korea
+1305,The city of Lanzhou is in Mexico.,0,Lanzhou,Mexico,China
+1108,The city of Izhevsk is in Russia.,1,Izhevsk,Russia,Russia
+1046,The city of Huangshi is in China.,1,Huangshi,China,China
+957,The city of Bhilai is in Venezuela.,0,Bhilai,Venezuela,India
+896,The city of Al Ain City is in the United Arab Emirates.,1,Al Ain City,the United Arab Emirates,the United Arab Emirates
+1410,The city of Fuxin is in China.,1,Fuxin,China,China
+1042,The city of Suizhou is in China.,1,Suizhou,China,China
+523,The city of Navi Mumbai is in China.,0,Navi Mumbai,China,India
+1332,The city of Mysore is in India.,1,Mysore,India,India
+537,The city of Yaroslavl is in India.,0,Yaroslavl,India,Russia
+1032,The city of Aktobe is in Kazakhstan.,1,Aktobe,Kazakhstan,Kazakhstan
+44,The city of Nowrangapur is in India.,1,Nowrangapur,India,India
+290,The city of Khabarovsk is in Russia.,1,Khabarovsk,Russia,Russia
+429,The city of Omsk is in China.,0,Omsk,China,Russia
+809,The city of Lusaka is in Poland.,0,Lusaka,Poland,Zambia
+441,The city of Krakow is in South Korea.,0,Krakow,South Korea,Poland
+797,The city of Zhangjiagang is in Brazil.,0,Zhangjiagang,Brazil,China
+540,The city of Diyarbakir is in Turkey.,1,Diyarbakir,Turkey,Turkey
+269,The city of Al Fayyum is in Chile.,0,Al Fayyum,Chile,Egypt
+1236,The city of Quito is in Ecuador.,1,Quito,Ecuador,Ecuador
+1119,The city of Ningbo is in South Korea.,0,Ningbo,South Korea,China
+319,The city of Jaboatao dos Guararapes is in Myanmar.,0,Jaboatao dos Guararapes,Myanmar,Brazil
+1025,The city of Handan is in Russia.,0,Handan,Russia,China
+1343,The city of Ilorin is in Ukraine.,0,Ilorin,Ukraine,Nigeria
+554,The city of San Luis Potosi is in Mexico.,1,San Luis Potosi,Mexico,Mexico
+437,The city of Baghdad is in China.,0,Baghdad,China,Iraq
+1089,The city of Curitiba is in India.,0,Curitiba,India,Brazil
+1438,The city of Ibadan is in Nigeria.,1,Ibadan,Nigeria,Nigeria
+447,The city of Tucson is in Canada.,0,Tucson,Canada,the United States
+976,The city of Quzhou is in China.,1,Quzhou,China,China
+1142,The city of Visakhapatnam is in India.,1,Visakhapatnam,India,India
+1158,The city of Nairobi is in Kenya.,1,Nairobi,Kenya,Kenya
+1198,The city of Homs is in Syria.,1,Homs,Syria,Syria
+1473,The city of Wanning is in the United States.,0,Wanning,the United States,China
+774,The city of Tehran is in Iran.,1,Tehran,Iran,Iran
+1182,The city of Mexico City is in Mexico.,1,Mexico City,Mexico,Mexico
+24,The city of Anqing is in China.,1,Anqing,China,China
+199,The city of Mukalla is in Iran.,0,Mukalla,Iran,Yemen
+580,The city of Cixi is in China.,1,Cixi,China,China
+500,The city of Sao Jose dos Campos is in Brazil.,1,Sao Jose dos Campos,Brazil,Brazil
+1414,The city of Mazar-e Sharif is in Afghanistan.,1,Mazar-e Sharif,Afghanistan,Afghanistan
+77,The city of Guilin is in the Dominican Republic.,0,Guilin,the Dominican Republic,China
+682,The city of Maoming is in China.,1,Maoming,China,China
+736,The city of Bahcelievler is in Turkey.,1,Bahcelievler,Turkey,Turkey
+1164,The city of Pune is in India.,1,Pune,India,India
+1,The city of Krasnodar is in South Africa.,0,Krasnodar,South Africa,Russia
+22,The city of Huaihua is in China.,1,Huaihua,China,China
+363,The city of Guangyuan is in Mexico.,0,Guangyuan,Mexico,China
+1476,The city of Laiwu is in China.,1,Laiwu,China,China
+1088,The city of Curitiba is in Brazil.,1,Curitiba,Brazil,Brazil
+548,The city of Sapporo is in Japan.,1,Sapporo,Japan,Japan
+1405,The city of Nanning is in Japan.,0,Nanning,Japan,China
+309,The city of Xuchang is in Japan.,0,Xuchang,Japan,China
+229,The city of Linfen is in India.,0,Linfen,India,China
+496,The city of Kisangani is in the Democratic Republic of the Congo.,1,Kisangani,the Democratic Republic of the Congo,the Democratic Republic of the Congo
+710,The city of Nagoya is in Japan.,1,Nagoya,Japan,Japan
+1479,The city of Hengyang is in Turkey.,0,Hengyang,Turkey,China
+1213,The city of Sao Paulo is in China.,0,Sao Paulo,China,Brazil
+977,The city of Quzhou is in Vietnam.,0,Quzhou,Vietnam,China
+1294,The city of Tanggu is in China.,1,Tanggu,China,China
+1322,The city of Duque de Caxias is in Brazil.,1,Duque de Caxias,Brazil,Brazil
+907,The city of Koeln is in Nigeria.,0,Koeln,Nigeria,Germany
+1246,The city of Langfang is in China.,1,Langfang,China,China
+1179,The city of Bagcilar is in Iran.,0,Bagcilar,Iran,Turkey
+267,The city of Santo Domingo Este is in India.,0,Santo Domingo Este,India,the Dominican Republic
+945,The city of Goyang-si is in Russia.,0,Goyang-si,Russia,South Korea
+477,The city of Xianyang is in Russia.,0,Xianyang,Russia,China
+1199,The city of Homs is in Indonesia.,0,Homs,Indonesia,Syria
+344,The city of Maceio is in Brazil.,1,Maceio,Brazil,Brazil
+448,The city of Can Tho is in Vietnam.,1,Can Tho,Vietnam,Vietnam
+769,The city of Quetta is in Kenya.,0,Quetta,Kenya,Pakistan
+476,The city of Xianyang is in China.,1,Xianyang,China,China
+1412,The city of Quebec is in Canada.,1,Quebec,Canada,Canada
+1101,The city of Tomsk is in Ghana.,0,Tomsk,Ghana,Russia
+722,The city of Isfahan is in Iran.,1,Isfahan,Iran,Iran
+148,The city of Naucalpan de Juarez is in Mexico.,1,Naucalpan de Juarez,Mexico,Mexico
+1318,The city of Gold Coast is in Australia.,1,Gold Coast,Australia,Australia
+1059,The city of Pikine is in Pakistan.,0,Pikine,Pakistan,Senegal
+718,The city of Ecatepec de Morelos is in Mexico.,1,Ecatepec de Morelos,Mexico,Mexico
+1365,The city of San Pedro Sula is in India.,0,San Pedro Sula,India,Honduras
+609,The city of Duesseldorf is in Mexico.,0,Duesseldorf,Mexico,Germany
+346,The city of Joao Pessoa is in Brazil.,1,Joao Pessoa,Brazil,Brazil
+1074,The city of Abu Ghurayb is in Iraq.,1,Abu Ghurayb,Iraq,Iraq
+1293,The city of Xining is in the United Arab Emirates.,0,Xining,the United Arab Emirates,China
+715,The city of Beirut is in Algeria.,0,Beirut,Algeria,Lebanon
+366,The city of Zhoushan is in China.,1,Zhoushan,China,China
+890,The city of Sanya is in China.,1,Sanya,China,China
+1284,The city of Gaziantep is in Turkey.,1,Gaziantep,Turkey,Turkey
+528,The city of Bursa is in Turkey.,1,Bursa,Turkey,Turkey
+379,The city of Casablanca is in Russia.,0,Casablanca,Russia,Morocco
+181,The city of Anshan is in Cameroon.,0,Anshan,Cameroon,China
+629,The city of Meerut is in Nigeria.,0,Meerut,Nigeria,India
+483,The city of Bengbu is in India.,0,Bengbu,India,China
+1121,The city of Jiujiang is in Indonesia.,0,Jiujiang,Indonesia,China
+316,The city of Manaus is in Brazil.,1,Manaus,Brazil,Brazil
+721,The city of Cancun is in Myanmar.,0,Cancun,Myanmar,Mexico
+881,The city of Daejeon is in India.,0,Daejeon,India,South Korea
+1265,The city of Bishkek is in Germany.,0,Bishkek,Germany,Kyrgyzstan
+5,The city of Maracay is in China.,0,Maracay,China,Venezuela
+1245,The city of Guankou is in Pakistan.,0,Guankou,Pakistan,China
+456,The city of Yunfu is in China.,1,Yunfu,China,China
+299,The city of Algiers is in China.,0,Algiers,China,Algeria
+1256,The city of Homyel' is in Belarus.,1,Homyel',Belarus,Belarus
+304,The city of Orumiyeh is in Iran.,1,Orumiyeh,Iran,Iran
+1408,The city of Binzhou is in China.,1,Binzhou,China,China
+1048,The city of Huaibei is in China.,1,Huaibei,China,China
+587,The city of Munich is in China.,0,Munich,China,Germany
+595,The city of Kashgar is in Turkey.,0,Kashgar,Turkey,China
+64,The city of Solapur is in India.,1,Solapur,India,India
+1445,The city of Haiphong is in the Dominican Republic.,0,Haiphong,the Dominican Republic,Vietnam
+442,The city of Tolyatti is in Russia.,1,Tolyatti,Russia,Russia
+470,The city of Zhumadian is in China.,1,Zhumadian,China,China
+1211,The city of Abu Dhabi is in Oman.,0,Abu Dhabi,Oman,the United Arab Emirates
+703,The city of Sao Bernardo do Campo is in Zambia.,0,Sao Bernardo do Campo,Zambia,Brazil
+361,The city of Liuzhou is in Russia.,0,Liuzhou,Russia,China
+503,The city of Florianopolis is in Ecuador.,0,Florianopolis,Ecuador,Brazil
+999,The city of Oslo is in Venezuela.,0,Oslo,Venezuela,Norway
+209,The city of Callao is in Myanmar.,0,Callao,Myanmar,Peru
+689,The city of Shuangyashan is in India.,0,Shuangyashan,India,China
+1061,The city of Dakar is in India.,0,Dakar,India,Senegal
 1267,The city of Muzaffarabad is in China.,0,Muzaffarabad,China,Pakistan
+85,The city of Niamey is in China.,0,Niamey,China,Niger
+925,The city of Johor Bahru is in Cuba.,0,Johor Bahru,Cuba,Malaysia
+951,The city of Kalyan is in South Korea.,0,Kalyan,South Korea,India
+1237,The city of Quito is in China.,0,Quito,China,Ecuador
+868,The city of Ordos is in China.,1,Ordos,China,China
+149,The city of Naucalpan de Juarez is in Honduras.,0,Naucalpan de Juarez,Honduras,Mexico
+220,The city of Cucuta is in Colombia.,1,Cucuta,Colombia,Colombia
+573,The city of Zhanjiang is in India.,0,Zhanjiang,India,China
+965,The city of Lome is in Yemen.,0,Lome,Yemen,Togo
+138,The city of Mosul is in Iraq.,1,Mosul,Iraq,Iraq
+342,The city of Sarajevo is in Bosnia and Herzegovina.,1,Sarajevo,Bosnia and Herzegovina,Bosnia and Herzegovina
+1331,The city of Nampula is in India.,0,Nampula,India,Mozambique
+343,The city of Sarajevo is in South Africa.,0,Sarajevo,South Africa,Bosnia and Herzegovina
+1257,The city of Homyel' is in Iran.,0,Homyel',Iran,Belarus
+1178,The city of Bagcilar is in Turkey.,1,Bagcilar,Turkey,Turkey
+952,The city of Jaipur is in India.,1,Jaipur,India,India
+268,The city of Al Fayyum is in Egypt.,1,Al Fayyum,Egypt,Egypt
+130,The city of Hwaseong-si is in South Korea.,1,Hwaseong-si,South Korea,South Korea
+384,The city of Pasig City is in the Philippines.,1,Pasig City,the Philippines,the Philippines
+490,The city of Albuquerque is in the United States.,1,Albuquerque,the United States,the United States
+508,The city of Nanjing is in China.,1,Nanjing,China,China
+866,The city of Namangan is in Uzbekistan.,1,Namangan,Uzbekistan,Uzbekistan
+84,The city of Niamey is in Niger.,1,Niamey,Niger,Niger
+646,The city of Anyang is in China.,1,Anyang,China,China
+744,The city of Lviv is in Ukraine.,1,Lviv,Ukraine,Ukraine
+163,The city of Izmir is in Iran.,0,Izmir,Iran,Turkey
+79,The city of Chaozhou is in South Korea.,0,Chaozhou,South Korea,China
+815,The city of Aracaju is in Russia.,0,Aracaju,Russia,Brazil
+435,The city of Siliguri is in China.,0,Siliguri,China,India
+427,The city of Hamadan is in Pakistan.,0,Hamadan,Pakistan,Iran
+1102,The city of Najran is in Saudi Arabia.,1,Najran,Saudi Arabia,Saudi Arabia
+1092,The city of Ribeirao Preto is in Brazil.,1,Ribeirao Preto,Brazil,Brazil
+256,The city of Vilnius is in Lithuania.,1,Vilnius,Lithuania,Lithuania
+197,The city of Naberezhnyye Chelny is in Brazil.,0,Naberezhnyye Chelny,Brazil,Russia
+16,The city of Nanchong is in China.,1,Nanchong,China,China
+1010,The city of Soweto is in South Africa.,1,Soweto,South Africa,South Africa
+1150,The city of Tabriz is in Iran.,1,Tabriz,Iran,Iran
+943,The city of Fukuoka is in Senegal.,0,Fukuoka,Senegal,Japan
+827,The city of Guang'an is in Germany.,0,Guang'an,Germany,China
+998,The city of Oslo is in Norway.,1,Oslo,Norway,Norway
+545,The city of Orenburg is in Malaysia.,0,Orenburg,Malaysia,Russia
+706,The city of Porto Alegre is in Brazil.,1,Porto Alegre,Brazil,Brazil
+1451,The city of Kuantan is in India.,0,Kuantan,India,Malaysia
+734,The city of Multan is in Pakistan.,1,Multan,Pakistan,Pakistan
+135,The city of Bamako is in India.,0,Bamako,India,Mali
+408,The city of Warri is in Nigeria.,1,Warri,Nigeria,Nigeria
+574,The city of Wenzhou is in China.,1,Wenzhou,China,China
+1120,The city of Jiujiang is in China.,1,Jiujiang,China,China
+612,The city of Hannover is in Germany.,1,Hannover,Germany,Germany
+1392,The city of Denpasar is in Indonesia.,1,Denpasar,Indonesia,Indonesia
+1135,The city of Davao is in Brazil.,0,Davao,Brazil,the Philippines
+1155,The city of Victoria de Durango is in Ghana.,0,Victoria de Durango,Ghana,Mexico
+1220,The city of Guiyang is in China.,1,Guiyang,China,China
+1388,The city of Karbala is in Iraq.,1,Karbala,Iraq,Iraq
+26,The city of Yingkou is in China.,1,Yingkou,China,China
+967,The city of Erzurum is in the Democratic Republic of the Congo.,0,Erzurum,the Democratic Republic of the Congo,Turkey
+418,The city of Ghaziabad is in India.,1,Ghaziabad,India,India
+360,The city of Liuzhou is in China.,1,Liuzhou,China,China
+841,The city of Detroit is in China.,0,Detroit,China,the United States
+57,The city of Marrakesh is in Malaysia.,0,Marrakesh,Malaysia,Morocco
+215,The city of Maturin is in Saudi Arabia.,0,Maturin,Saudi Arabia,Venezuela
+839,The city of Dortmund is in India.,0,Dortmund,India,Germany
+1122,The city of Jiaozuo is in China.,1,Jiaozuo,China,China
+101,The city of Santiago de Queretaro is in Ecuador.,0,Santiago de Queretaro,Ecuador,Mexico
+1273,The city of Kolhapur is in Mozambique.,0,Kolhapur,Mozambique,India
+937,The city of Abeokuta is in Mozambique.,0,Abeokuta,Mozambique,Nigeria
+259,The city of Ranchi is in Venezuela.,0,Ranchi,Venezuela,India
+1307,The city of Chenzhou is in Brazil.,0,Chenzhou,Brazil,China
+1136,The city of Sargodha is in Pakistan.,1,Sargodha,Pakistan,Pakistan
+232,The city of Qiqihar is in China.,1,Qiqihar,China,China
+1066,The city of Port Harcourt is in Nigeria.,1,Port Harcourt,Nigeria,Nigeria
+941,The city of Hachioji is in Mexico.,0,Hachioji,Mexico,Japan
+1047,The city of Huangshi is in India.,0,Huangshi,India,China
+201,The city of Harare is in Turkey.,0,Harare,Turkey,Zimbabwe
+623,The city of Himeji is in the Democratic Republic of the Congo.,0,Himeji,the Democratic Republic of the Congo,Japan
+823,The city of Yichang is in Japan.,0,Yichang,Japan,China
+177,The city of Hangzhou is in Russia.,0,Hangzhou,Russia,China
+960,The city of Amravati is in India.,1,Amravati,India,India
+145,The city of Torreon is in India.,0,Torreon,India,Mexico
+1255,The city of Chongqing is in Sweden.,0,Chongqing,Sweden,China
+619,The city of Enugu is in South Korea.,0,Enugu,South Korea,Nigeria
+751,The city of Onitsha is in China.,0,Onitsha,China,Nigeria
+480,The city of Pingdingshan is in China.,1,Pingdingshan,China,China
+364,The city of Bijie is in China.,1,Bijie,China,China
+288,The city of Dnipro is in Ukraine.,1,Dnipro,Ukraine,Ukraine
+76,The city of Guilin is in China.,1,Guilin,China,China
+218,The city of Xuzhou is in China.,1,Xuzhou,China,China
+515,The city of Sendai is in Brazil.,0,Sendai,Brazil,Japan
+169,The city of Zhaotong is in Iraq.,0,Zhaotong,Iraq,China
+805,The city of Dandong is in Niger.,0,Dandong,Niger,China
+1401,The city of Xingtai is in Russia.,0,Xingtai,Russia,China
+273,"The city of Mianzhu, Deyang, Sichuan is in India.",0,"Mianzhu, Deyang, Sichuan",India,China
+394,The city of Shymkent is in Kazakhstan.,1,Shymkent,Kazakhstan,Kazakhstan
+1180,The city of Quezon City is in the Philippines.,1,Quezon City,the Philippines,the Philippines
+1310,The city of Shenyang is in China.,1,Shenyang,China,China
+531,The city of Dar es Salaam is in Italy.,0,Dar es Salaam,Italy,Tanzania
+1072,The city of Madurai is in India.,1,Madurai,India,India
+922,The city of Bekasi is in Indonesia.,1,Bekasi,Indonesia,Indonesia
+961,The city of Amravati is in China.,0,Amravati,China,India
+555,The city of San Luis Potosi is in the Democratic Republic of the Congo.,0,San Luis Potosi,the Democratic Republic of the Congo,Mexico
+15,The city of Yongzhou is in Ukraine.,0,Yongzhou,Ukraine,China
+291,The city of Khabarovsk is in Saudi Arabia.,0,Khabarovsk,Saudi Arabia,Russia
+1482,The city of Varanasi is in India.,1,Varanasi,India,India
+266,The city of Santo Domingo Este is in the Dominican Republic.,1,Santo Domingo Este,the Dominican Republic,the Dominican Republic
+1051,The city of Hebi is in Nigeria.,0,Hebi,Nigeria,China
+1082,The city of Milwaukee is in the United States.,1,Milwaukee,the United States,the United States
+579,The city of Kunming is in Mexico.,0,Kunming,Mexico,China
+1123,The city of Jiaozuo is in Bangladesh.,0,Jiaozuo,Bangladesh,China
+1471,The city of Weinan is in Colombia.,0,Weinan,Colombia,China
+865,The city of Voronezh is in Romania.,0,Voronezh,Romania,Russia
+1490,The city of Kirkuk is in Iraq.,1,Kirkuk,Iraq,Iraq
+854,The city of Kahriz is in Iran.,1,Kahriz,Iran,Iran
+578,The city of Kunming is in China.,1,Kunming,China,China
+1271,The city of Nagpur is in Denmark.,0,Nagpur,Denmark,India
+911,The city of Zarqa is in India.,0,Zarqa,India,Jordan
+644,The city of Wanzhou is in China.,1,Wanzhou,China,China
+80,The city of Panzhihua is in China.,1,Panzhihua,China,China
+1050,The city of Hebi is in China.,1,Hebi,China,China
+1069,The city of Makhachkala is in Indonesia.,0,Makhachkala,Indonesia,Russia
+1316,The city of Kandahar is in Afghanistan.,1,Kandahar,Afghanistan,Afghanistan
+1128,The city of Harbin is in China.,1,Harbin,China,China
+678,The city of Xiamen is in China.,1,Xiamen,China,China
+536,The city of Yaroslavl is in Russia.,1,Yaroslavl,Russia,Russia
+507,The city of Chattogram is in China.,0,Chattogram,China,Bangladesh
+352,The city of Xuanzhou is in China.,1,Xuanzhou,China,China
+973,The city of Kryvyy Rih is in China.,0,Kryvyy Rih,China,Ukraine
+1087,The city of Uberlandia is in India.,0,Uberlandia,India,Brazil
+349,The city of Shangqiu is in South Korea.,0,Shangqiu,South Korea,China
+1385,The city of Faridabad is in the United States.,0,Faridabad,the United States,India
+1243,The city of Suining is in Algeria.,0,Suining,Algeria,China
+1380,The city of Nay Pyi Taw is in Myanmar.,1,Nay Pyi Taw,Myanmar,Myanmar
 1268,The city of Kotli is in Pakistan.,1,Kotli,Pakistan,Pakistan
-1269,The city of Kotli is in the United States.,0,Kotli,the United States,Pakistan
+1478,The city of Hengyang is in China.,1,Hengyang,China,China
+1443,The city of Ha'il is in China.,0,Ha'il,China,Saudi Arabia
+378,The city of Casablanca is in Morocco.,1,Casablanca,Morocco,Morocco
+1133,The city of Kleinzschocher is in Brazil.,0,Kleinzschocher,Brazil,Germany
+990,The city of Samarinda is in Indonesia.,1,Samarinda,Indonesia,Indonesia
+97,The city of Boumerdes is in Iran.,0,Boumerdes,Iran,Algeria
+1434,The city of Tijuana is in Mexico.,1,Tijuana,Mexico,Mexico
+1008,The city of Al Hudaydah is in Yemen.,1,Al Hudaydah,Yemen,Yemen
+520,The city of Pimpri is in India.,1,Pimpri,India,India
+127,The city of Suwon is in Russia.,0,Suwon,Russia,South Korea
+653,The city of Yangjiang is in Indonesia.,0,Yangjiang,Indonesia,China
+709,The city of Juiz de Fora is in India.,0,Juiz de Fora,India,Brazil
+1315,The city of Brasilia is in South Korea.,0,Brasilia,South Korea,Brazil
+705,The city of Feira de Santana is in China.,0,Feira de Santana,China,Brazil
+894,The city of Sharjah is in the United Arab Emirates.,1,Sharjah,the United Arab Emirates,the United Arab Emirates
+888,The city of Yangquan is in China.,1,Yangquan,China,China
+991,The city of Samarinda is in Iraq.,0,Samarinda,Iraq,Indonesia
+1382,The city of Ulhasnagar is in India.,1,Ulhasnagar,India,India
+431,The city of Ta'if is in Venezuela.,0,Ta'if,Venezuela,Saudi Arabia
+117,The city of Hohhot is in Indonesia.,0,Hohhot,Indonesia,China
+230,The city of Yiwu is in China.,1,Yiwu,China,China
+1425,The city of Esenler is in India.,0,Esenler,India,Turkey
+1328,The city of Mandalay is in Myanmar.,1,Mandalay,Myanmar,Myanmar
+1233,The city of Bulawayo is in China.,0,Bulawayo,China,Zimbabwe
+206,The city of Istanbul is in Turkey.,1,Istanbul,Turkey,Turkey
+1319,The city of Gold Coast is in China.,0,Gold Coast,China,Australia
+1376,The city of Bucheon-si is in South Korea.,1,Bucheon-si,South Korea,South Korea
+238,The city of Kinshasa is in the Democratic Republic of the Congo.,1,Kinshasa,the Democratic Republic of the Congo,the Democratic Republic of the Congo
+781,The city of Budapest is in Iraq.,0,Budapest,Iraq,Hungary
+738,The city of Saratov is in Russia.,1,Saratov,Russia,Russia
+543,The city of Tyumen is in Mexico.,0,Tyumen,Mexico,Russia
+1333,The city of Mysore is in Mexico.,0,Mysore,Mexico,India
+334,The city of Guarulhos is in Brazil.,1,Guarulhos,Brazil,Brazil
+282,The city of Nyala is in Sudan.,1,Nyala,Sudan,Sudan
+602,The city of Deyang is in China.,1,Deyang,China,China
+20,The city of Jiaxing is in China.,1,Jiaxing,China,China
+690,The city of Jiamusi is in China.,1,Jiamusi,China,China
+115,The city of Linyi is in Iraq.,0,Linyi,Iraq,China
+245,The city of Ciudad Juarez is in India.,0,Ciudad Juarez,India,Mexico
+331,The city of Rahim Yar Khan is in Lithuania.,0,Rahim Yar Khan,Lithuania,Pakistan
+766,The city of Narela is in India.,1,Narela,India,India
+549,The city of Sapporo is in Mexico.,0,Sapporo,Mexico,Japan
+35,The city of Tokyo is in Pakistan.,0,Tokyo,Pakistan,Japan
+1314,The city of Brasilia is in Brazil.,1,Brasilia,Brazil,Brazil
+1065,The city of Kyoto is in China.,0,Kyoto,China,Japan
+497,The city of Kisangani is in China.,0,Kisangani,China,the Democratic Republic of the Congo
+1395,The city of Batam is in Turkey.,0,Batam,Turkey,Indonesia
+1187,The city of Fes is in Mali.,0,Fes,Mali,Morocco
+432,The city of Stockholm is in Sweden.,1,Stockholm,Sweden,Sweden
+924,The city of Johor Bahru is in Malaysia.,1,Johor Bahru,Malaysia,Malaysia
+1423,The city of Ankara is in Japan.,0,Ankara,Japan,Turkey
+1221,The city of Guiyang is in South Korea.,0,Guiyang,South Korea,China
+397,The city of Tlalpan is in Egypt.,0,Tlalpan,Egypt,Mexico
+822,The city of Yichang is in China.,1,Yichang,China,China
+1494,The city of Tangerang is in Indonesia.,1,Tangerang,Indonesia,Indonesia
+7,The city of Baku is in Ukraine.,0,Baku,Ukraine,Azerbaijan
+568,The city of Indore is in India.,1,Indore,India,India
+834,The city of Rajshahi is in Bangladesh.,1,Rajshahi,Bangladesh,Bangladesh
+562,The city of Ebute Ikorodu is in Nigeria.,1,Ebute Ikorodu,Nigeria,Nigeria
+914,The city of Nanded is in India.,1,Nanded,India,India
+1013,The city of Benoni is in the Philippines.,0,Benoni,the Philippines,South Africa
+970,The city of Barquisimeto is in Venezuela.,1,Barquisimeto,Venezuela,Venezuela
+1053,The city of Benxi is in Brazil.,0,Benxi,Brazil,China
+1467,The city of Copenhagen is in China.,0,Copenhagen,China,Denmark
+1146,The city of Dhanbad is in India.,1,Dhanbad,India,India
+1016,The city of Wanxian is in China.,1,Wanxian,China,China
+116,The city of Hohhot is in China.,1,Hohhot,China,China
+1378,The city of Tangier is in Morocco.,1,Tangier,Morocco,Morocco
+443,The city of Tolyatti is in Ghana.,0,Tolyatti,Ghana,Russia
+210,The city of Cebu City is in the Philippines.,1,Cebu City,the Philippines,the Philippines
+339,The city of Ulyanovsk is in Ukraine.,0,Ulyanovsk,Ukraine,Russia
+1161,The city of Taguig is in India.,0,Taguig,India,the Philippines
+474,The city of Ya'an is in China.,1,Ya'an,China,China
+1355,The city of Xianning is in Lebanon.,0,Xianning,Lebanon,China
+362,The city of Guangyuan is in China.,1,Guangyuan,China,China
+891,The city of Sanya is in India.,0,Sanya,India,China
+800,The city of Jieyang is in China.,1,Jieyang,China,China
+994,The city of Khabarovsk Vtoroy is in Russia.,1,Khabarovsk Vtoroy,Russia,Russia
+838,The city of Dortmund is in Germany.,1,Dortmund,Germany,Germany
+147,The city of Beira is in India.,0,Beira,India,Mozambique
+1116,The city of Rui'an is in China.,1,Rui'an,China,China
+1396,The city of Liupanshui is in China.,1,Liupanshui,China,China
+174,The city of Shaoxing is in China.,1,Shaoxing,China,China
+784,The city of Recife is in Brazil.,1,Recife,Brazil,Brazil
+320,The city of Kakamega is in Kenya.,1,Kakamega,Kenya,Kenya
+1138,The city of Islamabad is in Pakistan.,1,Islamabad,Pakistan,Pakistan
+1197,The city of Mogadishu is in Iran.,0,Mogadishu,Iran,Somalia
+1111,The city of Madinat an Nasr is in India.,0,Madinat an Nasr,India,Egypt
+1275,The city of Cuttack is in Pakistan.,0,Cuttack,Pakistan,India
+1397,The city of Liupanshui is in the Philippines.,0,Liupanshui,the Philippines,China
+570,The city of Zunyi is in China.,1,Zunyi,China,China
+395,The city of Shymkent is in China.,0,Shymkent,China,Kazakhstan
+932,The city of Sofia is in Bulgaria.,1,Sofia,Bulgaria,Bulgaria
+641,The city of Saint Petersburg is in Canada.,0,Saint Petersburg,Canada,Russia
+1009,The city of Al Hudaydah is in South Korea.,0,Al Hudaydah,South Korea,Yemen
+552,The city of Cheonan is in South Korea.,1,Cheonan,South Korea,South Korea
+491,The city of Albuquerque is in Egypt.,0,Albuquerque,Egypt,the United States
+1006,The city of Ho Chi Minh City is in Vietnam.,1,Ho Chi Minh City,Vietnam,Vietnam
+975,The city of Krasnoyarsk is in India.,0,Krasnoyarsk,India,Russia
+1040,The city of Asansol is in India.,1,Asansol,India,India
+237,The city of Aparecida de Goiania is in China.,0,Aparecida de Goiania,China,Brazil
+1114,The city of Sanmenxia is in China.,1,Sanmenxia,China,China
+514,The city of Sendai is in Japan.,1,Sendai,Japan,Japan
+525,The city of Novosibirsk is in the Philippines.,0,Novosibirsk,the Philippines,Russia
+798,The city of Shanghai is in China.,1,Shanghai,China,China
+158,The city of Palembang is in Indonesia.,1,Palembang,Indonesia,Indonesia
+833,The city of Fushun is in Mexico.,0,Fushun,Mexico,China
+986,The city of Chengdu is in China.,1,Chengdu,China,China
+674,The city of Korla is in China.,1,Korla,China,China
+505,The city of Cuiaba is in Latvia.,0,Cuiaba,Latvia,Brazil
+1052,The city of Benxi is in China.,1,Benxi,China,China
+873,The city of Bengaluru is in China.,0,Bengaluru,China,India
+931,The city of Qingdao is in India.,0,Qingdao,India,China
+1251,The city of Guigang is in Japan.,0,Guigang,Japan,China
+4,The city of Maracay is in Venezuela.,1,Maracay,Venezuela,Venezuela
+92,The city of Odesa is in Ukraine.,1,Odesa,Ukraine,Ukraine
+638,The city of Ar Raqqah is in Syria.,1,Ar Raqqah,Syria,Syria
+878,The city of Okayama is in Japan.,1,Okayama,Japan,Japan
+495,The city of Calgary is in India.,0,Calgary,India,Canada
+535,The city of Goiania is in China.,0,Goiania,China,Brazil
+494,The city of Calgary is in Canada.,1,Calgary,Canada,Canada
+980,The city of Puning is in China.,1,Puning,China,China
+143,The city of Qom is in Vietnam.,0,Qom,Vietnam,Iran
+9,The city of Baoji is in Guatemala.,0,Baoji,Guatemala,China
+1320,The city of Ouagadougou is in Burkina Faso.,1,Ouagadougou,Burkina Faso,Burkina Faso
+1334,The city of Coimbatore is in India.,1,Coimbatore,India,India
+111,The city of Belo Horizonte is in North Korea.,0,Belo Horizonte,North Korea,Brazil
+40,The city of Warangal is in India.,1,Warangal,India,India
+645,The city of Wanzhou is in India.,0,Wanzhou,India,China
+740,The city of Kharkiv is in Ukraine.,1,Kharkiv,Ukraine,Ukraine
+263,The city of Bhayandar is in China.,0,Bhayandar,China,India
+356,The city of Nanchang is in China.,1,Nanchang,China,China
+928,The city of Urumqi is in China.,1,Urumqi,China,China
+21,The city of Jiaxing is in Ukraine.,0,Jiaxing,Ukraine,China
+510,The city of Kaifeng is in China.,1,Kaifeng,China,China
+457,The city of Yunfu is in Honduras.,0,Yunfu,Honduras,China
+283,The city of Nyala is in Mozambique.,0,Nyala,Mozambique,Sudan
+300,The city of Nashik is in India.,1,Nashik,India,India
+1360,The city of Hezhou is in China.,1,Hezhou,China,China
+576,The city of Luohe is in China.,1,Luohe,China,China
+590,The city of Malang is in Indonesia.,1,Malang,Indonesia,Indonesia
+104,The city of Jeddah is in Saudi Arabia.,1,Jeddah,Saudi Arabia,Saudi Arabia
+226,The city of Neijiang is in China.,1,Neijiang,China,China
+765,The city of Theni is in Nigeria.,0,Theni,Nigeria,India
+1022,The city of Hefei is in China.,1,Hefei,China,China
+492,The city of New South Memphis is in the United States.,1,New South Memphis,the United States,the United States
+985,The city of Chizhou is in the Republic of the Congo.,0,Chizhou,the Republic of the Congo,China
+189,The city of Marseille is in Russia.,0,Marseille,Russia,France
+1363,The city of Grosszschocher is in China.,0,Grosszschocher,China,Germany
+0,The city of Krasnodar is in Russia.,1,Krasnodar,Russia,Russia
+1389,The city of Karbala is in Turkey.,0,Karbala,Turkey,Iraq
+656,The city of Shah Alam is in Malaysia.,1,Shah Alam,Malaysia,Malaysia
+859,The city of Banjarmasin is in South Korea.,0,Banjarmasin,South Korea,Indonesia
+607,The city of Leipzig is in Russia.,0,Leipzig,Russia,Germany
+1489,The city of Kanayannur is in Saudi Arabia.,0,Kanayannur,Saudi Arabia,India
+1375,The city of Kawaguchi is in Indonesia.,0,Kawaguchi,Indonesia,Japan
+132,The city of Changwon is in South Korea.,1,Changwon,South Korea,South Korea
+171,The city of Weifang is in Indonesia.,0,Weifang,Indonesia,China
+853,The city of Nasiriyah is in Rwanda.,0,Nasiriyah,Rwanda,Iraq
+625,The city of Hamhung is in China.,0,Hamhung,China,North Korea
+879,The city of Okayama is in Russia.,0,Okayama,Russia,Japan
+1215,The city of Lianyungang is in the Philippines.,0,Lianyungang,the Philippines,China
+433,The city of Stockholm is in Russia.,0,Stockholm,Russia,Sweden
+1219,The city of Taicang is in Madagascar.,0,Taicang,Madagascar,China
+627,The city of Seoul is in Nicaragua.,0,Seoul,Nicaragua,South Korea
+1208,The city of Pietermaritzburg is in South Africa.,1,Pietermaritzburg,South Africa,South Africa
+310,The city of Changde is in China.,1,Changde,China,China
+1461,The city of Reynosa is in China.,0,Reynosa,China,Mexico
+1000,The city of Caloocan City is in the Philippines.,1,Caloocan City,the Philippines,the Philippines
+1229,The city of Indianapolis is in Côte d'Ivoire.,0,Indianapolis,Côte d'Ivoire,the United States
+81,The city of Panzhihua is in Iran.,0,Panzhihua,Iran,China
+782,The city of Pontianak is in Indonesia.,1,Pontianak,Indonesia,Indonesia
+89,The city of Abuja is in China.,0,Abuja,China,Nigeria
+295,The city of Libreville is in the United States.,0,Libreville,the United States,Gabon
+855,The city of Kahriz is in Uzbekistan.,0,Kahriz,Uzbekistan,Iran
+1058,The city of Pikine is in Senegal.,1,Pikine,Senegal,Senegal
+422,The city of Ahmedabad is in India.,1,Ahmedabad,India,India
+126,The city of Suwon is in South Korea.,1,Suwon,South Korea,South Korea
+908,The city of Nuernberg is in Germany.,1,Nuernberg,Germany,Germany
+223,The city of Santo Domingo Oeste is in Zambia.,0,Santo Domingo Oeste,Zambia,the Dominican Republic
+436,The city of Baghdad is in Iraq.,1,Baghdad,Iraq,Iraq
+1137,The city of Sargodha is in India.,0,Sargodha,India,Pakistan
+179,The city of Mudanjiang is in Turkey.,0,Mudanjiang,Turkey,China
+1139,The city of Islamabad is in Japan.,0,Islamabad,Japan,Pakistan
+923,The city of Bekasi is in China.,0,Bekasi,China,Indonesia
+712,The city of Al Ahmadi is in Kuwait.,1,Al Ahmadi,Kuwait,Kuwait
+557,The city of Culiacan is in China.,0,Culiacan,China,Mexico
+889,The city of Yangquan is in Hungary.,0,Yangquan,Hungary,China
+1370,The city of Bien Hoa is in Vietnam.,1,Bien Hoa,Vietnam,Vietnam
+438,The city of Al Basrah al Qadimah is in Iraq.,1,Al Basrah al Qadimah,Iraq,Iraq
+572,The city of Zhanjiang is in China.,1,Zhanjiang,China,China
+1034,The city of Chisinau is in Moldova.,1,Chisinau,Moldova,Moldova
+513,The city of Heze is in Yemen.,0,Heze,Yemen,China
+968,The city of Seattle is in the United States.,1,Seattle,the United States,the United States
+329,The city of Paranaque City is in India.,0,Paranaque City,India,the Philippines
+100,The city of Santiago de Queretaro is in Mexico.,1,Santiago de Queretaro,Mexico,Mexico
+861,The city of Vladivostok is in Romania.,0,Vladivostok,Romania,Russia
+250,The city of Maputo is in Mozambique.,1,Maputo,Mozambique,Mozambique
+1475,The city of Shijiazhuang is in Uzbekistan.,0,Shijiazhuang,Uzbekistan,China
+1288,The city of Tebessa is in Algeria.,1,Tebessa,Algeria,Algeria
+1103,The city of Najran is in India.,0,Najran,India,Saudi Arabia
+875,The city of Shivaji Nagar is in China.,0,Shivaji Nagar,China,India
+198,The city of Mukalla is in Yemen.,1,Mukalla,Yemen,Yemen
+458,The city of Xiangtan is in China.,1,Xiangtan,China,China
+754,The city of Kobe is in Japan.,1,Kobe,Japan,Japan
+850,The city of Mumbai is in India.,1,Mumbai,India,India
+462,The city of Chuzhou is in China.,1,Chuzhou,China,China
+559,The city of Kaduna is in Turkey.,0,Kaduna,Turkey,Nigeria
+1238,The city of Shubra al Khaymah is in Egypt.,1,Shubra al Khaymah,Egypt,Egypt
+1109,The city of Izhevsk is in Nigeria.,0,Izhevsk,Nigeria,Russia
+551,The city of Kimhae is in Senegal.,0,Kimhae,Senegal,South Korea
+620,The city of Shizuoka is in Japan.,1,Shizuoka,Japan,Japan
+1379,The city of Tangier is in Ecuador.,0,Tangier,Ecuador,Morocco
+848,The city of Erode is in India.,1,Erode,India,India
+677,The city of Zaozhuang is in Belarus.,0,Zaozhuang,Belarus,China
+420,The city of Cochin is in India.,1,Cochin,India,India
+748,The city of Kitakyushu is in Japan.,1,Kitakyushu,Japan,Japan
+526,The city of Goeteborg is in Sweden.,1,Goeteborg,Sweden,Sweden
+1005,The city of Ciudad Guayana is in South Africa.,0,Ciudad Guayana,South Africa,Venezuela
+1078,The city of Kampala is in Uganda.,1,Kampala,Uganda,Uganda
+807,The city of Frankfurt am Main is in Vietnam.,0,Frankfurt am Main,Vietnam,Germany
+708,The city of Juiz de Fora is in Brazil.,1,Juiz de Fora,Brazil,Brazil
+1308,The city of Baise is in China.,1,Baise,China,China
+953,The city of Jaipur is in China.,0,Jaipur,China,India
+109,The city of Macapa is in China.,0,Macapa,China,Brazil
+1055,The city of Fortaleza is in Honduras.,0,Fortaleza,Honduras,Brazil
+106,The city of Konya is in Turkey.,1,Konya,Turkey,Turkey
+530,The city of Dar es Salaam is in Tanzania.,1,Dar es Salaam,Tanzania,Tanzania
+667,The city of Aligarh is in China.,0,Aligarh,China,India
+1134,The city of Davao is in the Philippines.,1,Davao,the Philippines,the Philippines
+964,The city of Lome is in Togo.,1,Lome,Togo,Togo
+439,The city of Al Basrah al Qadimah is in China.,0,Al Basrah al Qadimah,China,Iraq
+695,The city of Lubumbashi is in India.,0,Lubumbashi,India,the Democratic Republic of the Congo
+1157,The city of Kota Kinabalu is in the United States.,0,Kota Kinabalu,the United States,Malaysia
+279,The city of Accra is in China.,0,Accra,China,Ghana
+225,The city of Tangshan is in India.,0,Tangshan,India,China
+233,The city of Qiqihar is in India.,0,Qiqihar,India,China
+387,The city of Kano is in China.,0,Kano,China,Nigeria
+1067,The city of Port Harcourt is in Eritrea.,0,Port Harcourt,Eritrea,Nigeria
+913,The city of Riga is in Japan.,0,Riga,Japan,Latvia
+1143,The city of Visakhapatnam is in Indonesia.,0,Visakhapatnam,Indonesia,India
+820,The city of Kunshan is in China.,1,Kunshan,China,China
+1191,The city of Barnaul is in South Africa.,0,Barnaul,South Africa,Russia
+153,The city of Bhubaneswar is in China.,0,Bhubaneswar,China,India
+1214,The city of Lianyungang is in China.,1,Lianyungang,China,China
+335,The city of Guarulhos is in China.,0,Guarulhos,China,Brazil
+1130,The city of Herat is in Afghanistan.,1,Herat,Afghanistan,Afghanistan
+946,The city of Meknes is in Morocco.,1,Meknes,Morocco,Morocco
+1278,The city of Yekaterinburg is in Russia.,1,Yekaterinburg,Russia,Russia
+650,The city of Meizhou is in China.,1,Meizhou,China,China
+90,The city of South Tangerang is in Indonesia.,1,South Tangerang,Indonesia,Indonesia
+547,The city of Osaka is in India.,0,Osaka,India,Japan
+307,The city of Zahedan is in Nicaragua.,0,Zahedan,Nicaragua,Iran
+614,The city of Penza is in Russia.,1,Penza,Russia,Russia
+1349,The city of Gujranwala is in China.,0,Gujranwala,China,Pakistan
+863,The city of Adana is in Togo.,0,Adana,Togo,Turkey
+1472,The city of Wanning is in China.,1,Wanning,China,China
+472,The city of Zhengzhou is in China.,1,Zhengzhou,China,China
+481,The city of Pingdingshan is in South Africa.,0,Pingdingshan,South Africa,China
+997,The city of Wroclaw is in Mexico.,0,Wroclaw,Mexico,Poland
+380,The city of Coyoacan is in Mexico.,1,Coyoacan,Mexico,Mexico
+485,The city of Zhangjiakou is in India.,0,Zhangjiakou,India,China
+303,The city of Karol Bagh is in Syria.,0,Karol Bagh,Syria,India
+664,The city of Prayagraj is in India.,1,Prayagraj,India,India
+231,The city of Yiwu is in India.,0,Yiwu,India,China
+565,The city of Benin City is in China.,0,Benin City,China,Nigeria
+1350,The city of Nizhniy Novgorod is in Russia.,1,Nizhniy Novgorod,Russia,Russia
+804,The city of Dandong is in China.,1,Dandong,China,China
+1218,The city of Taicang is in China.,1,Taicang,China,China
+1117,The city of Rui'an is in Indonesia.,0,Rui'an,Indonesia,China
+1441,The city of Managua is in Turkey.,0,Managua,Turkey,Nicaragua
+768,The city of Quetta is in Pakistan.,1,Quetta,Pakistan,Pakistan
+669,The city of Kermanshah is in China.,0,Kermanshah,China,Iran
+175,The city of Shaoxing is in the Philippines.,0,Shaoxing,the Philippines,China
+1283,The city of Dushanbe is in Nigeria.,0,Dushanbe,Nigeria,Tajikistan
+803,The city of Longyan is in Benin.,0,Longyan,Benin,China
+723,The city of Isfahan is in China.,0,Isfahan,China,Iran
+837,The city of Rangpur is in Russia.,0,Rangpur,Russia,Bangladesh
+1404,The city of Nanning is in China.,1,Nanning,China,China
+1356,The city of Suqian is in China.,1,Suqian,China,China
+867,The city of Namangan is in India.,0,Namangan,India,Uzbekistan
+789,The city of Port Said is in China.,0,Port Said,China,Egypt
+739,The city of Saratov is in Indonesia.,0,Saratov,Indonesia,Russia
+407,The city of Kuala Lumpur is in Oman.,0,Kuala Lumpur,Oman,Malaysia
+1306,The city of Chenzhou is in China.,1,Chenzhou,China,China
+1035,The city of Chisinau is in Germany.,0,Chisinau,Germany,Moldova
+1196,The city of Mogadishu is in Somalia.,1,Mogadishu,Somalia,Somalia
+98,The city of Asmara is in Eritrea.,1,Asmara,Eritrea,Eritrea
+811,The city of Aden is in Japan.,0,Aden,Japan,Yemen
+1485,The city of Puducherry is in Brazil.,0,Puducherry,Brazil,India
+1095,The city of The Bronx is in South Korea.,0,The Bronx,South Korea,the United States
+801,The city of Jieyang is in the Philippines.,0,Jieyang,the Philippines,China
+1152,The city of Tlaquepaque is in Mexico.,1,Tlaquepaque,Mexico,Mexico
+1452,The city of Maiduguri is in Nigeria.,1,Maiduguri,Nigeria,Nigeria
+1169,The city of Jamshedpur is in China.,0,Jamshedpur,China,India
+1075,The city of Abu Ghurayb is in Indonesia.,0,Abu Ghurayb,Indonesia,Iraq
+1357,The city of Suqian is in Mexico.,0,Suqian,Mexico,China
+755,The city of Kobe is in China.,0,Kobe,China,Japan
+759,The city of Phnom Penh is in Senegal.,0,Phnom Penh,Senegal,Cambodia
+1252,The city of Dalian is in China.,1,Dalian,China,China
+1279,The city of Yekaterinburg is in Lithuania.,0,Yekaterinburg,Lithuania,Russia
+466,The city of Tembisa is in South Africa.,1,Tembisa,South Africa,South Africa
+1019,The city of Qinzhou is in India.,0,Qinzhou,India,China
+702,The city of Sao Bernardo do Campo is in Brazil.,1,Sao Bernardo do Campo,Brazil,Brazil
+1415,The city of Mazar-e Sharif is in India.,0,Mazar-e Sharif,India,Afghanistan
+916,The city of Gwalior is in India.,1,Gwalior,India,India
+272,"The city of Mianzhu, Deyang, Sichuan is in China.",1,"Mianzhu, Deyang, Sichuan",China,China
+633,The city of Dubai is in the United States.,0,Dubai,the United States,the United Arab Emirates
+1083,The city of Milwaukee is in China.,0,Milwaukee,China,the United States
+663,The city of Guwahati is in China.,0,Guwahati,China,India
+236,The city of Aparecida de Goiania is in Brazil.,1,Aparecida de Goiania,Brazil,Brazil
+1394,The city of Batam is in Indonesia.,1,Batam,Indonesia,Indonesia
+1250,The city of Guigang is in China.,1,Guigang,China,China
+324,The city of Ulan Bator is in Mongolia.,1,Ulan Bator,Mongolia,Mongolia
+688,The city of Shuangyashan is in China.,1,Shuangyashan,China,China
+666,The city of Aligarh is in India.,1,Aligarh,India,India
+1456,The city of Kathmandu is in Nepal.,1,Kathmandu,Nepal,Nepal
+455,The city of Shihezi is in Russia.,0,Shihezi,Russia,China
+345,The city of Maceio is in China.,0,Maceio,China,Brazil
+1399,The city of Shangrao is in Russia.,0,Shangrao,Russia,China
+1371,The city of Bien Hoa is in South Korea.,0,Bien Hoa,South Korea,Vietnam
+1361,The city of Hezhou is in India.,0,Hezhou,India,China
+1437,The city of Jos is in India.,0,Jos,India,Nigeria
+581,The city of Cixi is in Indonesia.,0,Cixi,Indonesia,China
+204,The city of Lipetsk is in Russia.,1,Lipetsk,Russia,Russia
+152,The city of Bhubaneswar is in India.,1,Bhubaneswar,India,India
+270,The city of Rizhao is in China.,1,Rizhao,China,China
+958,The city of Bhavnagar is in India.,1,Bhavnagar,India,India
+974,The city of Krasnoyarsk is in Russia.,1,Krasnoyarsk,Russia,Russia
+66,The city of Najafgarh is in India.,1,Najafgarh,India,India
+1413,The city of Quebec is in Zimbabwe.,0,Quebec,Zimbabwe,Canada
+821,The city of Kunshan is in Russia.,0,Kunshan,Russia,China
+786,The city of Contagem is in Brazil.,1,Contagem,Brazil,Brazil
+186,The city of Kayseri is in Turkey.,1,Kayseri,Turkey,Turkey
+249,The city of Subang Jaya is in Germany.,0,Subang Jaya,Germany,Malaysia
+128,The city of Incheon is in South Korea.,1,Incheon,South Korea,South Korea
+123,The city of Seongnam-si is in Russia.,0,Seongnam-si,Russia,South Korea
+1249,The city of Jinan is in Rwanda.,0,Jinan,Rwanda,China
+1100,The city of Tomsk is in Russia.,1,Tomsk,Russia,Russia
+1327,The city of Saitama is in India.,0,Saitama,India,Japan
+1403,The city of Qujing is in India.,0,Qujing,India,China
+333,The city of Balikpapan is in Japan.,0,Balikpapan,Japan,Indonesia
+1189,The city of Surat is in Burkina Faso.,0,Surat,Burkina Faso,India
+423,The city of Ahmedabad is in China.,0,Ahmedabad,China,India
+102,The city of Perm is in Russia.,1,Perm,Russia,Russia
+451,The city of Bouake is in China.,0,Bouake,China,Côte d'Ivoire
+814,The city of Aracaju is in Brazil.,1,Aracaju,Brazil,Brazil
+1147,The city of Dhanbad is in Kenya.,0,Dhanbad,Kenya,India
+486,The city of Mississauga is in Canada.,1,Mississauga,Canada,Canada
+178,The city of Mudanjiang is in China.,1,Mudanjiang,China,China
+1484,The city of Puducherry is in India.,1,Puducherry,India,India
+453,The city of Abobo is in India.,0,Abobo,India,Côte d'Ivoire
+146,The city of Beira is in Mozambique.,1,Beira,Mozambique,Mozambique
+719,The city of Ecatepec de Morelos is in India.,0,Ecatepec de Morelos,India,Mexico
+1292,The city of Xining is in China.,1,Xining,China,China
+1358,The city of Tonghua is in China.,1,Tonghua,China,China
+1151,The city of Tabriz is in India.,0,Tabriz,India,Iran
+1080,The city of Chicago is in the United States.,1,Chicago,the United States,the United States
+17,The city of Nanchong is in Nigeria.,0,Nanchong,Nigeria,China
+385,The city of Pasig City is in Morocco.,0,Pasig City,Morocco,the Philippines
+752,The city of Anyang-si is in South Korea.,1,Anyang-si,South Korea,South Korea
+726,The city of Petaling Jaya is in Malaysia.,1,Petaling Jaya,Malaysia,Malaysia
+74,The city of Jiaozhou is in China.,1,Jiaozhou,China,China
+482,The city of Bengbu is in China.,1,Bengbu,China,China
+313,The city of Shaoguan is in Pakistan.,0,Shaoguan,Pakistan,China
+584,The city of Guangzhou is in China.,1,Guangzhou,China,China
+430,The city of Ta'if is in Saudi Arabia.,1,Ta'if,Saudi Arabia,Saudi Arabia
+1126,The city of Huizhou is in China.,1,Huizhou,China,China
+1302,The city of Luzhou is in China.,1,Luzhou,China,China
+1419,The city of Salta is in India.,0,Salta,India,Argentina
+749,The city of Kitakyushu is in Yemen.,0,Kitakyushu,Yemen,Japan
+167,The city of Zhenjiang is in Germany.,0,Zhenjiang,Germany,China
+1104,The city of Bangkok is in Thailand.,1,Bangkok,Thailand,Thailand
+1330,The city of Nampula is in Mozambique.,1,Nampula,Mozambique,Mozambique
+392,The city of Pyongyang is in North Korea.,1,Pyongyang,North Korea,North Korea
+658,The city of Vadodara is in India.,1,Vadodara,India,India
+83,The city of Bucaramanga is in Brazil.,0,Bucaramanga,Brazil,Colombia
+1240,The city of Al Mahallah al Kubra is in Egypt.,1,Al Mahallah al Kubra,Egypt,Egypt
+610,The city of Zagreb is in Croatia.,1,Zagreb,Croatia,Croatia
+1177,The city of Uskudar is in Bulgaria.,0,Uskudar,Bulgaria,Turkey
+1021,The city of Wuwei is in India.,0,Wuwei,India,China
+770,The city of Chennai is in India.,1,Chennai,India,India
+1094,The city of The Bronx is in the United States.,1,The Bronx,the United States,the United States
+91,The city of South Tangerang is in India.,0,South Tangerang,India,Indonesia
+1098,The city of Da Nang is in Vietnam.,1,Da Nang,Vietnam,Vietnam
+286,The city of Antalya is in Turkey.,1,Antalya,Turkey,Turkey
+882,The city of Battagram is in Pakistan.,1,Battagram,Pakistan,Pakistan
+1353,The city of Zhaoqing is in Brazil.,0,Zhaoqing,Brazil,China
+1071,The city of Thiruvananthapuram is in Japan.,0,Thiruvananthapuram,Japan,India
+359,The city of Luancheng is in Brazil.,0,Luancheng,Brazil,China
+743,The city of Malatya is in Russia.,0,Malatya,Russia,Turkey
+37,The city of Mombasa is in India.,0,Mombasa,India,Kenya
+901,The city of Mersin is in the United States.,0,Mersin,the United States,Turkey
+421,The city of Cochin is in China.,0,Cochin,China,India
+538,The city of Kigali is in Rwanda.,1,Kigali,Rwanda,Rwanda
+583,The city of Hanzhong is in Iran.,0,Hanzhong,Iran,China
+642,The city of Johannesburg is in South Africa.,1,Johannesburg,South Africa,South Africa
+601,The city of Laibin is in Ethiopia.,0,Laibin,Ethiopia,China
+1339,The city of Amritsar is in Moldova.,0,Amritsar,Moldova,India
+459,The city of Xiangtan is in Brazil.,0,Xiangtan,Brazil,China
+527,The city of Goeteborg is in South Korea.,0,Goeteborg,South Korea,Sweden
+713,The city of Al Ahmadi is in Japan.,0,Al Ahmadi,Japan,Kuwait
+328,The city of Paranaque City is in the Philippines.,1,Paranaque City,the Philippines,the Philippines
+1326,The city of Saitama is in Japan.,1,Saitama,Japan,Japan
+1253,The city of Dalian is in Saudi Arabia.,0,Dalian,Saudi Arabia,China
+711,The city of Nagoya is in China.,0,Nagoya,China,Japan
+424,The city of Sulaymaniyah is in Iraq.,1,Sulaymaniyah,Iraq,Iraq
+1398,The city of Shangrao is in China.,1,Shangrao,China,China
+350,The city of Zhangye is in China.,1,Zhangye,China,China
+1106,The city of Oklahoma City is in the United States.,1,Oklahoma City,the United States,the United States
+904,The city of Tegucigalpa is in Honduras.,1,Tegucigalpa,Honduras,Honduras
+1174,The city of Chelyabinsk is in Russia.,1,Chelyabinsk,Russia,Russia
+956,The city of Bhilai is in India.,1,Bhilai,India,India
+222,The city of Santo Domingo Oeste is in the Dominican Republic.,1,Santo Domingo Oeste,the Dominican Republic,the Dominican Republic
+1093,The city of Ribeirao Preto is in China.,0,Ribeirao Preto,China,Brazil
+321,The city of Kakamega is in Russia.,0,Kakamega,Russia,Kenya
+337,The city of Volgograd is in Nigeria.,0,Volgograd,Nigeria,Russia
+1054,The city of Fortaleza is in Brazil.,1,Fortaleza,Brazil,Brazil
+919,The city of Dombivli is in Mali.,0,Dombivli,Mali,India
+524,The city of Novosibirsk is in Russia.,1,Novosibirsk,Russia,Russia
+592,The city of Douala is in Cameroon.,1,Douala,Cameroon,Cameroon
+50,The city of Rohini is in India.,1,Rohini,India,India
+1216,The city of Xiaogan is in China.,1,Xiaogan,China,China
+119,The city of Malacca is in China.,0,Malacca,China,Malaysia
+317,The city of Manaus is in Turkey.,0,Manaus,Turkey,Brazil
 1270,The city of Nagpur is in India.,1,Nagpur,India,India
+796,The city of Zhangjiagang is in China.,1,Zhangjiagang,China,China
+188,The city of Marseille is in France.,1,Marseille,France,France
+1348,The city of Gujranwala is in Pakistan.,1,Gujranwala,Pakistan,Pakistan
+1129,The city of Harbin is in Russia.,0,Harbin,Russia,China
+763,The city of Vijayawada is in Nigeria.,0,Vijayawada,Nigeria,India
+1041,The city of Asansol is in China.,0,Asansol,China,India
+550,The city of Kimhae is in South Korea.,1,Kimhae,South Korea,South Korea
+120,The city of Busan is in South Korea.,1,Busan,South Korea,South Korea
+1261,The city of Klang is in China.,0,Klang,China,Malaysia
+150,The city of Dehra Dun is in India.,1,Dehra Dun,India,India
+243,The city of Mexicali is in South Africa.,0,Mexicali,South Africa,Mexico
+1297,The city of Shantou is in Pakistan.,0,Shantou,Pakistan,China
+504,The city of Cuiaba is in Brazil.,1,Cuiaba,Brazil,Brazil
+341,The city of Kota Bharu is in Norway.,0,Kota Bharu,Norway,Malaysia
+737,The city of Bahcelievler is in Germany.,0,Bahcelievler,Germany,Turkey
+983,The city of Huzhou is in Germany.,0,Huzhou,Germany,China
+662,The city of Guwahati is in India.,1,Guwahati,India,India
+51,The city of Rohini is in Russia.,0,Rohini,Russia,India
+244,The city of Ciudad Juarez is in Mexico.,1,Ciudad Juarez,Mexico,Mexico
+636,The city of Aleppo is in Syria.,1,Aleppo,Syria,Syria
+959,The city of Bhavnagar is in Japan.,0,Bhavnagar,Japan,India
+1317,The city of Kandahar is in China.,0,Kandahar,China,Afghanistan
+159,The city of Palembang is in Brazil.,0,Palembang,Brazil,Indonesia
+1335,The city of Coimbatore is in Malaysia.,0,Coimbatore,Malaysia,India
+649,The city of Qinhuangdao is in Eritrea.,0,Qinhuangdao,Eritrea,China
+1359,The city of Tonghua is in Venezuela.,0,Tonghua,Venezuela,China
+716,The city of Lilongwe is in Malawi.,1,Lilongwe,Malawi,Malawi
+1435,The city of Tijuana is in the United Arab Emirates.,0,Tijuana,the United Arab Emirates,Mexico
+732,The city of Arequipa is in Peru.,1,Arequipa,Peru,Peru
+816,The city of Londrina is in Brazil.,1,Londrina,Brazil,Brazil
+993,The city of Helsinki is in Pakistan.,0,Helsinki,Pakistan,Finland
+142,The city of Qom is in Iran.,1,Qom,Iran,Iran
+1269,The city of Kotli is in the United States.,0,Kotli,the United States,Pakistan
+940,The city of Hachioji is in Japan.,1,Hachioji,Japan,Japan
+1285,The city of Gaziantep is in Mexico.,0,Gaziantep,Mexico,Turkey
+840,The city of Detroit is in the United States.,1,Detroit,the United States,the United States
+775,The city of Tehran is in Niger.,0,Tehran,Niger,Iran
+182,The city of Porto Velho is in Brazil.,1,Porto Velho,Brazil,Brazil
+626,The city of Seoul is in South Korea.,1,Seoul,South Korea,South Korea
+99,The city of Asmara is in Indonesia.,0,Asmara,Indonesia,Eritrea
+399,The city of Kemerovo is in India.,0,Kemerovo,India,Russia
+413,The city of Kagoshima is in India.,0,Kagoshima,India,Japan
+605,The city of Teresina is in Vietnam.,0,Teresina,Vietnam,Brazil
+917,The city of Gwalior is in China.,0,Gwalior,China,India
+260,The city of Jalandhar is in India.,1,Jalandhar,India,India
+1156,The city of Kota Kinabalu is in Malaysia.,1,Kota Kinabalu,Malaysia,Malaysia
+1068,The city of Makhachkala is in Russia.,1,Makhachkala,Russia,Russia
+454,The city of Shihezi is in China.,1,Shihezi,China,China
+1203,The city of Thuan An is in Mozambique.,0,Thuan An,Mozambique,Vietnam
+799,The city of Shanghai is in Mexico.,0,Shanghai,Mexico,China
+575,The city of Wenzhou is in Moldova.,0,Wenzhou,Moldova,China
+1436,The city of Jos is in Nigeria.,1,Jos,Nigeria,Nigeria
+1324,The city of Hiroshima is in Japan.,1,Hiroshima,Japan,Japan
+880,The city of Daejeon is in South Korea.,1,Daejeon,South Korea,South Korea
+672,The city of Khulna is in Bangladesh.,1,Khulna,Bangladesh,Bangladesh
+25,The city of Anqing is in Brazil.,0,Anqing,Brazil,China
+597,The city of Zibo is in India.,0,Zibo,India,China
+546,The city of Osaka is in Japan.,1,Osaka,Japan,Japan
+984,The city of Chizhou is in China.,1,Chizhou,China,China
+1201,The city of Port-au-Prince is in South Korea.,0,Port-au-Prince,South Korea,Haiti
+471,The city of Zhumadian is in Brazil.,0,Zhumadian,Brazil,China
+883,The city of Battagram is in Tanzania.,0,Battagram,Tanzania,Pakistan
+1033,The city of Aktobe is in Afghanistan.,0,Aktobe,Afghanistan,Kazakhstan
+1346,The city of Khartoum is in Sudan.,1,Khartoum,Sudan,Sudan
+212,The city of Tashkent is in Uzbekistan.,1,Tashkent,Uzbekistan,Uzbekistan
+1421,The city of Bujumbura is in Nigeria.,0,Bujumbura,Nigeria,Burundi
+141,The city of Basrah is in China.,0,Basrah,China,Iraq
+1107,The city of Oklahoma City is in China.,0,Oklahoma City,China,the United States
+938,The city of Amman is in Jordan.,1,Amman,Jordan,Jordan
+910,The city of Zarqa is in Jordan.,1,Zarqa,Jordan,Jordan
+1449,The city of Ipoh is in Brazil.,0,Ipoh,Brazil,Malaysia
+460,The city of Qionghai is in China.,1,Qionghai,China,China
+389,The city of Bahawalpur is in China.,0,Bahawalpur,China,Pakistan
+1299,The city of Shangluo is in Honduras.,0,Shangluo,Honduras,China
+1113,The city of Yibin is in Brazil.,0,Yibin,Brazil,China
+493,The city of New South Memphis is in China.,0,New South Memphis,China,the United States
+591,The city of Malang is in Morocco.,0,Malang,Morocco,Indonesia
+668,The city of Kermanshah is in Iran.,1,Kermanshah,Iran,Iran
+895,The city of Sharjah is in China.,0,Sharjah,China,the United Arab Emirates
+168,The city of Zhaotong is in China.,1,Zhaotong,China,China
+887,The city of Zhangzhou is in Nicaragua.,0,Zhangzhou,Nicaragua,China
+302,The city of Karol Bagh is in India.,1,Karol Bagh,India,India
+594,The city of Kashgar is in China.,1,Kashgar,China,China
+1488,The city of Kanayannur is in India.,1,Kanayannur,India,India
+371,The city of E'zhou is in Malaysia.,0,E'zhou,Malaysia,China
+582,The city of Hanzhong is in China.,1,Hanzhong,China,China
+318,The city of Jaboatao dos Guararapes is in Brazil.,1,Jaboatao dos Guararapes,Brazil,Brazil
+87,The city of Sokoto is in South Korea.,0,Sokoto,South Korea,Nigeria
+632,The city of Dubai is in the United Arab Emirates.,1,Dubai,the United Arab Emirates,the United Arab Emirates
+330,The city of Rahim Yar Khan is in Pakistan.,1,Rahim Yar Khan,Pakistan,Pakistan
+468,The city of Puente Alto is in Chile.,1,Puente Alto,Chile,Chile
+246,The city of Kampung Baru Subang is in Malaysia.,1,Kampung Baru Subang,Malaysia,Malaysia
+884,The city of Yaounde is in Cameroon.,1,Yaounde,Cameroon,Cameroon
+289,The city of Dnipro is in Russia.,0,Dnipro,Russia,Ukraine
+1424,The city of Esenler is in Turkey.,1,Esenler,Turkey,Turkey
+208,The city of Callao is in Peru.,1,Callao,Peru,Peru
+824,The city of Sanming is in China.,1,Sanming,China,China
+845,The city of Ashgabat is in Bangladesh.,0,Ashgabat,Bangladesh,Turkmenistan
+1459,The city of Las Pinas is in Yemen.,0,Las Pinas,Yemen,the Philippines
+697,The city of San Miguel de Tucuman is in China.,0,San Miguel de Tucuman,China,Argentina
+847,The city of Maracaibo is in Russia.,0,Maracaibo,Russia,Venezuela
+1457,The city of Kathmandu is in China.,0,Kathmandu,China,Nepal
+475,The city of Ya'an is in Morocco.,0,Ya'an,Morocco,China
+131,The city of Hwaseong-si is in Brazil.,0,Hwaseong-si,Brazil,South Korea
+542,The city of Tyumen is in Russia.,1,Tyumen,Russia,Russia
+729,The city of Zaria is in India.,0,Zaria,India,Nigeria
+1017,The city of Wanxian is in Algeria.,0,Wanxian,Algeria,China
+933,The city of Sofia is in South Korea.,0,Sofia,South Korea,Bulgaria
+1091,The city of Rio de Janeiro is in Japan.,0,Rio de Janeiro,Japan,Brazil
+95,The city of Fort Worth is in Russia.,0,Fort Worth,Russia,the United States
+750,The city of Onitsha is in Nigeria.,1,Onitsha,Nigeria,Nigeria
+191,The city of Lyon is in Canada.,0,Lyon,Canada,France
+190,The city of Lyon is in France.,1,Lyon,France,France
+1411,The city of Fuxin is in Pakistan.,0,Fuxin,Pakistan,China
+452,The city of Abobo is in Côte d'Ivoire.,1,Abobo,Côte d'Ivoire,Côte d'Ivoire
+1230,The city of New York City is in the United States.,1,New York City,the United States,the United States
+971,The city of Barquisimeto is in Poland.,0,Barquisimeto,Poland,Venezuela
+1296,The city of Shantou is in China.,1,Shantou,China,China
+724,The city of Conakry is in Guinea.,1,Conakry,Guinea,Guinea
+156,The city of Kumasi is in Ghana.,1,Kumasi,Ghana,Ghana
+124,The city of Matsuyama is in Japan.,1,Matsuyama,Japan,Japan
+567,The city of Kanpur is in Brazil.,0,Kanpur,Brazil,India
+1431,The city of Rawalpindi is in Brazil.,0,Rawalpindi,Brazil,Pakistan
+1149,The city of Bokaro is in China.,0,Bokaro,China,India
+717,The city of Lilongwe is in Turkey.,0,Lilongwe,Turkey,Malawi
+382,The city of Oyo is in Nigeria.,1,Oyo,Nigeria,Nigeria
+764,The city of Theni is in India.,1,Theni,India,India
+499,The city of Bobo-Dioulasso is in China.,0,Bobo-Dioulasso,China,Burkina Faso
+1124,The city of Jiangmen is in China.,1,Jiangmen,China,China
+58,The city of Makati City is in the Philippines.,1,Makati City,the Philippines,the Philippines
+1300,The city of Putian is in China.,1,Putian,China,China
+86,The city of Sokoto is in Nigeria.,1,Sokoto,Nigeria,Nigeria
+298,The city of Algiers is in Algeria.,1,Algiers,Algeria,Algeria
+372,The city of Campos dos Goytacazes is in Brazil.,1,Campos dos Goytacazes,Brazil,Brazil
+53,The city of Serang is in Poland.,0,Serang,Poland,Indonesia
+741,The city of Kharkiv is in Moldova.,0,Kharkiv,Moldova,Ukraine
+265,The city of Bareilly is in Mozambique.,0,Bareilly,Mozambique,India
+808,The city of Lusaka is in Zambia.,1,Lusaka,Zambia,Zambia
+831,The city of Dongying is in India.,0,Dongying,India,China
+1207,The city of Pretoria is in India.,0,Pretoria,India,South Africa
+1303,The city of Luzhou is in Peru.,0,Luzhou,Peru,China
+830,The city of Dongying is in China.,1,Dongying,China,China
+405,The city of Aguascalientes is in China.,0,Aguascalientes,China,Mexico
+604,The city of Teresina is in Brazil.,1,Teresina,Brazil,Brazil
+1085,The city of Bloemfontein is in China.,0,Bloemfontein,China,South Africa
+390,The city of New Kingston is in Jamaica.,1,New Kingston,Jamaica,Jamaica
+1442,The city of Ha'il is in Saudi Arabia.,1,Ha'il,Saudi Arabia,Saudi Arabia
+296,The city of Santiago de los Caballeros is in the Dominican Republic.,1,Santiago de los Caballeros,the Dominican Republic,the Dominican Republic
+516,The city of Jeonju is in South Korea.,1,Jeonju,South Korea,South Korea
+165,The city of Lahore is in China.,0,Lahore,China,Pakistan
+70,The city of Zhabei is in China.,1,Zhabei,China,China
+1064,The city of Kyoto is in Japan.,1,Kyoto,Japan,Japan
+756,The city of Chiclayo is in Peru.,1,Chiclayo,Peru,Peru
+114,The city of Linyi is in China.,1,Linyi,China,China
+966,The city of Erzurum is in Turkey.,1,Erzurum,Turkey,Turkey
+137,The city of Acapulco de Juarez is in Morocco.,0,Acapulco de Juarez,Morocco,Mexico
+630,The city of Hubli is in India.,1,Hubli,India,India
+216,The city of Hanoi is in Vietnam.,1,Hanoi,Vietnam,Vietnam
+170,The city of Weifang is in China.,1,Weifang,China,China
+637,The city of Aleppo is in China.,0,Aleppo,China,Syria
+69,The city of Borivli is in Ukraine.,0,Borivli,Ukraine,India
+376,The city of Ansan-si is in South Korea.,1,Ansan-si,South Korea,South Korea
+857,The city of Surakarta is in India.,0,Surakarta,India,Indonesia
+818,The city of Zigong is in China.,1,Zigong,China,China
+558,The city of Kaduna is in Nigeria.,1,Kaduna,Nigeria,Nigeria
+777,The city of Bayannur is in Russia.,0,Bayannur,Russia,China
+745,The city of Lviv is in China.,0,Lviv,China,Ukraine
+1235,The city of Santiago de Cuba is in India.,0,Santiago de Cuba,India,Cuba
+1274,The city of Cuttack is in India.,1,Cuttack,India,India
+903,The city of Guayaquil is in China.,0,Guayaquil,China,Ecuador
+1073,The city of Madurai is in Burundi.,0,Madurai,Burundi,India
+1144,The city of Rourkela is in India.,1,Rourkela,India,India
+33,The city of Bauchi is in Iran.,0,Bauchi,Iran,Nigeria
+566,The city of Kanpur is in India.,1,Kanpur,India,India
+277,The city of Bilimora is in Uzbekistan.,0,Bilimora,Uzbekistan,India
+856,The city of Surakarta is in Indonesia.,1,Surakarta,Indonesia,Indonesia
+464,The city of Taiz is in Yemen.,1,Taiz,Yemen,Yemen
+326,The city of Muscat is in Oman.,1,Muscat,Oman,Oman
+1171,The city of Bhiwandi is in China.,0,Bhiwandi,China,India
+129,The city of Incheon is in India.,0,Incheon,India,South Korea
+1039,The city of Kozhikode is in the United States.,0,Kozhikode,the United States,India
+398,The city of Kemerovo is in Russia.,1,Kemerovo,Russia,Russia
+134,The city of Bamako is in Mali.,1,Bamako,Mali,Mali
+962,The city of Shiraz is in Iran.,1,Shiraz,Iran,Iran
+982,The city of Huzhou is in China.,1,Huzhou,China,China
+228,The city of Linfen is in China.,1,Linfen,China,China
+185,The city of N'Djamena is in China.,0,N'Djamena,China,Chad
+1374,The city of Kawaguchi is in Japan.,1,Kawaguchi,Japan,Japan
+19,The city of Lu'an is in Turkey.,0,Lu'an,Turkey,China
+1194,The city of Bikaner is in India.,1,Bikaner,India,India
+1043,The city of Suizhou is in Japan.,0,Suizhou,Japan,China
+357,The city of Nanchang is in Malaysia.,0,Nanchang,Malaysia,China
+351,The city of Zhangye is in Venezuela.,0,Zhangye,Venezuela,China
+1447,The city of Cape Town is in China.,0,Cape Town,China,South Africa
+1166,The city of Ludhiana is in India.,1,Ludhiana,India,India
+358,The city of Luancheng is in China.,1,Luancheng,China,China
+1234,The city of Santiago de Cuba is in Cuba.,1,Santiago de Cuba,Cuba,Cuba
+12,The city of Abidjan is in Côte d'Ivoire.,1,Abidjan,Côte d'Ivoire,Côte d'Ivoire
+207,The city of Istanbul is in Ghana.,0,Istanbul,Ghana,Turkey
+918,The city of Dombivli is in India.,1,Dombivli,India,India
+1390,The city of Jakarta is in Indonesia.,1,Jakarta,Indonesia,Indonesia
+665,The city of Prayagraj is in Kenya.,0,Prayagraj,Kenya,India
+813,The city of Jaboatao is in Syria.,0,Jaboatao,Syria,Brazil
+898,The city of Kalininskiy is in Russia.,1,Kalininskiy,Russia,Russia
+160,The city of Novokuznetsk is in Russia.,1,Novokuznetsk,Russia,Russia
+336,The city of Volgograd is in Russia.,1,Volgograd,Russia,Russia
+391,The city of New Kingston is in South Africa.,0,New Kingston,South Africa,Jamaica
+635,The city of Astrakhan is in India.,0,Astrakhan,India,Russia
+88,The city of Abuja is in Nigeria.,1,Abuja,Nigeria,Nigeria
+826,The city of Guang'an is in China.,1,Guang'an,China,China
+1402,The city of Qujing is in China.,1,Qujing,China,China
+1422,The city of Ankara is in Turkey.,1,Ankara,Turkey,Turkey
+1125,The city of Jiangmen is in South Korea.,0,Jiangmen,South Korea,China
+1338,The city of Amritsar is in India.,1,Amritsar,India,India
+1450,The city of Kuantan is in Malaysia.,1,Kuantan,Malaysia,Malaysia
+1329,The city of Mandalay is in Algeria.,0,Mandalay,Algeria,Myanmar
+403,The city of Iztapalapa is in Yemen.,0,Iztapalapa,Yemen,Mexico
+1368,The city of Caracas is in Venezuela.,1,Caracas,Venezuela,Venezuela
+978,The city of Pingliang is in China.,1,Pingliang,China,China
+1012,The city of Benoni is in South Africa.,1,Benoni,South Africa,South Africa
+1426,The city of Cankaya is in Turkey.,1,Cankaya,Turkey,Turkey
+67,The city of Najafgarh is in Brazil.,0,Najafgarh,Brazil,India
+59,The city of Makati City is in India.,0,Makati City,India,the Philippines
+1023,The city of Hefei is in Germany.,0,Hefei,Germany,China
+785,The city of Recife is in North Korea.,0,Recife,North Korea,Brazil
+1337,The city of Chandigarh is in China.,0,Chandigarh,China,India
+1188,The city of Surat is in India.,1,Surat,India,India
+1184,The city of Leon de los Aldama is in Mexico.,1,Leon de los Aldama,Mexico,Mexico
+161,The city of Novokuznetsk is in China.,0,Novokuznetsk,China,Russia
+1354,The city of Xianning is in China.,1,Xianning,China,China
+955,The city of Guntur is in China.,0,Guntur,China,India
+1287,The city of Asuncion is in Nigeria.,0,Asuncion,Nigeria,Paraguay
+412,The city of Kagoshima is in Japan.,1,Kagoshima,Japan,Japan
+522,The city of Navi Mumbai is in India.,1,Navi Mumbai,India,India
+10,The city of Addis Ababa is in Ethiopia.,1,Addis Ababa,Ethiopia,Ethiopia
+28,The city of Panshan is in China.,1,Panshan,China,China
+241,The city of Ciudad Nezahualcoyotl is in Senegal.,0,Ciudad Nezahualcoyotl,Senegal,Mexico
+995,The city of Khabarovsk Vtoroy is in China.,0,Khabarovsk Vtoroy,China,Russia
+696,The city of San Miguel de Tucuman is in Argentina.,1,San Miguel de Tucuman,Argentina,Argentina
+461,The city of Qionghai is in Ecuador.,0,Qionghai,Ecuador,China
+155,The city of Ahvaz is in China.,0,Ahvaz,China,Iran
+987,The city of Chengdu is in South Korea.,0,Chengdu,South Korea,China
+1407,The city of Huainan is in Egypt.,0,Huainan,Egypt,China
+276,The city of Bilimora is in India.,1,Bilimora,India,India
+1153,The city of Tlaquepaque is in Japan.,0,Tlaquepaque,Japan,Mexico
+314,The city of Jilin is in China.,1,Jilin,China,China
+954,The city of Guntur is in India.,1,Guntur,India,India
+365,The city of Bijie is in Indonesia.,0,Bijie,Indonesia,China
+78,The city of Chaozhou is in China.,1,Chaozhou,China,China
+564,The city of Benin City is in Nigeria.,1,Benin City,Nigeria,Nigeria
+49,The city of Ajmer is in Russia.,0,Ajmer,Russia,India
+23,The city of Huaihua is in South Africa.,0,Huaihua,South Africa,China
+415,The city of Hamamatsu is in Russia.,0,Hamamatsu,Russia,Japan

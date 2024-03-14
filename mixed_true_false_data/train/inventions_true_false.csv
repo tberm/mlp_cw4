@@ -1,701 +1,701 @@
 ,statement,label,original_idx
-0,Narinder Singh Kapany lived in India.,1,68
-1,Daisuke Inoue lived in Japan.,1,619
-2,Alexander Fleming invented the penicillin discovery.,1,669
-3,Benjamin Holt invented the caterpillar track.,1,135
-4,Hans Oersted invented the electromagnetism discovery.,1,216
-5,August Horch invented the Audi automobile.,1,521
-6,Whitcomb Judson lived in U.S.,1,39
+375,Guglielmo Marconi lived in Italy.,1,435
+736,Thomas Edison invented the trackball.,0,467
+225,Philo Farnsworth lived in U.S.,1,260
+129,Elisha Gray invented the telegraph printer.,1,767
+185,Ignazio Porro lived in Italy.,1,84
+823,Fritz Pfleumer lived in Canada/U.S.,0,513
+242,Hans von Ohain lived in Germany.,1,706
+137,Vint Cerf invented the internet protocol suite.,1,702
+169,Leon Theremin invented the theremin.,1,843
+93,Ernesto Blanco lived in U.S.,1,218
+516,Felix Hoffmann invented the agricultural innovations.,0,408
+750,Archimedes lived in U.S.,0,412
+491,Bartolomeo Cristofori lived in U.S.,0,794
+788,Alfred Nobel lived in U.S.,0,159
+65,Christian Huygens lived in Netherlands.,1,436
+390,Yvonne Brill lived in Canada.,1,142
+565,Ralph Benjamin invented the Porro prism.,0,133
+794,John Logie Baird invented the karaoke machine.,0,116
+317,Rudolf Diesel lived in Germany.,1,248
+239,George Devol lived in U.S.,1,487
+634,Sir Charles Parsons invented the lightning rod.,0,565
+274,Robert Moog invented the Moog synthesizer.,1,759
+631,Igor Tamm invented the Unimate (first industrial robot).,0,34
+415,Konrad Zuse lived in Poland/France.,0,734
+593,Carl Elsener invented the laser.,0,773
+43,Willis Carrier lived in U.S.,1,115
+157,James Dyson lived in U.K.,1,132
+17,Michael Faraday lived in U.K.,1,236
+270,Hans Goldschmidt invented the thermite process.,1,482
+724,Mary Phelps Jacob lived in Ukraine/U.S.,0,849
+767,George Cayley lived in Canada.,0,219
+484,Leon Theremin invented the Geiger counter.,0,685
+197,Paul Gottlieb Nipkow invented the Nipkow disk (mechanical television).,1,425
+497,Thomas Savery invented the bagless vacuum cleaner.,0,632
+600,Emile Berliner invented the Kirlian photography.,0,226
+608,Karl Benz invented the industrial robot.,0,276
+722,Ruth Handler invented the refracting telescope.,0,699
+333,Shinya Yamanaka invented the induced pluripotent stem cells.,1,281
+217,Luther Simjian lived in Turkey/U.S.,1,274
+437,Garrett Morgan invented the adhesive (used in Post-it notes).,0,774
+691,Nicolas Appert invented the heterotransistor.,0,278
+321,Carl Elsener lived in Switzerland.,1,757
+19,Benjamin Rubin invented the vaccine jet injector.,1,552
+556,Charles Tellier lived in U.K.,0,509
+449,George Cayley invented the orangutan conservation.,0,174
+237,Auguste and Louis Lumière invented the cinematograph.,1,594
+667,Nikolay Slavyanov lived in Stephanie.,0,175
+162,Mary Phelps Jacob invented the modern brassiere.,1,322
+368,Guglielmo Marconi invented the radio.,1,197
+315,Ruth Benerito lived in U.S.,1,224
+522,Frederick McKinley Jones invented the karaoke machine.,0,705
+53,Carl Wilhelm Siemens invented the Siemens regenerative furnace.,1,383
+444,John Boyd Dunlop invented the refrigeration (absorption process).,0,344
+395,John Shepherd-Barron invented the ATM.,1,874
+101,Frederick McKinley Jones invented the refrigeration unit for trucks.,1,422
+448,Daniel Fahrenheit invented the piano roll (used in player pianos).,0,202
+253,Alva J. Fisher lived in U.S.,1,473
+76,Godfrey Hounsfield lived in U.K.,1,859
+780,William Sturgeon lived in Germany.,0,462
+393,Charles Francis Richter lived in U.S.,1,533
+161,Frederick McKinley Jones lived in U.S.,1,691
+427,Ruth Benerito invented the Barbie doll.,0,355
+674,Ralph Benjamin lived in Italy.,0,262
+498,August Horch invented the electron cooling.,0,298
+241,Alessandro Volta lived in Italy.,1,546
+170,Linus Torvalds invented the Linux operating system.,1,855
+601,Richard Gatling lived in U.K.,0,271
+372,Alexander Graham Bell invented the telephone.,1,119
+786,Frank Bunker Gilbreth lived in Russia.,0,654
+742,Charles Francis Richter invented the liquefied gas refrigeration.,0,15
+32,André-Jacques Garnerin lived in France.,1,338
+382,Garrett Morgan invented the traffic signal.,1,136
+562,Paul Gottlieb Nipkow invented the electromagnetism discovery.,0,93
+640,Robert Chesebrough invented the roll film.,0,723
+606,Biruté Galdikas lived in France.,0,612
+28,Joseph Aspdin lived in U.K.,1,254
+148,Georges Claude lived in France.,1,549
+502,Herbert Akroyd Stuart lived in Russia.,0,677
+341,Ada Lovelace lived in U.K.,1,671
+434,Evangelista Torricelli invented the wireless remote control.,0,551
+475,Archimedes invented the electric washing machine.,0,345
+360,Eli Whitney lived in U.S.,1,601
+818,Robert Noyce invented the Unimate (first industrial robot).,0,440
+599,George Washington Carver invented the Gatling gun.,0,493
+231,Hans Oersted lived in Denmark.,1,534
+216,Clarence Birdseye invented the flash freezing.,1,146
+615,Leonardo da Vinci invented the discovery of radium and polonium.,0,574
+684,Josephine Cochrane lived in Germany.,0,169
+266,Igor Sikorsky lived in Ukraine/U.S.,1,595
+459,Bartolomeo Cristofori invented the geodesic dome.,0,217
+479,Gustaf Dalén lived in Germany.,0,598
+396,Chester Carlson lived in U.S.,1,402
+94,Sir Charles Parsons lived in U.K.,1,564
+720,Clarence Birdseye invented the wireless remote control.,0,227
+710,Emile Berliner lived in Russia.,0,3
+476,Charles Francis Jenkins lived in Germany.,0,686
+636,Elihu Thomson invented the traffic signal.,0,443
 7,Joseph Engelberger invented the industrial robot.,1,121
 8,George Pullman invented the Pullman railroad sleeping car.,1,696
-9,Albert Ghiorso lived in U.S.,1,359
+486,Carl Sontheimer lived in Switzerland.,0,151
+156,Charles Townes lived in U.S.,1,641
+138,Igor Tamm invented the electron cooling.,1,65
+158,Vint Cerf lived in U.S.,1,758
+501,Ferdinand Carré invented the Post-it notes.,0,852
+500,Otis Boykin invented the refrigeration (absorption process).,0,193
+358,Frank Julian Sprague invented the electric streetcar system.,1,125
+286,James Hargreaves invented the spinning jenny.,1,78
+222,Johannes Gutenberg lived in Germany.,1,414
+618,Christian Huygens lived in Scotland.,0,670
+271,Samuel Fox invented the steel ribbed umbrella.,1,376
+424,Michael Faraday invented the friction match.,0,396
+582,Samuel Colt invented the slide fastener (zipper precursor).,0,118
+59,John Atanasoff invented the first electronic digital computer (prototype).,1,558
+693,Wilhelm Conrad Röntgen invented the discovery of Pluto.,0,357
+124,Joseph Marie Jacquard lived in France.,1,780
+470,Sir Sandford Fleming lived in U.S.,0,114
+594,George Antheil invented the Band-Aid.,0,873
+61,Garrett Morgan lived in U.S.,1,343
+630,Sir Isaac Newton invented the celluloid.,0,708
+361,Nils Bohlin invented the three-point seatbelt.,1,98
+566,Wilhelm Conrad Röntgen lived in U.S.,0,432
+481,Hans Oersted lived in U.S.,0,302
+503,Gordon Gould lived in Canada.,0,562
+362,Hedy Lamarr invented the frequency hopping spread spectrum.,1,511
+795,Gustaf Dalén invented the thermite process.,0,616
+605,Hans Geiger invented the frequency hopping spread spectrum.,0,592
+307,Gordon Gould invented the laser.,1,363
 10,John Bardeen invented the transistor.,1,800
+805,Christian Huygens invented the ATM.,0,148
+757,Carlos Glidden invented the ATM.,0,13
+109,Lester Wire lived in U.S.,1,88
+159,William Kelly lived in U.S.,1,352
+598,Igor Tamm lived in U.S.,0,464
+58,James Murray Spangler lived in U.S.,1,746
+265,Ruth Handler lived in U.S.,1,547
+617,John Walker invented the modern electric refrigerator.,0,437
+804,Philipp Reis lived in Finland.,0,787
+378,Joseph Bramah invented the hydraulic press.,1,614
+653,Henri Giffard invented the wrinkle-resistant fabric.,0,11
+312,Ruth Handler invented the Barbie doll.,1,791
+302,Jack Kilby lived in U.S.,1,334
+211,Karl Landsteiner invented the blood types.,1,605
+70,George Cayley invented the aerodynamics (theoretical).,1,420
+192,Hippolyte Mège-Mouriès invented the margarine.,1,77
+438,Orville and Wilbur Wright lived in France.,0,411
+426,Elisha Gray invented the frequency hopping spread spectrum.,0,439
+380,John Walker lived in U.K.,1,841
+67,Kwolek lived in Stephanie.,1,544
+545,Yvonne Brill lived in U.S.,0,819
+383,James West invented the electret microphone.,1,783
+741,John Gorrie invented the piano.,0,168
+37,Carl Sontheimer lived in U.S.,1,729
+659,Vint Cerf lived in Italy.,0,715
+15,Elisha Otis lived in U.S.,1,249
+350,Walter Hunt lived in U.S.,1,139
+183,Sir Sandford Fleming lived in Canada.,1,102
+273,Sir Charles Parsons invented the steam turbine.,1,69
+346,Sir Humphry Davy lived in U.K.,1,199
+727,Yvonne Brill invented the electric wheelchair.,0,801
+698,Willem Einthoven invented the frameless parachute.,0,726
+38,Christopher Cockerell invented the hovercraft.,1,76
+456,William Kelly invented the phonograph (independent inventor).,0,704
+542,Tim Berners-Lee invented the movable type printing press.,0,143
+379,Charles Francis Jenkins lived in U.S.,1,663
+490,William Kelly lived in France.,0,472
+461,Giovanni Caselli lived in U.S.,0,382
+682,Charles Strite lived in Italy.,0,557
+754,Alfred Nobel invented the Band-Aid.,0,434
+100,Joseph Aspdin invented the Portland cement.,1,517
+813,Ami Argand lived in U.S.,0,628
+817,James Clerk Maxwell lived in U.S.,0,110
+714,Karl Landsteiner invented the waterproof fabric.,0,485
+530,Giovanni Caselli invented the integrated circuit.,0,192
+810,James Watt invented the electric traffic light.,0,586
+421,Spencer Silver invented the Richter scale.,0,823
+78,Alec Jeffreys lived in U.K.,1,540
+267,Édouard-Léon Scott de Martinville invented the Phonautograph.,1,532
+55,John Gorrie lived in U.S.,1,385
+26,Thomas Edison lived in U.S.,1,477
+614,Joseph Marie Jacquard lived in Netherlands.,0,59
+616,Yoshiro Nakamatsu invented the pop-up toaster.,0,535
+443,David Schwarz lived in France.,0,138
+400,Yoshua Bengio invented the deep learning (artificial neural networks).,1,806
+364,August Horch lived in Germany.,1,584
+283,Richard Gatling invented the Gatling gun.,1,661
+98,Zhores Alferov lived in Russia.,1,836
+325,Gustaf Dalén lived in Sweden.,1,7
+284,Igor Tamm lived in Russia.,1,489
+622,Robert Moog lived in Austria/U.S.,0,229
+669,Joseph Aspdin lived in Switzerland.,0,205
+306,Leonardo da Vinci invented the various inventions and concepts (theoretical).,1,372
+572,Hans von Ohain lived in Canada.,0,814
+534,Rudolf Kálmán invented the penicillin discovery.,0,403
+293,Semyon Kirlian lived in Russia.,1,82
+555,Ernest Swinton lived in U.S.,0,337
+123,John Ericsson lived in Sweden.,1,560
+160,Edwin Herbert Hall lived in U.S.,1,2
+149,Sergey Brin and Larry Page lived in U.S.,1,673
+244,James Watt lived in Scotland.,1,206
+60,Herbert Saffir invented the Saffir-Simpson Hurricane Scale.,1,840
+494,Charles Wheatstone lived in France.,0,44
+789,Joseph Marie Jacquard invented the electrocardiograph (ECG).,0,817
+208,Albert Ghiorso invented the co-discovery of multiple elements.,1,178
+539,Nikolai Basov lived in U.S.,0,200
+163,Marie Curie invented the discovery of radium and polonium.,1,306
+462,Frederick G. Creed invented the AGA lighthouse.,0,452
+304,Sir Isaac Newton invented the reflecting telescope.,1,446
+345,Archimedes invented the Archimedes' screw.,1,280
+125,Hans Berger lived in Germany.,1,336
+39,Candace Pert lived in U.S.,1,137
+728,Fridtjof Nansen invented the early steam engine.,0,6
+642,Edwin Link lived in U.K.,0,32
+650,Florence Parpart invented the trackball.,0,105
+721,Shinya Yamanaka lived in Germany.,0,149
+184,John Logie Baird invented the mechanical television.,1,556
+547,Edmund Cartwright invented the Morse code.,0,161
+708,Valdemar Poulsen invented the mechanical television.,0,51
+20,Giovanni Caselli lived in Italy.,1,684
+188,Charles Townes invented the maser.,1,742
+729,Louis Pasteur invented the vaccine jet injector.,0,29
+34,Thomas Savery lived in U.K.,1,311
+2,Alexander Fleming invented the penicillin discovery.,1,669
+713,Charles Francis Richter lived in France.,0,267
+343,Zhores Alferov invented the heterotransistor.,1,165
+661,Sergey Brin and Larry Page invented the DNA fingerprinting.,0,367
+816,Kwolek lived in U.S.,0,269
+740,Carl Elsener lived in U.S.,0,424
+342,Elihu Thomson lived in U.S.,1,815
+327,Frederick Walton invented the linoleum.,1,797
+580,Lester Wire invented the power loom.,0,332
+226,Emile Berliner invented the gramophone.,1,361
+51,Elihu Thomson invented the arc welding.,1,606
+467,George Eastman invented the Wheatstone bridge.,0,160
+620,James West invented the wrinkle-resistant fabric.,0,162
+357,John Ericsson invented the U.S.,1,474
+436,Charles Francis Jenkins invented the gasoline-powered automobile.,0,857
+248,Henry Ford lived in U.S.,1,566
+324,Marvin Camras lived in U.S.,1,264
+64,Clyde Tombaugh invented the discovery of Pluto.,1,368
+664,Elisha Gray lived in Austria/U.S.,0,768
+337,Alva J. Fisher invented the electric washing machine.,1,231
+373,Stephanie Kwolek lived in U.S.,1,291
+295,Clarence Birdseye lived in U.S.,1,21
+597,Robert Moog invented the frequency hopping spread spectrum.,0,85
+802,Joseph Henry lived in U.K.,0,625
+495,Clyde Tombaugh invented the electret microphone.,0,548
+110,Biruté Galdikas lived in Canada.,1,617
+550,Karl Landsteiner lived in U.K.,0,648
+371,Christopher Cockerell lived in U.K.,1,563
+392,Karl Benz invented the gasoline-powered automobile.,1,312
+36,Georges Claude invented the neon lighting.,1,624
+658,George Pullman lived in U.K.,0,9
+489,Hans Goldschmidt lived in Netherlands.,0,340
+528,John Callcott Horsley lived in Germany.,0,45
+633,Frederick Walton lived in U.S.,0,4
+4,Hans Oersted invented the electromagnetism discovery.,1,216
+150,George de Mestral lived in Switzerland.,1,370
+735,Charles Goodyear invented the dry collodion photographic plate.,0,679
+463,Thomas Edison lived in U.K.,0,866
+45,Fritz Pfleumer lived in Germany.,1,74
+72,Philipp Reis lived in Germany.,1,490
+24,Louis Pasteur invented the pasteurization.,1,279
+442,Gideon Sundback invented the electron scanning tube (Image dissector).,0,674
+406,Ferdinand von Zeppelin invented the rigid airship (Zeppelin).,1,516
+178,David Schwarz lived in Croatia.,1,693
+14,Gustaf Dalén invented the AGA lighthouse.,1,244
+203,John Wesley Hyatt lived in U.S.,1,131
+223,Reginald Fessenden lived in Canada/U.S.,1,643
+414,Hans Geiger lived in Austria/U.S.,0,283
+289,Charles Goodyear invented the vulcanized rubber.,1,326
+641,Edwin H. Land lived in Sweden.,0,87
+763,Hedy Lamarr invented the Morse code.,0,416
+723,Chester Carlson lived in U.K.,0,35
+235,Thomas Tompion invented the cylinder escapement (clockmaking).,1,844
+320,Édouard-Léon Scott de Martinville lived in France.,1,243
+603,Jack Kilby lived in U.K.,0,778
+73,Marvin Camras invented the magnetic recording.,1,183
+212,Joseph Bramah lived in U.K.,1,277
+796,August Horch lived in Russia.,0,58
+6,Whitcomb Judson lived in U.S.,1,39
+739,Elisha Otis invented the tank.,0,341
+292,Earle Dickson invented the Band-Aid.,1,126
+91,Henry Bessemer invented the Bessemer process for steelmaking.,1,779
+165,John Callcott Horsley lived in U.K.,1,331
+5,August Horch invented the Audi automobile.,1,521
+401,Samuel Morse invented the Morse code.,1,514
+356,George Eastman lived in U.S.,1,418
+585,Daniel Fahrenheit lived in U.S.,0,681
+760,William Congreve invented the snowmobile.,0,113
+541,Charles Goodyear lived in U.K.,0,827
+673,James Starley invented the zipper.,0,211
+473,Eli Whitney invented the electric wheelchair.,0,465
+579,Cai Lun lived in Italy.,0,203
+776,Charles Cros lived in U.S.,0,304
+521,Joseph-Armand Bombardier invented the orangutan conservation.,0,737
+662,Joseph Glidden lived in Germany.,0,478
+692,Edouard Benedictus lived in U.S.,0,377
+762,Henry Bessemer invented the electret microphone.,0,701
+68,Joseph-Armand Bombardier lived in Canada.,1,117
+800,Nicolas Appert lived in Russia.,0,522
+174,Biruté Galdikas invented the orangutan conservation.,1,42
+778,Joseph Henry invented the linoleum.,0,488
+648,Robert Adler invented the spinning jenny.,0,314
+730,Georges Claude lived in Italy.,0,349
+554,Rudolf Kálmán lived in U.K.,0,568
+803,Thomas Wedgwood invented the Linux operating system.,0,275
+330,Joseph Glidden lived in U.S.,1,40
+561,Charles Macintosh invented the transistor.,0,457
+797,Hans Goldschmidt invented the refracting telescope.,0,299
+581,Édouard-Léon Scott de Martinville invented the hovercraft.,0,581
+262,Igor Sikorsky invented the practical helicopter.,1,816
+107,George Antheil invented the piano roll (used in player pianos).,1,360
+477,Levi Strauss invented the laser.,0,651
+798,Godfrey Hounsfield lived in Denmark.,0,170
+388,Jean-Bernard-Léon Foucault lived in France.,1,212
+46,Edmund Cartwright lived in U.K.,1,492
+454,Henri Giffard lived in U.S.,0,323
+151,Ruth Benerito invented the wrinkle-resistant fabric.,1,365
+243,Fridtjof Nansen lived in Norway.,1,112
+363,Edmund Cartwright invented the power loom.,1,64
+29,Philo Taylor Farnsworth invented the electron scanning tube (Image dissector).,1,666
+117,Spencer Silver lived in U.S.,1,604
+90,Nikolay Slavyanov lived in Russia.,1,825
+301,Charles Strite invented the pop-up toaster.,1,179
+531,Ami Argand invented the electric streetcar system.,0,198
+227,Maria Telkes invented the solar thermal storage system.,1,728
+696,Joseph Glidden invented the jet engine.,0,466
+291,Alan Turing invented the Turing machine (theoretical).,1,608
+348,Leonardo da Vinci lived in Italy.,1,429
+686,Carl Wilhelm Siemens lived in U.S.,0,781
+417,Blaise Pascal invented the discovery of radium and polonium.,0,740
+505,Gordon Gould invented the snowmobile.,0,207
+677,Samuel Fox invented the liquefied gas refrigeration.,0,754
+66,Richard Leach Maddox invented the dry collodion photographic plate.,1,475
+206,John Gorrie invented the mechanical refrigeration (ice-making machine).,1,463
+297,James Clerk Maxwell invented the electromagnetic field theory.,1,652
+18,Galileo Galilei lived in Italy.,1,97
+309,Willem Einthoven lived in Netherlands.,1,853
+471,Benjamin Rubin invented the telegraph printer.,0,89
+552,Ignazio Porro lived in U.S.,0,129
+3,Benjamin Holt invented the caterpillar track.,1,135
+220,John Ambrose Fleming lived in U.K.,1,456
+611,Igor Sikorsky lived in U.S.,0,196
+56,James Hargreaves lived in U.K.,1,692
+672,Arthur Fry lived in France.,0,640
+637,Richard Leach Maddox invented the blood types.,0,634
+69,Nicolas Appert lived in France.,1,717
+422,Ada Lovelace lived in U.S.,0,603
+54,John Ambrose Fleming invented the vacuum tube diode.,1,764
+349,Gottlieb Daimler lived in Germany.,1,460
+675,Ralph H. Baer invented the canning process.,0,618
+131,Herbert Saffir lived in U.S.,1,124
+700,Alexander Fleming lived in France.,0,318
+419,John Logie Baird lived in Japan.,0,375
+114,Alexander Fleming lived in U.K.,1,339
+154,Konrad Zuse lived in Germany.,1,694
+404,Charles Goodyear lived in U.S.,1,49
+81,Charles Fritts invented the solar cell.,1,471
+200,Felix Hoffmann lived in Germany.,1,796
+281,Thomas Wedgwood invented the photogram (proto-photography).,1,809
+256,Robert Noyce lived in U.S.,1,528
+643,Richard Trevithick invented the airplane.,0,707
+193,Lloyd Groff Copeman invented the electric stove.,1,518
+176,Blaise Pascal invented the mechanical calculator.,1,506
+365,Earle Dickson lived in U.S.,1,120
+144,Yoshiro Nakamatsu lived in Japan.,1,860
+651,Samuel Morse lived in Germany.,0,140
+27,Sir Sandford Fleming invented the standard time zones.,1,451
+308,Antoine Lavoisier invented the modern chemical nomenclature.,1,56
+536,Gottlieb Daimler invented the airship (non-rigid).,0,144
+822,Benjamin Holt invented the Barbie doll.,0,333
+533,Galileo Galilei lived in U.S.,0,626
+589,Gottlieb Daimler lived in France.,0,72
+177,John Callcott Horsley invented the Christmas card.,1,804
+234,Godfrey Hounsfield invented the computed tomography (CT) scanner.,1,295
+781,Luther Simjian invented the Band-Aid.,0,505
+465,Blaise Pascal lived in Poland/France.,0,285
+290,Henri Giffard lived in France.,1,831
+647,John Gorrie lived in Italy.,0,235
+57,Carlos Glidden invented the typewriter.,1,733
+296,Arthur Fry lived in U.S.,1,79
 11,Benjamin Holt lived in U.S.,1,166
+704,Édouard-Léon Scott de Martinville lived in U.K.,0,294
+319,Eugene Polley invented the wireless remote control.,1,486
+126,Samuel Fox lived in U.K.,1,335
+627,Ferdinand Carré lived in U.S.,0,63
+173,George Cayley lived in U.K.,1,407
+632,Guglielmo Marconi lived in U.K.,0,145
+75,John Atanasoff lived in U.S.,1,99
+543,Gideon Sundback lived in U.S.,0,222
+63,Louis Pasteur lived in France.,1,316
+517,Valdemar Poulsen lived in Scotland.,0,500
+305,Daniel Fahrenheit invented the mercury-in-glass thermometer.,1,738
+468,John von Neumann invented the Google search engine.,0,789
+238,Hippolyte Mège-Mouriès lived in France.,1,602
+538,Cai Lun invented the piano.,0,369
+416,Sir Humphry Davy lived in U.S.,0,786
+549,Wallace Carothers invented the magnetic wire recorder.,0,623
+455,Herbert Saffir invented the electric generator.,0,423
+568,Arthur Fry invented the Phonautograph.,0,391
+439,Robert Adler lived in U.K.,0,438
+204,Paul Gottlieb Nipkow lived in Germany.,1,324
+553,John Boyd Dunlop lived in France.,0,426
+201,Alfred Nobel lived in Sweden.,1,553
+709,R. Buckminster Fuller invented the mechanical television.,0,639
+413,John Kay invented the electric stove.,0,808
+268,Luther George Simjian lived in Turkey/U.S.,1,123
+509,Philo Farnsworth invented the electroencephalography (EEG).,0,653
+31,Henri Giffard invented the airship (non-rigid).,1,588
+116,Robert Moog lived in U.S.,1,106
+483,Hans Berger invented the flash freezing.,0,719
+629,John Wesley Hyatt lived in U.K.,0,748
+773,Semyon Kirlian invented the friction match.,0,753
+811,Lloyd Groff Copeman lived in Germany.,0,237
+526,Paul Gottlieb Nipkow lived in Denmark.,0,86
+329,Elisha Otis invented the safety elevator.,1,656
+347,Grace Hopper lived in U.S.,1,615
+9,Albert Ghiorso lived in U.S.,1,359
+255,Sir Frank Whittle invented the jet engine.,1,520
+99,Jacob Perkins lived in U.S.,1,695
+210,Cai Lun lived in China.,1,869
+761,Edmund Cartwright lived in U.S.,0,839
+215,Orville and Wilbur Wright invented the airplane.,1,75
+814,Willem Einthoven lived in France.,0,342
+639,Sir Frank Whittle invented the tank.,0,30
+175,Mary Walton invented the noise reduction system for elevated railways.,1,858
+759,William Congreve lived in Canada.,0,5
+49,Alessandro Volta invented the electric battery.,1,386
+689,Hippolyte Mège-Mouriès lived in U.S.,0,325
+450,Mary Walton lived in France.,0,204
+440,Linus Torvalds invented the U.S.,0,270
+731,Frank Bunker Gilbreth invented the Kirlian photography.,0,736
+80,Eugene Polley lived in U.S.,1,833
+812,Alexander Graham Bell invented the Audi automobile.,0,16
+588,Zhores Alferov lived in U.K.,0,245
+679,Elisha Otis lived in U.K.,0,561
+167,William Kelly invented the Bessemer process for steelmaking.,1,519
+774,George Eastman lived in U.K.,0,92
+764,John Bardeen invented the telegraph printer.,0,73
+232,Wallace Carothers lived in U.S.,1,130
+228,Charles Wheatstone lived in U.K.,1,611
+334,Shinya Yamanaka lived in Japan.,1,682
+734,George Devol invented the compression refrigeration.,0,228
+303,Grace Hopper invented the COBOL programming language.,1,104
+207,Joseph Swan lived in U.K.,1,571
+676,Joseph Swan invented the alternating current (AC) electrical system.,0,404
+213,Sir Isaac Newton lived in U.K.,1,351
+514,Mary Walton invented the canning process.,0,395
+423,James Hargreaves invented the U.S.,0,536
+44,Emile Berliner lived in Germany/U.S.,1,610
+507,Herbert Akroyd Stuart invented the Kirlian photography.,0,272
+42,Carlos Glidden lived in U.S.,1,371
+251,Sir Humphry Davy invented the safety lamp.,1,453
+402,Henry Bessemer lived in U.K.,1,155
+701,Reginald Fessenden invented the electromagnetic field theory.,0,173
+575,Narinder Singh Kapany lived in U.K.,0,287
+367,Josephine Cochrane invented the automatic dishwasher.,1,36
+403,Thomas Savery invented the early steam engine.,1,523
+558,David Schwarz invented the modern chemical nomenclature.,0,194
+595,James Murray Spangler lived in U.K.,0,252
+33,Frank Bunker Gilbreth lived in U.S.,1,164
+205,Percy Spencer lived in U.S.,1,154
+557,Konrad Zuse invented the discovery of radium and polonium.,0,856
+602,Grace Hopper lived in U.K.,0,444
+607,James Watt lived in U.S.,0,190
+525,Felix Hoffmann lived in U.S.,0,524
+96,John Walker invented the friction match.,1,320
 12,John T. Parsons invented the numerical control (CNC).,1,531
 13,James Clerk Maxwell lived in U.K.,1,735
-14,Gustaf Dalén invented the AGA lighthouse.,1,244
-15,Elisha Otis lived in U.S.,1,249
-16,Auguste and Louis Lumière lived in France.,1,865
-17,Michael Faraday lived in U.K.,1,236
-18,Galileo Galilei lived in Italy.,1,97
-19,Benjamin Rubin invented the vaccine jet injector.,1,552
-20,Giovanni Caselli lived in Italy.,1,684
-21,Lester Wire invented the electric traffic light.,1,188
-22,Mary Anderson invented the windshield wiper.,1,378
-23,André-Jacques Garnerin invented the frameless parachute.,1,108
-24,Louis Pasteur invented the pasteurization.,1,279
-25,Christian Huygens invented the pendulum clock.,1,714
-26,Thomas Edison lived in U.S.,1,477
-27,Sir Sandford Fleming invented the standard time zones.,1,451
-28,Joseph Aspdin lived in U.K.,1,254
-29,Philo Taylor Farnsworth invented the electron scanning tube (Image dissector).,1,666
-30,Ralph Benjamin lived in U.K.,1,481
-31,Henri Giffard invented the airship (non-rigid).,1,588
-32,André-Jacques Garnerin lived in France.,1,338
-33,Frank Bunker Gilbreth lived in U.S.,1,164
-34,Thomas Savery lived in U.K.,1,311
-35,Bette Nesmith Graham lived in U.S.,1,288
-36,Georges Claude invented the neon lighting.,1,624
-37,Carl Sontheimer lived in U.S.,1,729
-38,Christopher Cockerell invented the hovercraft.,1,76
-39,Candace Pert lived in U.S.,1,137
-40,Philipp Reis invented the early telephone prototype.,1,208
-41,Henry Ford invented the assembly line production.,1,41
-42,Carlos Glidden lived in U.S.,1,371
-43,Willis Carrier lived in U.S.,1,115
-44,Emile Berliner lived in Germany/U.S.,1,610
-45,Fritz Pfleumer lived in Germany.,1,74
-46,Edmund Cartwright lived in U.K.,1,492
-47,Samuel Colt invented the revolver.,1,191
-48,Rudolf Kálmán lived in Hungary.,1,66
-49,Alessandro Volta invented the electric battery.,1,386
-50,Benjamin Rubin lived in U.S.,1,851
-51,Elihu Thomson invented the arc welding.,1,606
-52,Richard Leach Maddox lived in U.K.,1,158
-53,Carl Wilhelm Siemens invented the Siemens regenerative furnace.,1,383
-54,John Ambrose Fleming invented the vacuum tube diode.,1,764
-55,John Gorrie lived in U.S.,1,385
-56,James Hargreaves lived in U.K.,1,692
-57,Carlos Glidden invented the typewriter.,1,733
-58,James Murray Spangler lived in U.S.,1,746
-59,John Atanasoff invented the first electronic digital computer (prototype).,1,558
-60,Herbert Saffir invented the Saffir-Simpson Hurricane Scale.,1,840
-61,Garrett Morgan lived in U.S.,1,343
-62,Jack Kilby invented the integrated circuit.,1,48
-63,Louis Pasteur lived in France.,1,316
-64,Clyde Tombaugh invented the discovery of Pluto.,1,368
-65,Christian Huygens lived in Netherlands.,1,436
-66,Richard Leach Maddox invented the dry collodion photographic plate.,1,475
-67,Kwolek lived in Stephanie.,1,544
-68,Joseph-Armand Bombardier lived in Canada.,1,117
-69,Nicolas Appert lived in France.,1,717
-70,George Cayley invented the aerodynamics (theoretical).,1,420
-71,Evangelista Torricelli invented the barometer.,1,870
-72,Philipp Reis lived in Germany.,1,490
-73,Marvin Camras invented the magnetic recording.,1,183
-74,R. Buckminster Fuller invented the geodesic dome.,1,807
-75,John Atanasoff lived in U.S.,1,99
-76,Godfrey Hounsfield lived in U.K.,1,859
-77,Antoine Lavoisier lived in France.,1,181
-78,Alec Jeffreys lived in U.K.,1,540
-79,Thomas Edison invented the light bulb.,1,232
-80,Eugene Polley lived in U.S.,1,833
-81,Charles Fritts invented the solar cell.,1,471
-82,Dr. Robert Gallo lived in U.S.,1,826
-83,Charles Francis Richter invented the Richter scale.,1,688
-84,Robert Adler invented the ultrasonic remote control.,1,824
-85,Eli Whitney invented the cotton gin.,1,554
-86,Wilhelm Conrad Röntgen invented the X-rays discovery.,1,25
-87,Ernest Swinton lived in U.K.,1,210
-88,George Antheil lived in U.S.,1,470
-89,Alexander Graham Bell lived in Scotland/Canada/U.S.,1,284
-90,Nikolay Slavyanov lived in Russia.,1,825
-91,Henry Bessemer invented the Bessemer process for steelmaking.,1,779
-92,Gideon Sundback invented the zipper.,1,83
-93,Ernesto Blanco lived in U.S.,1,218
-94,Sir Charles Parsons lived in U.K.,1,564
-95,Ami Argand lived in Switzerland.,1,268
-96,John Walker invented the friction match.,1,320
-97,Joseph Henry lived in U.S.,1,525
-98,Zhores Alferov lived in Russia.,1,836
-99,Jacob Perkins lived in U.S.,1,695
-100,Joseph Aspdin invented the Portland cement.,1,517
-101,Frederick McKinley Jones invented the refrigeration unit for trucks.,1,422
-102,Ernest Swinton invented the tank.,1,364
-103,Willem Einthoven invented the electrocardiograph (ECG).,1,872
-104,Hans Goldschmidt lived in Germany.,1,750
-105,William Sturgeon lived in U.K.,1,17
-106,Wilhelm Conrad Röntgen lived in Germany.,1,668
-107,George Antheil invented the piano roll (used in player pianos).,1,360
-108,Yvonne Brill invented the U.S.,1,508
-109,Lester Wire lived in U.S.,1,88
-110,Biruté Galdikas lived in Canada.,1,617
-111,Evangelista Torricelli lived in Italy.,1,676
-112,Josephine Cochrane lived in U.S.,1,328
-113,Johannes Gutenberg invented the movable type printing press.,1,293
-114,Alexander Fleming lived in U.K.,1,339
-115,Frederick Walton lived in U.K.,1,18
-116,Robert Moog lived in U.S.,1,106
-117,Spencer Silver lived in U.S.,1,604
-118,Alan Turing lived in U.K.,1,241
-119,Charles Fritts lived in U.S.,1,67
-120,Nikolai Basov lived in Soviet Union.,1,430
-121,Sergey Brin and Larry Page invented the Google search engine.,1,700
-122,Charles Macintosh lived in U.K.,1,286
-123,John Ericsson lived in Sweden.,1,560
-124,Joseph Marie Jacquard lived in France.,1,780
-125,Hans Berger lived in Germany.,1,336
-126,Samuel Fox lived in U.K.,1,335
-127,László Bíró invented the ballpoint pen.,1,599
-128,Pierre Curie lived in France.,1,820
-129,Elisha Gray invented the telegraph printer.,1,767
-130,Gottlieb Daimler invented the internal combustion engine.,1,503
-131,Herbert Saffir lived in U.S.,1,124
-132,Valdemar Poulsen lived in Denmark.,1,251
-133,Philo Farnsworth invented the electronic television.,1,379
-134,Benjamin Franklin lived in U.S.,1,100
-135,Karl Benz lived in Germany.,1,579
-136,Nikolai Basov invented the molecular laser.,1,720
-137,Vint Cerf invented the internet protocol suite.,1,702
-138,Igor Tamm invented the electron cooling.,1,65
-139,Robert Chesebrough invented the Vaseline.,1,582
-140,Fridtjof Nansen invented the modern polar exploration.,1,657
-141,Chester Carlson invented the xerography.,1,567
-142,Rudolf Diesel invented the diesel engine.,1,53
-143,Samuel Morse lived in U.S.,1,828
-144,Yoshiro Nakamatsu lived in Japan.,1,860
-145,Fritz Pfleumer invented the magnetic tape.,1,350
-146,Joseph Henry invented the electromagnetic relay.,1,292
-147,Yoshiro Nakamatsu invented the floppy disk.,1,128
-148,Georges Claude lived in France.,1,549
-149,Sergey Brin and Larry Page lived in U.S.,1,673
-150,George de Mestral lived in Switzerland.,1,370
-151,Ruth Benerito invented the wrinkle-resistant fabric.,1,365
-152,Frederick G. Creed invented the teleprinter.,1,346
-153,Ferdinand Carré lived in France.,1,837
-154,Konrad Zuse lived in Germany.,1,694
-155,George Washington Carver invented the agricultural innovations.,1,775
-156,Charles Townes lived in U.S.,1,641
-157,James Dyson lived in U.K.,1,132
-158,Vint Cerf lived in U.S.,1,758
-159,William Kelly lived in U.S.,1,352
-160,Edwin Herbert Hall lived in U.S.,1,2
-161,Frederick McKinley Jones lived in U.S.,1,691
-162,Mary Phelps Jacob invented the modern brassiere.,1,322
-163,Marie Curie invented the discovery of radium and polonium.,1,306
-164,Reginald Fessenden invented the amplitude modulation (AM) radio.,1,569
-165,John Callcott Horsley lived in U.K.,1,331
-166,Luther George Simjian invented the Automated Teller Machine (ATM).,1,397
-167,William Kelly invented the Bessemer process for steelmaking.,1,519
-168,John von Neumann lived in Hungary/U.S.,1,220
-169,Leon Theremin invented the theremin.,1,843
-170,Linus Torvalds invented the Linux operating system.,1,855
-171,George Eastman invented the roll film.,1,832
-172,Charles Babbage lived in U.K.,1,266
-173,George Cayley lived in U.K.,1,407
-174,Biruté Galdikas invented the orangutan conservation.,1,42
-175,Mary Walton invented the noise reduction system for elevated railways.,1,858
-176,Blaise Pascal invented the mechanical calculator.,1,506
-177,John Callcott Horsley invented the Christmas card.,1,804
-178,David Schwarz lived in Croatia.,1,693
-179,James Starley lived in U.K.,1,583
-180,Tim Berners-Lee lived in U.K.,1,662
-181,John Boyd Dunlop lived in Scotland.,1,698
-182,Cai Lun invented the papermaking process.,1,810
-183,Sir Sandford Fleming lived in Canada.,1,102
-184,John Logie Baird invented the mechanical television.,1,556
-185,Ignazio Porro lived in Italy.,1,84
-186,Charles Tellier lived in France.,1,766
-187,Carl Wilhelm Siemens lived in Germany.,1,480
-188,Charles Townes invented the maser.,1,742
-189,Valdemar Poulsen invented the magnetic wire recorder.,1,214
-190,Carl Elsener invented the Swiss Army knife.,1,388
-191,Nikola Tesla invented the alternating current (AC) electrical system.,1,772
-192,Hippolyte Mège-Mouriès invented the margarine.,1,77
-193,Lloyd Groff Copeman invented the electric stove.,1,518
-194,Charles Macintosh invented the waterproof fabric.,1,265
-195,Joseph Glidden invented the barbed wire.,1,468
-196,Bette Nesmith Graham invented the Liquid Paper.,1,790
-197,Paul Gottlieb Nipkow invented the Nipkow disk (mechanical television).,1,425
-198,Percy Spencer invented the microwave oven.,1,261
-199,Alfred Nobel invented the dynamite.,1,1
-200,Felix Hoffmann lived in Germany.,1,796
-201,Alfred Nobel lived in Sweden.,1,553
-202,Hedy Lamarr lived in Austria/U.S.,1,687
-203,John Wesley Hyatt lived in U.S.,1,131
-204,Paul Gottlieb Nipkow lived in Germany.,1,324
-205,Percy Spencer lived in U.S.,1,154
-206,John Gorrie invented the mechanical refrigeration (ice-making machine).,1,463
-207,Joseph Swan lived in U.K.,1,571
-208,Albert Ghiorso invented the co-discovery of multiple elements.,1,178
-209,Heinrich Göbel lived in Germany.,1,587
-210,Cai Lun lived in China.,1,869
-211,Karl Landsteiner invented the blood types.,1,605
-212,Joseph Bramah lived in U.K.,1,277
-213,Sir Isaac Newton lived in U.K.,1,351
-214,Stephanie Kwolek invented the Kevlar.,1,739
-215,Orville and Wilbur Wright invented the airplane.,1,75
-216,Clarence Birdseye invented the flash freezing.,1,146
-217,Luther Simjian lived in Turkey/U.S.,1,274
-218,Mary Anderson lived in U.S.,1,329
-219,Leon Theremin lived in Russia.,1,246
-220,John Ambrose Fleming lived in U.K.,1,456
-221,Ignazio Porro invented the Porro prism.,1,761
-222,Johannes Gutenberg lived in Germany.,1,414
-223,Reginald Fessenden lived in Canada/U.S.,1,643
-224,Robert Adler lived in Austria/U.S.,1,187
-225,Philo Farnsworth lived in U.S.,1,260
-226,Emile Berliner invented the gramophone.,1,361
-227,Maria Telkes invented the solar thermal storage system.,1,728
-228,Charles Wheatstone lived in U.K.,1,611
-229,Samuel Colt lived in U.S.,1,788
-230,John von Neumann invented the stored-program computer architecture.,1,846
-231,Hans Oersted lived in Denmark.,1,534
-232,Wallace Carothers lived in U.S.,1,130
-233,Semyon Kirlian invented the Kirlian photography.,1,689
-234,Godfrey Hounsfield invented the computed tomography (CT) scanner.,1,295
-235,Thomas Tompion invented the cylinder escapement (clockmaking).,1,844
-236,Blaise Pascal lived in France.,1,848
-237,Auguste and Louis Lumière invented the cinematograph.,1,594
-238,Hippolyte Mège-Mouriès lived in France.,1,602
-239,George Devol lived in U.S.,1,487
-240,Karl Landsteiner lived in Austria.,1,622
-241,Alessandro Volta lived in Italy.,1,546
-242,Hans von Ohain lived in Germany.,1,706
-243,Fridtjof Nansen lived in Norway.,1,112
-244,James Watt lived in Scotland.,1,206
-245,James Starley invented the bicycle improvements (tangential spokes.,1,745
-246,Candace Pert invented the discovery of opiate receptor.,1,417
-247,Michael Faraday invented the electric generator.,1,186
-248,Henry Ford lived in U.S.,1,566
-249,Levi Strauss invented the blue jeans.,1,502
-250,Hans Geiger lived in Germany.,1,675
-251,Sir Humphry Davy invented the safety lamp.,1,453
-252,Nicolas Appert invented the canning process.,1,289
-253,Alva J. Fisher lived in U.S.,1,473
-254,John Wesley Hyatt invented the celluloid.,1,798
-255,Sir Frank Whittle invented the jet engine.,1,520
-256,Robert Noyce lived in U.S.,1,528
-257,Charles Tellier invented the liquefied gas refrigeration.,1,683
-258,Clyde Tombaugh lived in U.S.,1,515
-259,Ferdinand von Zeppelin lived in Germany.,1,577
-260,Richard Gatling lived in U.S.,1,573
-261,Kwolek invented the U.S.,1,366
-262,Igor Sikorsky invented the practical helicopter.,1,816
-263,R. Buckminster Fuller lived in U.S.,1,712
-264,David Edward Hughes lived in U.S.,1,61
-265,Ruth Handler lived in U.S.,1,547
-266,Igor Sikorsky lived in Ukraine/U.S.,1,595
-267,Édouard-Léon Scott de Martinville invented the Phonautograph.,1,532
-268,Luther George Simjian lived in Turkey/U.S.,1,123
-269,Linus Torvalds lived in Finland.,1,627
-270,Hans Goldschmidt invented the thermite process.,1,482
-271,Samuel Fox invented the steel ribbed umbrella.,1,376
-272,Nikola Tesla lived in Austrian Empire (modern-day Croatia)/U.S.,1,782
-273,Sir Charles Parsons invented the steam turbine.,1,69
-274,Robert Moog invented the Moog synthesizer.,1,759
-275,Arthur Fry invented the Post-it notes.,1,253
-276,Yoshua Bengio lived in Canada.,1,62
-277,Tim Berners-Lee invented the World Wide Web.,1,122
 278,Otis Boykin lived in U.S.,1,542
-279,David Edward Hughes invented the microphone (carbon).,1,223
-280,Arthur Pitney lived in U.S.,1,381
-281,Thomas Wedgwood invented the photogram (proto-photography).,1,809
-282,John Shepherd-Barron lived in Scotland.,1,23
-283,Richard Gatling invented the Gatling gun.,1,661
-284,Igor Tamm lived in Russia.,1,489
-285,Mary Walton lived in U.S.,1,795
-286,James Hargreaves invented the spinning jenny.,1,78
-287,John Harrison invented the marine chronometer.,1,799
-288,Nils Bohlin lived in Sweden.,1,538
-289,Charles Goodyear invented the vulcanized rubber.,1,326
-290,Henri Giffard lived in France.,1,831
-291,Alan Turing invented the Turing machine (theoretical).,1,608
-292,Earle Dickson invented the Band-Aid.,1,126
-293,Semyon Kirlian lived in Russia.,1,82
-294,Charles Babbage invented the analytical engine (mechanical computer).,1,297
-295,Clarence Birdseye lived in U.S.,1,21
-296,Arthur Fry lived in U.S.,1,79
-297,James Clerk Maxwell invented the electromagnetic field theory.,1,652
-298,Nikolay Slavyanov invented the shielded metal arc welding.,1,419
-299,Edouard Benedictus lived in France.,1,635
-300,Jacob Perkins invented the compression refrigeration.,1,765
-301,Charles Strite invented the pop-up toaster.,1,179
-302,Jack Kilby lived in U.S.,1,334
-303,Grace Hopper invented the COBOL programming language.,1,104
-304,Sir Isaac Newton invented the reflecting telescope.,1,446
-305,Daniel Fahrenheit invented the mercury-in-glass thermometer.,1,738
-306,Leonardo da Vinci invented the various inventions and concepts (theoretical).,1,372
-307,Gordon Gould invented the laser.,1,363
-308,Antoine Lavoisier invented the modern chemical nomenclature.,1,56
-309,Willem Einthoven lived in Netherlands.,1,853
-310,John T. Parsons lived in U.S.,1,541
-311,Daniel Fahrenheit lived in Poland/Germany.,1,829
-312,Ruth Handler invented the Barbie doll.,1,791
-313,Edwin Herbert Hall invented the Hall effect.,1,539
-314,George Washington Carver lived in U.S.,1,109
-315,Ruth Benerito lived in U.S.,1,224
-316,Konrad Zuse invented the programmable computer (Z3).,1,847
-317,Rudolf Diesel lived in Germany.,1,248
-318,Hans Berger invented the electroencephalography (EEG).,1,247
-319,Eugene Polley invented the wireless remote control.,1,486
-320,Édouard-Léon Scott de Martinville lived in France.,1,243
-321,Carl Elsener lived in Switzerland.,1,757
-322,Rudolf Kálmán invented the U.S.,1,526
-323,Walter Hunt invented the safety pin.,1,150
-324,Marvin Camras lived in U.S.,1,264
-325,Gustaf Dalén lived in Sweden.,1,7
-326,Thomas Wedgwood lived in U.K.,1,163
-327,Frederick Walton invented the linoleum.,1,797
-328,Hans Geiger invented the Geiger counter.,1,91
-329,Elisha Otis invented the safety elevator.,1,656
-330,Joseph Glidden lived in U.S.,1,40
-331,Lloyd Groff Copeman lived in U.S.,1,50
-332,Maria Telkes lived in Hungary/U.S.,1,185
-333,Shinya Yamanaka invented the induced pluripotent stem cells.,1,281
-334,Shinya Yamanaka lived in Japan.,1,682
-335,Robert Chesebrough lived in U.S.,1,387
-336,Heinrich Hertz invented the electromagnetic waves discovery.,1,854
-337,Alva J. Fisher invented the electric washing machine.,1,231
-338,William Congreve lived in U.K.,1,374
-339,Otis Boykin invented the improved electrical resistor.,1,763
-340,Charles Wheatstone invented the Wheatstone bridge.,1,0
-341,Ada Lovelace lived in U.K.,1,671
-342,Elihu Thomson lived in U.S.,1,815
-343,Zhores Alferov invented the heterotransistor.,1,165
-344,George Pullman lived in U.S.,1,406
-345,Archimedes invented the Archimedes' screw.,1,280
-346,Sir Humphry Davy lived in U.K.,1,199
-347,Grace Hopper lived in U.S.,1,615
-348,Leonardo da Vinci lived in Italy.,1,429
-349,Gottlieb Daimler lived in Germany.,1,460
-350,Walter Hunt lived in U.S.,1,139
-351,Edwin Link lived in U.S.,1,195
-352,George de Mestral invented the velcro.,1,134
-353,Charles Cros lived in France.,1,309
-354,Ami Argand invented the Argand lamp.,1,301
-355,Florence Parpart lived in U.S.,1,321
-356,George Eastman lived in U.S.,1,418
-357,John Ericsson invented the U.S.,1,474
-358,Frank Julian Sprague invented the electric streetcar system.,1,125
-359,Marie Curie lived in Poland/France.,1,498
-360,Eli Whitney lived in U.S.,1,601
-361,Nils Bohlin invented the three-point seatbelt.,1,98
-362,Hedy Lamarr invented the frequency hopping spread spectrum.,1,511
-363,Edmund Cartwright invented the power loom.,1,64
-364,August Horch lived in Germany.,1,584
-365,Earle Dickson lived in U.S.,1,120
-366,John Harrison lived in U.K.,1,501
-367,Josephine Cochrane invented the automatic dishwasher.,1,36
-368,Guglielmo Marconi invented the radio.,1,197
-369,Narinder Singh Kapany invented the fiber optics.,1,724
-370,Gordon Gould lived in U.S.,1,213
-371,Christopher Cockerell lived in U.K.,1,563
-372,Alexander Graham Bell invented the telephone.,1,119
-373,Stephanie Kwolek lived in U.S.,1,291
-374,Felix Hoffmann invented the aspirin synthesis.,1,755
-375,Guglielmo Marconi lived in Italy.,1,435
-376,Sir Frank Whittle lived in U.K.,1,454
-377,Edwin Link invented the flight simulator (Link Trainer).,1,597
-378,Joseph Bramah invented the hydraulic press.,1,614
-379,Charles Francis Jenkins lived in U.S.,1,663
-380,John Walker lived in U.K.,1,841
-381,George Devol invented the Unimate (first industrial robot).,1,10
-382,Garrett Morgan invented the traffic signal.,1,136
-383,James West invented the electret microphone.,1,783
-384,Jean-Bernard-Léon Foucault invented the Foucault pendulum.,1,447
-385,Heinrich Göbel invented the early incandescent light bulb.,1,176
-386,John Logie Baird lived in Scotland.,1,830
-387,Joseph-Armand Bombardier invented the snowmobile.,1,647
-388,Jean-Bernard-Léon Foucault lived in France.,1,212
-389,William Congreve invented the Congreve rocket.,1,811
-390,Yvonne Brill lived in Canada.,1,142
-391,Hans Lippershey lived in Netherlands.,1,421
-392,Karl Benz invented the gasoline-powered automobile.,1,312
-393,Charles Francis Richter lived in U.S.,1,533
-394,Joseph Swan invented the carbon-filament lamp.,1,180
-395,John Shepherd-Barron invented the ATM.,1,874
-396,Chester Carlson lived in U.S.,1,402
-397,Bartolomeo Cristofori invented the piano.,1,803
-398,Gideon Sundback lived in Sweden/U.S.,1,22
-399,Benjamin Franklin invented the lightning rod.,1,26
-400,Yoshua Bengio invented the deep learning (artificial neural networks).,1,806
-401,Samuel Morse invented the Morse code.,1,514
-402,Henry Bessemer lived in U.K.,1,155
-403,Thomas Savery invented the early steam engine.,1,523
-404,Charles Goodyear lived in U.S.,1,49
-405,John Boyd Dunlop invented the pneumatic bicycle tire.,1,307
-406,Ferdinand von Zeppelin invented the rigid airship (Zeppelin).,1,516
-407,Herbert Akroyd Stuart lived in England.,1,52
-408,James Watt invented the steam engine improvements.,1,31
-409,Florence Parpart invented the modern electric refrigerator.,1,813
-410,Bartolomeo Cristofori lived in Italy.,1,315
-411,James Dyson invented the bagless vacuum cleaner.,1,609
-412,Florence Parpart lived in U.K.,0,263
-413,John Kay invented the electric stove.,0,808
-414,Hans Geiger lived in Austria/U.S.,0,283
-415,Konrad Zuse lived in Poland/France.,0,734
-416,Sir Humphry Davy lived in U.S.,0,786
-417,Blaise Pascal invented the discovery of radium and polonium.,0,740
-418,Nikolay Slavyanov invented the U.S.,0,347
-419,John Logie Baird lived in Japan.,0,375
-420,Carl Sontheimer invented the Argand lamp.,0,101
-421,Spencer Silver invented the Richter scale.,0,823
-422,Ada Lovelace lived in U.S.,0,603
-423,James Hargreaves invented the U.S.,0,536
-424,Michael Faraday invented the friction match.,0,396
-425,Yoshua Bengio lived in U.S.,0,496
-426,Elisha Gray invented the frequency hopping spread spectrum.,0,439
-427,Ruth Benerito invented the Barbie doll.,0,355
-428,John Ericsson invented the celluloid.,0,537
-429,Ernesto Blanco invented the Gatling gun.,0,157
-430,Joseph Bramah invented the vacuum tube diode.,0,785
-431,Charles Townes invented the theremin.,0,450
-432,Ferdinand von Zeppelin lived in France.,0,863
-433,Edwin Link invented the analytical engine (mechanical computer).,0,589
-434,Evangelista Torricelli invented the wireless remote control.,0,551
-435,Zhores Alferov invented the power loom.,0,722
-436,Charles Francis Jenkins invented the gasoline-powered automobile.,0,857
-437,Garrett Morgan invented the adhesive (used in Post-it notes).,0,774
-438,Orville and Wilbur Wright lived in France.,0,411
-439,Robert Adler lived in U.K.,0,438
-440,Linus Torvalds invented the U.S.,0,270
-441,Lester Wire lived in U.K.,0,805
-442,Gideon Sundback invented the electron scanning tube (Image dissector).,0,674
-443,David Schwarz lived in France.,0,138
-444,John Boyd Dunlop invented the refrigeration (absorption process).,0,344
-445,Thomas Tompion invented the electric generator.,0,409
-446,Richard Trevithick lived in U.S.,0,348
-447,John Ambrose Fleming invented the Band-Aid.,0,282
-448,Daniel Fahrenheit invented the piano roll (used in player pianos).,0,202
-449,George Cayley invented the orangutan conservation.,0,174
-450,Mary Walton lived in France.,0,204
-451,Shinya Yamanaka invented the Siemens regenerative furnace.,0,821
-452,Alva J. Fisher invented the integrated circuit.,0,431
-453,Nikolai Basov invented the typewriter.,0,835
-454,Henri Giffard lived in U.S.,0,323
-455,Herbert Saffir invented the electric generator.,0,423
-456,William Kelly invented the phonograph (independent inventor).,0,704
-457,Earle Dickson invented the Vaseline.,0,354
-458,Arthur Pitney invented the friction match.,0,171
-459,Bartolomeo Cristofori invented the geodesic dome.,0,217
-460,Wallace Carothers lived in Denmark.,0,721
-461,Giovanni Caselli lived in U.S.,0,382
-462,Frederick G. Creed invented the AGA lighthouse.,0,452
-463,Thomas Edison lived in U.K.,0,866
-464,Philo Farnsworth lived in Germany.,0,238
-465,Blaise Pascal lived in Poland/France.,0,285
-466,Benjamin Franklin invented the Unimate (first industrial robot).,0,28
-467,George Eastman invented the Wheatstone bridge.,0,160
-468,John von Neumann invented the Google search engine.,0,789
-469,Christopher Cockerell invented the margarine.,0,752
-470,Sir Sandford Fleming lived in U.S.,0,114
-471,Benjamin Rubin invented the telegraph printer.,0,89
-472,Charles Strite invented the various inventions and concepts (theoretical).,0,313
-473,Eli Whitney invented the electric wheelchair.,0,465
-474,James Murray Spangler invented the electromagnet.,0,256
-475,Archimedes invented the electric washing machine.,0,345
-476,Charles Francis Jenkins lived in Germany.,0,686
-477,Levi Strauss invented the laser.,0,651
-478,Johannes Gutenberg invented the bagless vacuum cleaner.,0,572
-479,Gustaf Dalén lived in Germany.,0,598
-480,Mary Anderson invented the cotton gin.,0,483
-481,Hans Oersted lived in U.S.,0,302
-482,William Sturgeon invented the programmable computer (Z3).,0,19
-483,Hans Berger invented the flash freezing.,0,719
-484,Leon Theremin invented the Geiger counter.,0,685
-485,Fritz Pfleumer invented the amplitude modulation (AM) radio.,0,392
-486,Carl Sontheimer lived in Switzerland.,0,151
-487,Arthur Pitney lived in U.K.,0,697
-488,George Pullman invented the electromagnetic field theory.,0,802
-489,Hans Goldschmidt lived in Netherlands.,0,340
-490,William Kelly lived in France.,0,472
-491,Bartolomeo Cristofori lived in U.S.,0,794
-492,Alessandro Volta lived in U.S.,0,631
-493,Edwin Herbert Hall invented the airplane.,0,459
-494,Charles Wheatstone lived in France.,0,44
-495,Clyde Tombaugh invented the electret microphone.,0,548
-496,John von Neumann lived in U.S.,0,710
-497,Thomas Savery invented the bagless vacuum cleaner.,0,632
-498,August Horch invented the electron cooling.,0,298
-499,Yoshua Bengio invented the mechanical refrigeration (ice-making machine).,0,680
-500,Otis Boykin invented the refrigeration (absorption process).,0,193
-501,Ferdinand Carré invented the Post-it notes.,0,852
-502,Herbert Akroyd Stuart lived in Russia.,0,677
-503,Gordon Gould lived in Canada.,0,562
-504,Ruth Handler lived in Netherlands.,0,156
-505,Gordon Gould invented the snowmobile.,0,207
-506,Linus Torvalds lived in Stephanie.,0,875
-507,Herbert Akroyd Stuart invented the Kirlian photography.,0,272
-508,André-Jacques Garnerin invented the electrocardiograph (ECG).,0,394
-509,Philo Farnsworth invented the electroencephalography (EEG).,0,653
-510,László Bíró invented the safety elevator.,0,239
-511,James Clerk Maxwell invented the electric stove.,0,760
-512,Alan Turing invented the power loom.,0,141
-513,Joseph Swan lived in Austrian Empire (modern-day Croatia)/U.S.,0,744
-514,Mary Walton invented the canning process.,0,395
-515,Alexander Graham Bell lived in Germany.,0,527
-516,Felix Hoffmann invented the agricultural innovations.,0,408
-517,Valdemar Poulsen lived in Scotland.,0,500
-518,George de Mestral invented the snowmobile.,0,257
-519,Ignazio Porro invented the modern electric refrigerator.,0,96
-520,Karl Benz lived in U.S.,0,732
-521,Joseph-Armand Bombardier invented the orangutan conservation.,0,737
-522,Frederick McKinley Jones invented the karaoke machine.,0,705
-523,Alec Jeffreys lived in France.,0,380
-524,Frederick G. Creed lived in Sweden.,0,317
-525,Felix Hoffmann lived in U.S.,0,524
-526,Paul Gottlieb Nipkow lived in Denmark.,0,86
-527,Sir Isaac Newton lived in U.S.,0,862
-528,John Callcott Horsley lived in Germany.,0,45
-529,Nikola Tesla invented the electromagnetic waves discovery.,0,107
-530,Giovanni Caselli invented the integrated circuit.,0,192
-531,Ami Argand invented the electric streetcar system.,0,198
-532,Walter Hunt invented the traffic signal.,0,147
-533,Galileo Galilei lived in U.S.,0,626
-534,Rudolf Kálmán invented the penicillin discovery.,0,403
-535,Galileo Galilei invented the assembly line production.,0,433
-536,Gottlieb Daimler invented the airship (non-rigid).,0,144
-537,Philo Taylor Farnsworth invented the mechanical refrigeration (ice-making machine).,0,731
-538,Cai Lun invented the piano.,0,369
-539,Nikolai Basov lived in U.S.,0,200
-540,Orville and Wilbur Wright invented the Jacquard loom.,0,290
-541,Charles Goodyear lived in U.K.,0,827
-542,Tim Berners-Lee invented the movable type printing press.,0,143
-543,Gideon Sundback lived in U.S.,0,222
-544,Marie Curie lived in Hungary.,0,591
-545,Yvonne Brill lived in U.S.,0,819
-546,John Shepherd-Barron lived in U.S.,0,650
-547,Edmund Cartwright invented the Morse code.,0,161
-548,Jack Kilby invented the aerodynamics (theoretical).,0,362
-549,Wallace Carothers invented the magnetic wire recorder.,0,623
-550,Karl Landsteiner lived in U.K.,0,648
-551,Eugene Polley invented the Morse code.,0,709
-552,Ignazio Porro lived in U.S.,0,129
-553,John Boyd Dunlop lived in France.,0,426
-554,Rudolf Kálmán lived in U.K.,0,568
-555,Ernest Swinton lived in U.S.,0,337
-556,Charles Tellier lived in U.K.,0,509
-557,Konrad Zuse invented the discovery of radium and polonium.,0,856
-558,David Schwarz invented the modern chemical nomenclature.,0,194
-559,Charles Babbage invented the stored-program computer architecture.,0,867
-560,James Dyson invented the U.S.,0,658
-561,Charles Macintosh invented the transistor.,0,457
-562,Paul Gottlieb Nipkow invented the electromagnetism discovery.,0,93
-563,Willis Carrier invented the radio.,0,273
-564,Samuel Fox lived in France.,0,613
-565,Ralph Benjamin invented the Porro prism.,0,133
-566,Wilhelm Conrad Röntgen lived in U.S.,0,432
-567,Christopher Cockerell lived in France.,0,711
-568,Arthur Fry invented the Phonautograph.,0,391
-569,Biruté Galdikas invented the pasteurization.,0,792
-570,Marvin Camras lived in France.,0,12
-571,John Atanasoff invented the revolver.,0,637
-572,Hans von Ohain lived in Canada.,0,814
-573,Carlos Glidden lived in Scotland.,0,184
-574,Mary Phelps Jacob invented the practical helicopter.,0,842
-575,Narinder Singh Kapany lived in U.K.,0,287
-576,Bette Nesmith Graham invented the agricultural innovations.,0,575
-577,Heinrich Göbel lived in U.S.,0,495
-578,Nikola Tesla lived in Germany.,0,741
-579,Cai Lun lived in Italy.,0,203
-580,Lester Wire invented the power loom.,0,332
-581,Édouard-Léon Scott de Martinville invented the hovercraft.,0,581
-582,Samuel Colt invented the slide fastener (zipper precursor).,0,118
-583,Hans Lippershey lived in U.S.,0,111
-584,John Harrison invented the steel ribbed umbrella.,0,633
-585,Daniel Fahrenheit lived in U.S.,0,681
-586,Albert Ghiorso invented the Turing machine (theoretical).,0,868
-587,Edouard Benedictus invented the internet protocol suite.,0,234
-588,Zhores Alferov lived in U.K.,0,245
-589,Gottlieb Daimler lived in France.,0,72
-590,Willis Carrier lived in Italy.,0,308
-591,Nils Bohlin invented the jet engine.,0,413
-592,John Wesley Hyatt invented the vacuum tube diode.,0,27
-593,Carl Elsener invented the laser.,0,773
-594,George Antheil invented the Band-Aid.,0,873
-595,James Murray Spangler lived in U.K.,0,252
-596,Charles Babbage lived in Hungary/U.S.,0,703
-597,Robert Moog invented the frequency hopping spread spectrum.,0,85
-598,Igor Tamm lived in U.S.,0,464
-599,George Washington Carver invented the Gatling gun.,0,493
-600,Emile Berliner invented the Kirlian photography.,0,226
-601,Richard Gatling lived in U.K.,0,271
-602,Grace Hopper lived in U.K.,0,444
-603,Jack Kilby lived in U.K.,0,778
-604,László Bíró lived in U.S.,0,250
-605,Hans Geiger invented the frequency hopping spread spectrum.,0,592
-606,Biruté Galdikas lived in France.,0,612
-607,James Watt lived in U.S.,0,190
-608,Karl Benz invented the industrial robot.,0,276
+130,Gottlieb Daimler invented the internal combustion engine.,1,503
+770,Hans Lippershey invented the co-discovery of multiple elements.,0,310
+87,Ernest Swinton lived in U.K.,1,210
 609,Alessandro Volta invented the assembly line production.,0,861
-610,George de Mestral lived in Canada.,0,769
-611,Igor Sikorsky lived in U.S.,0,196
-612,Sir Sandford Fleming invented the integrated circuit.,0,484
-613,Joseph Aspdin invented the velcro.,0,221
-614,Joseph Marie Jacquard lived in Netherlands.,0,59
-615,Leonardo da Vinci invented the discovery of radium and polonium.,0,574
-616,Yoshiro Nakamatsu invented the pop-up toaster.,0,535
-617,John Walker invented the modern electric refrigerator.,0,437
-618,Christian Huygens lived in Scotland.,0,670
-619,Luther George Simjian lived in Norway.,0,230
-620,James West invented the wrinkle-resistant fabric.,0,162
-621,Ernest Swinton invented the nylon.,0,182
-622,Robert Moog lived in Austria/U.S.,0,229
-623,Stephanie Kwolek invented the co-discovery of HIV.,0,727
-624,Pierre Curie invented the modern chemical nomenclature.,0,167
-625,Thomas Wedgwood lived in Finland.,0,356
-626,Rudolf Diesel invented the microphone (carbon).,0,570
-627,Ferdinand Carré lived in U.S.,0,63
-628,Leon Theremin lived in Germany.,0,607
-629,John Wesley Hyatt lived in U.K.,0,748
-630,Sir Isaac Newton invented the celluloid.,0,708
-631,Igor Tamm invented the Unimate (first industrial robot).,0,34
-632,Guglielmo Marconi lived in U.K.,0,145
-633,Frederick Walton lived in U.S.,0,4
-634,Sir Charles Parsons invented the lightning rod.,0,565
-635,John Callcott Horsley invented the programmable computer (Z3).,0,327
-636,Elihu Thomson invented the traffic signal.,0,443
-637,Richard Leach Maddox invented the blood types.,0,634
-638,Josephine Cochrane invented the Audi automobile.,0,559
-639,Sir Frank Whittle invented the tank.,0,30
-640,Robert Chesebrough invented the roll film.,0,723
-641,Edwin H. Land lived in Sweden.,0,87
-642,Edwin Link lived in U.K.,0,32
-643,Richard Trevithick invented the airplane.,0,707
-644,Chester Carlson invented the programming language (theoretical).,0,871
-645,Maria Telkes invented the ballpoint pen.,0,33
-646,Georges Claude invented the various inventions and concepts (theoretical).,0,749
-647,John Gorrie lived in Italy.,0,235
-648,Robert Adler invented the spinning jenny.,0,314
-649,Whitcomb Judson invented the safety pin.,0,718
-650,Florence Parpart invented the trackball.,0,105
-651,Samuel Morse lived in Germany.,0,140
-652,Albert Ghiorso lived in U.K.,0,620
-653,Henri Giffard invented the wrinkle-resistant fabric.,0,11
-654,Igor Sikorsky invented the laser.,0,94
-655,Jean-Bernard-Léon Foucault invented the piano roll (used in player pianos).,0,747
-656,Charles Cros invented the electric washing machine.,0,71
-657,John Ambrose Fleming lived in U.S.,0,555
-658,George Pullman lived in U.K.,0,9
-659,Vint Cerf lived in Italy.,0,715
-660,Antoine Lavoisier lived in Austria.,0,645
-661,Sergey Brin and Larry Page invented the DNA fingerprinting.,0,367
-662,Joseph Glidden lived in Germany.,0,478
-663,R. Buckminster Fuller lived in Scotland.,0,305
-664,Elisha Gray lived in Austria/U.S.,0,768
-665,Tim Berners-Lee lived in Germany.,0,479
-666,Heinrich Göbel invented the Hall effect.,0,458
-667,Nikolay Slavyanov lived in Stephanie.,0,175
-668,James Dyson lived in Canada.,0,777
-669,Joseph Aspdin lived in Switzerland.,0,205
-670,Heinrich Hertz invented the internal combustion engine.,0,638
-671,Johannes Gutenberg lived in U.K.,0,393
-672,Arthur Fry lived in France.,0,640
-673,James Starley invented the zipper.,0,211
-674,Ralph Benjamin lived in Italy.,0,262
-675,Ralph H. Baer invented the canning process.,0,618
-676,Joseph Swan invented the alternating current (AC) electrical system.,0,404
-677,Samuel Fox invented the liquefied gas refrigeration.,0,754
-678,Henry Bessemer lived in U.S.,0,776
-679,Elisha Otis lived in U.K.,0,561
-680,Frederick McKinley Jones lived in Japan.,0,461
-681,Hans von Ohain invented the deep learning (artificial neural networks).,0,81
-682,Charles Strite lived in Italy.,0,557
-683,John Ericsson lived in U.S.,0,504
-684,Josephine Cochrane lived in Germany.,0,169
-685,Evangelista Torricelli lived in U.S.,0,8
-686,Carl Wilhelm Siemens lived in U.S.,0,781
-687,Sergey Brin and Larry Page lived in U.K.,0,153
-688,Hans Berger lived in U.S.,0,259
-689,Hippolyte Mège-Mouriès lived in U.S.,0,325
-690,Antoine Lavoisier invented the blood types.,0,770
-691,Nicolas Appert invented the heterotransistor.,0,278
-692,Edouard Benedictus lived in U.S.,0,377
-693,Wilhelm Conrad Röntgen invented the discovery of Pluto.,0,357
+310,John T. Parsons lived in U.S.,1,541
 694,Vint Cerf invented the radio.,0,37
-695,Godfrey Hounsfield invented the electromagnetism discovery.,0,818
-696,Joseph Glidden invented the jet engine.,0,466
-697,Ferdinand von Zeppelin invented the piezoelectricity.,0,578
-698,Willem Einthoven invented the frameless parachute.,0,726
+680,Frederick McKinley Jones lived in Japan.,0,461
+496,John von Neumann lived in U.S.,0,710
+626,Rudolf Diesel invented the microphone (carbon).,0,570
+431,Charles Townes invented the theremin.,0,450
+245,James Starley invented the bicycle improvements (tangential spokes.,1,745
+546,John Shepherd-Barron lived in U.S.,0,650
+394,Joseph Swan invented the carbon-filament lamp.,1,180
+229,Samuel Colt lived in U.S.,1,788
+233,Semyon Kirlian invented the Kirlian photography.,1,689
+668,James Dyson lived in Canada.,0,777
+376,Sir Frank Whittle lived in U.K.,1,454
+331,Lloyd Groff Copeman lived in U.S.,1,50
+510,László Bíró invented the safety elevator.,0,239
+79,Thomas Edison invented the light bulb.,1,232
+389,William Congreve invented the Congreve rocket.,1,811
+134,Benjamin Franklin lived in U.S.,1,100
+139,Robert Chesebrough invented the Vaseline.,1,582
+280,Arthur Pitney lived in U.S.,1,381
+127,László Bíró invented the ballpoint pen.,1,599
+712,Lloyd Groff Copeman invented the electromagnetic waves discovery.,0,621
+702,James Hargreaves lived in Sweden.,0,822
+743,Percy Spencer invented the industrial robot.,0,209
+596,Charles Babbage lived in Hungary/U.S.,0,703
+574,Mary Phelps Jacob invented the practical helicopter.,0,842
+799,Alec Jeffreys invented the phonograph (independent inventor).,0,543
+277,Tim Berners-Lee invented the World Wide Web.,1,122
+112,Josephine Cochrane lived in U.S.,1,328
+590,Willis Carrier lived in Italy.,0,308
+806,Luther Simjian lived in U.S.,0,850
+752,Joseph Engelberger invented the discovery of Pluto.,0,529
+326,Thomas Wedgwood lived in U.K.,1,163
+535,Galileo Galilei invented the assembly line production.,0,433
+408,James Watt invented the steam engine improvements.,1,31
+583,Hans Lippershey lived in U.S.,0,111
+257,Charles Tellier invented the liquefied gas refrigeration.,1,683
+515,Alexander Graham Bell lived in Germany.,0,527
+747,Hedy Lamarr lived in U.S.,0,550
+649,Whitcomb Judson invented the safety pin.,0,718
+793,Luther George Simjian invented the modern polar exploration.,0,373
+493,Edwin Herbert Hall invented the airplane.,0,459
+199,Alfred Nobel invented the dynamite.,1,1
+166,Luther George Simjian invented the Automated Teller Machine (ATM).,1,397
+108,Yvonne Brill invented the U.S.,1,508
+336,Heinrich Hertz invented the electromagnetic waves discovery.,1,854
+263,R. Buckminster Fuller lived in U.S.,1,712
+285,Mary Walton lived in U.S.,1,795
+399,Benjamin Franklin invented the lightning rod.,1,26
+16,Auguste and Louis Lumière lived in France.,1,865
+544,Marie Curie lived in Hungary.,0,591
+172,Charles Babbage lived in U.K.,1,266
+25,Christian Huygens invented the pendulum clock.,1,714
+279,David Edward Hughes invented the microphone (carbon).,1,223
+105,William Sturgeon lived in U.K.,1,17
+744,John Walker lived in U.S.,0,441
+128,Pierre Curie lived in France.,1,820
+765,Frederick Walton invented the Liquid Paper.,0,14
+432,Ferdinand von Zeppelin lived in France.,0,863
+716,Philipp Reis invented the Linux operating system.,0,415
+272,Nikola Tesla lived in Austrian Empire (modern-day Croatia)/U.S.,1,782
+89,Alexander Graham Bell lived in Scotland/Canada/U.S.,1,284
+428,John Ericsson invented the celluloid.,0,537
+719,Louis Pasteur lived in U.S.,0,476
+655,Jean-Bernard-Léon Foucault invented the piano roll (used in player pianos).,0,747
+458,Arthur Pitney invented the friction match.,0,171
+717,Hippolyte Mège-Mouriès invented the mechanical refrigeration (ice-making machine).,0,189
+425,Yoshua Bengio lived in U.S.,0,496
+386,John Logie Baird lived in Scotland.,1,830
+519,Ignazio Porro invented the modern electric refrigerator.,0,96
+808,Richard Gatling invented the flying shuttle.,0,103
+652,Albert Ghiorso lived in U.K.,0,620
+142,Rudolf Diesel invented the diesel engine.,1,53
+783,Frank Julian Sprague invented the electric traffic light.,0,494
+191,Nikola Tesla invented the alternating current (AC) electrical system.,1,772
+433,Edwin Link invented the analytical engine (mechanical computer).,0,589
+369,Narinder Singh Kapany invented the fiber optics.,1,724
+260,Richard Gatling lived in U.S.,1,573
+570,Marvin Camras lived in France.,0,12
+457,Earle Dickson invented the Vaseline.,0,354
+435,Zhores Alferov invented the power loom.,0,722
+726,Edwin H. Land invented the three-point seatbelt.,0,793
+592,John Wesley Hyatt invented the vacuum tube diode.,0,27
+685,Evangelista Torricelli lived in U.S.,0,8
+146,Joseph Henry invented the electromagnetic relay.,1,292
+478,Johannes Gutenberg invented the bagless vacuum cleaner.,0,572
+801,Semyon Kirlian lived in U.K.,0,845
+370,Gordon Gould lived in U.S.,1,213
+190,Carl Elsener invented the Swiss Army knife.,1,388
+587,Edouard Benedictus invented the internet protocol suite.,0,234
+322,Rudolf Kálmán invented the U.S.,1,526
+779,Guglielmo Marconi invented the Christmas card.,0,580
+397,Bartolomeo Cristofori invented the piano.,1,803
+756,Charles Townes lived in Russia.,0,449
+612,Sir Sandford Fleming invented the integrated circuit.,0,484
+391,Hans Lippershey lived in Netherlands.,1,421
+573,Carlos Glidden lived in Scotland.,0,184
 699,Fridtjof Nansen lived in U.K.,0,80
+249,Levi Strauss invented the blue jeans.,1,502
+487,Arthur Pitney lived in U.K.,0,697
+140,Fridtjof Nansen invented the modern polar exploration.,1,657
+86,Wilhelm Conrad Röntgen invented the X-rays discovery.,1,25
+706,Rudolf Diesel lived in U.S.,0,43
+711,Auguste and Louis Lumière invented the canning process.,0,448
+610,George de Mestral lived in Canada.,0,769
+23,André-Jacques Garnerin invented the frameless parachute.,1,108
+182,Cai Lun invented the papermaking process.,1,810
+194,Charles Macintosh invented the waterproof fabric.,1,265
+119,Charles Fritts lived in U.S.,1,67
+168,John von Neumann lived in Hungary/U.S.,1,220
+715,Daisuke Inoue invented the first home video game console.,0,389
+523,Alec Jeffreys lived in France.,0,380
+214,Stephanie Kwolek invented the Kevlar.,1,739
+122,Charles Macintosh lived in U.K.,1,286
+111,Evangelista Torricelli lived in Italy.,1,676
+85,Eli Whitney invented the cotton gin.,1,554
+504,Ruth Handler lived in Netherlands.,0,156
+352,George de Mestral invented the velcro.,1,134
+147,Yoshiro Nakamatsu invented the floppy disk.,1,128
+683,John Ericsson lived in U.S.,0,504
+656,Charles Cros invented the electric washing machine.,0,71
+21,Lester Wire invented the electric traffic light.,1,188
+524,Frederick G. Creed lived in Sweden.,0,317
+645,Maria Telkes invented the ballpoint pen.,0,33
+366,John Harrison lived in U.K.,1,501
+755,Jean-Bernard-Léon Foucault lived in U.S.,0,665
+77,Antoine Lavoisier lived in France.,1,181
+141,Chester Carlson invented the xerography.,1,567
+84,Robert Adler invented the ultrasonic remote control.,1,824
+569,Biruté Galdikas invented the pasteurization.,0,792
+132,Valdemar Poulsen lived in Denmark.,1,251
+410,Bartolomeo Cristofori lived in Italy.,1,315
+820,Sir Humphry Davy invented the light bulb.,0,659
+196,Bette Nesmith Graham invented the Liquid Paper.,1,790
+564,Samuel Fox lived in France.,0,613
+625,Thomas Wedgwood lived in Finland.,0,356
+705,Charles Wheatstone invented the phonograph (independent inventor).,0,255
+492,Alessandro Volta lived in U.S.,0,631
+298,Nikolay Slavyanov invented the shielded metal arc welding.,1,419
+584,John Harrison invented the steel ribbed umbrella.,0,633
+472,Charles Strite invented the various inventions and concepts (theoretical).,0,313
+646,Georges Claude invented the various inventions and concepts (theoretical).,0,749
+665,Tim Berners-Lee lived in Germany.,0,479
+445,Thomas Tompion invented the electric generator.,0,409
+766,Nils Bohlin lived in Germany.,0,358
+753,Henry Ford invented the barbed wire.,0,743
+97,Joseph Henry lived in U.S.,1,525
+560,James Dyson invented the U.S.,0,658
+252,Nicolas Appert invented the canning process.,1,289
+737,David Edward Hughes invented the piano roll (used in player pianos).,0,530
+411,James Dyson invented the bagless vacuum cleaner.,1,609
+224,Robert Adler lived in Austria/U.S.,1,187
+316,Konrad Zuse invented the programmable computer (Z3).,1,847
+52,Richard Leach Maddox lived in U.K.,1,158
+732,Kwolek invented the modern brassiere.,0,600
+83,Charles Francis Richter invented the Richter scale.,1,688
+777,Hans Oersted invented the wireless remote control.,0,834
+230,John von Neumann invented the stored-program computer architecture.,1,846
+482,William Sturgeon invented the programmable computer (Z3).,0,19
+429,Ernesto Blanco invented the Gatling gun.,0,157
+738,John Shepherd-Barron invented the electric wheelchair.,0,725
+22,Mary Anderson invented the windshield wiper.,1,378
+660,Antoine Lavoisier lived in Austria.,0,645
+687,Sergey Brin and Larry Page lived in U.K.,0,153
+189,Valdemar Poulsen invented the magnetic wire recorder.,1,214
+300,Jacob Perkins invented the compression refrigeration.,1,765
+663,R. Buckminster Fuller lived in Scotland.,0,305
+745,Samuel Morse invented the electroencephalography (EEG).,0,319
+671,Johannes Gutenberg lived in U.K.,0,393
+246,Candace Pert invented the discovery of opiate receptor.,1,417
+236,Blaise Pascal lived in France.,1,848
+635,John Callcott Horsley invented the programmable computer (Z3).,0,327
+604,László Bíró lived in U.S.,0,250
+103,Willem Einthoven invented the electrocardiograph (ECG).,1,872
+758,Sir Charles Parsons lived in U.S.,0,771
+480,Mary Anderson invented the cotton gin.,0,483
+35,Bette Nesmith Graham lived in U.S.,1,288
+276,Yoshua Bengio lived in Canada.,1,62
+791,James Starley lived in Sweden/U.S.,0,507
+792,Ada Lovelace invented the modern brassiere.,0,678
+353,Charles Cros lived in France.,1,309
+118,Alan Turing lived in U.K.,1,241
+567,Christopher Cockerell lived in France.,0,711
+314,George Washington Carver lived in U.S.,1,109
+529,Nikola Tesla invented the electromagnetic waves discovery.,0,107
+313,Edwin Herbert Hall invented the Hall effect.,1,539
+537,Philo Taylor Farnsworth invented the mechanical refrigeration (ice-making machine).,0,731
+666,Heinrich Göbel invented the Hall effect.,0,458
+578,Nikola Tesla lived in Germany.,0,741
+381,George Devol invented the Unimate (first industrial robot).,1,10
+532,Walter Hunt invented the traffic signal.,0,147
+678,Henry Bessemer lived in U.S.,0,776
+506,Linus Torvalds lived in Stephanie.,0,875
+451,Shinya Yamanaka invented the Siemens regenerative furnace.,0,821
+135,Karl Benz lived in Germany.,1,579
+258,Clyde Tombaugh lived in U.S.,1,515
+512,Alan Turing invented the power loom.,0,141
+452,Alva J. Fisher invented the integrated circuit.,0,431
+707,Charles Tellier invented the penicillin discovery.,0,405
+339,Otis Boykin invented the improved electrical resistor.,1,763
+30,Ralph Benjamin lived in U.K.,1,481
+405,John Boyd Dunlop invented the pneumatic bicycle tire.,1,307
+48,Rudolf Kálmán lived in Hungary.,1,66
+145,Fritz Pfleumer invented the magnetic tape.,1,350
+359,Marie Curie lived in Poland/France.,1,498
+771,Marvin Camras invented the airship (non-rigid).,0,576
+420,Carl Sontheimer invented the Argand lamp.,0,101
+294,Charles Babbage invented the analytical engine (mechanical computer).,1,297
+71,Evangelista Torricelli invented the barometer.,1,870
+344,George Pullman lived in U.S.,1,406
+311,Daniel Fahrenheit lived in Poland/Germany.,1,829
+318,Hans Berger invented the electroencephalography (EEG).,1,247
+460,Wallace Carothers lived in Denmark.,0,721
+695,Godfrey Hounsfield invented the electromagnetism discovery.,0,818
+815,Maria Telkes lived in Hungary.,0,398
+106,Wilhelm Conrad Röntgen lived in Germany.,1,668
+164,Reginald Fessenden invented the amplitude modulation (AM) radio.,1,569
+264,David Edward Hughes lived in U.S.,1,61
+772,Leonardo da Vinci lived in Poland/France.,0,215
+577,Heinrich Göbel lived in U.S.,0,495
+821,Grace Hopper invented the programming language (theoretical).,0,667
+790,John Kay lived in U.S.,0,497
+143,Samuel Morse lived in U.S.,1,828
+520,Karl Benz lived in U.S.,0,732
+287,John Harrison invented the marine chronometer.,1,799
+340,Charles Wheatstone invented the Wheatstone bridge.,1,0

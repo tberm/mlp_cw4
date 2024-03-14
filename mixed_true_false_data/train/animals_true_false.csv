@@ -1,857 +1,857 @@
 ,statement,label
-0,The giant anteater uses walking for locomotion.,1
-1,The eagle has a habitat of urban/wild.,0
-2,The tortoise has an iridescent tail with eye-like patterns used in courtship displays.,0
-3,"Human uses for hyena include conservation, research.",0
-4,The platypus uses swimming for locomotion.,1
-5,The salmon is a fish.,1
-6,The aardvark has a diet of insectivore.,1
-7,The beaver has a habitat of forest/grassland.,0
-8,The penguin has a habitat of marine/polar.,1
-9,The whale uses swimming for locomotion.,1
-10,The dog has a strong sense of smell and is known for its loyalty to humans.,1
-11,The chicken uses walking for locomotion.,1
-12,The gazelle has distinctive orange and black stripes and is an apex predator.,0
-13,The walrus has a diet of carnivore.,1
-14,The ostrich uses running for locomotion.,1
-15,The octopus has a diet of carnivore.,1
-16,"The octopus is a small, social bird that can be found in many urban environments.",0
-17,The iguana has a diet of herbivore.,1
-18,"The whale is the largest animal on earth, with some species using baleen plates to filter food from water.",1
-19,The frog has the atomic number of bird.,0
-20,"The iguana is the fastest land animal, reaching speeds up to 60-70 mph.",0
-21,The lobster is a crustacean.,1
-22,"The aardvark has humps that store fat, which can be metabolized for energy and water during long treks.",0
-23,The panda has a diet of herbivore.,1
-24,"Human uses for cheetah include conservation, research, zoos.",1
-25,The jellyfish uses walking/swimming for locomotion.,0
-26,"The wolverine is the largest animal on earth, with some species using baleen plates to filter food from water.",0
-27,The flamingo has a habitat of coastal/alkaline lakes.,1
-28,"Human uses for snake include pets, research, venom extraction.",1
-29,"The goldfish has antlers that are shed and regrown annually, and is a good swimmer.",0
-30,The raccoon is a mammal.,1
-31,The swan uses walking for locomotion.,0
-32,The octopus uses swimming for locomotion.,1
-33,The crocodile has a habitat of freshwater.,1
-34,The zebra uses flying for locomotion.,0
-35,The horse is a mammal.,1
-36,The kangaroo has a habitat of savanna.,0
-37,The giant anteater has the atomic number of fish.,0
-38,The crocodile uses walking for locomotion.,0
-39,The gazelle uses running for locomotion.,1
-40,"The narwhal has a long, spiral tusk, which is actually an elongated tooth, and can dive to great depths.",1
-41,The frog uses jumping for locomotion.,1
-42,The pigeon has a habitat of desert.,0
-43,The aardvark has the atomic number of fish.,0
-44,The deer has a habitat of forest/grassland.,1
-45,The squirrel has a habitat of marine.,0
-46,The polar bear has a habitat of polar.,1
-47,The hummingbird is a bird.,1
-48,The armadillo is a mammal.,1
-49,The hamster has a powerful bite and can go without food for long periods of time.,0
-50,The armadillo has a diet of insectivore.,1
-51,The parrot has a diet of omnivore.,1
-52,"Human uses for shark include research, conservation.",0
-53,"The camel has humps that store fat, which can be metabolized for energy and water during long treks.",1
-54,The squirrel has a habitat of forest/urban.,1
-55,The bee has the atomic number of bird.,0
-56,The llama has a diet of herbivore.,1
-57,The zebra is a fast swimmer and can maintain high speeds for extended periods of time.,0
+750,The armadillo has a diet of herbivore.,0
 58,The tuna uses walking for locomotion.,0
-59,"The whale has a long, tubular snout, large ears, and a powerful digging ability to locate and consume termites and ants.",0
-60,The rat has a diet of omnivore.,1
-61,The raccoon has a habitat of urban/old-world habitats.,0
-62,The sparrow has a diet of omnivore.,1
-63,The leopard uses walking for locomotion.,1
-64,The gorilla is a mammal.,1
-65,The platypus has a diet of  carnivore.,0
-66,The tapir uses walking for locomotion.,1
-67,The tuna has a diet of insectivore.,0
-68,The wolverine has a habitat of arctic/subarctic.,1
-69,The manta ray uses walking for locomotion.,0
-70,The raccoon uses walking for locomotion.,1
-71,"The wolverine is a strong and fierce predator, despite its relatively small size, and has a thick, frost-resistant fur.",1
-72,The frog has a diet of carnivore.,1
-73,The crocodile has a powerful bite and can go without food for long periods of time.,1
-74,The zebra has a habitat of farmland.,0
-75,The skunk has a diet of omnivore.,1
-76,The ostrich uses walking for locomotion.,0
-77,The seahorse uses swimming for locomotion.,1
-78,"The goat is known for its agility and can climb steep terrain, and has a rectangular pupil.",1
-79,There are no specific human uses for gazelle.,1
-80,The cheetah is a mammal.,1
-81,The tiger has distinctive orange and black stripes and is an apex predator.,1
-82,The tuna uses swimming for locomotion.,1
-83,The seagull has webbed feet for swimming and can drink both fresh and saltwater.,1
-84,The giraffe is a powerful bird of prey with keen eyesight and strong talons for catching prey.,0
-85,The zebra is a mammal.,1
-86,The giraffe has a habitat of farmland.,0
-87,The elephant has a habitat of terrestrial.,1
-88,The hummingbird uses flying for locomotion.,1
-89,"Human uses for gazelle include pets, research, conservation.",0
-90,The walrus uses swimming for locomotion.,1
-91,"The tarantula is a large, hairy spider with venomous fangs and can flick irritating hairs from its abdomen when threatened.",1
-92,"Human uses for crocodile include conservation, research.",0
-93,The peacock has a diet of herbivore.,0
-94,The tapir is a mammal.,1
-95,"Human uses for parrot include pets, research, conservation.",1
-96,"The beaver has antlers that are shed and regrown annually, and is a good swimmer.",0
-97,The zebra uses walking for locomotion.,1
-98,The rabbit is a mammal.,1
-99,"Human uses for parrot include tourism, zoos.",0
-100,The ostrich is the largest and fastest-running bird and has two-toed feet.,1
-101,The bat has a diet of varies.,1
-102,"Human uses for platypus include research, conservation.",1
-103,The bison is the heaviest land animal in north america and forms large herds for protection.,1
-104,The alpaca has a diet of herbivore.,1
-105,The armadillo can unhinge its jaw to swallow large prey whole and some species have heat-sensing pits.,0
-106,There are no specific human uses for aardvark.,1
-107,The hummingbird has a diet of omnivore.,0
-108,"Human uses for lobster include food, research.",1
-109,The camel has a diet of herbivore.,1
-110,The zebra has a diet of herbivore.,1
-111,The beaver has a habitat of freshwater.,1
-112,The elephant has a diet of carnivore.,0
-113,The gorilla has a habitat of forest.,1
-114,The seagull has a habitat of grassland.,0
-115,The horse uses walking for locomotion.,1
-116,The crocodile has a habitat of various.,0
-117,The elephant has distinctive orange and black stripes and is an apex predator.,0
-118,The panda has a diet of carnivore.,0
-119,The dog has a diet of carnivore.,0
-120,The sea turtle is a reptile.,1
-121,"The cow is the largest animal on earth, with some species using baleen plates to filter food from water.",0
-122,The cheetah has a diet of varies.,0
-123,The tuna has a habitat of marine.,1
-124,The dog uses walking for locomotion.,1
-125,There are no specific human uses for vulture.,1
-126,The platypus has the atomic number of bird.,0
-127,"Human uses for camel include transportation, meat, milk, wool.",1
-128,"Human uses for manta ray include pets, meat, fur.",0
-129,The goldfish has a habitat of farmland/domestic.,0
-130,The chimpanzee uses walking for locomotion.,1
-131,There are no specific human uses for snake.,0
-132,The pigeon has a habitat of urban/old-world habitats.,1
-133,The goldfish uses knuckle-walking for locomotion.,0
-134,"The bison is a large, flightless bird with a helmet-like casque on its head and powerful legs with a dagger-like claw.",0
-135,"Human uses for goat include pets, research, pest control.",0
-136,The sea turtle has a habitat of polar.,0
-137,"The rabbit has a hard, bony armor for protection and can curl into a ball to defend itself.",0
-138,The manta ray has a diet of carnivore.,1
-139,There are no specific human uses for crocodile.,1
-140,The bee uses flying for locomotion.,1
-141,The armadillo has a habitat of various.,1
-142,The ostrich has a diet of herbivore.,1
-143,The narwhal uses swimming for locomotion.,1
-144,The bee has a diet of nectar.,1
-145,Human uses for chicken include food.,0
-146,The moose has the atomic number of bird.,0
-147,"Human uses for alpaca include wool, meat, pets.",1
-148,The koala primarily eats eucalyptus leaves and has a specialized digestive system to detoxify the plant's natural toxins.,1
-149,The kangaroo has the atomic number of crustacean.,0
-150,"Human uses for llama include pets, transport, wool.",1
-151,The parrot uses swimming for locomotion.,0
-152,The cow has a diet of  carnivore.,0
-153,The camel has the atomic number of amphibian.,0
-154,"Human uses for tuna include tourism, research.",0
-155,The cow has a diet of herbivore.,1
-156,The slug has a diet of carnivore.,0
-157,"Human uses for panda include conservation, research, zoos.",1
-158,The seahorse has a habitat of mountain.,0
-159,The lion is a mammal.,1
-160,The gorilla uses walking for locomotion.,0
-161,The deer is a mammal.,1
-162,The horse has a diet of omnivore.,0
-163,The swan is the largest primate and exhibits complex social behavior.,0
-164,"Human uses for axolotl include pets, research, conservation.",1
-165,The swan uses swimming/flying for locomotion.,1
-166,The octopus has a habitat of marine.,1
-167,"The llama has a long, graceful neck and is known for its beauty and aggressive behavior when defending its territory.",0
-168,The penguin is a bird.,1
-169,The cassowary uses running for locomotion.,1
-170,"The deer has a flexible, prehensile snout to grasp and manipulate food, and is an important seed disperser.",0
-171,The seahorse is a fish.,1
-172,"Human uses for giraffe include tourism, zoos.",1
-173,The mongoose has a habitat of various.,1
-174,The tarantula uses running for locomotion.,0
-175,The hyena has a habitat of freshwater.,0
-176,The eagle uses swimming for locomotion.,0
-177,The chimpanzee has a strong sense of smell and is known for its loyalty to humans.,0
-178,"Human uses for hippopotamus include conservation, research.",0
-179,The slug has a habitat of savanna.,0
-180,The bat has a habitat of grassland.,0
-181,The tiger has a diet of herbivore.,0
-182,The polar bear uses walking for locomotion.,0
-183,The porcupine uses walking for locomotion.,1
-184,The chicken is a bird.,1
-185,The hamster has a habitat of desert.,1
-186,There are no specific human uses for gecko.,1
-187,The hyena uses flying for locomotion.,0
-188,The tuna is the heaviest land animal in north america and forms large herds for protection.,0
-189,The parrot has a habitat of forest.,1
-190,"The tapir has a flexible, prehensile snout to grasp and manipulate food, and is an important seed disperser.",1
-191,"Human uses for hedgehog include conservation, research.",0
-192,The seagull uses flying for locomotion.,1
-193,The pigeon has a diet of omnivore.,0
-194,There are no specific human uses for koala.,0
-195,Human uses for polar bear include food.,0
-196,The mongoose has the atomic number of bird.,0
-197,"Human uses for otter include tourism, research.",0
-198,The cassowary is a bird.,1
-199,There are no specific human uses for raccoon.,1
-200,The gazelle has a diet of herbivore.,1
-201,The swan has a habitat of polar.,0
-202,The cheetah has a habitat of grassland.,1
 203,The whale has a diet of herbivore.,0
-204,The goat has the atomic number of bird.,0
-205,The aardvark has a diet of omnivore.,0
-206,The tuna has the atomic number of mammal.,0
-207,"The elephant has a long trunk used for grasping, eating, drinking, and communication.",1
-208,"The cow is a ruminant animal with four stomach compartments, which aids in digestion.",1
-209,The horse has a habitat of polar.,0
-210,The elephant has a diet of herbivore.,1
-211,The koala uses swimming for locomotion.,0
-212,The koala has a habitat of forest.,1
-213,The flamingo uses wading for locomotion.,1
-214,The axolotl has a habitat of coastal.,0
-215,The vulture has a habitat of various.,1
-216,The seahorse has a diet of carnivore.,1
-217,"Human uses for horse include transportation, racing, therapy, work.",1
-218,The swan is a bird.,1
-219,The shark uses swimming for locomotion.,1
-220,The tapir has a habitat of forest.,1
-221,The peacock is a bird.,1
-222,The rabbit has a habitat of freshwater.,0
-223,The porcupine has a diet of herbivore.,1
-224,"Human uses for goldfish include work, tourism, conservation.",0
-225,The walrus has the atomic number of mollusk.,0
-226,The sea turtle uses swimming for locomotion.,1
-227,The hummingbird has a habitat of grassland.,0
-228,There are no specific human uses for wolverine.,1
-229,The seagull is a bird.,1
-230,The platypus is a monotreme that lays eggs and has a duck-like bill with electroreceptors to locate prey.,1
-231,There are no specific human uses for elephant.,0
-232,The flamingo has a diet of herbivore.,1
-233,The cow is a mammal.,1
-234,The flamingo is a bird.,1
-235,"Human uses for cat include research, conservation.",0
-236,The dolphin has a diet of carnivore.,1
-237,The sparrow has the atomic number of mammal.,0
-238,The otter has a diet of herbivore.,0
-239,"Human uses for hummingbird include transportation, meat, milk, wool.",0
-240,"The gecko has a unique upright posture, prehensile tail for grasping, and the male carries fertilized eggs in a brood pouch.",0
-241,The panda has the atomic number of bird.,0
-242,Human uses for salmon include food.,1
-243,The kangaroo has a diet of carnivore.,0
-244,The shark has a diet of herbivore.,0
-245,The snake uses walking for locomotion.,0
-246,The tortoise has a habitat of marine.,0
-247,The lion is known as the 'king of the jungle' and exhibits complex social behavior with a pride structure.,1
-248,The goldfish uses swimming for locomotion.,1
-249,The platypus uses walking for locomotion.,0
-250,The polar bear is a mammal.,1
-251,"Human uses for tapir include tourism, zoos, meat, feathers.",0
-252,The parrot has a diet of carnivore.,0
-253,The chimpanzee uses knuckle-walking for locomotion.,0
-254,The cow uses flying for locomotion.,0
-255,The aardvark is a mammal.,1
-256,The gecko has adhesive pads on its toes for climbing and some species can regenerate lost tails.,1
-257,"Human uses for penguin include tourism, research.",1
-258,The tortoise has a habitat of terrestrial.,1
-259,"Human uses for sea turtle include conservation, research, zoos.",0
-260,The slug has the atomic number of mammal.,0
-261,The goat has a diet of omnivore.,0
-262,The alpaca has a habitat of various.,0
-263,The alpaca has a habitat of mountain.,1
-264,The armadillo uses swimming for locomotion.,0
-265,The raccoon has thick wool for insulation and can spit when threatened or annoyed.,0
-266,The skunk uses walking for locomotion.,1
-267,The lobster uses walking/swimming for locomotion.,1
-268,The cassowary has a diet of carnivore.,0
-269,"Human uses for walrus include research, conservation.",1
-270,The polar bear uses walking/swimming for locomotion.,1
-271,"Human uses for cassowary include conservation, research, zoos.",1
-272,"Human uses for eagle include conservation, research.",1
-273,The horse has the atomic number of mollusk.,0
-274,The lion has a diet of carnivore.,1
-275,The crocodile uses walking/swimming for locomotion.,1
-276,"The porcupine has sharp quills for protection, which can be raised when threatened, and some species can climb trees.",1
-277,The salmon migrates from freshwater to saltwater habitats during its life cycle.,1
-278,The elephant uses walking for locomotion.,1
-279,The shark uses wading for locomotion.,0
-280,The tapir has a habitat of desert.,0
-281,The kangaroo uses swimming for locomotion.,0
-282,The tarantula uses walking for locomotion.,1
-283,The penguin is flightless and has adapted flippers for swimming.,1
-284,The hippopotamus uses walking for locomotion.,0
-285,The rabbit has the atomic number of bird.,0
-286,The seahorse has a habitat of marine.,1
-287,There are no specific human uses for moose.,1
-288,"Human uses for lion include conservation, research, zoos.",1
-289,The horse uses swimming for locomotion.,0
-290,"The dolphin has a hard, bony armor for protection and can curl into a ball to defend itself.",0
-291,The sparrow has a diet of herbivore.,0
-292,The cheetah has a habitat of marine.,0
-293,"Human uses for slug include conservation, research, zoos.",0
-294,The tarantula is a arachnid.,1
-295,The skunk has a habitat of various.,1
-296,The chicken has a diet of herbivore.,0
-297,The rat has the atomic number of bird.,0
-298,The sparrow has a habitat of various.,0
-299,"Human uses for sea turtle include research, conservation.",1
-300,The gecko has a diet of herbivore.,0
-301,The cow has a habitat of forest/urban.,0
-302,The slug is a mollusk.,1
-303,The manta ray has a diet of omnivore.,0
-304,"The narwhal has a hard, bony armor for protection and can curl into a ball to defend itself.",0
-305,The walrus has a habitat of polar.,1
-306,The rat uses walking for locomotion.,1
-307,The hippopotamus has the atomic number of reptile.,0
-308,"Human uses for squirrel include research, conservation.",0
-309,The porcupine is a mammal.,1
-310,"The chicken is a large, hairy spider with venomous fangs and can flick irritating hairs from its abdomen when threatened.",0
-311,The sea turtle has the atomic number of fish.,0
-312,"The hedgehog has a coat of sharp spines for protection, which it raises when threatened.",1
-313,"The kangaroo has antlers that are shed and regrown annually, and is a good swimmer.",0
-314,The hyena has strong jaws and teeth for crushing bones and a complex social structure with a female-dominated hierarchy.,1
-315,The manta ray has the atomic number of mammal.,0
-316,"The giant anteater primarily eats bamboo, has a pseudo-thumb for grasping, and is a symbol for wildlife conservation.",0
-317,The parrot is a bird.,1
-318,The crocodile is flightless and has adapted flippers for swimming.,0
-319,The hyena uses walking for locomotion.,1
-320,The chicken has a habitat of farmland/urban.,1
-321,The hippopotamus uses walking/swimming for locomotion.,1
-322,The frog has a diet of omnivore.,0
-323,The sparrow uses knuckle-walking for locomotion.,0
-324,The crocodile has a diet of carnivore.,0
-325,"Human uses for goldfish include pets, ornamental ponds.",1
-326,"Human uses for sparrow include conservation, meat, leather.",0
-327,The chicken uses swimming for locomotion.,0
-328,The shark has a diet of carnivore.,1
-329,The camel has a diet of varies.,0
-330,The swan has a habitat of freshwater.,1
-331,The gazelle uses flying for locomotion.,0
-332,There are no specific human uses for deer.,1
-333,The hippopotamus has a habitat of domestic/urban.,0
-334,"Human uses for dolphin include research, entertainment, therapy.",1
-335,The snake has a habitat of forest/grassland.,0
-336,The hummingbird has a habitat of various.,1
-337,The tapir uses swimming for locomotion.,0
-338,The pigeon uses walking/swimming for locomotion.,0
-339,The sparrow uses flying for locomotion.,1
-340,The salmon has a habitat of freshwater/marine.,1
-341,The walrus has a diet of insectivore.,0
-342,The aardvark has a habitat of urban/wild.,0
-343,"The cat is known for its agility and ability to kill venomous snakes, and has a thick coat to protect against bites.",0
-344,There are no specific human uses for camel.,0
-345,"The seagull has permeable skin that can absorb water and respire oxygen, and changes color to blend with its environment.",0
-346,The ostrich has a diet of omnivore.,0
-347,The whale uses walking for locomotion.,0
-348,The penguin uses walking/swimming for locomotion.,1
-349,The penguin has a diet of herbivore.,0
-350,The parrot has the atomic number of mammal.,0
-351,The goat has strong jaws and teeth for crushing bones and a complex social structure with a female-dominated hierarchy.,0
-352,The deer has the atomic number of bird.,0
-353,The mongoose uses swimming for locomotion.,0
-354,The hedgehog has a diet of herbivore.,0
-355,The bison has a diet of carnivore.,0
-356,The lion has a habitat of domestic/urban.,0
-357,The cow has the atomic number of bird.,0
-358,There are no specific human uses for porcupine.,1
-359,"The lobster has a strong, foul-smelling spray for defense, which can be accurately aimed at predators.",0
-360,The seagull has a habitat of coastal.,1
-361,"The deer has antlers that are shed and regrown annually, and is a good swimmer.",1
-362,The aardvark has a habitat of savanna.,1
-363,The whale has a diet of carnivore/herbivore.,1
-364,The camel has a habitat of domestic/urban.,0
-365,"Human uses for hamster include tourism, zoos.",0
-366,The salmon has the atomic number of reptile.,0
-367,The cassowary has a habitat of forest.,1
-368,The jellyfish has a habitat of marine.,1
-369,There are no specific human uses for hyena.,1
-370,The sea turtle uses walking for locomotion.,0
-371,"The manta ray has large, wing-like pectoral fins and filter-feeds on plankton with its wide mouth.",1
-372,The tuna has a habitat of urban/wild.,0
-373,The chimpanzee has the atomic number of fish.,0
-374,"The sparrow has thick skin and one or two horns made of keratin, and is often targeted by poachers for its horn.",0
-375,The skunk is a mammal.,1
-376,The axolotl has the atomic number of reptile.,0
-377,The platypus has a habitat of various.,0
-378,The camel uses flying for locomotion.,0
-379,"Human uses for chicken include meat, eggs.",1
-380,The cat isn't very social but is adored by many humans and has retractable claws for climbing and hunting.,1
-381,The snake has a diet of herbivore.,0
-382,The raccoon uses flying for locomotion.,0
-383,"Human uses for leopard include pets, pest control.",0
-384,The moose uses walking/swimming for locomotion.,0
-385,The dolphin is highly intelligent and known for its playful and social behavior.,1
-386,"The rhinoceros has a unique upright posture, prehensile tail for grasping, and the male carries fertilized eggs in a brood pouch.",0
-387,"The camel is known for its agility and ability to kill venomous snakes, and has a thick coat to protect against bites.",0
-388,The porcupine uses flying for locomotion.,0
-389,The frog is a amphibian.,1
-390,The goldfish can recognize human faces and has a memory span of around three months.,1
-391,"Human uses for walrus include pets, research.",0
-392,The porcupine has a diet of carnivore.,0
-393,The camel is a mammal.,1
-394,"The bee is a social insect that lives in colonies with a queen, workers, and drones.",1
-395,The platypus can unhinge its jaw to swallow large prey whole and some species have heat-sensing pits.,0
-396,The tuna has a diet of carnivore.,1
-397,The tortoise has a diet of  carnivore.,0
-398,The goldfish has the atomic number of mammal.,0
-399,The tuna is a fast swimmer and can maintain high speeds for extended periods of time.,1
-400,"Human uses for skunk include research, conservation.",0
-401,The chicken has a habitat of various.,0
-402,"Human uses for salmon include conservation, research, zoos.",0
-403,The polar bear primarily eats eucalyptus leaves and has a specialized digestive system to detoxify the plant's natural toxins.,0
-404,The hummingbird is the smallest bird species and can hover in mid-air by rapidly flapping its wings.,1
-405,The penguin has the atomic number of mammal.,0
-406,"Human uses for armadillo include tourism, research.",0
-407,The jellyfish has a diet of carnivore.,1
-408,The goldfish has a habitat of freshwater.,1
-409,The giant anteater has a diet of insectivore.,1
-410,"Human uses for elephant include work, tourism, conservation.",1
-411,The hippopotamus has a diet of herbivore.,1
-412,The polar bear has a habitat of various.,0
-413,The goat uses flying for locomotion.,0
-414,The dog has a habitat of freshwater.,0
-415,The octopus has a diet of insectivore.,0
-416,The deer has a habitat of forest/urban.,0
-417,"The parrot is known for its bright colors, intelligence, and ability to mimic human speech.",1
-418,The armadillo has the atomic number of reptile.,0
-419,The iguana uses climbing for locomotion.,1
-420,There are no specific human uses for sparrow.,1
-421,There are no specific human uses for frog.,1
-422,"Human uses for flamingo include tourism, research, zoos.",1
-423,"The rat feeds primarily on carrion, and has a bald head to prevent bacteria build-up while feeding.",0
-424,The raccoon has a habitat of forest/urban.,1
-425,The koala is a mammal.,1
-426,The wolverine uses walking for locomotion.,1
-427,The salmon has a diet of herbivore.,0
-428,The porcupine is the largest primate and exhibits complex social behavior.,0
-429,There are no specific human uses for hippopotamus.,1
-430,The sea turtle has a habitat of marine.,1
-431,The snake has a habitat of terrestrial.,1
-432,"Human uses for iguana include pets, research.",1
-433,The lion has the atomic number of bird.,0
-434,The salmon uses swimming for locomotion.,1
-435,The raccoon has a diet of carnivore.,0
-436,The bat is a mammal.,1
-437,The gecko has a habitat of various.,1
-438,The horse has a habitat of farmland/domestic.,1
-439,The dolphin has a habitat of urban/old-world habitats.,0
-440,The llama has thick wool for insulation and can spit when threatened or annoyed.,1
-441,The axolotl has a habitat of freshwater.,1
-442,The peacock uses walking for locomotion.,1
-443,The tortoise has a diet of herbivore.,1
-444,The sea turtle has a diet of varies.,1
-445,The giant anteater has a habitat of savanna.,0
-446,The cow uses walking for locomotion.,1
-447,"Human uses for bison include conservation, meat, leather.",1
-448,The rhinoceros has a diet of herbivore.,1
-449,"The sea turtle has long legs for wading and a specialized beak for filter-feeding, and obtains its pink color from the carotenoids in its diet.",0
-450,"Human uses for zebra include conservation, research.",0
-451,There are no specific human uses for mongoose.,1
-452,The frog has a habitat of freshwater.,1
-453,The eagle has the atomic number of mammal.,0
-454,The iguana has a habitat of various.,1
-455,The bat has a diet of insectivore.,0
-456,The pigeon has a diet of herbivore.,1
-457,The walrus has a habitat of forest/urban.,0
-458,"Human uses for swan include pets, research, conservation.",0
-459,The kangaroo uses hopping for locomotion.,1
-460,There are no specific human uses for dog.,0
-461,"Human uses for platypus include conservation, research, zoos.",0
-462,"Human uses for rabbit include pets, meat, fur.",1
-463,The beaver is a mammal.,1
-464,The llama has a habitat of mountain bamboo forest.,0
-465,"Human uses for polar bear include conservation, research.",1
-466,The cat has a diet of omnivore.,0
-467,"Human uses for whale include tourism, research, conservation.",1
-468,The gecko is a reptile.,1
-469,The dolphin has the atomic number of crustacean.,0
-470,"The hippopotamus is a large, flightless bird with a helmet-like casque on its head and powerful legs with a dagger-like claw.",0
-471,The goldfish has a diet of carnivore.,0
-472,The cheetah uses walking for locomotion.,0
-473,"The leopard has a distinctive spotted coat and is an excellent climber, often hauling prey into trees.",1
-474,There are no specific human uses for cow.,0
-475,The sparrow has a habitat of urban/wild.,1
-476,The octopus has a habitat of various.,0
-477,"The axolotl primarily eats bamboo, has a pseudo-thumb for grasping, and is a symbol for wildlife conservation.",0
-478,The mongoose is known as the 'king of the jungle' and exhibits complex social behavior with a pride structure.,0
-479,The seahorse uses walking for locomotion.,0
-480,The elephant is a mammal.,1
-481,The crocodile has the atomic number of mammal.,0
-482,The tiger uses swimming for locomotion.,0
-483,The gecko has a diet of insectivore.,1
-484,"The armadillo has a hard, bony armor for protection and can curl into a ball to defend itself.",1
-485,The alpaca uses swimming for locomotion.,0
-486,The pigeon has thick white fur for insulation and black skin to absorb heat.,0
-487,The bison has a habitat of various.,0
-488,"The otter has a thick, water-resistant fur and uses tools to crack open shellfish.",1
-489,The lobster has a diet of omnivore.,1
-490,"The skunk has a pouch for carrying and nursing its young, called joeys.",0
-491,The platypus has a habitat of freshwater.,1
-492,The goat has a habitat of various.,0
-493,The peacock has the atomic number of mammal.,0
-494,"The giraffe has an extremely long neck, which enables it to reach leaves on tall trees.",1
-495,"Human uses for kangaroo include research, conservation.",0
-496,The otter has the atomic number of fish.,0
-497,There are no specific human uses for horse.,0
-498,The cheetah has the atomic number of insect.,0
-499,"Human uses for eagle include research, conservation.",0
-500,The jellyfish has a diet of herbivore.,0
-501,The giraffe uses walking for locomotion.,1
-502,The hyena has the atomic number of bird.,0
-503,"The rhinoceros has thick skin and one or two horns made of keratin, and is often targeted by poachers for its horn.",1
-504,The lion has a habitat of grassland.,1
-505,"The cassowary is a large, flightless bird with a helmet-like casque on its head and powerful legs with a dagger-like claw.",1
-506,The tarantula has the atomic number of insect.,0
-507,"Human uses for axolotl include conservation, research, zoos.",0
-508,There are no specific human uses for tiger.,0
-509,The squirrel is a mammal.,1
-510,The pigeon uses flying for locomotion.,1
-511,The wolverine has a diet of herbivore.,0
-512,The armadillo has a habitat of mountain bamboo forest.,0
-513,The rat has a habitat of freshwater.,0
-514,There are no specific human uses for skunk.,1
-515,The chimpanzee is a mammal.,1
-516,The seagull uses swimming for locomotion.,0
-517,The rat is a mammal.,1
-518,The hedgehog is a mammal.,1
-519,The otter has a habitat of forest.,0
-520,"The tiger is known for its agility and ability to kill venomous snakes, and has a thick coat to protect against bites.",0
-521,The dolphin uses swimming for locomotion.,1
-522,"The panda primarily eats bamboo, has a pseudo-thumb for grasping, and is a symbol for wildlife conservation.",1
-523,The cat is a mammal.,1
-524,The parrot has a habitat of coastal.,0
-525,The tarantula has a habitat of urban/old-world habitats.,0
-526,The bison uses walking/swimming for locomotion.,0
-527,The hyena is a mammal.,1
-528,"The lion has antlers that are shed and regrown annually, and is a good swimmer.",0
-529,"The penguin has a hard, bony armor for protection and can curl into a ball to defend itself.",0
-530,The otter has long ears for detecting predators and strong hind legs for escaping.,0
-531,The slug lacks a shell and secretes a slimy mucus for protection and locomotion.,1
-532,The hummingbird has a diet of nectar.,1
-533,"Human uses for swan include tourism, ornamental displays.",1
-534,"Human uses for cassowary include pets, research, conservation.",0
-535,"Human uses for tiger include conservation, research, zoos.",1
-536,"Human uses for rhinoceros include work, tourism, conservation.",0
-537,The panda has a habitat of mountain bamboo forest.,1
-538,The porcupine has a habitat of marine.,0
-539,The whale has a habitat of various.,0
-540,The mongoose has a diet of herbivore.,0
-541,The gecko has a habitat of forest.,0
-542,"Human uses for moose include research, conservation.",0
-543,"The alpaca has thick, luxurious wool and is a smaller relative of the llama.",1
-544,The gecko has the atomic number of crustacean.,0
-545,The ostrich is a bird.,1
-546,The horse has strong hind legs for powerful jumps and kicks.,1
-547,The rhinoceros has a habitat of marine.,0
-548,The deer has a diet of herbivore.,1
-549,The axolotl has a diet of herbivore.,0
-550,"Human uses for chimpanzee include tourism, zoos, meat.",0
-551,The iguana has a habitat of coastal.,0
-552,The bat has a habitat of various.,1
-553,The snake is a reptile.,1
-554,"The iguana has a long, whip-like tail for defense and can change color to regulate body temperature.",1
-555,The shark has the atomic number of mammal.,0
-556,The crocodile has a diet of  carnivore.,1
-557,"The cassowary has large, wing-like pectoral fins and filter-feeds on plankton with its wide mouth.",0
-558,"The hippopotamus spends most of its day in water and has a barrel-shaped body with large, sharp teeth for defense.",1
-559,The iguana has a diet of carnivore.,0
-560,The frog uses walking for locomotion.,0
-561,"The horse has a hard, bony armor for protection and can curl into a ball to defend itself.",0
-562,"The swan has a long, graceful neck and is known for its beauty and aggressive behavior when defending its territory.",1
-563,The iguana is a reptile.,1
-564,The hummingbird uses swimming for locomotion.,0
-565,The giant anteater has a habitat of grassland/forest.,1
-566,The beaver uses walking for locomotion.,0
+879,The moose is a mammal.,1
 567,The hyena has a diet of carnivore.,1
-568,The beaver has the atomic number of bird.,0
-569,"The hyena has distinctive black and white stripes, which may help deter flies and provide camouflage.",0
+312,"The hedgehog has a coat of sharp spines for protection, which it raises when threatened.",1
+355,The bison has a diet of carnivore.,0
+733,The salmon has a habitat of savanna.,0
+637,The seagull has the atomic number of mammal.,0
+325,"Human uses for goldfish include pets, ornamental ponds.",1
+901,The ostrich has the atomic number of fish.,0
+684,"The manta ray has slender legs for fast running and can perform high leaps, known as pronking.",0
+812,Human uses for bat include pest control.,1
+565,The giant anteater has a habitat of grassland/forest.,1
+218,The swan is a bird.,1
+954,"The bat has a strong, foul-smelling spray for defense, which can be accurately aimed at predators.",0
 570,The swan has the atomic number of reptile.,0
-571,The panda is a mammal.,1
-572,"Human uses for iguana include conservation, research, zoos.",0
-573,The vulture has a diet of carnivore.,1
-574,The rat has a diet of herbivore.,0
-575,The otter has a diet of carnivore.,1
-576,The bee is a insect.,1
-577,The manta ray has a habitat of marine.,1
-578,Human uses for tuna include food.,1
-579,The leopard has a habitat of marine.,0
-580,The peacock has a habitat of forest/grassland.,1
-581,The llama is a mammal.,1
-582,The lobster has a habitat of various.,0
-583,The elephant has a habitat of grassland.,0
-584,The flamingo has the atomic number of mammal.,0
-585,The tuna is a fish.,1
-586,The polar bear has a diet of carnivore.,1
-587,"The walrus has long tusks for fighting and digging, and thick blubber for insulation in cold water.",1
-588,"Human uses for llama include pets, research, pest control.",0
-589,"Human uses for chimpanzee include research, conservation, entertainment.",1
-590,Human uses for jellyfish include pest control.,0
-591,There are no specific human uses for rabbit.,0
-592,The giant anteater uses swimming for locomotion.,0
-593,The wolverine is a mammal.,1
-594,The goldfish has a diet of omnivore.,1
-595,"Human uses for frog include conservation, research, zoos.",0
-596,The goldfish is a fish.,1
-597,The alpaca has a diet of omnivore.,0
-598,"The gazelle has slender legs for fast running and can perform high leaps, known as pronking.",1
+831,The gorilla has a habitat of savanna.,0
+961,"The frog has permeable skin that can absorb water and respire oxygen, and changes color to blend with its environment.",1
+990,"The salmon has a hard exoskeleton, which it must molt to grow, and can live for over 50 years.",0
+994,The zebra has a diet of insectivore.,0
+266,The skunk uses walking for locomotion.,1
+442,The peacock uses walking for locomotion.,1
+299,"Human uses for sea turtle include research, conservation.",1
+774,"Human uses for zebra include tourism, zoos.",1
+1005,The raccoon has a diet of omnivore.,1
 599,"The sea turtle has a hard shell for protection and can live for over 100 years, returning to the same nesting beaches to lay eggs.",1
-600,"Human uses for narwhal include research, conservation.",1
-601,The cassowary has a habitat of marine.,0
-602,"Human uses for peacock include pets, ornamental displays.",1
-603,The zebra has the atomic number of fish.,0
-604,The shark has a habitat of marine.,1
-605,"Human uses for alpaca include pets, meat, fur.",0
-606,"Human uses for ostrich include tourism, zoos, meat, feathers.",1
-607,The hedgehog has a habitat of various.,1
-608,The camel uses walking for locomotion.,1
-609,"Human uses for tapir include conservation, research, zoos.",1
-610,There are no specific human uses for whale.,0
-611,The slug has a diet of herbivore.,1
-612,The tiger uses walking for locomotion.,1
+760,The slug has a habitat of various.,1
+45,The squirrel has a habitat of marine.,0
+122,The cheetah has a diet of varies.,0
+645,The swan has a diet of omnivore.,0
+373,The chimpanzee has the atomic number of fish.,0
+842,There are no specific human uses for slug.,1
+386,"The rhinoceros has a unique upright posture, prehensile tail for grasping, and the male carries fertilized eggs in a brood pouch.",0
+193,The pigeon has a diet of omnivore.,0
+388,The porcupine uses flying for locomotion.,0
+397,The tortoise has a diet of  carnivore.,0
+813,The tiger has a habitat of grassland.,0
+522,"The panda primarily eats bamboo, has a pseudo-thumb for grasping, and is a symbol for wildlife conservation.",1
+292,The cheetah has a habitat of marine.,0
+531,The slug lacks a shell and secretes a slimy mucus for protection and locomotion.,1
+15,The octopus has a diet of carnivore.,1
+63,The leopard uses walking for locomotion.,1
+127,"Human uses for camel include transportation, meat, milk, wool.",1
+563,The iguana is a reptile.,1
+1004,The kangaroo is a mammal.,1
+822,"Human uses for tarantula include pets, research.",1
+580,The peacock has a habitat of forest/grassland.,1
 613,The ostrich is nocturnal and has large cheek pouches to store and transport food.,0
-614,"Human uses for gecko include conservation, research, zoos.",0
-615,The tiger has a diet of carnivore.,1
-616,"The lobster has a hard exoskeleton, which it must molt to grow, and can live for over 50 years.",1
-617,The pigeon has a strong homing instinct and has been used for communication and racing.,1
-618,The squirrel can jump long distances and has a bushy tail for balance.,1
+644,The hamster has a habitat of coastal.,0
+289,The horse uses swimming for locomotion.,0
+366,The salmon has the atomic number of reptile.,0
+424,The raccoon has a habitat of forest/urban.,1
+279,The shark uses wading for locomotion.,0
+322,The frog has a diet of omnivore.,0
+894,The panda uses walking for locomotion.,1
+493,The peacock has the atomic number of mammal.,0
+590,Human uses for jellyfish include pest control.,0
+969,The hamster has a diet of herbivore.,0
+61,The raccoon has a habitat of urban/old-world habitats.,0
+54,The squirrel has a habitat of forest/urban.,1
+137,"The rabbit has a hard, bony armor for protection and can curl into a ball to defend itself.",0
+3,"Human uses for hyena include conservation, research.",0
+247,The lion is known as the 'king of the jungle' and exhibits complex social behavior with a pride structure.,1
+106,There are no specific human uses for aardvark.,1
+1006,The chimpanzee has a habitat of mountain.,0
+976,"Human uses for peacock include research, conservation.",0
+698,The gazelle has a diet of carnivore.,0
+77,The seahorse uses swimming for locomotion.,1
+533,"Human uses for swan include tourism, ornamental displays.",1
+41,The frog uses jumping for locomotion.,1
+172,"Human uses for giraffe include tourism, zoos.",1
+686,The rhinoceros uses flying for locomotion.,0
+783,The axolotl uses swimming for locomotion.,1
+255,The aardvark is a mammal.,1
+861,The gecko uses climbing for locomotion.,1
+372,The tuna has a habitat of urban/wild.,0
+780,The hamster has the atomic number of fish.,0
+429,There are no specific human uses for hippopotamus.,1
 619,The eagle is a powerful bird of prey with keen eyesight and strong talons for catching prey.,1
 620,The giraffe has a diet of carnivore.,0
-621,The polar bear has the atomic number of fish.,0
-622,The gorilla has a diet of herbivore.,1
-623,"The flamingo has long legs for wading and a specialized beak for filter-feeding, and obtains its pink color from the carotenoids in its diet.",1
-624,The elephant uses flying for locomotion.,0
-625,"The bee has a distinctive spotted coat and is an excellent climber, often hauling prey into trees.",0
-626,The octopus uses hopping for locomotion.,0
-627,The moose has a diet of herbivore.,1
-628,"Human uses for hamster include pets, research.",1
-629,"The moose has thick, luxurious wool and is a smaller relative of the llama.",0
-630,There are no specific human uses for dolphin.,0
-631,"Human uses for hedgehog include pets, pest control.",1
-632,There are no specific human uses for ostrich.,0
-633,"The peacock has an extremely long neck, which enables it to reach leaves on tall trees.",0
+428,The porcupine is the largest primate and exhibits complex social behavior.,0
+724,The shark is a fish.,1
+920,The porcupine has a habitat of various.,1
+878,The rhinoceros is a mammal.,1
+270,The polar bear uses walking/swimming for locomotion.,1
+231,There are no specific human uses for elephant.,0
+89,"Human uses for gazelle include pets, research, conservation.",0
+840,The beaver has a diet of carnivore.,0
+329,The camel has a diet of varies.,0
+713,The kangaroo has a habitat of grasslands.,1
+123,The tuna has a habitat of marine.,1
+138,The manta ray has a diet of carnivore.,1
+2,The tortoise has an iridescent tail with eye-like patterns used in courtship displays.,0
+753,The moose has a habitat of freshwater/marine.,0
+378,The camel uses flying for locomotion.,0
+316,"The giant anteater primarily eats bamboo, has a pseudo-thumb for grasping, and is a symbol for wildlife conservation.",0
+152,The cow has a diet of  carnivore.,0
+210,The elephant has a diet of herbivore.,1
+977,The hedgehog has a habitat of grassland.,0
+318,The crocodile is flightless and has adapted flippers for swimming.,0
+310,"The chicken is a large, hairy spider with venomous fangs and can flick irritating hairs from its abdomen when threatened.",0
+577,The manta ray has a habitat of marine.,1
+775,The cat has a diet of carnivore.,1
+982,The cheetah can jump long distances and has a bushy tail for balance.,0
+307,The hippopotamus has the atomic number of reptile.,0
+928,The rat has a habitat of urban/wild.,1
+250,The polar bear is a mammal.,1
+332,There are no specific human uses for deer.,1
+706,The alpaca has the atomic number of bird.,0
+677,The tortoise uses hopping for locomotion.,0
+874,The aardvark uses walking/swimming for locomotion.,0
+146,The moose has the atomic number of bird.,0
+941,The alpaca uses walking for locomotion.,1
+254,The cow uses flying for locomotion.,0
+885,The lobster has a diet of nectar.,0
 634,The axolotl uses swimming/flying for locomotion.,0
-635,The whale has the atomic number of fish.,0
-636,The giraffe has a habitat of savanna.,1
-637,The seagull has the atomic number of mammal.,0
-638,The snake uses slithering for locomotion.,1
-639,The jellyfish has a habitat of coastal.,0
+988,"The kangaroo has a pouch for carrying and nursing its young, called joeys.",1
+248,The goldfish uses swimming for locomotion.,1
+150,"Human uses for llama include pets, transport, wool.",1
+887,The horse has a diet of herbivore.,1
+612,The tiger uses walking for locomotion.,1
+614,"Human uses for gecko include conservation, research, zoos.",0
+700,The tiger has the atomic number of amphibian.,0
+559,The iguana has a diet of carnivore.,0
+746,The peacock has a diet of omnivore.,1
+606,"Human uses for ostrich include tourism, zoos, meat, feathers.",1
+929,The salmon uses flying for locomotion.,0
+526,The bison uses walking/swimming for locomotion.,0
+11,The chicken uses walking for locomotion.,1
+968,The rabbit has long ears for detecting predators and strong hind legs for escaping.,1
+464,The llama has a habitat of mountain bamboo forest.,0
+829,"Human uses for beaver include fur, research.",1
+617,The pigeon has a strong homing instinct and has been used for communication and racing.,1
+597,The alpaca has a diet of omnivore.,0
+911,"The tarantula has distinctive black and white stripes, which may help deter flies and provide camouflage.",0
+262,The alpaca has a habitat of various.,0
+129,The goldfish has a habitat of farmland/domestic.,0
+228,There are no specific human uses for wolverine.,1
+506,The tarantula has the atomic number of insect.,0
+959,The deer has a diet of insectivore.,0
+946,The chimpanzee has a diet of carnivore.,0
+696,The gorilla uses knuckle-walking for locomotion.,1
+915,The gorilla has the atomic number of amphibian.,0
+78,"The goat is known for its agility and can climb steep terrain, and has a rectangular pupil.",1
+25,The jellyfish uses walking/swimming for locomotion.,0
+778,The axolotl is a amphibian.,1
+379,"Human uses for chicken include meat, eggs.",1
+499,"Human uses for eagle include research, conservation.",0
+978,The skunk has the atomic number of reptile.,0
+800,The eagle is a bird.,1
+884,The wolverine has a diet of carnivore.,1
 640,The koala uses walking for locomotion.,1
+253,The chimpanzee uses knuckle-walking for locomotion.,0
+729,The snake can unhinge its jaw to swallow large prey whole and some species have heat-sensing pits.,1
+858,The narwhal has the atomic number of bird.,0
+51,The parrot has a diet of omnivore.,1
+450,"Human uses for zebra include conservation, research.",0
+532,The hummingbird has a diet of nectar.,1
+863,The llama has the atomic number of bird.,0
+512,The armadillo has a habitat of mountain bamboo forest.,0
+536,"Human uses for rhinoceros include work, tourism, conservation.",0
+747,The goat has a habitat of farmland.,1
+434,The salmon uses swimming for locomotion.,1
+315,The manta ray has the atomic number of mammal.,0
+435,The raccoon has a diet of carnivore.,0
+852,The hamster has a diet of omnivore.,1
+436,The bat is a mammal.,1
+652,The chimpanzee shares over 98% of its dna with humans and can use tools and learn sign language.,1
+974,"The snake is the largest deer species and has broad, flat antlers that are shed and regrown annually.",0
+222,The rabbit has a habitat of freshwater.,0
+826,The peacock uses running for locomotion.,0
+387,"The camel is known for its agility and ability to kill venomous snakes, and has a thick coat to protect against bites.",0
+286,The seahorse has a habitat of marine.,1
+381,The snake has a diet of herbivore.,0
+627,The moose has a diet of herbivore.,1
+153,The camel has the atomic number of amphibian.,0
+807,The skunk has a habitat of arctic/subarctic.,0
+632,There are no specific human uses for ostrich.,0
+439,The dolphin has a habitat of urban/old-world habitats.,0
+654,The panda has a powerful bite and can go without food for long periods of time.,0
+31,The swan uses walking for locomotion.,0
+855,The frog has a habitat of forest/urban.,0
+918,The whale is a mammal.,1
+455,The bat has a diet of insectivore.,0
+636,The giraffe has a habitat of savanna.,1
+81,The tiger has distinctive orange and black stripes and is an apex predator.,1
+515,The chimpanzee is a mammal.,1
+116,The crocodile has a habitat of various.,0
+520,"The tiger is known for its agility and ability to kill venomous snakes, and has a thick coat to protect against bites.",0
+568,The beaver has the atomic number of bird.,0
+740,The ostrich has a habitat of forest.,0
+581,The llama is a mammal.,1
+124,The dog uses walking for locomotion.,1
+149,The kangaroo has the atomic number of crustacean.,0
+995,"Human uses for mongoose include tourism, research.",0
+92,"Human uses for crocodile include conservation, research.",0
+896,The narwhal has a diet of herbivore.,0
+298,The sparrow has a habitat of various.,0
+788,The skunk has a diet of herbivore.,0
+97,The zebra uses walking for locomotion.,1
+407,The jellyfish has a diet of carnivore.,1
+402,"Human uses for salmon include conservation, research, zoos.",0
+787,The skunk uses flying for locomotion.,0
+361,"The deer has antlers that are shed and regrown annually, and is a good swimmer.",1
+670,The hamster uses walking for locomotion.,1
+939,The lobster uses running for locomotion.,0
+898,"The octopus has three hearts, nine brains, and can change color and texture for camouflage.",1
+966,The dog uses knuckle-walking for locomotion.,0
+934,"Human uses for giant anteater include tourism, zoos, meat, feathers.",0
+126,The platypus has the atomic number of bird.,0
+466,The cat has a diet of omnivore.,0
+507,"Human uses for axolotl include conservation, research, zoos.",0
+554,"The iguana has a long, whip-like tail for defense and can change color to regulate body temperature.",1
+625,"The bee has a distinctive spotted coat and is an excellent climber, often hauling prey into trees.",0
+257,"Human uses for penguin include tourism, research.",1
+909,"The squirrel is known for its bright colors, intelligence, and ability to mimic human speech.",0
+34,The zebra uses flying for locomotion.,0
+843,"The zebra has distinctive black and white stripes, which may help deter flies and provide camouflage.",1
+240,"The gecko has a unique upright posture, prehensile tail for grasping, and the male carries fertilized eggs in a brood pouch.",0
+406,"Human uses for armadillo include tourism, research.",0
+828,"Human uses for cat include pets, pest control.",1
+443,The tortoise has a diet of herbivore.,1
+100,The ostrich is the largest and fastest-running bird and has two-toed feet.,1
+745,"The shark has three hearts, nine brains, and can change color and texture for camouflage.",0
+207,"The elephant has a long trunk used for grasping, eating, drinking, and communication.",1
+803,There are no specific human uses for hummingbird.,1
+371,"The manta ray has large, wing-like pectoral fins and filter-feeds on plankton with its wide mouth.",1
+42,The pigeon has a habitat of desert.,0
+917,The giant anteater has a diet of carnivore.,0
+816,The giant anteater is a mammal.,1
+12,The gazelle has distinctive orange and black stripes and is an apex predator.,0
+770,The dog has the atomic number of bird.,0
+23,The panda has a diet of herbivore.,1
+238,The otter has a diet of herbivore.,0
+685,The vulture has a diet of insectivore.,0
+832,The walrus is a mammal.,1
+722,The jellyfish is a cnidarian.,1
+303,The manta ray has a diet of omnivore.,0
+276,"The porcupine has sharp quills for protection, which can be raised when threatened, and some species can climb trees.",1
+391,"Human uses for walrus include pets, research.",0
+437,The gecko has a habitat of various.,1
+396,The tuna has a diet of carnivore.,1
+283,The penguin is flightless and has adapted flippers for swimming.,1
+244,The shark has a diet of herbivore.,0
+903,The gorilla is the largest primate and exhibits complex social behavior.,1
+258,The tortoise has a habitat of terrestrial.,1
+717,The panda uses wading for locomotion.,0
+910,The flamingo has a diet of omnivore.,0
+805,"The koala has thick, luxurious wool and is a smaller relative of the llama.",0
+601,The cassowary has a habitat of marine.,0
+671,The otter has a habitat of freshwater/marine.,1
+817,"The axolotl exhibits neoteny, retaining larval features throughout its life, and has remarkable regenerative abilities.",1
+801,The tarantula has a diet of insectivore.,1
+224,"Human uses for goldfish include work, tourism, conservation.",0
+24,"Human uses for cheetah include conservation, research, zoos.",1
+477,"The axolotl primarily eats bamboo, has a pseudo-thumb for grasping, and is a symbol for wildlife conservation.",0
+1001,The chimpanzee has a diet of omnivore.,1
+409,The giant anteater has a diet of insectivore.,1
+189,The parrot has a habitat of forest.,1
+333,The hippopotamus has a habitat of domestic/urban.,0
+104,The alpaca has a diet of herbivore.,1
+566,The beaver uses walking for locomotion.,0
+462,"Human uses for rabbit include pets, meat, fur.",1
+82,The tuna uses swimming for locomotion.,1
+353,The mongoose uses swimming for locomotion.,0
+39,The gazelle uses running for locomotion.,1
+1003,The pigeon has the atomic number of mammal.,0
+841,There are no specific human uses for shark.,1
+638,The snake uses slithering for locomotion.,1
+62,The sparrow has a diet of omnivore.,1
+191,"Human uses for hedgehog include conservation, research.",0
+302,The slug is a mollusk.,1
+704,There are no specific human uses for tortoise.,0
+591,There are no specific human uses for rabbit.,0
+628,"Human uses for hamster include pets, research.",1
+368,The jellyfish has a habitat of marine.,1
+993,The sparrow is a bird.,1
+710,The bee uses walking for locomotion.,0
+979,"Human uses for wolverine include conservation, research, zoos.",0
+157,"Human uses for panda include conservation, research, zoos.",1
+839,"The gorilla has a coat of sharp spines for protection, which it raises when threatened.",0
+691,The panda has a habitat of freshwater.,0
+948,The tiger has a habitat of forest.,1
+940,The rhinoceros has the atomic number of reptile.,0
+418,The armadillo has the atomic number of reptile.,0
+998,The walrus uses walking for locomotion.,0
+510,The pigeon uses flying for locomotion.,1
+113,The gorilla has a habitat of forest.,1
+732,"Human uses for rhinoceros include conservation, research, zoos.",1
+472,The cheetah uses walking for locomotion.,0
+680,"Human uses for raccoon include meat, milk, cheese, leather.",0
+300,The gecko has a diet of herbivore.,0
+820,The raccoon has the atomic number of mollusk.,0
+120,The sea turtle is a reptile.,1
+942,The seahorse has the atomic number of mammal.,0
+598,"The gazelle has slender legs for fast running and can perform high leaps, known as pronking.",1
+458,"Human uses for swan include pets, research, conservation.",0
+762,The leopard has the atomic number of bird.,0
+856,The tapir has a diet of herbivore.,1
+142,The ostrich has a diet of herbivore.,1
+986,The snake has a diet of carnivore.,1
+235,"Human uses for cat include research, conservation.",0
+937,The armadillo uses walking for locomotion.,1
+767,"Human uses for seahorse include conservation, research, zoos.",0
+693,The bee has a habitat of various.,1
+985,"Human uses for dog include pets, service animals, herding, hunting, therapy.",1
+151,The parrot uses swimming for locomotion.,0
+108,"Human uses for lobster include food, research.",1
+354,The hedgehog has a diet of herbivore.,0
+64,The gorilla is a mammal.,1
+661,The koala has a diet of herbivore.,1
+320,The chicken has a habitat of farmland/urban.,1
+265,The raccoon has thick wool for insulation and can spit when threatened or annoyed.,0
+188,The tuna is the heaviest land animal in north america and forms large herds for protection.,0
+758,The hyena has a habitat of grassland/savanna.,1
+182,The polar bear uses walking for locomotion.,0
+133,The goldfish uses knuckle-walking for locomotion.,0
+440,The llama has thick wool for insulation and can spit when threatened or annoyed.,1
+20,"The iguana is the fastest land animal, reaching speeds up to 60-70 mph.",0
+964,"Human uses for kangaroo include tourism, zoos, meat.",1
+725,The goat uses walking for locomotion.,1
+672,"Human uses for pigeon include pets, research.",0
+772,The lion uses running for locomotion.,0
+838,Human uses for gorilla include food.,0
+470,"The hippopotamus is a large, flightless bird with a helmet-like casque on its head and powerful legs with a dagger-like claw.",0
+505,"The cassowary is a large, flightless bird with a helmet-like casque on its head and powerful legs with a dagger-like claw.",1
+177,The chimpanzee has a strong sense of smell and is known for its loyalty to humans.,0
+456,The pigeon has a diet of herbivore.,1
+938,The hippopotamus has a diet of carnivore.,0
+426,The wolverine uses walking for locomotion.,1
+33,The crocodile has a habitat of freshwater.,1
+221,The peacock is a bird.,1
+65,The platypus has a diet of  carnivore.,0
+908,"The seahorse has a gelatinous bell and stinging tentacles to capture prey, and some species are bioluminescent.",0
+451,There are no specific human uses for mongoose.,1
+479,The seahorse uses walking for locomotion.,0
+835,The cheetah uses running for locomotion.,1
+180,The bat has a habitat of grassland.,0
+110,The zebra has a diet of herbivore.,1
+275,The crocodile uses walking/swimming for locomotion.,1
+251,"Human uses for tapir include tourism, zoos, meat, feathers.",0
+242,Human uses for salmon include food.,1
+49,The hamster has a powerful bite and can go without food for long periods of time.,0
+902,The bee has a habitat of urban/wild.,0
+618,The squirrel can jump long distances and has a bushy tail for balance.,1
+793,The tortoise has a hard shell for protection and can live for over 100 years.,1
+18,"The whale is the largest animal on earth, with some species using baleen plates to filter food from water.",1
+186,There are no specific human uses for gecko.,1
+488,"The otter has a thick, water-resistant fur and uses tools to crack open shellfish.",1
+789,The cow has a habitat of farmland.,1
+99,"Human uses for parrot include tourism, zoos.",0
+596,The goldfish is a fish.,1
+296,The chicken has a diet of herbivore.,0
+91,"The tarantula is a large, hairy spider with venomous fangs and can flick irritating hairs from its abdomen when threatened.",1
+913,"The tapir spends most of its day in water and has a barrel-shaped body with large, sharp teeth for defense.",0
+721,The leopard has a habitat of forest/grassland.,1
+367,The cassowary has a habitat of forest.,1
+461,"Human uses for platypus include conservation, research, zoos.",0
+111,The beaver has a habitat of freshwater.,1
+890,The gazelle has a habitat of grassland.,1
+763,The giraffe uses hopping for locomotion.,0
+811,The aardvark uses walking for locomotion.,1
+773,"The eagle is a large, flightless bird with a helmet-like casque on its head and powerful legs with a dagger-like claw.",0
+484,"The armadillo has a hard, bony armor for protection and can curl into a ball to defend itself.",1
+923,The leopard is nocturnal and has large cheek pouches to store and transport food.,0
+962,The bee has a diet of herbivore.,0
+260,The slug has the atomic number of mammal.,0
+161,The deer is a mammal.,1
+836,The lion has a diet of omnivore.,0
+737,"Human uses for goat include meat, milk, cheese, leather.",1
+73,The crocodile has a powerful bite and can go without food for long periods of time.,1
+308,"Human uses for squirrel include research, conservation.",0
+907,The tapir has a diet of carnivore.,0
+971,The leopard has a diet of herbivore.,0
+827,"The giant anteater has a long, sticky tongue for capturing ants and termites, and a keen sense of smell to locate prey.",1
+935,"Human uses for beaver include tourism, zoos, meat.",0
+468,The gecko is a reptile.,1
+237,The sparrow has the atomic number of mammal.,0
+400,"Human uses for skunk include research, conservation.",0
+847,The parrot uses flying for locomotion.,1
+140,The bee uses flying for locomotion.,1
+804,The hippopotamus is a mammal.,1
+657,The rabbit has a habitat of grassland.,1
+970,The deer uses walking for locomotion.,1
+212,The koala has a habitat of forest.,1
+0,The giant anteater uses walking for locomotion.,1
+663,The bison has a diet of herbivore.,1
+98,The rabbit is a mammal.,1
+607,The hedgehog has a habitat of various.,1
+518,The hedgehog is a mammal.,1
+955,"The vulture feeds primarily on carrion, and has a bald head to prevent bacteria build-up while feeding.",1
+702,The narwhal has a habitat of arctic.,1
+76,The ostrich uses walking for locomotion.,0
+154,"Human uses for tuna include tourism, research.",0
+882,The manta ray is a fish.,1
+70,The raccoon uses walking for locomotion.,1
+735,The hedgehog uses running for locomotion.,0
+277,The salmon migrates from freshwater to saltwater habitats during its life cycle.,1
+481,The crocodile has the atomic number of mammal.,0
+358,There are no specific human uses for porcupine.,1
+864,The giraffe has a diet of herbivore.,1
+868,The koala has a diet of carnivore.,0
+246,The tortoise has a habitat of marine.,0
+160,The gorilla uses walking for locomotion.,0
+131,There are no specific human uses for snake.,0
+615,The tiger has a diet of carnivore.,1
+623,"The flamingo has long legs for wading and a specialized beak for filter-feeding, and obtains its pink color from the carotenoids in its diet.",1
+502,The hyena has the atomic number of bird.,0
+446,The cow uses walking for locomotion.,1
+183,The porcupine uses walking for locomotion.,1
+94,The tapir is a mammal.,1
+385,The dolphin is highly intelligent and known for its playful and social behavior.,1
+525,The tarantula has a habitat of urban/old-world habitats.,0
+274,The lion has a diet of carnivore.,1
+701,The rhinoceros has a diet of omnivore.,0
+155,The cow has a diet of herbivore.,1
+447,"Human uses for bison include conservation, meat, leather.",1
+967,The elephant has the atomic number of bird.,0
+252,The parrot has a diet of carnivore.,0
+365,"Human uses for hamster include tourism, zoos.",0
+883,"Human uses for giraffe include pets, research.",0
+290,"The dolphin has a hard, bony armor for protection and can curl into a ball to defend itself.",0
+621,The polar bear has the atomic number of fish.,0
+317,The parrot is a bird.,1
+958,The squirrel uses walking/jumping for locomotion.,1
+583,The elephant has a habitat of grassland.,0
+870,The peacock has an iridescent tail with eye-like patterns used in courtship displays.,1
+208,"The cow is a ruminant animal with four stomach compartments, which aids in digestion.",1
+834,The chimpanzee has a habitat of forest.,1
+101,The bat has a diet of varies.,1
+476,The octopus has a habitat of various.,0
+344,There are no specific human uses for camel.,0
+401,The chicken has a habitat of various.,0
+584,The flamingo has the atomic number of mammal.,0
+380,The cat isn't very social but is adored by many humans and has retractable claws for climbing and hunting.,1
+204,The goat has the atomic number of bird.,0
+765,There are no specific human uses for pigeon.,1
+876,The snake has the atomic number of fish.,0
+103,The bison is the heaviest land animal in north america and forms large herds for protection.,1
+408,The goldfish has a habitat of freshwater.,1
+833,The lion uses walking for locomotion.,1
+261,The goat has a diet of omnivore.,0
+95,"Human uses for parrot include pets, research, conservation.",1
+604,The shark has a habitat of marine.,1
+653,"Human uses for penguin include tourism, zoos, meat.",0
+389,The frog is a amphibian.,1
+422,"Human uses for flamingo include tourism, research, zoos.",1
+176,The eagle uses swimming for locomotion.,0
+755,"Human uses for cow include meat, dairy products.",1
+52,"Human uses for shark include research, conservation.",0
+560,The frog uses walking for locomotion.,0
+535,"Human uses for tiger include conservation, research, zoos.",1
+541,The gecko has a habitat of forest.,0
+730,"Human uses for leopard include conservation, research, zoos.",1
+285,The rabbit has the atomic number of bird.,0
+377,The platypus has a habitat of various.,0
+819,The platypus has a diet of carnivore.,1
+28,"Human uses for snake include pets, research, venom extraction.",1
+496,The otter has the atomic number of fish.,0
+350,The parrot has the atomic number of mammal.,0
+132,The pigeon has a habitat of urban/old-world habitats.,1
+542,"Human uses for moose include research, conservation.",0
+69,The manta ray uses walking for locomotion.,0
+869,The hamster uses drifting for locomotion.,0
+943,The rhinoceros has a habitat of grassland/forest.,1
+595,"Human uses for frog include conservation, research, zoos.",0
+445,The giant anteater has a habitat of savanna.,0
+547,The rhinoceros has a habitat of marine.,0
+404,The hummingbird is the smallest bird species and can hover in mid-air by rapidly flapping its wings.,1
+523,The cat is a mammal.,1
+271,"Human uses for cassowary include conservation, research, zoos.",1
+184,The chicken is a bird.,1
+83,The seagull has webbed feet for swimming and can drink both fresh and saltwater.,1
+919,The gazelle has the atomic number of mollusk.,0
+398,The goldfish has the atomic number of mammal.,0
+895,The shark has a habitat of urban/wild.,0
+50,The armadillo has a diet of insectivore.,1
+757,The tarantula has a diet of carnivore.,0
+287,There are no specific human uses for moose.,1
+823,The rhinoceros uses walking for locomotion.,1
+790,The rabbit uses running for locomotion.,0
+720,The otter uses swimming for locomotion.,1
+486,The pigeon has thick white fur for insulation and black skin to absorb heat.,0
+29,"The goldfish has antlers that are shed and regrown annually, and is a good swimmer.",0
+519,The otter has a habitat of forest.,0
+726,The hippopotamus has a habitat of freshwater.,1
+578,Human uses for tuna include food.,1
+7,The beaver has a habitat of forest/grassland.,0
+495,"Human uses for kangaroo include research, conservation.",0
+197,"Human uses for otter include tourism, research.",0
+360,The seagull has a habitat of coastal.,1
+345,"The seagull has permeable skin that can absorb water and respire oxygen, and changes color to blend with its environment.",0
+504,The lion has a habitat of grassland.,1
+550,"Human uses for chimpanzee include tourism, zoos, meat.",0
+756,The tortoise is a reptile.,1
+71,"The wolverine is a strong and fierce predator, despite its relatively small size, and has a thick, frost-resistant fur.",1
+766,The flamingo has a powerful bite and can go without food for long periods of time.,0
+114,The seagull has a habitat of grassland.,0
+572,"Human uses for iguana include conservation, research, zoos.",0
+205,The aardvark has a diet of omnivore.,0
+168,The penguin is a bird.,1
+673,The zebra has a habitat of grassland.,1
+616,"The lobster has a hard exoskeleton, which it must molt to grow, and can live for over 50 years.",1
+956,The narwhal is a mammal.,1
+453,The eagle has the atomic number of mammal.,0
+821,The octopus is a mollusk.,1
+432,"Human uses for iguana include pets, research.",1
+245,The snake uses walking for locomotion.,0
+196,The mongoose has the atomic number of bird.,0
+854,"Human uses for gorilla include conservation, research, zoos.",1
+692,"Human uses for otter include research, conservation.",1
+185,The hamster has a habitat of desert.,1
+444,The sea turtle has a diet of varies.,1
+162,The horse has a diet of omnivore.,0
+474,There are no specific human uses for cow.,0
+392,The porcupine has a diet of carnivore.,0
+335,The snake has a habitat of forest/grassland.,0
+925,There are no specific human uses for octopus.,1
+676,The mongoose is a mammal.,1
+603,The zebra has the atomic number of fish.,0
+764,The bison has the atomic number of amphibian.,0
+281,The kangaroo uses swimming for locomotion.,0
+503,"The rhinoceros has thick skin and one or two horns made of keratin, and is often targeted by poachers for its horn.",1
+545,The ostrich is a bird.,1
+739,The iguana uses swimming for locomotion.,0
+600,"Human uses for narwhal include research, conservation.",1
+899,"Human uses for panda include pets, research.",0
+121,"The cow is the largest animal on earth, with some species using baleen plates to filter food from water.",0
 641,There are no specific human uses for armadillo.,1
-642,The rabbit has a diet of herbivore.,1
+230,The platypus is a monotreme that lays eggs and has a duck-like bill with electroreceptors to locate prey.,1
+145,Human uses for chicken include food.,0
+664,The narwhal uses jumping for locomotion.,0
+824,The otter is a mammal.,1
+792,The llama uses flying for locomotion.,0
+352,The deer has the atomic number of bird.,0
+478,The mongoose is known as the 'king of the jungle' and exhibits complex social behavior with a pride structure.,0
+658,The dolphin has a diet of omnivore.,0
+714,The wolverine has a habitat of forest.,0
+297,The rat has the atomic number of bird.,0
+699,The hamster is a mammal.,1
+433,The lion has the atomic number of bird.,0
+171,The seahorse is a fish.,1
+931,The moose has a habitat of forest.,1
+781,There are no specific human uses for seagull.,1
+288,"Human uses for lion include conservation, research, zoos.",1
+694,The lobster has the atomic number of mammal.,0
+731,"The skunk has a strong, foul-smelling spray for defense, which can be accurately aimed at predators.",1
+147,"Human uses for alpaca include wool, meat, pets.",1
+727,The squirrel has a diet of omnivore.,0
+178,"Human uses for hippopotamus include conservation, research.",0
+797,The flamingo has a habitat of mountain bamboo forest.,0
+295,The skunk has a habitat of various.,1
+190,"The tapir has a flexible, prehensile snout to grasp and manipulate food, and is an important seed disperser.",1
+47,The hummingbird is a bird.,1
+853,The leopard has a diet of carnivore.,1
+551,The iguana has a habitat of coastal.,0
+588,"Human uses for llama include pets, research, pest control.",0
+799,The salmon has a diet of carnivore.,1
+413,The goat uses flying for locomotion.,0
+984,There are no specific human uses for tarantula.,0
+309,The porcupine is a mammal.,1
+243,The kangaroo has a diet of carnivore.,0
+16,"The octopus is a small, social bird that can be found in many urban environments.",0
+622,The gorilla has a diet of herbivore.,1
+769,The cheetah has a diet of carnivore.,1
+278,The elephant uses walking for locomotion.,1
+779,The goat has a diet of herbivore.,1
+55,The bee has the atomic number of bird.,0
+553,The snake is a reptile.,1
+881,The chicken has a diet of omnivore.,1
+57,The zebra is a fast swimmer and can maintain high speeds for extended periods of time.,0
+17,The iguana has a diet of herbivore.,1
+539,The whale has a habitat of various.,0
+605,"Human uses for alpaca include pets, meat, fur.",0
+232,The flamingo has a diet of herbivore.,1
+223,The porcupine has a diet of herbivore.,1
+109,The camel has a diet of herbivore.,1
+511,The wolverine has a diet of herbivore.,0
+791,The penguin uses swimming for locomotion.,0
+135,"Human uses for goat include pets, research, pest control.",0
+117,The elephant has distinctive orange and black stripes and is an apex predator.,0
+27,The flamingo has a habitat of coastal/alkaline lakes.,1
+209,The horse has a habitat of polar.,0
+844,The giraffe has the atomic number of crustacean.,0
+382,The raccoon uses flying for locomotion.,0
+675,The hedgehog has a diet of insectivore.,1
+364,The camel has a habitat of domestic/urban.,0
+485,The alpaca uses swimming for locomotion.,0
+21,The lobster is a crustacean.,1
+217,"Human uses for horse include transportation, racing, therapy, work.",1
+459,The kangaroo uses hopping for locomotion.,1
+487,The bison has a habitat of various.,0
+118,The panda has a diet of carnivore.,0
+139,There are no specific human uses for crocodile.,1
+748,The bat uses flying for locomotion.,1
+999,"Human uses for tortoise include pets, zoos.",1
+148,The koala primarily eats eucalyptus leaves and has a specialized digestive system to detoxify the plant's natural toxins.,1
+105,The armadillo can unhinge its jaw to swallow large prey whole and some species have heat-sensing pits.,0
+782,The mongoose has a habitat of grassland.,0
+867,The leopard uses flying for locomotion.,0
+771,The vulture uses jumping for locomotion.,0
+236,The dolphin has a diet of carnivore.,1
+806,The vulture is flightless and has adapted flippers for swimming.,0
+158,The seahorse has a habitat of mountain.,0
+579,The leopard has a habitat of marine.,0
+36,The kangaroo has a habitat of savanna.,0
+562,"The swan has a long, graceful neck and is known for its beauty and aggressive behavior when defending its territory.",1
+351,The goat has strong jaws and teeth for crushing bones and a complex social structure with a female-dominated hierarchy.,0
+738,The gazelle is a mammal.,1
+734,The bison has a habitat of grassland.,1
+415,The octopus has a diet of insectivore.,0
+785,The tortoise has the atomic number of cnidarian.,0
+705,The manta ray uses swimming for locomotion.,1
+945,"The aardvark has a long, tubular snout, large ears, and a powerful digging ability to locate and consume termites and ants.",1
+331,The gazelle uses flying for locomotion.,0
+202,The cheetah has a habitat of grassland.,1
+736,"Human uses for narwhal include transportation, meat, milk, wool.",0
+960,The jellyfish uses drifting for locomotion.,1
+564,The hummingbird uses swimming for locomotion.,0
+544,The gecko has the atomic number of crustacean.,0
+119,The dog has a diet of carnivore.,0
+490,"The skunk has a pouch for carrying and nursing its young, called joeys.",0
+794,The slug uses swimming for locomotion.,0
+575,The otter has a diet of carnivore.,1
+465,"Human uses for polar bear include conservation, research.",1
+759,"Human uses for porcupine include research, conservation.",0
+44,The deer has a habitat of forest/grassland.,1
+543,"The alpaca has thick, luxurious wool and is a smaller relative of the llama.",1
+688,The sea turtle has a diet of carnivore.,0
+313,"The kangaroo has antlers that are shed and regrown annually, and is a good swimmer.",0
+905,The dolphin uses walking for locomotion.,0
+500,The jellyfish has a diet of herbivore.,0
+695,The cassowary has the atomic number of mammal.,0
+164,"Human uses for axolotl include pets, research, conservation.",1
+872,The hedgehog has the atomic number of bird.,0
+810,The jellyfish has the atomic number of mammal.,0
+665,The whale has a habitat of marine.,1
+508,There are no specific human uses for tiger.,0
+527,The hyena is a mammal.,1
+280,The tapir has a habitat of desert.,0
+893,The dog is flightless and has adapted flippers for swimming.,0
+709,"Human uses for seagull include conservation, research, zoos.",0
+383,"Human uses for leopard include pets, pest control.",0
+268,The cassowary has a diet of carnivore.,0
+830,The eagle has a diet of carnivore.,1
+689,The vulture has a habitat of grassland.,0
+343,"The cat is known for its agility and ability to kill venomous snakes, and has a thick coat to protect against bites.",0
+904,The porcupine has the atomic number of bird.,0
+906,The eagle has a diet of herbivore.,0
+75,The skunk has a diet of omnivore.,1
+304,"The narwhal has a hard, bony armor for protection and can curl into a ball to defend itself.",0
+412,The polar bear has a habitat of various.,0
+341,The walrus has a diet of insectivore.,0
+198,The cassowary is a bird.,1
+549,The axolotl has a diet of herbivore.,0
+865,"Human uses for rat include pets, research, pest control.",1
+517,The rat is a mammal.,1
+282,The tarantula uses walking for locomotion.,1
+115,The horse uses walking for locomotion.,1
+337,The tapir uses swimming for locomotion.,0
+557,"The cassowary has large, wing-like pectoral fins and filter-feeds on plankton with its wide mouth.",0
+128,"Human uses for manta ray include pets, meat, fur.",0
+892,The cat has a habitat of various.,0
+501,The giraffe uses walking for locomotion.,1
+814,"The frog is known for its agility and can climb steep terrain, and has a rectangular pupil.",0
+181,The tiger has a diet of herbivore.,0
+528,"The lion has antlers that are shed and regrown annually, and is a good swimmer.",0
+610,There are no specific human uses for whale.,0
+220,The tapir has a habitat of forest.,1
+761,The chicken has a comb and wattles on its head for thermoregulation.,1
+321,The hippopotamus uses walking/swimming for locomotion.,1
+323,The sparrow uses knuckle-walking for locomotion.,0
+947,The flamingo uses drifting for locomotion.,0
+851,"The moose is the largest deer species and has broad, flat antlers that are shed and regrown annually.",1
+480,The elephant is a mammal.,1
+449,"The sea turtle has long legs for wading and a specialized beak for filter-feeding, and obtains its pink color from the carotenoids in its diet.",0
+930,The slug has long ears for detecting predators and strong hind legs for escaping.,0
+267,The lobster uses walking/swimming for locomotion.,1
+32,The octopus uses swimming for locomotion.,1
+219,The shark uses swimming for locomotion.,1
+293,"Human uses for slug include conservation, research, zoos.",0
+715,The camel has a habitat of desert.,1
+438,The horse has a habitat of farmland/domestic.,1
+798,The llama uses walking for locomotion.,1
+752,The peacock has a habitat of various.,0
+825,"Human uses for manta ray include tourism, research.",1
+96,"The beaver has antlers that are shed and regrown annually, and is a good swimmer.",0
+571,The panda is a mammal.,1
 643,"The walrus has a hard exoskeleton, which it must molt to grow, and can live for over 50 years.",0
-644,The hamster has a habitat of coastal.,0
-645,The swan has a diet of omnivore.,0
+356,The lion has a habitat of domestic/urban.,0
+952,The crocodile is a reptile.,1
+624,The elephant uses flying for locomotion.,0
+375,The skunk is a mammal.,1
+848,"Human uses for flamingo include conservation, research, zoos.",0
+629,"The moose has thick, luxurious wool and is a smaller relative of the llama.",0
+326,"Human uses for sparrow include conservation, meat, leather.",0
+953,The rat has a long tail for balance and is an excellent climber and swimmer.,1
+723,The rabbit uses hopping for locomotion.,1
+249,The platypus uses walking for locomotion.,0
+467,"Human uses for whale include tourism, research, conservation.",1
+143,The narwhal uses swimming for locomotion.,1
+862,"The hedgehog has thick, luxurious wool and is a smaller relative of the llama.",0
+659,The bison is a mammal.,1
+777,The seagull has a diet of omnivore.,1
+728,The moose uses walking for locomotion.,1
+802,The seahorse has a diet of insectivore.,0
+86,The giraffe has a habitat of farmland.,0
+534,"Human uses for cassowary include pets, research, conservation.",0
+284,The hippopotamus uses walking for locomotion.,0
+79,There are no specific human uses for gazelle.,1
+576,The bee is a insect.,1
+981,The polar bear has thick white fur for insulation and black skin to absorb heat.,1
+384,The moose uses walking/swimming for locomotion.,0
+589,"Human uses for chimpanzee include research, conservation, entertainment.",1
+305,The walrus has a habitat of polar.,1
+494,"The giraffe has an extremely long neck, which enables it to reach leaves on tall trees.",1
+403,The polar bear primarily eats eucalyptus leaves and has a specialized digestive system to detoxify the plant's natural toxins.,0
+983,"The parrot has a long, spiral tusk, which is actually an elongated tooth, and can dive to great depths.",0
+362,The aardvark has a habitat of savanna.,1
+513,The rat has a habitat of freshwater.,0
+719,"Human uses for octopus include tourism, research, conservation.",0
+916,The penguin has a diet of carnivore.,1
 646,"The seahorse has a unique upright posture, prehensile tail for grasping, and the male carries fertilized eggs in a brood pouch.",1
+80,The cheetah is a mammal.,1
+319,The hyena uses walking for locomotion.,1
+845,The dog has a diet of omnivore.,1
+873,The mongoose has a diet of carnivore.,1
+10,The dog has a strong sense of smell and is known for its loyalty to humans.,1
+213,The flamingo uses wading for locomotion.,1
+130,The chimpanzee uses walking for locomotion.,1
+35,The horse is a mammal.,1
+363,The whale has a diet of carnivore/herbivore.,1
+921,The cat uses walking for locomotion.,1
+234,The flamingo is a bird.,1
+156,The slug has a diet of carnivore.,0
+877,The beaver uses swimming for locomotion.,1
+593,The wolverine is a mammal.,1
+837,The hummingbird has the atomic number of mammal.,0
+72,The frog has a diet of carnivore.,1
+516,The seagull uses swimming for locomotion.,0
+370,The sea turtle uses walking for locomotion.,0
+707,There are no specific human uses for lobster.,0
+891,The tiger is a mammal.,1
+1000,The tapir has the atomic number of bird.,0
+846,"Human uses for bee include conservation, research, zoos.",0
+655,The penguin has a habitat of mountain.,0
+537,The panda has a habitat of mountain bamboo forest.,1
+259,"Human uses for sea turtle include conservation, research, zoos.",0
+751,The raccoon has dexterous front paws and a distinctive black mask on its face.,1
+471,The goldfish has a diet of carnivore.,0
+263,The alpaca has a habitat of mountain.,1
+914,The leopard is a mammal.,1
+314,The hyena has strong jaws and teeth for crushing bones and a complex social structure with a female-dominated hierarchy.,1
 647,The gecko uses walking for locomotion.,0
-648,The cassowary uses walking/swimming for locomotion.,0
-649,The mongoose uses walking for locomotion.,1
+594,The goldfish has a diet of omnivore.,1
+678,The wolverine has the atomic number of bird.,0
+38,The crocodile uses walking for locomotion.,0
+393,The camel is a mammal.,1
+996,"The sparrow is a small, social bird that can be found in many urban environments.",1
+912,The squirrel uses swimming/flying for locomotion.,0
+741,The octopus has the atomic number of fish.,0
+498,The cheetah has the atomic number of insect.,0
+194,There are no specific human uses for koala.,0
+225,The walrus has the atomic number of mollusk.,0
+626,The octopus uses hopping for locomotion.,0
+107,The hummingbird has a diet of omnivore.,0
+330,The swan has a habitat of freshwater.,1
+697,The polar bear has a diet of omnivore.,0
+871,The dog is a mammal.,1
+416,The deer has a habitat of forest/urban.,0
+214,The axolotl has a habitat of coastal.,0
+192,The seagull uses flying for locomotion.,1
+174,The tarantula uses running for locomotion.,0
+411,The hippopotamus has a diet of herbivore.,1
+334,"Human uses for dolphin include research, entertainment, therapy.",1
+340,The salmon has a habitat of freshwater/marine.,1
+87,The elephant has a habitat of terrestrial.,1
+14,The ostrich uses running for locomotion.,1
+423,"The rat feeds primarily on carrion, and has a bald head to prevent bacteria build-up while feeding.",0
+611,The slug has a diet of herbivore.,1
+60,The rat has a diet of omnivore.,1
+633,"The peacock has an extremely long neck, which enables it to reach leaves on tall trees.",0
+328,The shark has a diet of carnivore.,1
+165,The swan uses swimming/flying for locomotion.,1
+687,The axolotl has a diet of carnivore.,1
+173,The mongoose has a habitat of various.,1
+336,The hummingbird has a habitat of various.,1
+524,The parrot has a habitat of coastal.,0
+556,The crocodile has a diet of  carnivore.,1
+40,"The narwhal has a long, spiral tusk, which is actually an elongated tooth, and can dive to great depths.",1
+239,"Human uses for hummingbird include transportation, meat, milk, wool.",0
+768,"Human uses for aardvark include research, entertainment, therapy.",0
+965,The giraffe is a mammal.,1
+67,The tuna has a diet of insectivore.,0
+473,"The leopard has a distinctive spotted coat and is an excellent climber, often hauling prey into trees.",1
+448,The rhinoceros has a diet of herbivore.,1
+136,The sea turtle has a habitat of polar.,0
+933,"Human uses for bat include tourism, zoos.",0
+683,"The cheetah is the fastest land animal, reaching speeds up to 60-70 mph.",1
+48,The armadillo is a mammal.,1
+175,The hyena has a habitat of freshwater.,0
+269,"Human uses for walrus include research, conservation.",1
+690,The squirrel has the atomic number of bird.,0
+718,"The jellyfish has an extremely long neck, which enables it to reach leaves on tall trees.",0
+949,The wolverine uses swimming for locomotion.,0
+84,The giraffe is a powerful bird of prey with keen eyesight and strong talons for catching prey.,0
+216,The seahorse has a diet of carnivore.,1
+635,The whale has the atomic number of fish.,0
+997,The goat is a mammal.,1
+926,The narwhal has a habitat of desert.,0
+241,The panda has the atomic number of bird.,0
+897,The vulture uses flying for locomotion.,1
+538,The porcupine has a habitat of marine.,0
+376,The axolotl has the atomic number of reptile.,0
+944,The slug uses sliding for locomotion.,1
+866,There are no specific human uses for squirrel.,1
+229,The seagull is a bird.,1
+417,"The parrot is known for its bright colors, intelligence, and ability to mimic human speech.",1
+660,"The jellyfish has a gelatinous bell and stinging tentacles to capture prey, and some species are bioluminescent.",1
+574,The rat has a diet of herbivore.,0
+134,"The bison is a large, flightless bird with a helmet-like casque on its head and powerful legs with a dagger-like claw.",0
+291,The sparrow has a diet of herbivore.,0
+226,The sea turtle uses swimming for locomotion.,1
+674,The eagle has a habitat of various.,1
+441,The axolotl has a habitat of freshwater.,1
+980,The tortoise uses walking for locomotion.,1
+860,The vulture is a bird.,1
+667,The rabbit has a diet of carnivore.,0
+552,The bat has a habitat of various.,1
+932,The kangaroo has a diet of herbivore.,1
+390,The goldfish can recognize human faces and has a memory span of around three months.,1
+394,"The bee is a social insect that lives in colonies with a queen, workers, and drones.",1
+4,The platypus uses swimming for locomotion.,1
+46,The polar bear has a habitat of polar.,1
+681,The cat has a habitat of domestic/urban.,1
+256,The gecko has adhesive pads on its toes for climbing and some species can regenerate lost tails.,1
+454,The iguana has a habitat of various.,1
+68,The wolverine has a habitat of arctic/subarctic.,1
+669,The cat has the atomic number of bird.,0
+482,The tiger uses swimming for locomotion.,0
+199,There are no specific human uses for raccoon.,1
+927,"The mongoose is known for its agility and ability to kill venomous snakes, and has a thick coat to protect against bites.",1
+1007,The alpaca is a mammal.,1
+808,The llama has a diet of insectivore.,0
+609,"Human uses for tapir include conservation, research, zoos.",1
+88,The hummingbird uses flying for locomotion.,1
+301,The cow has a habitat of forest/urban.,0
+639,The jellyfish has a habitat of coastal.,0
+141,The armadillo has a habitat of various.,1
+886,"Human uses for bison include conservation, research, zoos.",0
+951,The beaver has a diet of herbivore.,1
+889,The gorilla has a diet of carnivore.,0
 650,The rat uses climbing for locomotion.,0
 651,The shark has multiple rows of teeth that are continuously replaced throughout its life.,1
-652,The chimpanzee shares over 98% of its dna with humans and can use tools and learn sign language.,1
-653,"Human uses for penguin include tourism, zoos, meat.",0
-654,The panda has a powerful bite and can go without food for long periods of time.,0
-655,The penguin has a habitat of mountain.,0
-656,The eagle uses flying for locomotion.,1
-657,The rabbit has a habitat of grassland.,1
-658,The dolphin has a diet of omnivore.,0
-659,The bison is a mammal.,1
-660,"The jellyfish has a gelatinous bell and stinging tentacles to capture prey, and some species are bioluminescent.",1
-661,The koala has a diet of herbivore.,1
-662,"The hummingbird has a distinctive spotted coat and is an excellent climber, often hauling prey into trees.",0
-663,The bison has a diet of herbivore.,1
-664,The narwhal uses jumping for locomotion.,0
-665,The whale has a habitat of marine.,1
-666,The dolphin has a habitat of marine.,1
-667,The rabbit has a diet of carnivore.,0
-668,The platypus is a mammal.,1
-669,The cat has the atomic number of bird.,0
-670,The hamster uses walking for locomotion.,1
-671,The otter has a habitat of freshwater/marine.,1
-672,"Human uses for pigeon include pets, research.",0
-673,The zebra has a habitat of grassland.,1
-674,The eagle has a habitat of various.,1
-675,The hedgehog has a diet of insectivore.,1
-676,The mongoose is a mammal.,1
-677,The tortoise uses hopping for locomotion.,0
-678,The wolverine has the atomic number of bird.,0
-679,"Human uses for rat include pets, transport, wool.",0
-680,"Human uses for raccoon include meat, milk, cheese, leather.",0
-681,The cat has a habitat of domestic/urban.,1
-682,"Human uses for koala include conservation, research, zoos.",1
-683,"The cheetah is the fastest land animal, reaching speeds up to 60-70 mph.",1
-684,"The manta ray has slender legs for fast running and can perform high leaps, known as pronking.",0
-685,The vulture has a diet of insectivore.,0
-686,The rhinoceros uses flying for locomotion.,0
-687,The axolotl has a diet of carnivore.,1
-688,The sea turtle has a diet of carnivore.,0
-689,The vulture has a habitat of grassland.,0
-690,The squirrel has the atomic number of bird.,0
-691,The panda has a habitat of freshwater.,0
-692,"Human uses for otter include research, conservation.",1
-693,The bee has a habitat of various.,1
-694,The lobster has the atomic number of mammal.,0
-695,The cassowary has the atomic number of mammal.,0
-696,The gorilla uses knuckle-walking for locomotion.,1
-697,The polar bear has a diet of omnivore.,0
-698,The gazelle has a diet of carnivore.,0
-699,The hamster is a mammal.,1
-700,The tiger has the atomic number of amphibian.,0
-701,The rhinoceros has a diet of omnivore.,0
-702,The narwhal has a habitat of arctic.,1
-703,The dog has a habitat of domestic/urban.,1
-704,There are no specific human uses for tortoise.,0
-705,The manta ray uses swimming for locomotion.,1
-706,The alpaca has the atomic number of bird.,0
-707,There are no specific human uses for lobster.,0
-708,The hamster is nocturnal and has large cheek pouches to store and transport food.,1
-709,"Human uses for seagull include conservation, research, zoos.",0
-710,The bee uses walking for locomotion.,0
-711,The koala has the atomic number of fish.,0
-712,"Human uses for vulture include work, tourism, conservation.",0
-713,The kangaroo has a habitat of grasslands.,1
-714,The wolverine has a habitat of forest.,0
-715,The camel has a habitat of desert.,1
-716,The lobster has a habitat of marine.,1
-717,The panda uses wading for locomotion.,0
-718,"The jellyfish has an extremely long neck, which enables it to reach leaves on tall trees.",0
-719,"Human uses for octopus include tourism, research, conservation.",0
-720,The otter uses swimming for locomotion.,1
-721,The leopard has a habitat of forest/grassland.,1
-722,The jellyfish is a cnidarian.,1
-723,The rabbit uses hopping for locomotion.,1
-724,The shark is a fish.,1
-725,The goat uses walking for locomotion.,1
-726,The hippopotamus has a habitat of freshwater.,1
-727,The squirrel has a diet of omnivore.,0
-728,The moose uses walking for locomotion.,1
-729,The snake can unhinge its jaw to swallow large prey whole and some species have heat-sensing pits.,1
-730,"Human uses for leopard include conservation, research, zoos.",1
-731,"The skunk has a strong, foul-smelling spray for defense, which can be accurately aimed at predators.",1
-732,"Human uses for rhinoceros include conservation, research, zoos.",1
-733,The salmon has a habitat of savanna.,0
-734,The bison has a habitat of grassland.,1
-735,The hedgehog uses running for locomotion.,0
-736,"Human uses for narwhal include transportation, meat, milk, wool.",0
-737,"Human uses for goat include meat, milk, cheese, leather.",1
-738,The gazelle is a mammal.,1
-739,The iguana uses swimming for locomotion.,0
-740,The ostrich has a habitat of forest.,0
-741,The octopus has the atomic number of fish.,0
-742,The dolphin is a mammal.,1
-743,The tarantula has a habitat of various.,1
-744,"Human uses for lion include pets, research, pest control.",0
-745,"The shark has three hearts, nine brains, and can change color and texture for camouflage.",0
-746,The peacock has a diet of omnivore.,1
-747,The goat has a habitat of farmland.,1
-748,The bat uses flying for locomotion.,1
 749,The squirrel has a diet of herbivore.,1
-750,The armadillo has a diet of herbivore.,0
-751,The raccoon has dexterous front paws and a distinctive black mask on its face.,1
-752,The peacock has a habitat of various.,0
-753,The moose has a habitat of freshwater/marine.,0
-754,"Human uses for seahorse include research, conservation.",1
-755,"Human uses for cow include meat, dairy products.",1
-756,The tortoise is a reptile.,1
-757,The tarantula has a diet of carnivore.,0
-758,The hyena has a habitat of grassland/savanna.,1
-759,"Human uses for porcupine include research, conservation.",0
-760,The slug has a habitat of various.,1
-761,The chicken has a comb and wattles on its head for thermoregulation.,1
-762,The leopard has the atomic number of bird.,0
-763,The giraffe uses hopping for locomotion.,0
-764,The bison has the atomic number of amphibian.,0
-765,There are no specific human uses for pigeon.,1
-766,The flamingo has a powerful bite and can go without food for long periods of time.,0
-767,"Human uses for seahorse include conservation, research, zoos.",0
-768,"Human uses for aardvark include research, entertainment, therapy.",0
-769,The cheetah has a diet of carnivore.,1
-770,The dog has the atomic number of bird.,0
-771,The vulture uses jumping for locomotion.,0
-772,The lion uses running for locomotion.,0
-773,"The eagle is a large, flightless bird with a helmet-like casque on its head and powerful legs with a dagger-like claw.",0
-774,"Human uses for zebra include tourism, zoos.",1
-775,The cat has a diet of carnivore.,1
-776,The hedgehog uses walking for locomotion.,1
-777,The seagull has a diet of omnivore.,1
-778,The axolotl is a amphibian.,1
-779,The goat has a diet of herbivore.,1
-780,The hamster has the atomic number of fish.,0
-781,There are no specific human uses for seagull.,1
-782,The mongoose has a habitat of grassland.,0
-783,The axolotl uses swimming for locomotion.,1
-784,There are no specific human uses for cheetah.,0
-785,The tortoise has the atomic number of cnidarian.,0
-786,The cat uses running for locomotion.,0
-787,The skunk uses flying for locomotion.,0
-788,The skunk has a diet of herbivore.,0
-789,The cow has a habitat of farmland.,1
-790,The rabbit uses running for locomotion.,0
-791,The penguin uses swimming for locomotion.,0
-792,The llama uses flying for locomotion.,0
-793,The tortoise has a hard shell for protection and can live for over 100 years.,1
-794,The slug uses swimming for locomotion.,0
-795,The narwhal has a diet of carnivore.,1
-796,The iguana has the atomic number of bird.,0
-797,The flamingo has a habitat of mountain bamboo forest.,0
-798,The llama uses walking for locomotion.,1
-799,The salmon has a diet of carnivore.,1
-800,The eagle is a bird.,1
-801,The tarantula has a diet of insectivore.,1
-802,The seahorse has a diet of insectivore.,0
-803,There are no specific human uses for hummingbird.,1
-804,The hippopotamus is a mammal.,1
-805,"The koala has thick, luxurious wool and is a smaller relative of the llama.",0
-806,The vulture is flightless and has adapted flippers for swimming.,0
-807,The skunk has a habitat of arctic/subarctic.,0
-808,The llama has a diet of insectivore.,0
-809,The swan has a diet of herbivore.,1
-810,The jellyfish has the atomic number of mammal.,0
-811,The aardvark uses walking for locomotion.,1
-812,Human uses for bat include pest control.,1
-813,The tiger has a habitat of grassland.,0
-814,"The frog is known for its agility and can climb steep terrain, and has a rectangular pupil.",0
-815,"The beaver builds dams and lodges out of sticks and mud, and has large, strong teeth for cutting trees.",1
-816,The giant anteater is a mammal.,1
-817,"The axolotl exhibits neoteny, retaining larval features throughout its life, and has remarkable regenerative abilities.",1
-818,The chicken has the atomic number of mammal.,0
-819,The platypus has a diet of carnivore.,1
-820,The raccoon has the atomic number of mollusk.,0
-821,The octopus is a mollusk.,1
-822,"Human uses for tarantula include pets, research.",1
-823,The rhinoceros uses walking for locomotion.,1
-824,The otter is a mammal.,1
-825,"Human uses for manta ray include tourism, research.",1
-826,The peacock uses running for locomotion.,0
-827,"The giant anteater has a long, sticky tongue for capturing ants and termites, and a keen sense of smell to locate prey.",1
-828,"Human uses for cat include pets, pest control.",1
-829,"Human uses for beaver include fur, research.",1
-830,The eagle has a diet of carnivore.,1
-831,The gorilla has a habitat of savanna.,0
-832,The walrus is a mammal.,1
-833,The lion uses walking for locomotion.,1
-834,The chimpanzee has a habitat of forest.,1
-835,The cheetah uses running for locomotion.,1
-836,The lion has a diet of omnivore.,0
-837,The hummingbird has the atomic number of mammal.,0
-838,Human uses for gorilla include food.,0
-839,"The gorilla has a coat of sharp spines for protection, which it raises when threatened.",0
-840,The beaver has a diet of carnivore.,0
-841,There are no specific human uses for shark.,1
-842,There are no specific human uses for slug.,1
-843,"The zebra has distinctive black and white stripes, which may help deter flies and provide camouflage.",1
-844,The giraffe has the atomic number of crustacean.,0
-845,The dog has a diet of omnivore.,1
-846,"Human uses for bee include conservation, research, zoos.",0
-847,The parrot uses flying for locomotion.,1
-848,"Human uses for flamingo include conservation, research, zoos.",0
-849,The koala has a habitat of savanna.,0
-850,"Human uses for bee include pollination, honey production.",1
-851,"The moose is the largest deer species and has broad, flat antlers that are shed and regrown annually.",1
-852,The hamster has a diet of omnivore.,1
-853,The leopard has a diet of carnivore.,1
-854,"Human uses for gorilla include conservation, research, zoos.",1
-855,The frog has a habitat of forest/urban.,0

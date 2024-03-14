@@ -1,55 +1,55 @@
 ,statement,label
-300,The Spanish word 'cuello' does not mean 'neck'.,0
-301,The Spanish word 'temporada' does not mean 'insect'.,1
-302,The Spanish word 'plata' does not mean 'silver'.,0
-303,The Spanish word 'rama' does not mean 'back'.,1
-304,The Spanish word 'higo' does not mean 'fig'.,0
-305,The Spanish word 'hermana' does not mean 'sister'.,0
-306,The Spanish word 'guiar' does not mean 'age'.,1
-307,The Spanish word 'manzana' does not mean 'hand'.,1
-308,The Spanish word 'abrigo' does not mean 'coat'.,0
-309,The Spanish word 'tarjeta' does not mean 'bear'.,1
-310,The Spanish word 'ganar' does not mean 'to use'.,1
-311,The Spanish word 'herramienta' does not mean 'tool'.,0
-312,The Spanish word 'olor' does not mean 'smell'.,0
+267,The Spanish word 'anillo' does not mean 'to love'.,1
+58,The Spanish word 'dos' does not mean 'enemy'.,1
 313,The Spanish word 'valle' does not mean 'face'.,1
-314,The Spanish word 'continuar' does not mean 'coat'.,1
-315,The Spanish word 'vender' does not mean 'to sell'.,0
-316,The Spanish word 'nadar' does not mean 'to swim'.,0
-317,The Spanish word 'opuesta' does not mean 'dress'.,1
-318,The Spanish word 'esposa' does not mean 'wife'.,0
-319,The Spanish word 'hombro' does not mean 'shoulder'.,0
-320,The Spanish word 'nueve' does not mean 'stone'.,1
-321,The Spanish word 'ruido' does not mean 'noise'.,0
-322,The Spanish word 'lanzar' does not mean 'to throw'.,0
-323,The Spanish word 'gris' does not mean 'history'.,1
-324,The Spanish word 'sal' does not mean 'horse'.,1
-325,The Spanish word 'nariz' does not mean 'giraffe'.,1
-326,The Spanish word 'burro' does not mean 'donkey'.,0
-327,The Spanish word 'cabra' does not mean 'money'.,1
-328,The Spanish word 'cordero' does not mean 'fat'.,1
-329,The Spanish word 'caballo' does not mean 'horse'.,0
-330,The Spanish word 'cerdo' does not mean 'wave'.,1
-331,The Spanish word 'oveja' does not mean 'sheep'.,0
-332,The Spanish word 'pato' does not mean 'shoulder'.,1
-333,The Spanish word 'toro' does not mean 'bull'.,0
-334,The Spanish word 'vaca' does not mean 'cow'.,0
-335,The Spanish word 'conejo' does not mean 'rabbit'.,0
-336,The Spanish word 'gato' does not mean 'large'.,1
-337,The Spanish word 'perro' does not mean 'dog'.,0
-338,The Spanish word 'rana' does not mean 'frog'.,0
-339,The Spanish word 'anguila' does not mean 'south'.,1
-340,The Spanish word 'ballena' does not mean 'whale'.,0
-341,The Spanish word 'calamar' does not mean 'squid'.,0
-342,The Spanish word 'pulpo' does not mean 'slow'.,1
-343,The Spanish word 'lobo' does not mean 'leg'.,1
-344,The Spanish word 'oso' does not mean 'bear'.,0
-345,The Spanish word 'zorro' does not mean 'shell'.,1
-346,The Spanish word 'mariposa' does not mean 'rose'.,1
-347,The Spanish word 'tortuga' does not mean 'dry'.,1
+41,The Spanish word 'nombre' does not mean 'name'.,0
+192,The Spanish word 'brazo' does not mean 'arm'.,0
+238,The Spanish word 'sonrisa' does not mean 'smile'.,0
+79,The Spanish word 'granja' does not mean 'woman'.,1
 348,The Spanish word 'cebra' does not mean 'to imagine'.,1
-349,The Spanish word 'elefante' does not mean 'spring'.,1
-350,The Spanish word 'jirafa' does not mean 'giraffe'.,0
-351,The Spanish word 'tigre' does not mean 'cow'.,1
-352,The Spanish word 'hola' does not mean 'hello'.,0
+208,The Spanish word 'viaje' does not mean 'system'.,1
+163,The Spanish word 'semana' does not mean 'face'.,1
+186,The Spanish word 'huevo' does not mean 'egg'.,0
+188,The Spanish word 'hablar' does not mean 'to speak'.,0
+166,The Spanish word 'fuerte' does not mean 'dress'.,1
+154,The Spanish word 'calor' does not mean 'dry'.,1
+235,The Spanish word 'hierro' does not mean 'iron'.,0
+167,The Spanish word 'especial' does not mean 'strong'.,1
+285,The Spanish word 'amarillo' does not mean 'land'.,1
+142,The Spanish word 'luna' does not mean 'letter'.,1
+131,The Spanish word 'sur' does not mean 'south'.,0
+30,The Spanish word 'mundo' does not mean 'zebra'.,1
+16,The Spanish word 'aire' does not mean 'silver'.,1
+315,The Spanish word 'vender' does not mean 'to sell'.,0
+195,The Spanish word 'tienda' does not mean 'insect'.,1
+53,The Spanish word 'escribir' does not mean 'to write'.,0
+10,The Spanish word 'hacer' does not mean 'lost'.,1
+196,The Spanish word 'verano' does not mean 'to push'.,1
+249,The Spanish word 'seguro' does not mean 'danger'.,1
+63,The Spanish word 'primero' does not mean 'first'.,0
+0,The Spanish word 'con' does not mean 'to speak'.,1
+205,The Spanish word 'feliz' does not mean 'second'.,1
+299,The Spanish word 'concha' does not mean 'shell'.,0
+117,The Spanish word 'pronto' does not mean 'to die'.,1
+252,The Spanish word 'ley' does not mean 'dog'.,1
+312,The Spanish word 'olor' does not mean 'smell'.,0
+273,The Spanish word 'adivinar' does not mean 'war'.,1
+174,The Spanish word 'cantar' does not mean 'simple'.,1
+223,The Spanish word 'lago' does not mean 'month'.,1
+56,The Spanish word 'cosa' does not mean 'thing'.,0
 353,The Spanish word 'nuevo' does not mean 'new'.,0
+132,The Spanish word 'problema' does not mean 'problem'.,0
+325,The Spanish word 'nariz' does not mean 'giraffe'.,1
+184,The Spanish word 'voz' does not mean 'voice'.,0
+306,The Spanish word 'guiar' does not mean 'age'.,1
+162,The Spanish word 'belleza' does not mean 'beauty'.,0
+26,The Spanish word 'preguntar' does not mean 'to describe'.,1
+309,The Spanish word 'tarjeta' does not mean 'bear'.,1
+129,The Spanish word 'orden' does not mean 'old'.,1
+290,The Spanish word 'pan' does not mean 'eye'.,1
+293,The Spanish word 'pato' does not mean 'wolf'.,1
+349,The Spanish word 'elefante' does not mean 'spring'.,1
+304,The Spanish word 'higo' does not mean 'fig'.,0
+85,The Spanish word 'mientras' does not mean 'while'.,0
+291,The Spanish word 'oferta' does not mean 'offer'.,0
+178,The Spanish word 'guerra' does not mean 'example'.,1

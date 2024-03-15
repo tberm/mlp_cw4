@@ -10,21 +10,6 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 ACTS_BATCH_SIZE = 25
 
 
-def cat_data(d):
-    """
-    Given a dict of datasets (possible recursively nested), returns the concatenated activations and labels.
-    """
-    all_acts, all_labels = [], []
-    for dataset in d:
-        if isinstance(d[dataset], dict):
-            if len(d[dataset]) != 0: # disregard empty dicts
-                acts, labels = cat_data(d[dataset])
-                all_acts.append(acts), all_labels.append(labels)
-        else:
-            acts, labels = d[dataset]
-            all_acts.append(acts), all_labels.append(labels)
-    return t.cat(all_acts, dim=0), t.cat(all_labels, dim=0)
-
 class DataManager:
     """
     Class for storing activations and labels from datasets of statements.
@@ -43,19 +28,21 @@ class DataManager:
         # Convert list to numpy array and return
         return np.array(embedding_list, dtype=np.float32)
     
-    def add_dataset(self, dataset_name, label='label', split=None, seed=None, center=True, scale=False, device='cpu'):
+    def add_dataset(self, dataset,dataset_use='train', split=None, seed=None, scale=False, device='cpu'):
         """
         Add a dataset to the DataManager.
         label : which column of the csv file to use as the labels.
         If split is not None, gives the train/val split proportion. Uses seed for reproducibility.
         """
         #acts = collect_acts(dataset_name, model_size, layer, center=center, scale=scale, device=device)
-        df = pd.read_csv(os.path.join(ROOT, '../processed_datasets', f'{dataset_name}.csv'))
-        labels = t.Tensor(df[label].values).to(device).to(dtype=t.float32)
-        acts = t.Tensor(df['embeddings'].apply(self.parse_embeddings)).to(device).to(dtype=t.float32)
+        #df = pd.read_csv(os.path.join(ROOT, '../processed_datasets', f'{dataset_name}.csv'))
+        df = dataset
+        labels = t.Tensor(df['label'].values).to(device).to(dtype=t.float32)
+        acts = t.tensor(np.stack(df['embeddings'].apply(self.parse_embeddings).to_numpy()), dtype=t.float32).to(device)
+
 
         if split is None:
-            self.data[dataset_name] = acts, labels
+            self.data[dataset_use] = acts, labels
 
         if split is not None:
             assert 0 < split and split < 1
@@ -92,10 +79,13 @@ class DataManager:
             data_dict = {datasets : self.data[datasets]}
         else:
             raise ValueError(f"datasets must be 'all', 'train', 'val', a list of dataset names, or a single dataset name, not {datasets}")
-        acts, labels = cat_data(data_dict)
         # if proj and self.proj is not None:
         #     acts = t.mm(acts, self.proj)
-        return acts, labels
+        all_acts, all_labels = [], []
+        acts,labels=data_dict
+        all_acts.append(acts), 
+        all_labels.append(labels)
+        return t.cat(all_acts, dim=0), t.cat(all_labels, dim=0)
 
 
 

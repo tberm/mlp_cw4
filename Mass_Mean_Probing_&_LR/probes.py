@@ -1,4 +1,5 @@
 import torch as t
+from tqdm import tqdm
 
 class LRProbe(t.nn.Module):
     def __init__(self, d_in):
@@ -13,17 +14,27 @@ class LRProbe(t.nn.Module):
 
     def pred(self, x, iid=None):
         return self(x).round()
-    
+
     def from_data(acts, labels, lr=0.001, weight_decay=0.1, epochs=1000, device='cpu'):
         acts, labels = acts.to(device), labels.to(device)
         probe = LRProbe(acts.shape[-1]).to(device)
         
         opt = t.optim.AdamW(probe.parameters(), lr=lr, weight_decay=weight_decay)
-        for _ in range(epochs):
-            opt.zero_grad()
-            loss = t.nn.BCELoss()(probe(acts), labels)
-            loss.backward()
-            opt.step()
+        with open('accuracy_per_epoch.txt', 'w') as f:
+            for epoch in tqdm(range(epochs), desc='Training LRProbe'):
+                opt.zero_grad()
+                outputs = probe(acts)
+                loss = t.nn.BCELoss()(outputs, labels)
+                loss.backward()
+                opt.step()
+
+                # Calculate accuracy
+                preds = outputs.round()
+                correct = (preds == labels).float().sum()
+                accuracy = correct / labels.shape[0]
+                
+                # Write accuracy to file
+                f.write(f'Epoch {epoch+1}: {accuracy.item()}\n')
         
         return probe
 

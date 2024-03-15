@@ -43,12 +43,12 @@ def get_batch_of_embeddings(number=None, split='train'):
         frame = pd.read_csv(csv_path)
         source = str(csv_path).split('/')[-1].split('.')[0]
         frame['source'] = source
-        frames.append(frame[['statement', 'label', 'source']])
+        frames.append(frame[['statement', 'label', 'source', 'embeddings']])
 
     df = pd.concat(frames)
+    df = df.iloc[rng.permutation(len(df))]
  
     if number is None:
         return df
 
-    df = df.iloc[rng.permutation(len(df))]
-    return df.iloc[number]
+    return df.iloc[:number]

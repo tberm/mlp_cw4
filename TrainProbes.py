@@ -64,9 +64,9 @@ def load_datasets(dataset_names, layers_to_process, should_remove_period, input_
     for dataset_name in dataset_names:
         try:
             if should_remove_period:
-                path = input_path / f"embeddings_{dataset_name}{model_name}_{abs(layers_to_process[idx])}_rmv_period.csv"
+                path = input_path / f"embeddings_{dataset_name}{model_name}_{layers_to_process[idx]}_rmv_period.csv"
             else:
-                path = input_path / f"embeddings_{dataset_name}{model_name}_{abs(layers_to_process[idx])}.csv"
+                path = input_path / f"embeddings_{dataset_name}{model_name}_{layers_to_process[idx]}.csv"
             datasets.append(pd.read_csv(path))
             dataset_paths.append(path)
         except FileNotFoundError:
@@ -393,9 +393,9 @@ def main():
                     if not os.path.exists(probes_path):
                         os.makedirs(probes_path)
                     if should_remove_period:
-                        model_path = os.path.join(probes_path, f"{model_name}_{abs(layers_to_process[idx])}_{dataset_names[count]}_rp.h5")
+                        model_path = os.path.join(probes_path, f"{model_name}_{layers_to_process[idx]}_{dataset_names[count]}_rp.h5")
                     else:
-                        model_path = os.path.join(probes_path, f"{model_name}_{abs(layers_to_process[idx])}_{dataset_names[count]}.h5")
+                        model_path = os.path.join(probes_path, f"{model_name}_{layers_to_process[idx]}_{dataset_names[count]}.h5")
                     best_model.save(model_path)
                 except Exception as e:
                     logger.error(f"Error saving the model: {e}")

@@ -61,30 +61,34 @@ def load_config(config_file):
         print(f"Error parsing JSON in {config_file}.")
         sys.exit(1)
 
-def load_datasets(dataset_names, layers_to_process, should_remove_period, input_path, model_name, idx, mode="val", task="tf"):
+def load_datasets(train_dataset_names, eval_dataset_names, layers_to_process, should_remove_period, train_input_path, eval_input_path, model_name, idx, train_task="tf", eval_task="tf"):
     train_datasets = []
     train_dataset_paths = []
     eval_datasets = []
     eval_dataset_paths = []
-    for dataset_name in dataset_names:
+    for train_dataset_name in train_dataset_names:
         try:
             if should_remove_period:
-                if task == "tf":
-                    train_path = input_path / f"train/embeddings_{dataset_name}{model_name}_{layers_to_process[idx]}_rmv_period.csv"
-                elif task == "qa":
-                    train_path = input_path / f"train/{dataset_name}_{layers_to_process[idx]}_rmv_period.csv"
+                if train_task == "tf":
+                    # train_path = input_path / f"train/embeddings_{dataset_name}{model_name}_{layers_to_process[idx]}_rmv_period.csv"
+                    train_path = train_input_path / f"embeddings_{train_dataset_name}{model_name}_{layers_to_process[idx]}_rmv_period.csv"
+                elif train_task == "qa":
+                    # train_path = input_path / f"train/{dataset_name}_{layers_to_process[idx]}_rmv_period.csv"
+                    train_path = train_input_path / f"{train_dataset_name}_{layers_to_process[idx]}_rmv_period.csv"
                 else:
                     print("Incorrect task has been input")
                     sys.exit(1)
             else:
-                if task == "tf":
-                    train_path = input_path / f"train/embeddings_{dataset_name}{model_name}_{layers_to_process[idx]}.csv"
-                elif task == "qa":
-                    train_path = input_path / f"train/{dataset_name}_{layers_to_process[idx]}.csv"
+                if train_task == "tf":
+                    # train_path = input_path / f"train/embeddings_{dataset_name}{model_name}_{layers_to_process[idx]}.csv"
+                    train_path = train_input_path / f"embeddings_{train_dataset_name}{model_name}_{layers_to_process[idx]}.csv"
+                elif train_task == "qa":
+                    # train_path = input_path / f"train/{dataset_name}_{layers_to_process[idx]}.csv"
+                    train_path = train_input_path / f"{train_dataset_name}_{layers_to_process[idx]}.csv"
                 else:
                     print("Incorrect task has been input")
                     sys.exit(1)
-            print(f"Loaded dataset {dataset_name}")
+            print(f"Loaded training dataset {train_dataset_name}")
             train_datasets.append(pd.read_csv(train_path))
             train_dataset_paths.append(train_path)
         except FileNotFoundError:
@@ -93,23 +97,29 @@ def load_datasets(dataset_names, layers_to_process, should_remove_period, input_
         except pd.errors.ParserError:
             print(f"Error parsing CSV file: {train_path}. Please ensure the file is in correct CSV format.")
             sys.exit(1)
+    for eval_dataset_name in eval_dataset_names:
         try:
             if should_remove_period:
-                if task == "tf":
-                    eval_path = input_path / mode / f"embeddings_{dataset_name}{model_name}_{layers_to_process[idx]}_rmv_period.csv"
-                elif task == "qa":
-                    eval_path = input_path / mode / f"{dataset_name}_{layers_to_process[idx]}_rmv_period.csv"
+                if eval_task == "tf":
+                    # eval_path = input_path / mode / f"embeddings_{dataset_name}{model_name}_{layers_to_process[idx]}_rmv_period.csv"
+                    eval_path = eval_input_path / f"embeddings_{eval_dataset_name}{model_name}_{layers_to_process[idx]}_rmv_period.csv"
+                elif eval_task == "qa":
+                    # eval_path = input_path / mode / f"{dataset_name}_{layers_to_process[idx]}_rmv_period.csv"
+                    eval_path = eval_input_path / f"{eval_dataset_name}_{layers_to_process[idx]}_rmv_period.csv"
                 else:
                     print("Incorrect task has been input")
                     sys.exit(1)
             else:
-                if task == "tf":
-                    eval_path = input_path / mode / f"embeddings_{dataset_name}{model_name}_{layers_to_process[idx]}.csv"
-                elif task == "qa":
-                    eval_path = input_path / mode / f"{dataset_name}_{layers_to_process[idx]}.csv"
+                if eval_task == "tf":
+                    # eval_path = input_path / mode / f"embeddings_{dataset_name}{model_name}_{layers_to_process[idx]}.csv"
+                    eval_path = eval_input_path / f"embeddings_{eval_dataset_name}{model_name}_{layers_to_process[idx]}.csv"
+                elif eval_task == "qa":
+                    # eval_path = input_path / mode / f"{dataset_name}_{layers_to_process[idx]}.csv"
+                    eval_path = eval_input_path / f"{eval_dataset_name}_{layers_to_process[idx]}.csv"
                 else:
                     print("Incorrect task has been input")
                     sys.exit(1)
+            print(f"Loaded evaluation dataset {eval_dataset_name}")
             eval_datasets.append(pd.read_csv(eval_path))
             eval_dataset_paths.append(eval_path)
         except FileNotFoundError:
@@ -120,7 +130,7 @@ def load_datasets(dataset_names, layers_to_process, should_remove_period, input_
             sys.exit(1)
     return train_datasets, train_dataset_paths, eval_datasets, eval_dataset_paths
 
-def prepare_datasets(train_datasets, eval_datasets, dataset_names):
+def prepare_datasets(train_datasets, eval_datasets, train_dataset_names, eval_dataset_names):
     """
     Prepares train and test datasets from a list of datasets.
 
@@ -138,13 +148,13 @@ def prepare_datasets(train_datasets, eval_datasets, dataset_names):
     test_datasets -- A list of pandas dataframes, where each dataframe is a testing dataset.
     """
 
-    if (not train_datasets) or (not dataset_names):
-        raise ValueError("Both 'train_datasets' and 'dataset_names' must be nonempty.")
-    if len(train_datasets) != len(dataset_names):
+    if (not train_datasets) or (not train_dataset_names):
+        raise ValueError("Both 'train_datasets' and 'train_dataset_names' must be nonempty.")
+    if len(train_datasets) != len(train_dataset_names):
         raise ValueError("'train_datasets' and 'dataset_names' must have the same length.")
-    if (not eval_datasets):
-        raise ValueError("'eval_datasets' must be nonempty.")
-    if len(eval_datasets) != len(dataset_names):
+    if (not eval_datasets) or (not eval_dataset_names):
+        raise ValueError("Both 'eval_datasets' and 'eval_dataset_names' must be nonempty.")
+    if len(eval_datasets) != len(eval_dataset_names):
         raise ValueError("'eval_datasets' and 'dataset_names' must have the same length.")
     # complete_train_datasets = []
     # complete_eval_datasets = []
@@ -278,7 +288,7 @@ def find_optimal_threshold(X, y, model,device):
     return optimal_threshold
 
 
-def print_results(results, dataset_names, repeat_each, layer_num_from_end):
+def print_results(results, repeat_each, layer_num_from_end):
     """
     Prints the average accuracy, AUC, and optimal threshold for each dataset, and returns a list of these results.
 
@@ -332,20 +342,26 @@ def main():
 
     # Load the config
     try:
-        config_parameters = load_config("config.json")
+        config_parameters = load_config("config_tf_update.json")
     except Exception as e:
         logger.error(f"Error loading config file: {e}")
         return
 
     parser = argparse.ArgumentParser(description="Train probes on processed and labeled datasets.")
     parser.add_argument("--mode", help="Validation or testing mode, 'val' or 'test' (used for fetching datasets)")
-    parser.add_argument("--task", help="Task for which embeddings have been generated, 'tf' or 'qa' (used for getting correct filepath)")
+    # parser.add_argument("--task", help="Task for which embeddings have been generated, 'tf' or 'qa' (used for getting correct filepath)")
+    parser.add_argument("--train_task", help="Training task for which embeddings have been generated, 'tf' or 'qa' (used for getting correct filepath)")
+    parser.add_argument("--eval_task", help="Evaluation task for which embeddings have been generated, 'tf' or 'qa' (used for getting correct filepath)")
     parser.add_argument("--model", 
                         help="Name of the language model to use: '6.7b', '2.7b', '1.3b', '350m'")
     parser.add_argument("--layers", nargs='*', 
                         help="List of layers of the LM to save embeddings from indexed negatively from the end")
-    parser.add_argument("--dataset_names", nargs='*',
-                        help="List of dataset names without csv extension.")
+    # parser.add_argument("--dataset_names", nargs='*',
+                        # help="List of dataset names without csv extension.")
+    parser.add_argument("--train_dataset_names", nargs='*',
+                        help="List of training dataset names without csv extension.")
+    parser.add_argument("--eval_dataset_names", nargs='*',
+                        help="List of training dataset names without csv extension.")
     parser.add_argument("--remove_period", type=bool, help="True if you want to extract embedding for last token before the final period.")
     parser.add_argument("--test_first_only", type=bool, help="True if you only want to use the first dataset for testing a probe.")
     parser.add_argument("--save_probes", type=bool, help="True if you want to save the trained probes.")
@@ -353,15 +369,20 @@ def main():
     args = parser.parse_args()
 
     mode = args.mode if args.mode is not None else "val"
-    task = args.task if args.task is not None else "tf"
+    # task = args.task if args.task is not None else "tf"
+    train_task = args.train_task if args.train_task is not None else "tf"
+    eval_task = args.eval_task if args.eval_task is not None else "tf"
     model_name = args.model if args.model is not None else config_parameters["model"]
     should_remove_period = args.remove_period if args.remove_period is not None else config_parameters["remove_period"]
     layers_to_process = [int(x) for x in args.layers] if args.layers is not None else config_parameters["layers_to_use"]
-    dataset_names = args.dataset_names if args.dataset_names is not None else config_parameters["list_of_datasets"]
+    # dataset_names = args.dataset_names if args.dataset_names is not None else config_parameters["list_of_datasets"]
+    train_dataset_names = args.train_dataset_names if args.train_dataset_names is not None else config_parameters["list_of_train_datasets"]
+    eval_dataset_names = args.eval_dataset_names if args.eval_dataset_names is not None else config_parameters["list_of_eval_datasets"]
     test_first_only = args.test_first_only if args.test_first_only is not None else config_parameters["test_first_only"]
     save_probes = args.save_probes if args.save_probes is not None else config_parameters["save_probes"]
     repeat_each = args.repeat_each if args.repeat_each is not None else config_parameters["repeat_each"]
-    input_path = Path(config_parameters["processed_dataset_path"])
+    train_input_path = Path(config_parameters["processed_dataset_path"])
+    eval_input_path = Path(config_parameters["eval_dataset_path"]) # Added new config parameter for validation / test data path
     probes_path = Path(config_parameters["probes_dir"])
     
     overall_res = []
@@ -370,10 +391,12 @@ def main():
         # Load the datasets
         # datasets, dataset_paths = load_datasets(dataset_names, layers_to_process, should_remove_period, input_path, model_name, idx)
         print(f"Layer {layers_to_process[idx]}:")
-        train_datasets, train_dataset_paths, eval_datasets, eval_dataset_paths = load_datasets(dataset_names, layers_to_process, should_remove_period, input_path, model_name, idx, mode, task)
+        # train_datasets, train_dataset_paths, eval_datasets, eval_dataset_paths = load_datasets(dataset_names, layers_to_process, should_remove_period, train_input_path, eval_input_path, model_name, idx, train_task, eval_task)
+        train_datasets, train_dataset_paths, eval_datasets, eval_dataset_paths = load_datasets(train_dataset_names, eval_dataset_names, layers_to_process, should_remove_period, train_input_path, eval_input_path, model_name, idx, train_task, eval_task)
    
         # Prepare the datasets
-        complete_train_datasets, complete_eval_datasets = prepare_datasets(train_datasets, eval_datasets, dataset_names)
+        # complete_train_datasets, complete_eval_datasets = prepare_datasets(train_datasets, eval_datasets, dataset_names)
+        complete_train_datasets, complete_eval_datasets = prepare_datasets(train_datasets, eval_datasets, train_dataset_names, eval_dataset_names)
 
         # print(complete_train_datasets)
 
@@ -388,11 +411,14 @@ def main():
         test_embeddings = np.array([np.fromstring(correct_str(embedding), sep=',') for embedding in complete_eval_datasets['embeddings'].tolist()])
 
         # Extract labels based on each file's formatting
-        if task == "tf":
+        if train_task == "tf":
             train_labels = complete_train_datasets['label']
-            test_labels = complete_eval_datasets['label']
         else:
             train_labels = complete_train_datasets['answer_is_correct']
+            
+        if eval_task == "tf":
+            test_labels = complete_eval_datasets['label']
+        else:
             test_labels = complete_eval_datasets['answer_is_correct']
 
         # Repeat training and testing for specified number of times
@@ -457,14 +483,14 @@ def main():
                 test_dataset_copy[col] = test_dataset_copy[col].round(4)
 
         #Define the new filename for the copy
-        new_path = Path(input_path / f"{mode}" / f"{idx}_{mode}_predictions.csv")
+        new_path = Path(eval_input_path / f"{idx}_{mode}_predictions.csv")
         # new_path = original_path.with_name(original_path.name.replace('.csv', '_predictions.csv'))
 
         # Save the modified copy as a new CSV file
         test_dataset_copy.to_csv(new_path, index=False) 
         # Print the results
         if not test_first_only:
-            avg_res = print_results(results, dataset_names, repeat_each, layers_to_process[idx])
+            avg_res = print_results(results, repeat_each, layers_to_process[idx])
             overall_res.append(avg_res)
 
         

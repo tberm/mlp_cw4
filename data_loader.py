@@ -38,16 +38,24 @@ def get_batch_of_statements(number=None, split='train', reindex=False):
     return df
 
 def get_batch_of_embeddings(number=None, source='tf', split='train', layer=-1, topic=None):
+    if source not in ['tf', 'qa']:
+        raise ValueError(f'Invalid `source`: {source}')
+    if topic is not None and source != 'tf':
+        raise ValueError(f'`topic` is only a valid parameter when `source="tf"`')
+
     rng = np.random.default_rng(17)
     frames = []
     data_folder = 'llama-qa-results' if source == 'qa' else 'llama-true-false-results'
     path = Path(__file__).parent.resolve() / data_folder / split
 
     layer_pat = str(layer) if layer is not None else r'[\-0-9]+'
+
     if source == 'qa':
-        pattern = 'answers_' + layer_pat + '.csv'
+        pattern = f'answers_{layer_pat}.csv'
+    elif topic is not None:
+        pattern = f'embeddings_{topic}7B_{layer_pat}.csv'
     else:
-        pattern = 'embeddings(.*)7B_' + layer_pat + '.csv'
+        pattern = f'embeddings_(.*)7B_{layer_pat}.csv'
 
     pattern = re.compile(pattern)
 
@@ -63,8 +71,13 @@ def get_batch_of_embeddings(number=None, source='tf', split='train', layer=-1, t
             frame.rename({'answer_is_correct': 'label'}, axis='columns', inplace=True)
             tpl = 'Q: {} A: {}'
             frame['statement'] = frame.apply(lambda row: tpl.format(row.question, row.answer), axis=1)
-        topic = 'qa' if source == 'qa' else filename_match.groups()[0]
-        frame['topic'] = topic
+            this_topic = 'qa'
+        elif topic is None:
+            this_topic = filename_match.groups()[0]
+        else:
+            this_topic = topic
+
+        frame['topic'] = this_topic
         frame['layer'] = int(layer)
         frame['label'] = frame.label.astype(int)
         frames.append(frame[['statement', 'label', 'topic', 'layer', 'embeddings']])

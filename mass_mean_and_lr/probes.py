@@ -2,7 +2,7 @@ import torch as t
 from tqdm import tqdm
 
 class LRProbe(t.nn.Module):
-    def __init__(self, d_in):
+    def __init__(self, d_in=4096):
         super().__init__()
         self.net = t.nn.Sequential(
             t.nn.Linear(d_in, 1, bias=False),
@@ -42,6 +42,22 @@ class LRProbe(t.nn.Module):
     def direction(self):
         return self.net[0].weight.data[0]
 
+class MMProbeWrapper:
+    def train_probe(self, acts, labels):
+        self.model = MMProbe.from_data(acts, labels)
+
+    def predict(self, acts):
+        with t.no_grad():
+            return self.model(acts).numpy()
+
+class LRProbeWrapper:
+    def train_probe(self, acts, labels):
+        self.model = LRProbe.from_data(acts, labels)
+
+    def predict(self, acts):
+        with t.no_grad():
+            return self.model(acts).numpy()
+
 
 class MMProbe(t.nn.Module):
     def __init__(self, direction, covariance=None, inv=None, atol=1e-3):
@@ -62,7 +78,7 @@ class MMProbe(t.nn.Module):
         if iid:
             return t.nn.Sigmoid()(x @ self.inv @ self.direction)
         else:
-            print("It's looking promising")
+            #print("It's looking promising")
             return t.nn.Sigmoid()(x @ self.direction)
 
 

@@ -1,3 +1,4 @@
+from ast import literal_eval
 import subprocess
 from pathlib import Path
 import re
@@ -36,6 +37,14 @@ def get_batch_of_statements(number=None, split='train', reindex=False):
         df = df.set_index([df.index, 'source'])
 
     return df
+
+
+def parse_embedding(embedding_str):
+    """
+    much faster str->arr conversion than ast.literal_eval
+    """
+    return np.fromstring(embedding_str[1:-1], sep=',', dtype=np.float32)
+
 
 def get_batch_of_embeddings(number=None, source='tf', split='train', layer=-1, topic=None):
     if source not in ['tf', 'qa']:
@@ -82,9 +91,10 @@ def get_batch_of_embeddings(number=None, source='tf', split='train', layer=-1, t
         frame['label'] = frame.label.astype(int)
         frames.append(frame[['statement', 'label', 'topic', 'layer', 'embeddings']])
 
-    print('Loaded data from:\n\n', '\n'.join(data_files))
+    print('Loading data from:\n\n', '\n'.join(data_files))
     df = pd.concat(frames)
     df = df.iloc[rng.permutation(len(df))]
+    df['embeddings'] = df.embeddings.apply(parse_embedding)
  
     if number is None:
         return df

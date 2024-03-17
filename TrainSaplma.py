@@ -190,7 +190,7 @@ def correct_str(str_arr):
     return val_to_ret
 
 class ProbeNetwork(nn.Module):
-    def __init__(self, input_size):
+    def __init__(self, input_size=4096):
         super(ProbeNetwork, self).__init__()
         self.layer1 = nn.Linear(input_size, 256)
         self.layer2 = nn.Linear(256, 128)
@@ -206,41 +206,37 @@ class ProbeNetwork(nn.Module):
         x = F.sigmoid(self.layer4(x))
         return x
 
-def train_model(model, train_embeddings, train_labels, device):
-    model.train()
-    optimizer = optim.Adam(model.parameters())
-    criterion = nn.BCELoss()
-    train_embeddings_tensor = torch.tensor(train_embeddings).float().to(device)
-    train_labels_tensor = torch.tensor(train_labels).float().to(device)
-    
-    for epoch in tqdm(range(5), desc="Training SAPLMA Probe"): 
-        optimizer.zero_grad()
-        outputs = model(train_embeddings_tensor)
-        #print("outputs",outputs.squeeze())
-        #print("train_labels_tensor",train_labels_tensor.squeeze())
-        loss = criterion(outputs.squeeze(), train_labels_tensor.squeeze())
-        loss.backward()
-        optimizer.step()
-    return model
-
-def evaluate_model(model, test_embeddings, test_labels, device):
-    model.eval()
-    with torch.no_grad():
-        test_embeddings_tensor = torch.tensor(test_embeddings).float().to(device)
-        test_labels_tensor = torch.tensor(test_labels).float().to(device)
-        outputs = model(test_embeddings_tensor).squeeze()
+    def train_probe(self, train_embeddings, train_labels):
+        self.train()
+        optimizer = optim.Adam(self.parameters())
         criterion = nn.BCELoss()
-        loss = criterion(outputs, test_labels_tensor.squeeze())
-        predicted = outputs.round()
-        accuracy = (predicted == test_labels_tensor).float().mean().item()
-    return loss.item(), accuracy
+        
+        for epoch in tqdm(range(5), desc="Training SAPLMA Probe"): 
+            optimizer.zero_grad()
+            outputs = self(train_embeddings)
+            #print("outputs",outputs.squeeze())
+            #print("train_labels_tensor",train_labels_tensor.squeeze())
+            loss = criterion(outputs.squeeze(), train_labels)
+            loss.backward()
+            optimizer.step()
+        return self
 
-def predict(model, X_test, device):
-    X_test_torch = torch.tensor(X_test.astype(np.float32)).to(device)
-    model.eval()
-    with torch.no_grad():
-        outputs = model(X_test_torch)
-    return outputs.cpu().numpy()
+    def evaluate_probe(self, test_embeddings, test_labels):
+        self.eval()
+        with torch.no_grad():
+            outputs = self(test_embeddings).squeeze()
+            criterion = nn.BCELoss()
+            loss = criterion(outputs, test_labels)
+            predicted = outputs.round()
+            accuracy = (predicted == test_labels).float().mean().item()
+        return {'accuracy': accuracy}
+
+    def predict(self, X_test, device='cpu'):
+        #X_test_torch = torch.tensor(X_test.astype(np.float32)).to(device)
+        self.eval()
+        with torch.no_grad():
+            outputs = self(X_test)
+        return outputs.cpu().numpy().squeeze(-1)
 
 
 def compute_roc_curve(test_labels, test_pred_prob):
@@ -431,19 +427,19 @@ def main():
             model = ProbeNetwork(input_size=train_embeddings.shape[1]).to(device)
         
             # Train the model on full training data
-            model = train_model(model, train_embeddings, train_labels, device)
+            model.train_probe(train_embeddings, train_labels, device)
 
             # Find the optimal threshold and compute validation set accuracy
             optimal_threshold = find_optimal_threshold(train_embeddings, train_labels, model, device)
 
             # Evaluate the model
-            loss, accuracy = evaluate_model(model, test_embeddings, test_labels, device)
+            loss, accuracy = model.evaluate_probe(test_embeddings, test_labels, device)
 
             if accuracy > best_accuracy:
                 best_accuracy = accuracy
                 best_model = model
 
-            test_pred_prob = predict(model,test_embeddings, device)
+            test_pred_prob = model.predict(model,test_embeddings, device)
             all_probs_list.append(deepcopy(test_pred_prob)) #Store probabilities
 
             # Compute ROC curve and ROC area

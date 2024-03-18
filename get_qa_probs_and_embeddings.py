@@ -244,9 +244,8 @@ def run_mc(model_name, questions_path, output_path, prompt_style, continue_parti
 
     model.eval()
 
-    pbar = tqdm(total=len(questions) - start_at_idx)
-    for i, row in questions[start_at_idx:].iterrows():
-
+    pbar = tqdm(questions[start_at_idx:].iterrows(), total=len(questions) - start_at_idx)
+    for i, row in pbar:
         question = row['Question']
 
         pbar.set_description(question)
@@ -259,6 +258,7 @@ def run_mc(model_name, questions_path, output_path, prompt_style, continue_parti
         # do pass of just the question + in-context examples
         prompt = build_prompt(question, prompt_style)
         inputs = tokenizer(prompt, return_tensors="pt").to(device)
+        num_prompt_tokens = inputs['input_ids'].size(-1)
         with torch.no_grad():
             outputs = model(**inputs, output_hidden_states=True, return_dict=True) 
 
@@ -298,17 +298,17 @@ def run_mc(model_name, questions_path, output_path, prompt_style, continue_parti
             # skip probabilities of question tokens
             # the -1s are because to get the prob of token t we need to look at
             # output at position t-1
-            num_prompt_tokens = inputs['input_ids'].size(-1)
-            log_probs = log_probs[num_prompt_tokens-1:, :]
+            log_probs = log_probs[num_prompt_tokens-2:-1:, :]
             # get only the probs of tokens in the answer
-            answer_log_probs = log_probs[range(log_probs.shape[0]), inputs['input_ids'][0]]
+            answer_tokens = inputs['input_ids'][0][num_prompt_tokens-1:]
+            answer_log_probs = log_probs[range(log_probs.shape[0]), answer_tokens]
             a_results['all_log_probs'] = answer_log_probs.cpu().numpy().tolist()
             a_results['avg_log_prob'] = answer_log_probs.mean().cpu().item()
             a_results['sum_log_prob'] = answer_log_probs.sum().cpu().item()
 
             # calculate entropy of distribution over tokens 
             probs = outputs.logits[0].softmax(-1)
-            probs = probs[num_prompt_tokens-1:, :]
+            probs = probs[num_prompt_tokens-2:-1, :]
             entropy_per_pos = - (probs * log_probs).sum(-1)
             a_results['avg_entropy'] = entropy_per_pos.mean().cpu().item()
 

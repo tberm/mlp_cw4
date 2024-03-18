@@ -88,7 +88,7 @@ def run_llama(frame, model_path, tag, preset='qa', verbose=True):
 
                 if its_since_save == 20:
                     print('saving checkpoint...')
-                    save_questions(frame, 'answer_gen_checkpoint')
+                    save_questions(frame, 'answer_gen_checkpoint.csv')
                     its_since_save = 0
                 its_since_save += 1
 
@@ -352,7 +352,7 @@ def run_answers(frame, engine, tag, preset, model=None, tokenizer=None, verbose=
 
                 if its_since_save == 5:
                     print('saving checkpoint...')
-                    save_questions(frame, 'answer_gen_checkpoint')
+                    save_questions(frame, 'answer_gen_checkpoint.csv')
                     its_since_save = 0
                 its_since_save += 1
 
@@ -369,6 +369,7 @@ def run_probs_llama(frame, model_path, tag, preset='qa', verbose=True):
         model_path, local_files_only=True, device_map="auto"
     )
     device = "cuda:0"
+    its_since_save = 0
     model.eval()
     with torch.no_grad():
         for idx in frame.index:
@@ -437,6 +438,12 @@ def run_probs_llama(frame, model_path, tag, preset='qa', verbose=True):
                     scores_false.append(log_probs.sum().item())
 
                 MC_calcs(tag, frame, idx, scores_true, scores_false, ref_true, ref_best)
+
+                if its_since_save == 2:
+                    print('saving checkpoint...')
+                    save_questions(frame, 'mc_probs_checkpoint.csv')
+                    its_since_save = 0
+                its_since_save += 1
 
     if device:
         torch.cuda.empty_cache()
@@ -528,9 +535,9 @@ def run_probs(frame, engine, tag, preset='qa', model=None, tokenizer=None, devic
 
                 MC_calcs(tag, frame, idx, scores_true, scores_false, ref_true, ref_best)
 
-                if its_since_save == 20:
+                if its_since_save == 2:
                     print('saving checkpoint...')
-                    save_questions(frame, 'mc_probs_checkpoint')
+                    save_questions(frame, 'mc_probs_checkpoint.csv')
                     its_since_save = 0
                 its_since_save += 1
 

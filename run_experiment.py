@@ -29,8 +29,8 @@ from sklearn.metrics import roc_curve, accuracy_score
 
 from TrainSaplma import ProbeNetwork as SAPLMA
 from TrainSaplma import compute_roc_curve
-from mass_mean_and_lr.probes import LRProbeWrapper, MMProbeWrapper
-from data_loader import get_batch_of_embeddings
+from mass_mean_and_lr.probes import LRProbeWrapper, MMProbeWrapper, LRProbe
+from data_loader import get_batch_of_embeddings, get_prob_stats
 
 
 DatasetArgs = namedtuple('DatasetArgs', 'source topic layer split')
@@ -40,6 +40,24 @@ MODELS = {
     'lr': LRProbeWrapper,
     'mm': MMProbeWrapper,
 }
+
+def run_prob_baseline(features, topic=None, save_to_file=True):
+    data = get_prob_stats(topic)
+    
+    if isinstance(features, str):
+        features = [features]
+
+    if len(features) == 1:
+        feature = features[0]
+        labels = data['label'].to_numpy()
+        scores = data[feature].to_numpy()
+        # we expect *low* entropy to correlate with truth
+        if 'entropy' in feature:
+            scores = - scores
+        results = evaluate_results(scores, labels)
+        print(results)
+    else:
+        raise NotImplementedError("Haven't implemented training on multiple prob features")
 
 def run_experiment(train_data_args, val_data_args, model_name, repeats=1, save_to_file=True):
 
@@ -121,7 +139,7 @@ def find_optimal_threshold(probs, labels):
     return optimal_threshold
 
 
-def load_results():
+def load_results(sort_by=None):
     """
     load results of past experiments from files and return as a data
     frame
@@ -133,5 +151,12 @@ def load_results():
                 line.strip().split('=')[0]: line.strip().split('=')[1]
                 for line in file.readlines()
             })
-    return pd.DataFrame(rows)
-
+    df = pd.DataFrame(rows)
+    df['train_layer'] = df.train_layer.astype('int8')
+    df['started_at'] = df.started_at.apply(
+        lambda dt: datetime.strptime(dt, '%Y-%m-%d-%H%M%S')
+    )
+    if sort_by is not None:
+        return df.sort_values(sort_by)
+    
+    return df

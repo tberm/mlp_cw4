@@ -46,6 +46,37 @@ def parse_embedding(embedding_str):
     return np.fromstring(embedding_str[1:-1], sep=',', dtype=np.float32)
 
 
+def get_prob_stats(topic=None):
+    # currently we only have these for QA and it only really makes sense for evaluation
+    data_folder = 'llama-qa-results'
+
+    # made a bit of a mess when making the splits since the train/val/test question
+    # splits don't necessarily match up to the train/val/test answer splits
+    # so combine all the questions and then join to answers from the split we want
+    base_path = Path(__file__).parent.resolve() / data_folder
+    train_qs = pd.read_csv(base_path / 'train' / 'questions_prob-stats.csv')
+    val_qs = pd.read_csv(base_path / 'val' / 'questions_prob-stats.csv')
+    test_qs = pd.read_csv(base_path / 'test' / 'questions_prob-stats.csv')
+    questions = pd.concat([train_qs, val_qs, test_qs])
+    questions = questions.set_index('question_idx')
+    # remove columns clashing with answers
+    questions = questions[['next_token_log_prob', 'next_token_entropy']]
+
+    split = 'val'
+    answers = pd.read_csv(base_path / split / 'answers_prob-stats.csv')
+
+    frame = answers.join(questions, on='question_idx')
+
+    frame = frame.rename({
+        'next_token_log_prob': 'answer_start_token_log_prob',
+        'next_token_entropy': 'answer_start_token_entropy',
+        'answer_is_correct': 'label',
+    }, axis='columns')
+
+    frame['label'] = frame.label.astype(int)
+    return frame
+
+
 def get_batch_of_embeddings(number=None, source='tf', split='train', layer=-1, topic=None):
     if source not in ['tf', 'qa']:
         raise ValueError(f'Invalid `source`: {source}')

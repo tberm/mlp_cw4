@@ -2,6 +2,13 @@ from itertools import islice
 import pandas as pd
 import sys
 
+'''
+
+
+python3 fix_gpt_evals.py llama-qa-results-gen-prof-prompt/generated_answers_and_evals.csv 0
+
+
+'''
 
 def print_bold(*text):
     print(f'\033[1m{" ".join(text)}\033[0m')
@@ -26,7 +33,7 @@ if __name__ == '__main__':
         else:
             print(f'No GPT eval for question {i}!')
             continue
-        print(row['Question'])
+        print(f"Question index number {i}: {row['Question']}")
         print()
         print_bold('LLAMA ANSWER:', row['answer'])
         print()
@@ -47,4 +54,5 @@ if __name__ == '__main__':
                 break
 
         print()
+        print('---------------------------------------------------------------------------------')
         print()

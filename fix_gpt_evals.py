@@ -48,7 +48,7 @@ if __name__ == '__main__':
             print('GOOD ANSWER:', row['Best Answer'])
             print_bold('BAD ANSWER:', row['Incorrect Answers'].split(';')[0])
         while True:
-            resp = input(f'GPT says this is {gpt_says_correct}. Agree? [enter if yes, type "no" if not]')
+            resp = input(f'GPT says this is {gpt_says_correct}. Agree? [enter if yes, type "no" if not, or "more" for more example answers]')
             if resp.strip() == '':
                 break
             if resp.strip() == 'no':
@@ -56,6 +56,11 @@ if __name__ == '__main__':
                 df.loc[i, 'GPT eval'] = 'false' if gpt_says_correct else 'true'
                 df.to_csv(file)
                 break
+            if resp.strip() == 'more':
+                for answer in row['Correct Answers'].split(';')[1:]:
+                    print('GOOD ANSWER:', answer)
+                for answer in row['Incorrect Answers'].split(';')[1:]:
+                    print('BAD ANSWER:', answer)
 
         print()
         print('---------------------------------------------------------------------------------')

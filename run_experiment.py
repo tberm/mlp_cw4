@@ -11,12 +11,22 @@ Specify the parameters for the datasets used for training and validation:
 Run the experiment, specifying the method to use and how many times to repeat (results
 will be averaged out):
 
->>> run_experiment(train_dataset_args, val_dataset_args, 'saplma', repeats=5)
+>>> run_experiment(train_dataset_args, val_dataset_args, 'lr', repeats=5, monitor_training=True)
 
 The results will be saved to a new file in probe-results.
 
 You can use the `load_results` to get all the results stored in the probe-results folder
 formatted as a DataFrame.
+
+
+from run_experiment import *
+train_dataset_args = DatasetArgs(source='tf', topic=None, layer=-1, split='train') 
+val_dataset_args = DatasetArgs(source='tf', topic=None, layer=-1, split='val') 
+run_experiment(train_dataset_args, val_dataset_args, 'lr', repeats=1, monitor_training=False)
+
+
+
+
 """
 from collections import namedtuple
 from datetime import datetime
@@ -59,7 +69,7 @@ def run_prob_baseline(features, topic=None, save_to_file=True):
     else:
         raise NotImplementedError("Haven't implemented training on multiple prob features")
 
-def run_experiment(train_data_args, val_data_args, model_name, repeats=1, save_to_file=True):
+def run_experiment(train_data_args, val_data_args, model_name, repeats=1, save_to_file=True, monitor_training=False):
 
     start_time = datetime.now().strftime("%Y-%m-%d-%H%M%S")
     
@@ -69,12 +79,18 @@ def run_experiment(train_data_args, val_data_args, model_name, repeats=1, save_t
     train_acts = torch.tensor(np.vstack(train_data['embeddings']), dtype=torch.float32)
     train_labels = torch.tensor(train_data['label'].to_numpy(), dtype=torch.float32)
     val_acts = torch.tensor(np.vstack(val_data['embeddings']), dtype=torch.float32)
-    val_labels = val_data['label'].to_numpy()
+    if monitor_training==True and model_name=='lr':
+        val_labels = torch.tensor(np.vstack(val_data['label']), dtype=torch.float32)
+    else:
+        val_labels = val_data['label'].to_numpy()
 
     all_results = []
     for i in range(repeats):
         model = MODELS[model_name]()
-        model.train_probe(train_acts, train_labels)
+        if monitor_training==True and model_name=='lr':
+            model.train_probe(train_acts=train_acts, train_labels=train_labels,val_acts=val_acts, val_labels=val_labels, train_data_info=train_data_args, val_data_info=val_data_args)
+        else:
+            model.train_probe(train_acts, train_labels)
         probs = model.predict(val_acts)
         results = evaluate_results(probs, val_labels)
         print(results)

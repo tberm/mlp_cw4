@@ -47,12 +47,20 @@ def build_prompt(question, prompt_style):
     return prompt
 
 
-def run_gen(model_name, questions_path, output_path, prompt_style, continue_partial=False, cpu_only=False):
+def print_tokens_with_probs(tokens, tokenizer, log_probs):
+    lines = [
+        f'{tokenizer.decode(token)} ({log_prob})'
+        for token, log_prob in zip(tokens, log_probs)
+    ]
+    print('\n'.join(lines))
+
+
+def run_gen(model_name, questions_path, output_path, prompt_style, continue_partial=False, cpu_only=False, debug=False):
     with open("config.json") as config_file:
         config = json.load(config_file)
 
-    layers = [-1, -5, -9, -13]
-    #layers = [-1, -5]
+    #layers = [-1, -5, -9, -13]
+    layers = [-1, -5]
 
     if output_path.exists():
         if not continue_partial:
@@ -117,6 +125,7 @@ def run_gen(model_name, questions_path, output_path, prompt_style, continue_part
         results = {}
         results['question'] = question
         results['question_idx'] = i
+        results['answer'] = row['llama2-7b-chat']
 
         prompt = build_prompt(question, prompt_style)
         # tokenise just so we know how long the prompt is
@@ -144,6 +153,10 @@ def run_gen(model_name, questions_path, output_path, prompt_style, continue_part
         results['avg_log_prob'] = answer_log_probs.mean().cpu().item()
         results['sum_log_prob'] = answer_log_probs.sum().cpu().item()
 
+        if debug:
+            print_tokens_with_probs(answer_tokens, tokenizer, answer_log_probs)
+            print('Average log prob:', answer_log_probs.mean().cpu().item())
+ 
         # get activations
         for layer in layers:
             col_name = f'activations_layer_{layer}'
@@ -155,12 +168,12 @@ def run_gen(model_name, questions_path, output_path, prompt_style, continue_part
             writer.writerow(results)
 
 
-def run_mc(model_name, questions_path, output_path, prompt_style, continue_partial=False, cpu_only=False):
+def run_mc(model_name, questions_path, output_path, prompt_style, continue_partial=False, cpu_only=False, debug=False):
     with open("config.json") as config_file:
         config = json.load(config_file)
 
-    layers = [-1, -5, -9, -13]
-    #layers = [-1, -5]
+    #layers = [-1, -5, -9, -13]
+    layers = [-1, -5]
 
     if output_path.exists():
         if not continue_partial:
@@ -306,6 +319,11 @@ def run_mc(model_name, questions_path, output_path, prompt_style, continue_parti
             a_results['avg_log_prob'] = answer_log_probs.mean().cpu().item()
             a_results['sum_log_prob'] = answer_log_probs.sum().cpu().item()
 
+
+            if debug:
+                print_tokens_with_probs(answer_tokens, tokenizer, answer_log_probs)
+                print('Average log prob:', answer_log_probs.mean().cpu().item())
+            
             # calculate entropy of distribution over tokens 
             probs = outputs.logits[0].softmax(-1)
             probs = probs[num_prompt_tokens-2:-1, :]
@@ -343,6 +361,7 @@ if __name__ == '__main__':
     parser.add_argument('--continue-partial', action='store_true', help='continue a previously started experiment (with the same output path)')
     parser.add_argument('--cpu-only', action='store_true', help='do not use GPU')
     parser.add_argument('--qa-mode', choices=['mc', 'gen'], required=True)
+    parser.add_argument('--debug', action='store_true')
 
     args = parser.parse_args()
     questions_path = Path(args.questions_path)
@@ -351,4 +370,4 @@ if __name__ == '__main__':
     if args.qa_mode == 'mc':
         run_mc(args.model, questions_path, output_path, args.prompt_style, args.continue_partial, args.cpu_only)
     elif args.qa_mode == 'gen':
-        run_gen(args.model, questions_path, output_path, args.prompt_style, args.continue_partial, args.cpu_only)
+        run_gen(args.model, questions_path, output_path, args.prompt_style, args.continue_partial, args.cpu_only, args.debug)

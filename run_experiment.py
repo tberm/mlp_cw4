@@ -52,7 +52,10 @@ MODELS = {
     'mm': MMProbeWrapper,
 }
 
-def run_prob_baseline(source, features, topic=None, save_to_file=True):
+def run_prob_baseline(source, features, topic=None, save_to_file=True, plot_preds=False):
+
+    start_time = datetime.now().strftime("%Y-%m-%d-%H%M%S")
+
     data = get_prob_stats(source, topic)
     
     if isinstance(features, str):
@@ -66,9 +69,41 @@ def run_prob_baseline(source, features, topic=None, save_to_file=True):
         if 'entropy' in feature:
             scores = - scores
         results = evaluate_results(scores, labels)
+        if plot_preds:
+            import pdb; pdb.set_trace()
+            trues = scores[labels == 1]
+            falses = scores[labels == 0]
+            fig, ax = plt.subplots()
+            ax.hist(falses, bins=300, alpha=0.5, label='false')
+            ax.hist(trues, bins=300, alpha=0.5, label='true')
+            ax.legend()
+            fig.show()
         print(results)
     else:
         raise NotImplementedError("Haven't implemented training on multiple prob features")
+
+    record_strings = [
+        f'model={feature}_baseline',
+        f'started_at={start_time}',
+        f'val_source={source}',
+    ] + [
+        f'{key}={value}'
+        for key, value in results.items()
+    ]
+
+    record_txt = '\n'.join(record_strings)
+    print(record_txt)
+
+    if save_to_file:
+        folder = Path('probe-results')
+        folder.mkdir(exist_ok=True)
+        file_path = folder / f'{feature}_baseline_results_{start_time}.txt'
+        with file_path.open('w', encoding='utf-8') as file:
+            file.write(record_txt)
+
+        print('Results saved to', str(file_path))
+
+
 
 def run_experiment(train_data_args, val_data_args, model_name, repeats=1, save_to_file=True, monitor_training=False, plot_preds=False):
 
@@ -98,7 +133,7 @@ def run_experiment(train_data_args, val_data_args, model_name, repeats=1, save_t
         all_results.append(results)
         if plot_preds:
             color = ['green' if label else 'red' for label in val_labels]
-            plt.scatter([0]*len(probs), probs, color=color, marker='_', alpha=0.3, s=20)
+            plt.scatter([0]*len(probs), probs, color=color, marker='_', alpha=0.3, s=500)
             plt.show()
 
     if repeats == 1:
@@ -173,7 +208,7 @@ def load_results(sort_by=None):
                 for line in file.readlines()
             })
     df = pd.DataFrame(rows)
-    df['train_layer'] = df.train_layer.astype('int8')
+    df['train_layer'] = df.train_layer.astype(float)
     df['started_at'] = df.started_at.apply(
         lambda dt: datetime.strptime(dt, '%Y-%m-%d-%H%M%S')
     )

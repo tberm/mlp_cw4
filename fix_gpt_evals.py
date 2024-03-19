@@ -26,6 +26,10 @@ if __name__ == '__main__':
 
     df = pd.read_csv(file)
     for i, row in islice(df.iterrows(), start_from, None):
+        if 'I have no comment' in row['answer']:
+            print(f'Skipping question {i} as LLAMA has no comment.')
+            df.loc[i, 'GPT eval'] = 'true'
+            continue
         if row['GPT eval'] == 'true':
             gpt_says_correct = True
         elif row['GPT eval'] == 'false':

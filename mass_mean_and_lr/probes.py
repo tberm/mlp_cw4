@@ -30,7 +30,7 @@ class LRProbe(t.nn.Module):
             results_dir = os.path.join('probe_results', 'lr_training_results', f'experiment_{today_str}')
             os.makedirs(results_dir, exist_ok=True)
         else:
-            name = f"{train_data_info.source}_{train_data_info.topic}_{train_data_info.layer}__to__{val_data_info.source}_{val_data_info.topic}_{val_data_info.layer}_{val_data_info.split}_{datetime.today().strftime('%Y-%m-%d')}"
+            name = f"{lr}_{train_data_info.source}_{train_data_info.topic}_{train_data_info.layer}__to__{val_data_info.source}_{val_data_info.topic}_{val_data_info.layer}_{val_data_info.split}_{datetime.today().strftime('%Y-%m-%d')}"
             results_dir = os.path.join('probe-results', 'lr_training_results', name)
             os.makedirs(results_dir, exist_ok=True)
         
@@ -71,14 +71,16 @@ class LRProbe(t.nn.Module):
         return self.net[0].weight.data[0]
 
 class LRProbeWrapper:
-    def train_probe(self, train_acts, train_labels,val_acts=None, val_labels=None, train_data_info=None, val_data_info=None):
-        if val_acts is not None and val_labels is not None:
-            self.model = LRProbe.from_data(train_acts=train_acts, train_labels=train_labels,val_acts=val_acts, val_labels=val_labels, train_data_info=train_data_info, val_data_info=val_data_info)
+    def train_probe(self, train_acts, train_labels, val_acts=None, val_labels=None, train_data_info=None, val_data_info=None, learning_rate=0.001):
+        if val_acts and val_labels:
+            self.model = LRProbe.from_data(train_acts=train_acts, train_labels=train_labels, val_acts=val_acts, val_labels=val_labels, train_data_info=train_data_info, val_data_info=val_data_info, lr=learning_rate)
         else:
-            self.model = LRProbe.from_data(train_acts=train_acts, train_labels=train_labels)
+            self.model = LRProbe.from_data(train_acts=train_acts, train_labels=train_labels, train_data_info=train_data_info, val_data_info=val_data_info, lr=learning_rate)
+
     def predict(self, acts):
         with t.no_grad():
             return self.model(acts).numpy()
+
 
 
 class MMProbeWrapper:

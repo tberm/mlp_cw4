@@ -22,8 +22,8 @@ formatted as a DataFrame.
 from run_experiment import *
 train_dataset_args = DatasetArgs(source='tf', topic=None, layer=-1, split='train') 
 val_dataset_args = DatasetArgs(source='tf', topic=None, layer=-1, split='val') 
-run_experiment(train_dataset_args, val_dataset_args, 'lr', repeats=1, monitor_training=False)
-
+learning_rates = [0.1, 0.01, 0.001, 0.0001, 0.00001, 1e-6, 1e-7, 1e-8, 1e-9, 1e-10]
+run_experiment(train_dataset_args, val_dataset_args, 'lr', learning_rates, repeats=1, monitor_training=True)
 
 
 
@@ -105,7 +105,7 @@ def run_prob_baseline(source, features, topic=None, save_to_file=True, plot_pred
 
 
 
-def run_experiment(train_data_args, val_data_args, model_name, repeats=1, save_to_file=True, monitor_training=False, plot_preds=False):
+def run_experiment(train_data_args, val_data_args, model_name, learning_rates=[0.001], repeats=1, save_to_file=True, monitor_training=False, plot_preds=False):
 
     start_time = datetime.now().strftime("%Y-%m-%d-%H%M%S")
     
@@ -120,21 +120,29 @@ def run_experiment(train_data_args, val_data_args, model_name, repeats=1, save_t
     else:
         val_labels = val_data['label'].to_numpy()
 
+
     all_results = []
-    for i in range(repeats):
-        model = MODELS[model_name]()
-        if monitor_training==True and model_name=='lr':
-            model.train_probe(train_acts=train_acts, train_labels=train_labels,val_acts=val_acts, val_labels=val_labels, train_data_info=train_data_args, val_data_info=val_data_args)
-        else:
-            model.train_probe(train_acts, train_labels)
-        probs = model.predict(val_acts)
-        results = evaluate_results(probs, val_labels)
-        print(results)
-        all_results.append(results)
-        if plot_preds:
-            color = ['green' if label else 'red' for label in val_labels]
-            plt.scatter([0]*len(probs), probs, color=color, marker='_', alpha=0.3, s=500)
-            plt.show()
+    for lr in learning_rates:
+        for i in range(repeats):
+            model = MODELS[model_name]()
+            if monitor_training and model_name == 'lr':
+                model.train_probe(train_acts=train_acts, train_labels=train_labels, 
+                                val_acts=val_acts, val_labels=val_labels, 
+                                train_data_info=train_data_args, val_data_info=val_data_args, 
+                                learning_rate=lr)
+            else:
+                model.train_probe(train_acts=train_acts, train_labels=train_labels, 
+                                train_data_info=train_data_args, val_data_info=val_data_args, 
+                                learning_rate=lr)
+
+            probs = model.predict(val_acts)
+            results = evaluate_results(probs, val_labels)
+            print(results)
+            all_results.append(results)
+            if plot_preds:
+                color = ['green' if label else 'red' for label in val_labels]
+                plt.scatter([0]*len(probs), probs, color=color, marker='_', alpha=0.3, s=500)
+                plt.show()
 
     if repeats == 1:
         results = all_results[0]

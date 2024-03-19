@@ -21,6 +21,7 @@ formatted as a DataFrame.
 from collections import namedtuple
 from datetime import datetime
 from pathlib import Path
+import matplotlib.pyplot as plt
 
 import torch
 import numpy as np
@@ -41,8 +42,8 @@ MODELS = {
     'mm': MMProbeWrapper,
 }
 
-def run_prob_baseline(features, topic=None, save_to_file=True):
-    data = get_prob_stats(topic)
+def run_prob_baseline(source, features, topic=None, save_to_file=True):
+    data = get_prob_stats(source, topic)
     
     if isinstance(features, str):
         features = [features]
@@ -59,7 +60,7 @@ def run_prob_baseline(features, topic=None, save_to_file=True):
     else:
         raise NotImplementedError("Haven't implemented training on multiple prob features")
 
-def run_experiment(train_data_args, val_data_args, model_name, repeats=1, save_to_file=True):
+def run_experiment(train_data_args, val_data_args, model_name, repeats=1, save_to_file=True, plot_preds=False):
 
     start_time = datetime.now().strftime("%Y-%m-%d-%H%M%S")
     
@@ -79,6 +80,10 @@ def run_experiment(train_data_args, val_data_args, model_name, repeats=1, save_t
         results = evaluate_results(probs, val_labels)
         print(results)
         all_results.append(results)
+        if plot_preds:
+            color = ['green' if label else 'red' for label in val_labels]
+            plt.scatter([0]*len(probs), probs, color=color, marker='_', alpha=0.3, s=20)
+            plt.show()
 
     if repeats == 1:
         results = all_results[0]

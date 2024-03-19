@@ -1,0 +1,7 @@
+model=sum_log_prob_baseline
+started_at=2024-03-19-231202
+val_source=qa-gen
+accuracy=0.023255813953488372
+optimum_threshold=-18.089984893798828
+calibrated_acc=0.5777233782129743
+auroc=0.38600466715794646

@@ -1,0 +1,7 @@
+model=avg_log_prob_baseline
+started_at=2024-03-19-231203
+val_source=qa-fixed-probs
+accuracy=0.037852112676056336
+optimum_threshold=-4.954890251159668
+calibrated_acc=0.5123239436619719
+auroc=0.46722955275972267

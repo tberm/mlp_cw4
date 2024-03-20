@@ -206,14 +206,14 @@ class ProbeNetwork(nn.Module):
         x = F.sigmoid(self.layer4(x))
         return x
 
-    def train_probe(self, train_embeddings, train_labels):
+    def train_probe(self, train_acts, train_labels, *args, **kwargs):
         self.train()
         optimizer = optim.Adam(self.parameters())
         criterion = nn.BCELoss()
         
         for epoch in tqdm(range(5), desc="Training SAPLMA Probe"): 
             optimizer.zero_grad()
-            outputs = self(train_embeddings)
+            outputs = self(train_acts)
             #print("outputs",outputs.squeeze())
             #print("train_labels_tensor",train_labels_tensor.squeeze())
             loss = criterion(outputs.squeeze(), train_labels)

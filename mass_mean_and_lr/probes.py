@@ -84,8 +84,8 @@ class LRProbeWrapper:
 
 
 class MMProbeWrapper:
-    def train_probe(self, acts, labels):
-        self.model = MMProbe.from_data(acts, labels)
+    def train_probe(self, train_acts, train_labels, *args, **kwargs):
+        self.model = MMProbe.from_data(train_acts, train_labels)
 
     def predict(self, acts):
         with t.no_grad():

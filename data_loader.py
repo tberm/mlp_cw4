@@ -108,10 +108,15 @@ def get_batch_of_embeddings(number=None, source='tf', split='train', layer=-1, t
     }
     data_folder = data_folders[source]
     if 'gen' in source:
-        # we have no train/val splits for generated answers
-        path = Path(__file__).parent.resolve() / data_folder
+        # we have no train/val splits for generated answers:
+        paths = [Path(__file__).parent.resolve() / data_folder]
+    elif split is None:
+        paths = [
+            Path(__file__).parent.resolve() / data_folder / split 
+            for split in ['train', 'val', 'test']
+        ]
     else:
-        path = Path(__file__).parent.resolve() / data_folder / split
+        paths = [Path(__file__).parent.resolve() / data_folder / split]
 
     layer_pat = str(layer) if layer is not None else r'[\-0-9]+'
 
@@ -126,39 +131,40 @@ def get_batch_of_embeddings(number=None, source='tf', split='train', layer=-1, t
     pattern = re.compile(pattern)
 
     data_files = []
-    for csv_path in path.glob('*.csv'):
-        filename_match = pattern.match(csv_path.name)
-        if filename_match is None:
-            continue
+    for path in paths:
+        for csv_path in path.glob('*.csv'):
+            filename_match = pattern.match(csv_path.name)
+            if filename_match is None:
+                continue
 
-        data_files.append(str(csv_path))
-        frame = pd.read_csv(csv_path)
-        if 'qa' in source:
-            # Load the TruthfulQA CSV
-            truthfulqa_path = Path(__file__).parent.resolve() / 'TruthfulQA' / 'TruthfulQA.csv'
-            truthfulqa_df = pd.read_csv(truthfulqa_path)
+            data_files.append(str(csv_path))
+            frame = pd.read_csv(csv_path)
+            if 'qa' in source:
+                # Load the TruthfulQA CSV
+                truthfulqa_path = Path(__file__).parent.resolve() / 'TruthfulQA' / 'TruthfulQA.csv'
+                truthfulqa_df = pd.read_csv(truthfulqa_path)
 
-            # Perform the join
-            frame = pd.merge(
-                frame, truthfulqa_df[['Question', 'Category']],
-                left_on='question', right_on='Question', how='left'
-            )
+                # Perform the join
+                frame = pd.merge(
+                    frame, truthfulqa_df[['Question', 'Category']],
+                    left_on='question', right_on='Question', how='left'
+                )
 
-            # Filter frame_with_category to only include rows with 'Category' in the 'topic' list
-            if topic is not None: 
-                frame = frame[frame['Category'].isin(filter_topics)]
+                # Filter frame_with_category to only include rows with 'Category' in the 'topic' list
+                if topic is not None: 
+                    frame = frame[frame['Category'].isin(filter_topics)]
 
-            frame.rename({'answer_is_correct': 'label'}, axis='columns', inplace=True)
-            frame.rename({'Category': 'topic'}, axis='columns', inplace=True)
-            tpl = 'Q: {} A: {}'
-            frame['statement'] = frame.apply(lambda row: tpl.format(row.question, row.answer), axis=1)
-        else:
-            frame['topic'] = filename_match.groups()[0]
+                frame.rename({'answer_is_correct': 'label'}, axis='columns', inplace=True)
+                frame.rename({'Category': 'topic'}, axis='columns', inplace=True)
+                tpl = 'Q: {} A: {}'
+                frame['statement'] = frame.apply(lambda row: tpl.format(row.question, row.answer), axis=1)
+            else:
+                frame['topic'] = filename_match.groups()[0]
 
-        frame['layer'] = int(layer)
-        frame['label'] = frame.label.astype(int)
+            frame['layer'] = int(layer)
+            frame['label'] = frame.label.astype(int)
 
-        frames.append(frame[['statement', 'label', 'topic', 'layer', 'embeddings']])
+            frames.append(frame[['statement', 'label', 'topic', 'layer', 'embeddings']])
 
     print('Loading data from:\n\n', '\n'.join(data_files))
     df = pd.concat(frames)

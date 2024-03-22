@@ -95,6 +95,9 @@ def get_batch_of_embeddings(number=None, source='tf', split='train', layer=-1, t
     if topic is not None and source != 'tf':
         raise ValueError(f'`topic` is only a valid parameter when `source="tf"`')
 
+    if topic is not None:
+        filter_topics = [topic] if isinstance(topic, str) else topic
+
     rng = np.random.default_rng(17)
     frames = []
     data_folders = {
@@ -116,7 +119,8 @@ def get_batch_of_embeddings(number=None, source='tf', split='train', layer=-1, t
     if 'qa' in source:
         pattern = f'answers_{layer_pat}.csv'
     elif topic is not None:
-        pattern = f'embeddings_{topic}7B_{layer_pat}.csv'
+        topics_pat = '(' + '|'.join(filter_topics) + ')'
+        pattern = f'embeddings_{topics_pat}7B_{layer_pat}.csv'
     else:
         pattern = f'embeddings_(.*)7B_{layer_pat}.csv'
 
@@ -135,14 +139,13 @@ def get_batch_of_embeddings(number=None, source='tf', split='train', layer=-1, t
             tpl = 'Q: {} A: {}'
             frame['statement'] = frame.apply(lambda row: tpl.format(row.question, row.answer), axis=1)
             this_topic = source
-        elif topic is None:
-            this_topic = filename_match.groups()[0]
         else:
-            this_topic = topic
+            this_topic = filename_match.groups()[0]
 
         frame['topic'] = this_topic
         frame['layer'] = int(layer)
         frame['label'] = frame.label.astype(int)
+
         frames.append(frame[['statement', 'label', 'topic', 'layer', 'embeddings']])
 
     print('Loading data from:\n\n', '\n'.join(data_files))

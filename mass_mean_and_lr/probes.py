@@ -18,8 +18,14 @@ class LRProbe(t.nn.Module):
         with t.no_grad():
             return self(x).round().numpy()
 
+    def predict(self, acts):
+        with t.no_grad():
+            return self(acts).numpy()
+
     @classmethod 
-    def from_data(cls, train_acts, train_labels, lr=0.001, weight_decay=0.1, epochs=1000, device='cpu', val_acts=None, val_labels=None, train_data_info=None, val_data_info=None):
+    def from_data(cls, train_acts, train_labels, lr=0.001, weight_decay=0.1,
+                  epochs=None, device='cpu', val_acts=None, val_labels=None, train_data_info=None,
+                  val_data_info=None, training_epoch_callback=None):
         train_acts, train_labels = train_acts.to(device), train_labels.to(device)
         if val_acts is not None and val_labels is not None:
             val_acts, val_labels = val_acts.to(device), val_labels.to(device)
@@ -38,6 +44,8 @@ class LRProbe(t.nn.Module):
         
         opt = t.optim.AdamW(probe.parameters(), lr=lr, weight_decay=weight_decay)
 
+        epochs = 1000 if epochs is None else epochs
+
         with open(os.path.join(results_dir, 'training_accuracy_per_epoch.txt'), 'w') as train_f, open(os.path.join(results_dir, 'validation_accuracy_per_epoch.txt'), 'w') as val_f:
             for epoch in tqdm(range(epochs), desc='Training LRProbe'):
                 opt.zero_grad()
@@ -45,6 +53,8 @@ class LRProbe(t.nn.Module):
                 loss = t.nn.BCELoss()(outputs, train_labels)
                 loss.backward()
                 opt.step()
+
+                training_epoch_callback(probe)
 
                 # Calculate training accuracy
                 preds = outputs.round()
@@ -71,12 +81,14 @@ class LRProbe(t.nn.Module):
         return self.net[0].weight.data[0]
 
 class LRProbeWrapper:
-    def train_probe(self, train_acts, train_labels, val_acts=None, val_labels=None, train_data_info=None, val_data_info=None, learning_rate=0.001):
-        if val_acts and val_labels:
-            self.model = LRProbe.from_data(train_acts=train_acts, train_labels=train_labels, val_acts=val_acts, val_labels=val_labels, train_data_info=train_data_info, val_data_info=val_data_info, lr=learning_rate)
-        else:
-            self.model = LRProbe.from_data(train_acts=train_acts, train_labels=train_labels, train_data_info=train_data_info, val_data_info=val_data_info, lr=learning_rate)
-
+    def train_probe(self, train_acts, train_labels, val_acts=None, val_labels=None,
+                    train_data_info=None, val_data_info=None, learning_rate=0.001,
+                    epochs=None, training_epoch_callback=None, **kwargs):
+        self.model = LRProbe.from_data(train_acts=train_acts, train_labels=train_labels,
+            val_acts=val_acts, val_labels=val_labels, train_data_info=train_data_info,
+            val_data_info=val_data_info, lr=learning_rate, epochs=None,
+            training_epoch_callback=training_epoch_callback)
+        
     def predict(self, acts):
         with t.no_grad():
             return self.model(acts).numpy()

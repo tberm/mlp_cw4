@@ -105,7 +105,9 @@ def run_prob_baseline(source, features, topic=None, save_to_file=True, plot_pred
 
 
 
-def run_experiment(train_data_args, val_data_args, model_name, learning_rates=[0.001], repeats=1, save_to_file=True, monitor_training=False, plot_preds=False):
+def run_experiment(train_data_args, val_data_args, model_name, learning_rates=[0.001],
+    repeats=1, save_to_file=True, monitor_training=False, plot_preds=False, epochs=None,
+    note=None):
 
     start_time = datetime.now().strftime("%Y-%m-%d-%H%M%S")
     
@@ -115,34 +117,47 @@ def run_experiment(train_data_args, val_data_args, model_name, learning_rates=[0
     train_acts = torch.tensor(np.vstack(train_data['embeddings']), dtype=torch.float32)
     train_labels = torch.tensor(train_data['label'].to_numpy(), dtype=torch.float32)
     val_acts = torch.tensor(np.vstack(val_data['embeddings']), dtype=torch.float32)
-    if monitor_training==True and model_name=='lr':
-        val_labels = torch.tensor(np.vstack(val_data['label']), dtype=torch.float32)
-    else:
-        val_labels = val_data['label'].to_numpy()
-
+    val_labels = torch.tensor(np.vstack(val_data['label']), dtype=torch.float32)
 
     all_results = []
     for lr in learning_rates:
         for i in range(repeats):
             model = MODELS[model_name]()
-            if monitor_training and model_name == 'lr':
-                model.train_probe(train_acts=train_acts, train_labels=train_labels, 
-                                val_acts=val_acts, val_labels=val_labels, 
-                                train_data_info=train_data_args, val_data_info=val_data_args, 
-                                learning_rate=lr)
+            if monitor_training:
+                monitor = TrainingMonitor(train_acts, train_labels,
+                                          val_acts, val_labels)
+                callback = monitor.update
             else:
-                model.train_probe(train_acts=train_acts, train_labels=train_labels, 
-                                train_data_info=train_data_args, val_data_info=val_data_args, 
-                                learning_rate=lr)
+                callback = None
 
-            probs = model.predict(val_acts)
-            results = evaluate_results(probs, val_labels)
+            model.train_probe(train_acts=train_acts, train_labels=train_labels, 
+                val_acts=val_acts, val_labels=val_labels, train_data_info=train_data_args,
+                val_data_info=val_data_args, learning_rate=lr, epochs=epochs,
+                training_epoch_callback=callback)
+
+            val_probs = model.predict(val_acts)
+            train_probs = model.predict(train_acts)
+            results = evaluate_results(val_probs, val_labels, train_probs, train_labels)
             print(results)
             all_results.append(results)
             if plot_preds:
+                #hist
+                falses = val_probs[val_labels == 0]
+                trues = val_probs[val_labels == 1]
+                fig, ax = plt.subplots()
+                ax.hist(falses, bins=100, alpha=0.5, label='false')
+                ax.hist(trues, bins=100, alpha=0.5, label='true')
+                ax.legend()
+                fig.show()
+
+                #lines
+                fig2, ax2 = plt.subplots()
                 color = ['green' if label else 'red' for label in val_labels]
-                plt.scatter([0]*len(probs), probs, color=color, marker='_', alpha=0.3, s=500)
-                plt.show()
+                ax2.scatter([0]*len(val_probs), val_probs, color=color, marker='_', alpha=0.3, s=500)
+                fig2.show()
+
+            if monitor_training:
+                monitor.plot_losses()
 
     if repeats == 1:
         results = all_results[0]
@@ -161,6 +176,7 @@ def run_experiment(train_data_args, val_data_args, model_name, learning_rates=[0
         f'model={model_name}',
         f'started_at={start_time}',
         f'repeats={repeats}',
+        f'epochs={epochs}',
     ] + [
         f'train_{param}={value}'
         for param, value in train_data_args._asdict().items()
@@ -171,27 +187,55 @@ def run_experiment(train_data_args, val_data_args, model_name, learning_rates=[0
         f'{key}={value}'
         for key, value in results.items()
     ]
+    if note is not None:
+        record_strings.append(f'note={note}')
+
     record_txt = '\n'.join(record_strings)
     print(record_txt)
 
-    if save_to_file:
-        folder = Path('probe-results')
-        folder.mkdir(exist_ok=True)
-        file_path = folder / f'{model_name}_results_{start_time}.txt'
-        with file_path.open('w', encoding='utf-8') as file:
-            file.write(record_txt)
+class TrainingMonitor:
+    def __init__(self, train_acts, train_labels, val_acts, val_labels):
+        self.train_acts = train_acts
+        self.train_labels = train_labels
+        self.val_acts = val_acts
+        self.val_labels = val_labels
 
-        print('Results saved to', str(file_path))
+        self.train_accs = []
+        self.val_accs = []
+        self.cal_val_accs = []
+
+    def update(self, model):
+        train_probs = model.predict(self.train_acts)
+        val_probs = model.predict(self.val_acts)
+        self.train_accs.append(accuracy_score(self.train_labels, train_probs.round()))
+        self.val_accs.append(accuracy_score(self.val_labels, val_probs.round()))
+        opt_thr = find_optimal_threshold(val_probs, self.val_labels)
+        self.cal_val_accs.append(accuracy_score(self.val_labels, val_probs > opt_thr))
+
+    def plot_losses(self):
+        fig, ax = plt.subplots()
+        ax.plot(self.train_accs, label='train acc')
+        ax.plot(self.val_accs, label='val acc')
+        ax.plot(self.cal_val_accs, label='calibrated val acc')
+        ax.set_xlabel('Training epoch')
+        ax.legend()
+        fig.show()
 
 
-def evaluate_results(probs, labels):
-    out = {'accuracy': accuracy_score(labels, probs.round())}
-    opt_thr = find_optimal_threshold(probs, labels)
+def evaluate_results(val_probs, val_labels, train_probs=None, train_labels=None):
+    out = {'accuracy': accuracy_score(val_labels, val_probs.round())}
+    opt_thr = find_optimal_threshold(val_probs, val_labels)
     out['optimum_threshold'] = opt_thr
-    out['calibrated_acc'] = accuracy_score(labels, probs > opt_thr)
-    out['auroc'] = compute_roc_curve(labels, probs)[0]
-    return out
+    out['calibrated_acc'] = accuracy_score(val_labels, val_probs > opt_thr)
+    out['auroc'] = compute_roc_curve(val_labels, val_probs)[0]
 
+    if train_probs is None and train_labels is None:
+        return out
+
+    opt_thr = find_optimal_threshold(train_probs, train_labels)
+    out['optimum_threshold_on_train'] = opt_thr
+    out['calibrated_on_train'] = accuracy_score(val_labels, val_probs > opt_thr)
+    return out
 
 def find_optimal_threshold(probs, labels):
     """
@@ -201,6 +245,14 @@ def find_optimal_threshold(probs, labels):
     optimal_threshold = thresholds_val[np.argmax([accuracy_score(labels, probs > thr) for thr in thresholds_val])]
 
     return optimal_threshold
+
+
+def sanitise_nulls(value):
+    if value == np.nan:
+        return value
+    if value == 'None':
+        return np.nan
+    return value
 
 
 def load_results(sort_by=None):
@@ -220,6 +272,9 @@ def load_results(sort_by=None):
     df['started_at'] = df.started_at.apply(
         lambda dt: datetime.strptime(dt, '%Y-%m-%d-%H%M%S')
     )
+    # we have a mess of different null values for topic
+    df['train_topic'] = df.train_topic.apply(sanitise_nulls)
+    df['val_topic'] = df.val_topic.apply(sanitise_nulls)
     if sort_by is not None:
         return df.sort_values(sort_by)
     

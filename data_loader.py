@@ -139,19 +139,22 @@ def get_batch_of_embeddings(number=None, source='tf', split='train', layer=-1, t
             truthfulqa_df = pd.read_csv(truthfulqa_path)
 
             # Perform the join
-            frame_with_category = pd.merge(frame, truthfulqa_df[['Question', 'Category']], on='Question', how='left')
+            frame = pd.merge(
+                frame, truthfulqa_df[['Question', 'Category']],
+                left_on='question', right_on='Question', how='left'
+            )
 
             # Filter frame_with_category to only include rows with 'Category' in the 'topic' list
-            frame_filtered = frame_with_category[frame_with_category['Category'].isin(topic)]
+            if topic is not None: 
+                frame = frame[frame['Category'].isin(filter_topics)]
 
-            frame_filtered.rename({'answer_is_correct': 'label'}, axis='columns', inplace=True)
+            frame.rename({'answer_is_correct': 'label'}, axis='columns', inplace=True)
+            frame.rename({'Category': 'topic'}, axis='columns', inplace=True)
             tpl = 'Q: {} A: {}'
-            frame_filtered['statement'] = frame_filtered.apply(lambda row: tpl.format(row.question, row.answer), axis=1)
-            this_topic = topic
+            frame['statement'] = frame.apply(lambda row: tpl.format(row.question, row.answer), axis=1)
         else:
-            this_topic = filename_match.groups()[0]
+            frame['topic'] = filename_match.groups()[0]
 
-        frame['topic'] = this_topic
         frame['layer'] = int(layer)
         frame['label'] = frame.label.astype(int)
 

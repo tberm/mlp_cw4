@@ -92,8 +92,7 @@ def get_prob_stats(source, topic=None):
 def get_batch_of_embeddings(number=None, source='tf', split='train', layer=-1, topic=None):
     if source not in ['tf', 'qa', 'qa-gen', 'qa-fixed-probs', 'qa-gen-prof']:
         raise ValueError(f'Invalid `source`: {source}')
-    if topic is not None and source != 'tf':
-        raise ValueError(f'`topic` is only a valid parameter when `source="tf"`')
+
 
     rng = np.random.default_rng(17)
     frames = []
@@ -131,10 +130,20 @@ def get_batch_of_embeddings(number=None, source='tf', split='train', layer=-1, t
         data_files.append(str(csv_path))
         frame = pd.read_csv(csv_path)
         if 'qa' in source:
-            frame.rename({'answer_is_correct': 'label'}, axis='columns', inplace=True)
+            # Load the TruthfulQA CSV
+            truthfulqa_path = Path(__file__).parent.resolve() / 'TruthfulQA' / 'TruthfulQA.csv'
+            truthfulqa_df = pd.read_csv(truthfulqa_path)
+
+            # Perform the join
+            frame_with_category = pd.merge(frame, truthfulqa_df[['Question', 'Category']], on='Question', how='left')
+
+            # Filter frame_with_category to only include rows with 'Category' in the 'topic' list
+            frame_filtered = frame_with_category[frame_with_category['Category'].isin(topic)]
+
+            frame_filtered.rename({'answer_is_correct': 'label'}, axis='columns', inplace=True)
             tpl = 'Q: {} A: {}'
-            frame['statement'] = frame.apply(lambda row: tpl.format(row.question, row.answer), axis=1)
-            this_topic = source
+            frame_filtered['statement'] = frame_filtered.apply(lambda row: tpl.format(row.question, row.answer), axis=1)
+            this_topic = topic
         elif topic is None:
             this_topic = filename_match.groups()[0]
         else:

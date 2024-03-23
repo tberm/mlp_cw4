@@ -54,7 +54,8 @@ class LRProbe(t.nn.Module):
                 loss.backward()
                 opt.step()
 
-                training_epoch_callback(probe)
+                if training_epoch_callback is not None:
+                    training_epoch_callback(probe, epoch)
 
                 # Calculate training accuracy
                 preds = outputs.round()

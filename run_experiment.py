@@ -34,6 +34,7 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 
 import torch
+import torch.nn.functional as F
 import numpy as np
 import pandas as pd
 from sklearn.metrics import roc_curve, accuracy_score
@@ -52,7 +53,7 @@ MODELS = {
     'mm': MMProbeWrapper,
 }
 
-def run_prob_baseline(source, features, topic=None, save_to_file=True, plot_preds=False):
+def run_prob_baseline(source, features, topic=None, save_to_file=True, plot_preds=False, note=None):
 
     start_time = datetime.now().strftime("%Y-%m-%d-%H%M%S")
 
@@ -70,7 +71,6 @@ def run_prob_baseline(source, features, topic=None, save_to_file=True, plot_pred
             scores = - scores
         results = evaluate_results(scores, labels)
         if plot_preds:
-            import pdb; pdb.set_trace()
             trues = scores[labels == 1]
             falses = scores[labels == 0]
             fig, ax = plt.subplots()
@@ -90,6 +90,8 @@ def run_prob_baseline(source, features, topic=None, save_to_file=True, plot_pred
         f'{key}={value}'
         for key, value in results.items()
     ]
+    if note is not None:
+        record_strings.append(f'note={note}')
 
     record_txt = '\n'.join(record_strings)
     print(record_txt)
@@ -110,14 +112,14 @@ def run_experiment(train_data_args, val_data_args, model_name, learning_rates=[0
     note=None):
 
     start_time = datetime.now().strftime("%Y-%m-%d-%H%M%S")
-    
+
     train_data = get_batch_of_embeddings(**train_data_args._asdict())
     val_data = get_batch_of_embeddings(**val_data_args._asdict())
 
     train_acts = torch.tensor(np.vstack(train_data['embeddings']), dtype=torch.float32)
     train_labels = torch.tensor(train_data['label'].to_numpy(), dtype=torch.float32)
     val_acts = torch.tensor(np.vstack(val_data['embeddings']), dtype=torch.float32)
-    val_labels = torch.tensor(np.vstack(val_data['label']), dtype=torch.float32)
+    val_labels = torch.tensor(val_data['label'].to_numpy(), dtype=torch.float32)
 
     all_results = []
     for lr in learning_rates:
@@ -193,6 +195,16 @@ def run_experiment(train_data_args, val_data_args, model_name, learning_rates=[0
     record_txt = '\n'.join(record_strings)
     print(record_txt)
 
+    if save_to_file:
+        folder = Path('probe-results')
+        folder.mkdir(exist_ok=True)
+        file_path = folder / f'{model_name}_baseline_results_{start_time}.txt'
+        with file_path.open('w', encoding='utf-8') as file:
+            file.write(record_txt)
+
+        print('Results saved to', str(file_path))
+
+
 class TrainingMonitor:
     def __init__(self, train_acts, train_labels, val_acts, val_labels):
         self.train_acts = train_acts
@@ -200,23 +212,36 @@ class TrainingMonitor:
         self.val_acts = val_acts
         self.val_labels = val_labels
 
+        self.epochs = []
         self.train_accs = []
         self.val_accs = []
         self.cal_val_accs = []
+        self.train_losses = []
+        self.val_losses = []
 
-    def update(self, model):
-        train_probs = model.predict(self.train_acts)
-        val_probs = model.predict(self.val_acts)
-        self.train_accs.append(accuracy_score(self.train_labels, train_probs.round()))
-        self.val_accs.append(accuracy_score(self.val_labels, val_probs.round()))
-        opt_thr = find_optimal_threshold(val_probs, self.val_labels)
-        self.cal_val_accs.append(accuracy_score(self.val_labels, val_probs > opt_thr))
+    def update(self, model, epoch=None):
+        if epoch is None:
+            self.epochs.append(len(self.epochs) + 1)
+        else:
+            self.epochs.append(epoch)
+
+        with torch.no_grad():
+            train_probs = torch.tensor(model.predict(self.train_acts)).detach()
+            val_probs = torch.tensor(model.predict(self.val_acts)).detach()
+            #self.train_accs.append(accuracy_score(self.train_labels, train_probs.round()))
+            self.train_losses.append(F.binary_cross_entropy(train_probs, self.train_labels))
+            #self.val_accs.append(accuracy_score(self.val_labels, val_probs.round()))
+            self.val_losses.append(F.binary_cross_entropy(val_probs, self.val_labels))
+            #opt_thr = find_optimal_threshold(val_probs, self.val_labels)
+            #self.cal_val_accs.append(accuracy_score(self.val_labels, val_probs > opt_thr))
 
     def plot_losses(self):
         fig, ax = plt.subplots()
-        ax.plot(self.train_accs, label='train acc')
-        ax.plot(self.val_accs, label='val acc')
-        ax.plot(self.cal_val_accs, label='calibrated val acc')
+        #ax.plot(self.epochs, self.train_accs, label='train acc')
+        ax.plot(self.epochs, self.train_losses, label='train loss')
+        #ax.plot(self.epochs, self.val_accs, label='val acc')
+        ax.plot(self.epochs, self.val_losses, label='val loss')
+        #ax.plot(self.epochs, self.cal_val_accs, label='calibrated val acc')
         ax.set_xlabel('Training epoch')
         ax.legend()
         fig.show()

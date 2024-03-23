@@ -90,9 +90,6 @@ def get_prob_stats(source, topic=None):
 
 
 def get_batch_of_embeddings(number=None, source='tf', split='train', layer=-1, topic=None):
-    if source not in ['tf', 'qa', 'qa-gen', 'qa-fixed-probs', 'qa-gen-prof']:
-        raise ValueError(f'Invalid `source`: {source}')
-
 
     if topic is not None:
         filter_topics = [topic] if isinstance(topic, str) else topic
@@ -104,7 +101,9 @@ def get_batch_of_embeddings(number=None, source='tf', split='train', layer=-1, t
         'qa-fixed-probs': 'llama-qa-results-fixed-probs',
         'tf': 'llama-true-false-results',
         'qa-gen': 'llama-qa-gen-results',
+        'qa-gen-bal': 'llama-qa-gen-results',
         'qa-gen-prof': 'llama-qa-results-gen-prof-prompt',
+        'qa-gen-prof-bal': 'llama-qa-results-gen-prof-prompt',
     }
     data_folder = data_folders[source]
     if 'gen' in source:
@@ -140,6 +139,15 @@ def get_batch_of_embeddings(number=None, source='tf', split='train', layer=-1, t
             data_files.append(str(csv_path))
             frame = pd.read_csv(csv_path)
             if 'qa' in source:
+                if 'bal' in source:
+                    # balance true vs false in the dataset
+                    surplus = frame.answer_is_correct.sum() - (~frame.answer_is_correct).sum()
+                    assert surplus > 0, 'Should have more correct than incorrect'
+                    true_idxs = frame[frame.answer_is_correct].index.to_numpy()
+                    rng.shuffle(true_idxs)
+                    idxs_to_rm = true_idxs[:surplus]
+                    frame.drop(idxs_to_rm, axis='index', inplace=True)
+
                 # Load the TruthfulQA CSV
                 truthfulqa_path = Path(__file__).parent.resolve() / 'TruthfulQA' / 'TruthfulQA.csv'
                 truthfulqa_df = pd.read_csv(truthfulqa_path)

@@ -10,10 +10,7 @@ practical tool for detecting hallucinations. Our work aims to build on the resea
 - Marks & Tegmark, 2023 (M&T): https://arxiv.org/abs/2310.06824
 - Zou et al, 2023: https://arxiv.org/abs/2310.01405
 
-Large parts of the code are copied from the corresponding repos:
-
-- L&H: https://github.com/balevinstein/Probes
-- M&T: https://github.com/saprmarks/geometry-of-truth
+Part of the code is copied from L&H's implementation: https://github.com/balevinstein/Probes
 
 The above works have demonstrated that one can use a linear probe or simple neural
 classifier to predict whether a sentence processed by a LLM is a falsehood, by feeding

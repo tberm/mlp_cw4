@@ -24,9 +24,6 @@ train_dataset_args = DatasetArgs(source='tf', topic=None, layer=-1, split='train
 val_dataset_args = DatasetArgs(source='tf', topic=None, layer=-1, split='val') 
 learning_rates = [0.1, 0.01, 0.001, 0.0001, 0.00001, 1e-6, 1e-7, 1e-8, 1e-9, 1e-10]
 run_experiment(train_dataset_args, val_dataset_args, 'lr', learning_rates, repeats=1, monitor_training=True)
-
-
-
 """
 from collections import namedtuple
 from datetime import datetime
@@ -39,9 +36,9 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import roc_curve, accuracy_score
 
-from TrainSaplma import ProbeNetwork as SAPLMA
-from TrainSaplma import compute_roc_curve
-from mass_mean_and_lr.probes import LRProbeWrapper, MMProbeWrapper, LRProbe
+from classifiers.TrainSaplma import compute_roc_curve, ProbeNetwork as SAPLMA
+from classifiers.mass_mean import MMProbeWrapper
+from classifiers.lr import LRProbeWrapper
 from data_loader import get_batch_of_embeddings, get_prob_stats
 
 
@@ -66,9 +63,6 @@ def run_prob_baseline(source, features, topic=None, save_to_file=True, plot_pred
         feature = features[0]
         labels = data['label'].to_numpy()
         scores = data[feature].to_numpy()
-        # we expect *low* entropy to correlate with truth
-        if 'entropy' in feature:
-            scores = - scores
         results = evaluate_results(scores, labels)
         if plot_preds:
             trues = scores[labels == 1]
@@ -147,17 +141,13 @@ def run_experiment(train_data_args, val_data_args, model_name, learning_rates=[0
                 falses = val_probs[val_labels == 0]
                 trues = val_probs[val_labels == 1]
                 fig, ax = plt.subplots()
-                ax.hist(falses, bins=100, alpha=0.5, label='false')
-                ax.hist(trues, bins=100, alpha=0.5, label='true')
+                ax.hist(falses, bins=20, alpha=0.5, label='False')
+                ax.hist(trues, bins=20, alpha=0.5, label='True')
+                ax.set_xlabel('Softmax output')
+                ax.set_ylabel('Count')
+                ax.set_title('Distribution of SAPLMA outputs on TQA gen.')
                 ax.legend()
-                fig.show()
-
-                #lines
-                fig2, ax2 = plt.subplots()
-                color = ['green' if label else 'red' for label in val_labels]
-                ax2.scatter([0]*len(val_probs), val_probs, color=color, marker='_', alpha=0.3, s=500)
-                fig2.show()
-
+                fig.savefig('saplma_tqa_gen_outputs_hist.svg')
             if monitor_training:
                 monitor.plot_losses()
 
@@ -198,11 +188,14 @@ def run_experiment(train_data_args, val_data_args, model_name, learning_rates=[0
     if save_to_file:
         folder = Path('probe-results')
         folder.mkdir(exist_ok=True)
-        file_path = folder / f'{model_name}_baseline_results_{start_time}.txt'
+        file_path = folder / f'{model_name}_results_{start_time}.txt'
         with file_path.open('w', encoding='utf-8') as file:
             file.write(record_txt)
 
         print('Results saved to', str(file_path))
+
+    if monitor_training:
+        return monitor
 
 
 class TrainingMonitor:
@@ -228,23 +221,17 @@ class TrainingMonitor:
         with torch.no_grad():
             train_probs = torch.tensor(model.predict(self.train_acts)).detach()
             val_probs = torch.tensor(model.predict(self.val_acts)).detach()
-            #self.train_accs.append(accuracy_score(self.train_labels, train_probs.round()))
+            self.train_accs.append(accuracy_score(self.train_labels, train_probs.round()))
             self.train_losses.append(F.binary_cross_entropy(train_probs, self.train_labels))
-            #self.val_accs.append(accuracy_score(self.val_labels, val_probs.round()))
+            self.val_accs.append(accuracy_score(self.val_labels, val_probs.round()))
             self.val_losses.append(F.binary_cross_entropy(val_probs, self.val_labels))
             #opt_thr = find_optimal_threshold(val_probs, self.val_labels)
             #self.cal_val_accs.append(accuracy_score(self.val_labels, val_probs > opt_thr))
 
     def plot_losses(self):
-        fig, ax = plt.subplots()
-        #ax.plot(self.epochs, self.train_accs, label='train acc')
-        ax.plot(self.epochs, self.train_losses, label='train loss')
-        #ax.plot(self.epochs, self.val_accs, label='val acc')
-        ax.plot(self.epochs, self.val_losses, label='val loss')
-        #ax.plot(self.epochs, self.cal_val_accs, label='calibrated val acc')
-        ax.set_xlabel('Training epoch')
-        ax.legend()
-        fig.show()
+        plt.plot(self.epochs, self.train_losses, label='train loss')
+        plt.plot(self.epochs, self.val_losses, label='val loss')
+        plt.legend()
 
 
 def evaluate_results(val_probs, val_labels, train_probs=None, train_labels=None):
@@ -302,5 +289,5 @@ def load_results(sort_by=None):
     df['val_topic'] = df.val_topic.apply(sanitise_nulls)
     if sort_by is not None:
         return df.sort_values(sort_by)
-    
+
     return df

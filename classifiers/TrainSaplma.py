@@ -1,4 +1,7 @@
 '''
+Script from https://github.com/balevinstein/Probes for training a neural network
+to detect true/false statements from LLM activations.
+
 This script trains probes on labeled data from csv files that
 already have a column with embeddings and (optionally) saves the
 best models to a directory. 

@@ -1,4 +1,12 @@
 #!/usr/bin/env python
+"""
+Evaluates free-text answers to TruthfulQA questions using a GPT model through the  OpenAI API.
+
+TruthfulQA contains example truthful and untruthful answers for each question in the dataset. This
+script provides GPT with a question, example answers and an answer to evaluate, and GPT determines
+whether it is true or false. It may also respond with "Neutral" for unclear cases, so this can be
+reviewed by a human.
+"""
 import argparse
 from pathlib import Path
 import sys
@@ -53,9 +61,10 @@ EXAMPLES = [
 ]
 
 
-def main(input_path, output_path, qa_model, judge_model, verbose=False):
-    import pdb; pdb.set_trace()
-    df = pd.read_csv(input_path)
+def main(questions_path, answers_path, output_path, qa_model, judge_model, verbose=True):
+    questions = pd.read_csv(questions_path)
+    answers = pd.read_csv(answers_path)
+    df = answers.join(questions, on='question_idx')
 
     if 'GPT eval' in df and not df['GPT eval'].isnull().all():
         print('Some GPT evaluation results are already in the input CSV')
@@ -84,7 +93,7 @@ def main(input_path, output_path, qa_model, judge_model, verbose=False):
             "question": row["Question"],
             "true_eg": row["Best Answer"],
             "false_eg": row["Incorrect Answers"][0],
-            "actual": row[qa_model],
+            "actual": row["answer"],
         }
         messages.append(
             {
@@ -96,6 +105,8 @@ def main(input_path, output_path, qa_model, judge_model, verbose=False):
         if verbose:
             print("QUESTION:", this_row_prompt["question"])
             print("ANSWER:", this_row_prompt["actual"])
+            print()
+            print('\n'.join([str(message) for message in messages]))
 
         response = client.chat.completions.create(
             model=judge_model,
@@ -123,6 +134,8 @@ def main(input_path, output_path, qa_model, judge_model, verbose=False):
         row["GPT eval"] = resp_text
         row["GPT eval logprob"] = logprob
 
+        df.loc[i] = row
+
         if i % SAVE_EVERY == 0:
             print('Saving results after %s rows' % (i + 1))
             df.to_csv(output_path)
@@ -130,7 +143,8 @@ def main(input_path, output_path, qa_model, judge_model, verbose=False):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('-i', '--input-path', help='Path to CSV file containing questions and answers', required=True)
+    parser.add_argument('-a', '--answers-path', help='csv containing model generated answers', required=True)
+    parser.add_argument('-q', '--questions-path', help='csv containing truthfulqa questions', required=True)
     parser.add_argument('-o', '--output-path', help='Path to save output CSV')
     parser.add_argument('--qa-model',
         help='Model that generated the QA answers (used as column name of answers in CSV)',
@@ -138,10 +152,10 @@ if __name__ == '__main__':
     )
     parser.add_argument('--judge-model',
         help='OpenAI model to use as judge',
-        default='gpt-4',
+        default='gpt-3.5-turbo',
     )
     parser.add_argument('-v', '--verbose', action='store_true')
 
     args = parser.parse_args()
 
-    main(args.input_path, args.output_path, args.qa_model, args.judge_model, args.verbose)
+    main(args.questions_path, args.answers_path, args.output_path, args.qa_model, args.judge_model, args.verbose)

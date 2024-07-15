@@ -4,7 +4,7 @@ import pandas as pd
 
 
 TRAIN_VAL_RATIO = (0.85, 0.15)
-TRAIN_VAL_TEST_RATIO = (0.70, 0.15, 0.15)
+TRAIN_VAL_TEST_RATIO = (0.65, 0.15, 0.2)
 
 
 def split_gen_tqa_data(balance=False):
@@ -70,7 +70,7 @@ def split_tqa_data():
         'answers': ['all_log_probs', 'avg_log_prob', 'sum_log_prob', 'avg_entropy'],
     }
 
-    folder = Path('llama-qa-results-fixed-probs')
+    folder = Path('llama-qa-results-help-prompt')
     for file_type in ['answers', 'questions']:
         file = folder / (file_type + '.csv')
         print(file)

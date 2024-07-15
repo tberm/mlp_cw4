@@ -6,8 +6,6 @@ import re
 import numpy as np
 import pandas as pd
 
-import os
-
 def get_file_word_count(file):
     return int(subprocess.check_output(['wc', file]).decode().split()[0])
 
@@ -114,8 +112,11 @@ def get_batch_of_embeddings(number=None, source='tf', split='train', layer=-1, t
             Path(__file__).parent.resolve() / data_folder / split 
             for split in ['train', 'val', 'test']
         ]
-    else:
+    elif isinstance(split, str):
         paths = [Path(__file__).parent.resolve() / data_folder / split]
+    else:
+        # it's an array
+        paths = [Path(__file__).parent.resolve() / data_folder / s for s in split]
 
     layer_pat = str(layer) if layer is not None else r'[\-0-9]+'
 

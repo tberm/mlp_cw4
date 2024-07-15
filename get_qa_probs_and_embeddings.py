@@ -1,3 +1,9 @@
+"""
+Uses a LLM (LLama or Pythia) to process question-answer pairs and save the model's
+embeddings and token probabilities.  We save the embeddings at the final token position
+of the answer over several layers (hardcoded in run_gen/run_mc) and aggregate over token
+probabilities for all the tokens in the answer. Results are written to a CSV file.
+"""
 from argparse import ArgumentParser
 import csv
 from datetime import datetime
@@ -7,7 +13,7 @@ import subprocess
 import re
 
 import torch
-from transformers import AutoTokenizer, LlamaForCausalLM, LlamaTokenizer, GPTNeoXForCausalLM
+from transformers import AutoTokenizer, LlamaForCausalLM, GPTNeoXForCausalLM
 from tqdm import tqdm
 
 # hacky import of truthfulqa stuff
@@ -21,7 +27,6 @@ import pandas as pd
 
 def load_llama_model(model_path, cpu_only=False):
     model = LlamaForCausalLM.from_pretrained(model_path, local_files_only=True, device_map=None if cpu_only else 'auto')
-    #tokenizer = LlamaTokenizer.from_pretrained(model_path)
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     return model, tokenizer
 
@@ -56,11 +61,15 @@ def print_tokens_with_probs(tokens, tokenizer, log_probs):
 
 
 def run_gen(model_name, questions_path, output_path, prompt_style, continue_partial=False, cpu_only=False, debug=False):
+    """
+    Get embeddings and token probabilities for model-generated answers.
+    ``questions_path`` should point to a CSV containing a column for questions and a
+    column for model-generated answers.
+    """
     with open("config.json") as config_file:
         config = json.load(config_file)
 
-    #layers = [-1, -5, -9, -13]
-    layers = [-1, -5]
+    layers = [-1, -5, -9, -13]
 
     if output_path.exists():
         if not continue_partial:
@@ -117,7 +126,7 @@ def run_gen(model_name, questions_path, output_path, prompt_style, continue_part
     pbar = tqdm(questions[start_at_idx:].iterrows(), total=len(questions) - start_at_idx)
     for i, row in pbar:
         question = row['Question']
-        answer = row['llama2-7b-chat']
+        answer = row[model_name]
 
         pbar.set_description(question)
 
@@ -125,7 +134,7 @@ def run_gen(model_name, questions_path, output_path, prompt_style, continue_part
         results = {}
         results['question'] = question
         results['question_idx'] = i
-        results['answer'] = row['llama2-7b-chat']
+        results['answer'] = row[model_name]
 
         prompt = build_prompt(question, prompt_style)
         # tokenise just so we know how long the prompt is
@@ -169,11 +178,19 @@ def run_gen(model_name, questions_path, output_path, prompt_style, continue_part
 
 
 def run_mc(model_name, questions_path, output_path, prompt_style, continue_partial=False, cpu_only=False, debug=False):
+    """
+    Get embeddings and token probabilities for question-answer pairs given in the
+    TruthfulQA multiple choice setting. Since there are several answers for each
+    question, the output is two separate CSVs: one for questions (recording token
+    probabilities and entropy after the question) and one for answers (recording
+    embeddings and token probabilities of the answer).
+    
+    ``questions_path`` should point to the CSV of questions and answers from TruthfulQA.
+    """
     with open("config.json") as config_file:
         config = json.load(config_file)
 
-    #layers = [-1, -5, -9, -13]
-    layers = [-1, -5]
+    layers = [-1, -5, -9, -13]
 
     if output_path.exists():
         if not continue_partial:
@@ -357,10 +374,12 @@ if __name__ == '__main__':
     parser.add_argument('-q', '--questions-path', required=True, help='path to questions and answers CSV')
     parser.add_argument('-o', '--output-path', required=True, help='path for creating results directory')
     parser.add_argument('-p', '--prompt-style', choices=['qa', 'help', 'harm', 'null'], default='qa',
-        help='what to include in prompts before question')
+        help='which of the TruthfulQA prompt formats to use')
     parser.add_argument('--continue-partial', action='store_true', help='continue a previously started experiment (with the same output path)')
     parser.add_argument('--cpu-only', action='store_true', help='do not use GPU')
-    parser.add_argument('--qa-mode', choices=['mc', 'gen'], required=True)
+    parser.add_argument('--qa-mode', choices=['mc', 'gen'],
+        help='run on model-generated answers or on the answers provided in the TruthfulQA multiple choice task (mc)',
+        required=True)
     parser.add_argument('--debug', action='store_true')
 
     args = parser.parse_args()

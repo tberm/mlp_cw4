@@ -2,25 +2,19 @@
 Embedding Generation for Language Model for LLAMA and OPT models
 Date: 2023-05-26
 
-
-This script loads sentences from specified CSV files, processes them with a specified LLaMa or OPT model with Hugging Face's transformers library,
+This script loads sentences from specified CSV files, processes them with a specified  model with Hugging Face's transformers library,
 and saves the embeddings of the last token of each sentence into new CSV files.
-
-It does the same work as Generate_Embeddings.py but adds (fragile) functionality for LLaMA.
 
 It's based on Amos Azaria's and Tom Mitchell's implementation for their paper `The Internal State of an LLM Knows When it's Lying.' 
 https://arxiv.org/abs/2304.13734
 
-It uses the Hugging Face's tokenizer, with the model names specified in a configuration JSON file or by commandline args. 
-Model options for OPT include: '6.7b', '2.7b', '1.3b', '350m', 
-Model options for LLaMa include: '7B', '13B', '30B', and '65B'. 
+It uses Hugging Face's tokenizer, with the model names specified in a configuration JSON file or by commandline args. 
+Model options for LLaMa are: '7B', '13B', '30B', and '65B'. 
+Model options for Pythia are: 70m'
+Model options for OPT are: '6.7b', '2.7b', '1.3b', '350m', 
 
-The configuration file and/or commandline args also specify whether to remove periods at the end of sentences, which layers of the model to use for generating embeddings,
+The configuration file and/or command line args also specify whether to remove periods at the end of sentences, which layers of the model to use for generating embeddings,
 and the list of datasets to process.
-
-!!!!!!
-CAUTION: Because the LLaMa models are not fully publically available, paths for loading those models are hard-coded into the `load_llama_model` function.
-!!!!!
 
 If any step fails, the script logs an error message and continues with the next dataset.
 
@@ -32,7 +26,7 @@ Requirements:
 """
 
 import torch
-from transformers import AutoTokenizer, OPTForCausalLM, LlamaForCausalLM, LlamaTokenizer, GPTNeoXForCausalLM
+from transformers import AutoTokenizer, OPTForCausalLM, LlamaForCausalLM, GPTNeoXForCausalLM
 import pandas as pd
 import numpy as np
 from typing import Dict, List
@@ -59,7 +53,6 @@ def load_llama_model(model_path: Path, cpu_only: bool = False):
     Tuple[LlamaForCausalLM, LlamaTokenizer]. A tuple containing the loaded LLaMa model and its tokenizer.
     '''
     model = LlamaForCausalLM.from_pretrained(model_path, local_files_only=True, device_map=None if cpu_only else 'auto')
-    #tokenizer = LlamaTokenizer.from_pretrained(model_path)
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     return model, tokenizer
 
@@ -121,7 +114,6 @@ def process_row(prompt: str, model, tokenizer, layers_to_use: list, remove_perio
         embeddings[layer] = [last_hidden_state.numpy().tolist()]
     return embeddings
 
-#Still not convinced this function works 100% correctly, but it's much faster than process_row.
 def process_batch(batch_prompts: List[str], model, tokenizer, layers_to_use: list, remove_period: bool, cpu_only: bool):
     """
     Processes a batch of data and returns the embeddings for each statement.
@@ -205,7 +197,7 @@ def main():
     """
     Loads configuration parameters, initializes the model and tokenizer, and processes datasets.
 
-    Configuration parameters are loaded from a JSON file named "BenConfigMultiLayer.json". 
+    Configuration parameters are loaded from a JSON file named "config.json". 
     These parameters specify the model to use, whether to remove periods from the end of sentences, 
     which layers of the model to use for generating embeddings, the list of datasets to process, 
     and the paths to the input datasets and output location.
@@ -258,24 +250,6 @@ def main():
     if model is None or tokenizer is None:
         logging.error("Model or tokenizer initialization failed.")
         return
-    #I've left this in in case there's an issue with the batch_processing fanciness
-    # for dataset_name in tqdm(dataset_names, desc="Processing datasets"):
-    #     dataset = load_data(dataset_path, dataset_name, true_false=true_false)
-    #     if dataset is None:
-    #         continue
-    #     for layer in layers_to_process:
-    #         model_output_per_layer[layer] = dataset.copy()
-
-    #     for i, row in tqdm(dataset.iterrows(), desc="Row number"):
-    #         sentence = row['statement']
-    #         embeddings = process_row(sentence, model, tokenizer, layers_to_process, should_remove_period)
-    #         for layer in layers_to_process:
-    #             model_output_per_layer[layer].at[i, 'embeddings'] = embeddings[layer]
-    #         if i % 100 == 0:
-    #             logging.info(f"Processing row {i}")
-
-    #     for layer in layers_to_process:
-    #         save_data(model_output_per_layer[layer], output_path, dataset_name, model_name, layer, should_remove_period) 
 
     for dataset_name in tqdm(dataset_names, desc="Processing datasets"):
         # Increase the threshold parameter to a large number

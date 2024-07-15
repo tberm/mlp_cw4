@@ -26,7 +26,7 @@ if __name__ == '__main__':
 
     df = pd.read_csv(file)
     for i, row in islice(df.iterrows(), start_from, None):
-        if 'I have no comment' in row['answer']:
+        if 'I have no comment' in row['generated_answer']:
             print(f'Skipping question {i} as LLAMA has no comment.')
             df.loc[i, 'GPT eval'] = 'true'
             continue
@@ -35,27 +35,39 @@ if __name__ == '__main__':
         elif row['GPT eval'] == 'false':
             gpt_says_correct = False
         else:
-            print(f'No GPT eval for question {i}!')
-            continue
+            gpt_says_correct = None
+
         print(f"Question index number {i}: {row['Question']}")
         print()
-        print_bold('LLAMA ANSWER:', row['answer'])
+        print_bold('LLAMA ANSWER:', row['generated_answer'])
         print()
-        if gpt_says_correct:
+        if gpt_says_correct is None:
+            print('GOOD ANSWER:', row['Best Answer'])
+            print('BAD ANSWER:', row['Incorrect Answers'].split(';')[0])
+        elif gpt_says_correct:
             print_bold('GOOD ANSWER:', row['Best Answer'])
             print('BAD ANSWER:', row['Incorrect Answers'].split(';')[0])
         else:
             print('GOOD ANSWER:', row['Best Answer'])
             print_bold('BAD ANSWER:', row['Incorrect Answers'].split(';')[0])
         while True:
-            resp = input(f'GPT says this is {gpt_says_correct}. Agree? [enter if yes, type "no" if not, or "more" for more example answers]')
-            if resp.strip() == '':
-                break
-            if resp.strip() == 'no':
-                print(f'Changing eval to {not gpt_says_correct}')
-                df.loc[i, 'GPT eval'] = 'false' if gpt_says_correct else 'true'
-                df.to_csv(file)
-                break
+            if gpt_says_correct is None:
+                resp = input(f'No eval, please type "true", "false" or "more"')
+                if resp.strip().lower() in ('true', 'false'):
+                    df.loc[i, 'GPT eval'] = resp.strip().lower()
+                    df.to_csv(file)
+                    break
+
+            else:
+                resp = input(f'GPT says this is {gpt_says_correct}. Agree? [enter if yes, type "no" if not, or "more" for more example answers]')
+                if resp.strip() == '':
+                    break
+                if resp.strip() == 'no':
+                    print(f'Changing eval to {not gpt_says_correct}')
+                    df.loc[i, 'GPT eval'] = 'false' if gpt_says_correct else 'true'
+                    df.to_csv(file)
+                    break
+
             if resp.strip() == 'more':
                 for answer in row['Correct Answers'].split(';')[1:]:
                     print('GOOD ANSWER:', answer)

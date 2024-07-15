@@ -1,3 +1,0 @@
-Probe Class, Accuracy 
-LRProbe: 0.8748997449874878
-MMProbe: 0.6206896305084229

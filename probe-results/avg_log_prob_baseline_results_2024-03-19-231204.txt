@@ -1,7 +1,0 @@
-model=avg_log_prob_baseline
-started_at=2024-03-19-231204
-val_source=qa-gen
-accuracy=0.3708690330477356
-optimum_threshold=-1.028389573097229
-calibrated_acc=0.583843329253366
-auroc=0.463927781871776
